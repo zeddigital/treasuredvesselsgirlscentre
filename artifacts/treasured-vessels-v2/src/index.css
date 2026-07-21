@@ -177,6 +177,21 @@
   }
 }
 
+/* Phone (tel:) and email (mailto:) links in page content read as normal text —
+   no underline, inherited colour and weight — and only turn purple on hover.
+   Deliberately unlayered so it wins over the typography plugin's prose styles. */
+.prose a[href^="tel:"],
+.prose a[href^="mailto:"] {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.prose a[href^="tel:"]:hover,
+.prose a[href^="mailto:"]:hover {
+  color: var(--color-brand-purple);
+}
+
 @layer utilities {
   input[type='search']::-webkit-search-cancel-button {
     @apply hidden;
