@@ -69,7 +69,14 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-brand-paleblue/80 mb-8">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0 text-brand-pink" />
-                <span>Masese-Walukuba<br/>Jinja District, Eastern Uganda</span>
+                <a
+                  href="https://maps.app.goo.gl/Z1XvjQeUSutmSnAP8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Walukuba-Masese Rd<br/>Jinja District, Eastern Uganda
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 flex-shrink-0 text-brand-pink" />
