@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Heart } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
@@ -26,14 +26,14 @@ export function Footer() {
               A women-led, registered community organisation founded in 2018 in Jinja District, Uganda, supporting vulnerable girls, teenage mothers, and women to build stronger futures.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-pink transition-colors">
+              <a href="https://www.facebook.com/p/Treasured-Vessels-Girls-Center-61577348832518/" target="_blank" rel="noopener noreferrer" aria-label="Treasured Vessels Girls' Centre on Facebook" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-pink transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-pink transition-colors">
+              <a href="https://www.instagram.com/treasuredvesselsgirls/" target="_blank" rel="noopener noreferrer" aria-label="Treasured Vessels Girls' Centre on Instagram" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-pink transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-pink transition-colors">
-                <Twitter className="w-4 h-4" />
+              <a href="https://www.linkedin.com/in/racheal-achen-muggaga-912b4330a/" target="_blank" rel="noopener noreferrer" aria-label="Racheal Achen Muggaga on LinkedIn" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-pink transition-colors">
+                <Linkedin className="w-4 h-4" />
               </a>
             </div>
           </div>
