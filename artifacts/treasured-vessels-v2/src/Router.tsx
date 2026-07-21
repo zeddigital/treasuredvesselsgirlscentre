@@ -5,6 +5,8 @@ import ProgramsOverview from "@/pages/ProgramsOverview";
 import ProgramDetail from "@/pages/ProgramDetail";
 import Donate from "@/pages/Donate";
 import About from "@/pages/About";
+import News from "@/pages/News";
+import NewsArticle from "@/pages/NewsArticle";
 import NotFound from "@/pages/not-found";
 import GenericPage from "@/components/layout/GenericPage";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
@@ -152,13 +154,8 @@ function Router() {
             </GenericPage>
           )}
         </Route>
-        <Route path="/news">
-          {() => (
-            <GenericPage title="News & Updates">
-              <p>We're working on bringing you regular updates from the Centre. In the meantime, visit our <Link href="/stories">Stories of Change</Link> page for recent highlights, or follow us on social media for the latest from Jinja District.</p>
-            </GenericPage>
-          )}
-        </Route>
+        <Route path="/news" component={News} />
+        <Route path="/news/:slug" component={NewsArticle} />
         <Route path="/contact">
           {() => (
             <GenericPage title="Contact Us">
