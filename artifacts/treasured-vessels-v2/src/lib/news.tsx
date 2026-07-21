@@ -4,7 +4,7 @@ export interface NewsPost {
   slug: string;
   title: string;
   eyebrow: string;
-  date: string;
+  date?: string;
   image: string;
   excerpt: string;
   body: ReactNode;
@@ -13,6 +13,68 @@ export interface NewsPost {
 // Add new stories to the top of this array — the News page and article
 // routes are generated from it automatically.
 export const newsPosts: NewsPost[] = [
+  {
+    slug: "hope-restored-joans-story",
+    title: "Hope Restored: Joan's Story",
+    eyebrow: "How We Started",
+    image: `${import.meta.env.BASE_URL}images/joan-story.jpg`,
+    excerpt:
+      "At Treasured Vessels Girls' Centre, every transformed life reminds us why this ministry exists. Joan's story is one of restoration, resilience, and renewed purpose.",
+    body: (
+      <>
+        <p>
+          At Treasured Vessels Girls' Centre, every transformed life reminds us why this ministry
+          exists. Joan's story is one of restoration, resilience, and renewed purpose.
+        </p>
+        <p>Meet Joan.</p>
+        <p>
+          At just 16 years old, Joan became a teenage mother. The father of her child left, and with
+          him seemed to disappear every dream she once held. There were nights when her baby cried
+          from hunger and Joan had nothing to give.
+        </p>
+        <blockquote>
+          &ldquo;I thought my life was over,&rdquo; she shared during a counseling session with our
+          founder, Ma Rachael. &ldquo;I was a mother with no food, no education, and no hope.&rdquo;
+        </blockquote>
+        <p>But shame was never meant to be the final chapter of her story.</p>
+        <p>
+          Through counseling and discipleship at Treasured Vessels Girls' Centre, Joan encountered a
+          message of hope:
+        </p>
+        <blockquote>
+          <em>
+            &ldquo;Your purpose did not end when you became a mother. God still has a plan for your
+            life.&rdquo;
+          </em>
+        </blockquote>
+        <p>
+          Today, Joan is enrolled in our Hairdressing Skills Program. She continues to learn and grow
+          each day, but she is no longer defined by her circumstances. She has begun using her skills
+          to braid hair in her community, helping provide for her child while building a brighter
+          future.
+        </p>
+        <p>Most importantly, Joan now wakes each morning with purpose.</p>
+        <p>In her own words:</p>
+        <blockquote>
+          <em>
+            &ldquo;Ma Rachael saw value in me when I could no longer see it in myself. I am not just a
+            teenage mother&mdash;I am a future hairdresser. I am a mother with hope. Thank you,
+            Treasured Vessels, for standing beside me when I felt forgotten.&rdquo;
+          </em>
+        </blockquote>
+        <p>Stories like Joan's are why we do what we do.</p>
+        <h2>Counseling + Skills Training + Christ = Restored Lives</h2>
+        <p>
+          To every young woman reading this: <strong>your story is not over. Shame is not your
+          identity. There is hope, there is purpose, and there is a future.</strong>
+        </p>
+        <p>
+          Treasured Vessels Girls' Centre exists to raise young women of dignity, faith, and
+          purpose&mdash;one life at a time.
+        </p>
+      </>
+    ),
+  },
   {
     slug: "treasured-skills-graduation-2024",
     title: "Treasured Skills Graduation 2024",

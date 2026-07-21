@@ -26,7 +26,7 @@ export default function NewsArticle() {
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to News
           </Link>
           <span className="block text-brand-gold font-semibold tracking-wider uppercase mb-3 text-sm">
-            {post.eyebrow} &middot; {post.date}
+            {post.eyebrow}{post.date ? ` · ${post.date}` : ""}
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white max-w-3xl leading-tight">
             {post.title}

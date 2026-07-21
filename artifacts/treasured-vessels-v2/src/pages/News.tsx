@@ -28,7 +28,7 @@ export default function News() {
                   <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 </Link>
                 <div className="p-8 flex flex-col flex-1">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-brand-pink mb-3">{post.eyebrow} &middot; {post.date}</span>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-brand-pink mb-3">{post.eyebrow}{post.date ? ` · ${post.date}` : ""}</span>
                   <h2 className="font-serif text-2xl text-brand-plum mb-4">
                     <Link href={`/news/${post.slug}`} className="hover:text-brand-purple transition-colors">{post.title}</Link>
                   </h2>
