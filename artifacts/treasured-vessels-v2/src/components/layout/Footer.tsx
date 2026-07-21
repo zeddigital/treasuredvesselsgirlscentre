@@ -75,7 +75,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  Walukuba-Masese Rd<br/>Jinja District, Eastern Uganda
+                  Walukuba-Masese Rd<br/>Jinja District, Uganda
                 </a>
               </li>
               <li className="flex items-center gap-3">
