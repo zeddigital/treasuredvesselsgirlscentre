@@ -1,0 +1,1 @@
+- [Treasured Vessels V2 real content](treasured-vessels-real-content.md) — verified real-world facts/media for the TVGC charity site; use instead of guessing when editing that artifact again.

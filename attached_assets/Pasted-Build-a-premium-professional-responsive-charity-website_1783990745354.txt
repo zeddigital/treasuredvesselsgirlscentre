@@ -1,0 +1,304 @@
+Build a premium, professional, responsive charity website for Treasured Vessels Girls’ Centre, a women-led, registered community organisation based in Eastern Uganda and founded in 2018.
+
+The organisation supports vulnerable girls, teenage mothers and women affected by poverty, interrupted education, teenage pregnancy, early marriage, gender-based violence, exploitation, abandonment and family instability.
+
+Its work includes girls’ education and sponsorship, school reintegration, vocational skills training, teenage-mother support, menstrual health education, school outreach, counselling and referrals, gender-rights advocacy, community relief and practical economic empowerment.
+
+PRIMARY WEBSITE GOALS
+
+1. Clearly explain who Treasured Vessels Girls’ Centre is and what it does.
+2. Establish credibility, professionalism, transparency and emotional trust.
+3. Encourage one-time and monthly donations.
+4. Promote girl sponsorship, partnerships, volunteering and in-kind donations.
+5. Showcase authentic program images and measurable impact.
+6. Publish stories, project updates and organisational reports.
+7. Provide a safe pathway for girls, families and community leaders to request help or make referrals.
+
+BRAND POSITIONING
+
+The website must feel hopeful, dignified, trustworthy, compassionate, locally grounded and professionally managed.
+
+Do not use a generic charity-template appearance. Do not present girls and women as helpless. Show them as capable people receiving practical support, gaining skills, rebuilding confidence and creating stronger futures.
+
+The visual tone should combine warmth, human connection and community authenticity with the polish expected from an internationally credible non-profit organisation.
+
+TAGLINE
+
+Strong Girls. Strong Communities. A Stronger World.
+
+PRIMARY HOMEPAGE HEADLINE
+
+Empowering Girls to Build Stronger Futures
+
+HERO SUPPORTING COPY
+
+Treasured Vessels Girls’ Centre supports vulnerable girls, teenage mothers and women in Eastern Uganda through education, practical skills, mentoring, advocacy and community care.
+
+PRIMARY CALL TO ACTION
+
+Donate to Empower a Girl
+
+SECONDARY CALL TO ACTION
+
+Discover Our Work
+
+COLOUR PALETTE
+
+Primary Purple: #A43896
+Primary Blue: #3DACE0
+Deep Plum: #542051
+Empowerment Pink: #E63F8E
+Warm Gold: #F2B84B
+Soft Blush: #FBEFF7
+Pale Blue: #EEF8FC
+Warm Cream: #FFF9F2
+Charcoal: #24212A
+White: #FFFFFF
+
+Use white, cream, blush and pale blue for most backgrounds. Use deep plum for dark feature sections and the footer. Use purple and blue for brand elements and buttons. Use pink and gold sparingly as accent colours.
+
+TYPOGRAPHY
+
+Use DM Serif Display for headings and Inter for body text, navigation, forms and buttons.
+
+The heading style should feel warm, editorial and authoritative. Body text must be highly readable and accessible.
+
+DESIGN STYLE
+
+Use a clean editorial layout with generous whitespace, large authentic photography, soft rounded corners and restrained shadows.
+
+Maximum content width: approximately 1240px.
+Use large section spacing.
+Cards should have 18–24px rounded corners.
+Images should have 20–28px rounded corners.
+Buttons should have 8–12px rounded corners.
+Do not make every component pill-shaped.
+
+Use subtle rounded line icons for education, vocational skills, teenage-mother support, health, protection, partnerships and community outreach.
+
+Use subtle animations only: gentle fade-ins, number counters, image reveals and refined hover states. Do not use distracting sliders, flying text or excessive parallax.
+
+NAVIGATION
+
+Home
+About
+Our Programs
+Our Impact
+Stories
+Get Involved
+News
+Contact
+Donate
+
+ABOUT DROPDOWN
+
+Who We Are
+Our Founder
+Vision, Mission and Values
+Our Team
+Governance and Transparency
+FAQs
+
+PROGRAM DROPDOWN
+
+Girls’ Education
+Vocational Skills and Economic Empowerment
+Teenage Mother Support
+Menstrual Health and School Outreach
+Protection and Rehabilitation
+Community Outreach
+
+GET INVOLVED DROPDOWN
+
+Donate
+Sponsor a Girl
+Partner With Us
+Volunteer
+Donate Goods
+Fund a Project
+
+HOMEPAGE STRUCTURE
+
+1. Slim announcement bar:
+“Empowering girls and young women across Eastern Uganda since 2018.”
+
+2. Sticky header:
+Logo on the left, navigation in the centre or right and a prominent Donate button.
+
+3. Hero section:
+Use a strong authentic image showing girls or young women actively participating in training, learning or mentoring.
+Eyebrow: “Girls deserve safety, opportunity and a future.”
+Heading: “Empowering Girls to Build Stronger Futures”
+Supporting paragraph as provided above.
+Primary button: “Donate to Empower a Girl”
+Secondary button: “Discover Our Work”
+Trust line: “A registered, women-led community organisation serving girls and families since 2018.”
+
+4. Credibility strip:
+Community-led since 2018
+Women-led organisation
+Practical locally delivered programs
+Transparent and accountable support
+
+5. Who We Are section:
+Heading: “Every Girl Is a Treasured Vessel”
+Explain that the organisation reaches girls and women affected by poverty, school exclusion, teenage pregnancy, violence, exploitation and family instability. It provides practical support, restores confidence and creates pathways towards education, safety and economic independence.
+Include buttons to Our Story and Meet Our Founder.
+
+6. Challenge and response section:
+Show common challenges on one side and Treasured Vessels’ practical response on the other.
+Challenges may include school dropout, teenage pregnancy, early marriage, gender-based violence, poverty, unemployment, menstrual-product insecurity and family instability.
+Responses include education, school reintegration, vocational training, mentoring, pregnancy and parenting support, health awareness, counselling, referrals and economic empowerment.
+
+7. Programs section:
+Heading: “Practical Programs That Create Lasting Change”
+Create six large program cards with authentic images:
+Girls’ Education
+Skills and Economic Empowerment
+Teenage Mother Support
+Menstrual Health and School Outreach
+Protection and Rehabilitation
+Community Outreach
+
+8. Featured impact story:
+Use a large photograph, a respectful participant story, a short quote and a link to read the full story.
+
+9. Impact statistics:
+Use placeholders until verified:
+Girls and women supported
+Girls returned to education
+Vocational training participants
+Schools and communities reached
+Include the line: “Every number represents a girl, a family and a future strengthened.”
+
+10. Skills training visual section:
+Heading: “Skills That Create Independence”
+Use a staggered gallery showing baking, tailoring, hairdressing, crafts, practical demonstrations and group learning.
+Explain that skills training helps women generate income, support their children and regain confidence.
+
+11. Donation section:
+Use a deep-plum background with white text.
+Heading: “Help a Girl Take Her Next Step”
+Explain that donations support school materials, menstrual products, vocational equipment, mother-and-baby essentials, mentoring and urgent assistance.
+Include One-Time and Monthly donation buttons.
+Include suggested giving amounts as editable placeholders.
+Include trust points for secure giving, clear fund allocation and donor updates.
+
+12. Ways to get involved:
+Four cards:
+Donate
+Sponsor a Girl
+Volunteer
+Partner With Us
+
+13. Testimonials:
+Include voices from program participants, parents, school leaders, volunteers, partners or community leaders. Use real testimonials only.
+
+14. News and updates:
+Display three recent stories with strong authentic photographs.
+
+15. Final CTA:
+Heading: “Together, We Can Help Girls Build Safer, Stronger Futures”
+Buttons: “Make a Donation” and “Partner With Us”
+
+16. Footer:
+Include organisation links, program links, get-involved links, confirmed contact details, social links, privacy policy, safeguarding policy, donation policy, complaints process and copyright.
+
+REQUIRED PAGES
+
+Home
+About Us
+Our Founder
+Our Programs
+Individual Program Pages
+Our Impact
+Stories of Change
+Donate
+Sponsor a Girl
+Partner With Us
+Volunteer
+Gallery
+News and Updates
+FAQs
+Contact and Get Help
+Governance and Transparency
+Safeguarding Policy
+Privacy Policy
+Donation Policy
+
+PROGRAM PAGE TEMPLATE
+
+Each program page must include:
+Program hero and image
+The need
+What the program provides
+Who it supports
+How it works
+Program outcomes
+Participant story
+Current material or funding needs
+Support This Program call to action
+
+DONATION PAGE
+
+Create a simple, focused donation experience with:
+One-time and monthly options
+Suggested amounts
+Custom amount
+Fund selection
+Credit card and mobile-compatible payment presentation
+Trust and registration information
+Donation-use explanation
+Receipt and confirmation flow
+Link to financial and impact reporting
+
+Allow donors to select:
+Where needed most
+Girls’ education
+Skills training
+Teenage mother support
+Menstrual health
+Emergency assistance
+Community outreach
+
+PHOTOGRAPHY
+
+Use the supplied authentic Treasured Vessels photographs throughout the website.
+
+Prioritise images showing active participation, training, mentoring, finished products, group learning, celebration, community connection and confidence.
+
+Use warm natural colour correction, consistent crops and gentle rounded corners.
+
+Do not overuse repeated group photographs.
+Do not use pity-based imagery.
+Do not use generic stock photos where authentic project photos are available.
+Do not publish sensitive identifying information about vulnerable children or survivors.
+
+ACCESSIBILITY AND PERFORMANCE
+
+Design mobile-first and ensure the site works well on slower internet connections.
+
+Compress and lazy-load images.
+Use clear colour contrast.
+Use visible keyboard focus states.
+Use descriptive alt text.
+Use accessible form labels.
+Use large tap targets.
+Avoid autoplay video.
+Avoid heavy animations.
+
+TRUST AND SAFEGUARDING
+
+Include visible links to:
+Registration and governance information
+Safeguarding policy
+Privacy policy
+Complaints and feedback
+Donation management
+Annual or project reports
+
+The website must protect the identity and dignity of vulnerable girls, teenage mothers and survivors of violence.
+
+Do not invent statistics, partner logos, testimonials, registration numbers, donation amounts or program outcomes. Use clearly labelled placeholders where confirmed information has not been supplied.
+
+The final website should feel polished enough to present to international donors, NGOs, foundations, churches, businesses and government partners while remaining warm, accessible and authentically connected to the communities Treasured Vessels serves.

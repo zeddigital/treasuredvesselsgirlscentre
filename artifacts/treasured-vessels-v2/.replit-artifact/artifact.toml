@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Treasured Vessels V2"
+version = "1.0.0"
+id = "artifacts/treasured-vessels-v2"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18770
+
+[services.development]
+run = "pnpm --filter @workspace/treasured-vessels-v2 run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/treasured-vessels-v2", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/treasured-vessels-v2/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18770"
+BASE_PATH = "/"
