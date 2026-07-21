@@ -11,7 +11,7 @@ export default function About() {
             <span className="block text-brand-purple font-semibold tracking-wider uppercase mb-4 text-sm">Who We Are</span>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-plum mb-6">Built by the Community, for the Community.</h1>
             <p className="text-lg text-brand-charcoal/80 leading-relaxed">
-              Treasured Vessels Girls' Centre is a fully registered, women-led community based organisation (CBO) founded in 2018 by Racheal Muggaga Achen in Jinja District, Eastern Uganda. We exist to catch the girls who fall through the cracks.
+              Treasured Vessels Girls' Centre is a fully registered, women-led community based organisation (CBO) founded in 2018 by Racheal Muggaga Achen in Jinja District, Uganda. We exist to catch the girls who fall through the cracks.
             </p>
           </div>
         </div>
@@ -26,7 +26,7 @@ export default function About() {
               <div>
                 <h2 className="font-serif text-3xl text-brand-plum mb-4">Our Story</h2>
                 <p className="text-brand-charcoal/80 leading-relaxed mb-4">
-                  Treasured Vessels Girls' Centre was founded in 2018 by Racheal Muggaga Achen in Jinja District, Eastern Uganda, in response to the number of girls and women left without adequate care and support &mdash; among them children affected by the loss of parents to HIV/AIDS, women navigating remarriage, divorce or widowhood, families in dispute, and girls at risk of trafficking and sexual exploitation.
+                  Treasured Vessels Girls' Centre was founded in 2018 by Racheal Muggaga Achen in Jinja District, Uganda, in response to the number of girls and women left without adequate care and support &mdash; among them children affected by the loss of parents to HIV/AIDS, women navigating remarriage, divorce or widowhood, families in dispute, and girls at risk of trafficking and sexual exploitation.
                 </p>
                 <p className="text-brand-charcoal/80 leading-relaxed">
                   Today, as a fully registered community based organisation (CBO), we work in schools, institutions and directly with communities &mdash; training girls and women in practical skills, supporting survivors of gender-based violence, and addressing the health and social challenges facing our community.

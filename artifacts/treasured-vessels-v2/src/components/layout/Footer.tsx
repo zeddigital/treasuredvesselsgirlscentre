@@ -23,7 +23,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-brand-paleblue/80 text-sm leading-relaxed mb-8 pr-4">
-              A women-led, registered community organisation founded in 2018 in Eastern Uganda, supporting vulnerable girls, teenage mothers, and women to build stronger futures.
+              A women-led, registered community organisation founded in 2018 in Jinja District, Uganda, supporting vulnerable girls, teenage mothers, and women to build stronger futures.
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-pink transition-colors">

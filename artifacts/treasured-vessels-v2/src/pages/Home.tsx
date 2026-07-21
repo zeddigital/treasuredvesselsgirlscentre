@@ -108,7 +108,7 @@ export default function Home() {
                 We believe that no girl should be left behind due to poverty, early marriage, teenage pregnancy, or gender-based violence. 
               </p>
               <p className="text-base text-brand-charcoal/70 mb-10 leading-relaxed">
-                Founded in 2018 by Racheal Muggaga Achen in Jinja District, Eastern Uganda, Treasured Vessels is a women-led community based organisation. We provide safe spaces, practical training, and essential resources to help girls regain their dignity, rebuild their confidence, and step into self-reliance. We don't just see vulnerability; we see immense potential waiting to be unlocked.
+                Founded in 2018 by Racheal Muggaga Achen in Jinja District, Uganda, Treasured Vessels is a women-led community based organisation. We provide safe spaces, practical training, and essential resources to help girls regain their dignity, rebuild their confidence, and step into self-reliance. We don't just see vulnerability; we see immense potential waiting to be unlocked.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <Link href="/about">

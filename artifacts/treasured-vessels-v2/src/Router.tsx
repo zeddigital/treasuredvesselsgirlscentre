@@ -29,7 +29,7 @@ function Router() {
                 alt="Racheal Muggaga Achen, Founder of Treasured Vessels Girls' Centre"
                 className="w-full max-w-sm rounded-[24px] shadow-lg mb-8 not-prose"
               />
-              <p><strong>Racheal Muggaga Achen</strong> founded Treasured Vessels Girls' Centre in 2018 in Jinja District, Eastern Uganda.</p>
+              <p><strong>Racheal Muggaga Achen</strong> founded Treasured Vessels Girls' Centre in 2018 in Jinja District, Uganda.</p>
               <p>She established the Centre in response to the number of girls and women in her community left without adequate care and support &mdash; including children affected by the loss of parents to HIV/AIDS, women navigating remarriage, divorce or widowhood, families in dispute, and girls at risk of trafficking and sexual exploitation.</p>
               <p>Under her leadership, Treasured Vessels has grown from grassroots community support into a fully registered community based organisation (CBO) running six active programs and drawing on around 30 regular volunteers.</p>
             </GenericPage>
@@ -38,7 +38,7 @@ function Router() {
         <Route path="/about/governance">
           {() => (
             <GenericPage title="Governance & Transparency">
-              <p>Treasured Vessels Girls' Centre is a fully registered, women-led community based organisation (CBO) operating in Jinja District, Eastern Uganda.</p>
+              <p>Treasured Vessels Girls' Centre is a fully registered, women-led community based organisation (CBO) operating in Jinja District, Uganda.</p>
               <p>Accountability and transparency is one of our core values. We are committed to being answerable for our decisions and to being honest, trustworthy stewards of every resource entrusted to us by donors, partners and the communities we serve.</p>
               <p>We welcome partnership and scrutiny from NGOs, government agencies, community groups and donors who share our commitment to girls' and women's empowerment. For specific questions about our governance or financial reporting, please <Link href="/contact">contact us</Link> directly.</p>
             </GenericPage>
@@ -50,7 +50,7 @@ function Router() {
               {[
                 {
                   q: "What is Treasured Vessels Girls' Centre?",
-                  a: "Treasured Vessels Girls' Centre is a women-led, non-governmental community based organisation founded in 2018, dedicated to empowering girls and young women in Eastern Uganda."
+                  a: "Treasured Vessels Girls' Centre is a women-led, non-governmental community based organisation founded in 2018, dedicated to empowering girls and young women in Jinja District, Uganda."
                 },
                 {
                   q: "What are your main programs?",
@@ -219,7 +219,7 @@ function Router() {
               <p>By using our website, you agree to the terms outlined in this Privacy Policy.</p>
 
               <h2>1. Who We Are</h2>
-              <p>Treasured Vessels Girls' Centre is a registered, women-led community based organisation (CBO) dedicated to providing care, support, education, and opportunities for vulnerable girls, teenage mothers, and women in Jinja District, Eastern Uganda. Through donations, sponsorships, partnerships, and community initiatives, we seek to improve the lives of those entrusted to our care.</p>
+              <p>Treasured Vessels Girls' Centre is a registered, women-led community based organisation (CBO) dedicated to providing care, support, education, and opportunities for vulnerable girls, teenage mothers, and women in Jinja District, Uganda. Through donations, sponsorships, partnerships, and community initiatives, we seek to improve the lives of those entrusted to our care.</p>
               <p>If you have any questions regarding this Privacy Policy, please contact us:</p>
               <ul>
                 <li><strong>Organisation:</strong> Treasured Vessels Girls' Centre</li>
