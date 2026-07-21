@@ -50,7 +50,7 @@ const programs = [
 
 export default function ProgramsOverview() {
   return (
-    <div className="pt-20">
+    <div>
       {/* Header */}
       <section className="bg-brand-paleblue py-16 md:py-24">
         <div className="container mx-auto max-w-[1240px] px-4 md:px-6">
