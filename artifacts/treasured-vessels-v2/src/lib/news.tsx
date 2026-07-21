@@ -58,7 +58,7 @@ export const newsPosts: NewsPost[] = [
         <blockquote>
           <em>
             &ldquo;Ma Rachael saw value in me when I could no longer see it in myself. I am not just a
-            teenage mother&mdash;I am a future hairdresser. I am a mother with hope. Thank you,
+            teenage mother &mdash; I am a future hairdresser. I am a mother with hope. Thank you,
             Treasured Vessels, for standing beside me when I felt forgotten.&rdquo;
           </em>
         </blockquote>
@@ -70,7 +70,7 @@ export const newsPosts: NewsPost[] = [
         </p>
         <p>
           Treasured Vessels Girls' Centre exists to raise young women of dignity, faith, and
-          purpose&mdash;one life at a time.
+          purpose &mdash; one life at a time.
         </p>
       </>
     ),
@@ -102,7 +102,7 @@ export const newsPosts: NewsPost[] = [
           prepared for them. Their success is a testament to the power of investing in girls and the
           lasting impact that investment has on families, communities, and future generations.
         </p>
-        <p>This graduation was not simply an event&mdash;it was a declaration that restoration is possible.</p>
+        <p>This graduation was not simply an event &mdash; it was a declaration that restoration is possible.</p>
         <p>
           We are deeply grateful to every supporter, volunteer, partner, and prayer warrior who has
           stood alongside us. Your generosity and encouragement have helped make this moment a
