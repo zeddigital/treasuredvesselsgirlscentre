@@ -1,0 +1,11 @@
+# Cloudflare Pages configuration for the Treasured Vessels Girls' Centre site.
+# The site is one package inside a pnpm workspace, so the build runs from the
+# repo root and emits static files into the artifact's dist/public folder.
+#
+# Cloudflare build settings (dashboard → Pages → Settings → Builds):
+#   Build command:            pnpm install && pnpm --filter @workspace/treasured-vessels-v2 build
+#   Build output directory:   artifacts/treasured-vessels-v2/dist/public
+#   Root directory:           (leave as repo root)
+name = "treasuredvesselsgirlscentre"
+pages_build_output_dir = "artifacts/treasured-vessels-v2/dist/public"
+compatibility_date = "2025-01-01"
