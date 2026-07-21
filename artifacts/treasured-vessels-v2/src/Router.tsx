@@ -165,7 +165,7 @@ function Router() {
               <p>We'd love to hear from you &mdash; whether you want to volunteer, partner with us, or simply learn more about our work.</p>
               <ul>
                 <li><strong>Address:</strong> Walukuba-Masese Rd, Jinja District, Uganda</li>
-                <li><strong>Phone:</strong> +256 756 233 041 / +256 774 427 101</li>
+                <li><strong>Phone:</strong> <a href="tel:+256756233041">+256 756 233 041</a> / <a href="tel:+256774427101">+256 774 427 101</a></li>
                 <li><strong>Email:</strong> <a href="mailto:treassuredvesselsug@gmail.com">treassuredvesselsug@gmail.com</a></li>
               </ul>
               <a
@@ -224,7 +224,7 @@ function Router() {
               <ul>
                 <li><strong>Organisation:</strong> Treasured Vessels Girls' Centre</li>
                 <li><strong>Address:</strong> Walukuba-Masese Rd, Jinja District, Uganda</li>
-                <li><strong>Phone:</strong> +256 756 233 041 / +256 774 427 101</li>
+                <li><strong>Phone:</strong> <a href="tel:+256756233041">+256 756 233 041</a> / <a href="tel:+256774427101">+256 774 427 101</a></li>
                 <li><strong>Email:</strong> <a href="mailto:treassuredvesselsug@gmail.com">treassuredvesselsug@gmail.com</a></li>
               </ul>
 
@@ -351,7 +351,7 @@ function Router() {
                 <strong>Treasured Vessels Girls' Centre</strong><br />
                 Walukuba-Masese Rd, Jinja District, Uganda<br />
                 <a href="mailto:treassuredvesselsug@gmail.com">treassuredvesselsug@gmail.com</a><br />
-                +256 756 233 041 / +256 774 427 101
+                <a href="tel:+256756233041">+256 756 233 041</a> / <a href="tel:+256774427101">+256 774 427 101</a>
               </p>
 
               <h3>Commitment to Privacy</h3>

@@ -80,7 +80,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 flex-shrink-0 text-brand-pink" />
-                <span>+256 756 233 041</span>
+                <a href="tel:+256756233041" className="hover:text-white transition-colors">+256 756 233 041</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 flex-shrink-0 text-brand-pink" />
