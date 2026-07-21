@@ -19,7 +19,7 @@ export default function Home() {
                 Empowering Girls to Build Stronger Futures
               </h1>
               <p className="text-lg text-brand-charcoal/80 mb-8 leading-relaxed">
-                Treasured Vessels Girls' Centre supports vulnerable girls, teenage mothers and women in Eastern Uganda through education, practical skills, mentoring, advocacy and community care.
+                Treasured Vessels Girls' Centre supports vulnerable girls, teenage mothers and women in Uganda through education, practical skills, mentoring, advocacy and community care.
               </p>
               <div className="flex flex-wrap items-center gap-4 mb-8">
                 <Link href="/donate">
