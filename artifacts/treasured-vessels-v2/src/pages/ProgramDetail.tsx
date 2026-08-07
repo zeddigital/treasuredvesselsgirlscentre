@@ -8,7 +8,7 @@ const programData = {
     title: "Girls' Education",
     subtitle: "Keeping Girls in the Classroom",
     image: `${import.meta.env.BASE_URL}images/education.jpg`,
-    need: "In many parts of Eastern Uganda, poverty dictates that families prioritize boys' education over girls'. When funds run out, girls are pulled from school, exposing them to risks of early marriage and exploitation.",
+    need: "In many parts of Uganda, poverty dictates that families prioritize boys' education over girls'. When funds run out, girls are pulled from school, exposing them to risks of early marriage and exploitation.",
     provides: "We provide tuition assistance, scholastic materials (books, pens, uniforms), and ongoing mentorship to ensure girls not only stay in school but thrive academically.",
     supports: "Primary and secondary school-aged girls at high risk of dropping out due to financial constraints.",
     howItWorks: "We partner with local schools to identify vulnerable girls, cover their fees directly, and assign them mentors who monitor their academic progress and well-being.",

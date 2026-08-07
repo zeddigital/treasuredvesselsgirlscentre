@@ -57,7 +57,7 @@ export default function ProgramsOverview() {
           <div className="max-w-3xl">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-plum mb-6">Our Programs</h1>
             <p className="text-lg text-brand-charcoal/80 leading-relaxed">
-              We take a holistic approach to empowerment. From keeping girls in school to teaching practical trades and supporting young mothers, our programs address the root causes of vulnerability in Eastern Uganda.
+              We take a holistic approach to empowerment. From keeping girls in school to teaching practical trades and supporting young mothers, our programs address the root causes of vulnerability in Uganda.
             </p>
           </div>
         </div>

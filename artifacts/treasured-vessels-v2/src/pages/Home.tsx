@@ -132,7 +132,7 @@ export default function Home() {
         <div className="container mx-auto max-w-[1240px] px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-serif text-3xl md:text-4xl text-brand-plum mb-6">Addressing the Challenges, Delivering Real Solutions</h2>
-            <p className="text-brand-charcoal/80">We tackle systemic barriers with holistic, practical interventions tailored to the realities of Eastern Uganda.</p>
+            <p className="text-brand-charcoal/80">We tackle systemic barriers with holistic, practical interventions tailored to the realities of Uganda.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">

@@ -29,7 +29,7 @@ export default function Donate() {
           <Heart className="w-12 h-12 text-brand-pink mx-auto mb-4" />
           <h1 className="font-serif text-4xl md:text-5xl text-brand-plum mb-4">Invest in a Girl's Future</h1>
           <p className="text-lg text-brand-charcoal/70">
-            Your generous donation directly funds education, vocational training, and safe spaces for vulnerable young women in Eastern Uganda.
+            Your generous donation directly funds education, vocational training, and safe spaces for vulnerable young women in Uganda.
           </p>
         </div>
 
