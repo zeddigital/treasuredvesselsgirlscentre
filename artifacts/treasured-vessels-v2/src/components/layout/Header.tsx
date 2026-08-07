@@ -92,6 +92,11 @@ export function Header() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), "bg-transparent h-10 text-[15px]")}>
+                  <Link href="/blog">Blog</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild className={cn(navigationMenuTriggerStyle(), "bg-transparent h-10 text-[15px]")}>
                   <Link href="/news">News</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -160,6 +165,7 @@ export function Header() {
           {/* Flat links */}
           <Link href="/impact" onClick={close} className="font-medium text-base py-3 border-b">Our Impact</Link>
           <Link href="/stories" onClick={close} className="font-medium text-base py-3 border-b">Stories</Link>
+          <Link href="/blog" onClick={close} className="font-medium text-base py-3 border-b">Blog</Link>
           <Link href="/news" onClick={close} className="font-medium text-base py-3 border-b">News</Link>
 
           {/* Get Involved — accordion */}

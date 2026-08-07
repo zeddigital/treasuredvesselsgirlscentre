@@ -7,6 +7,8 @@ import Donate from "@/pages/Donate";
 import About from "@/pages/About";
 import News from "@/pages/News";
 import NewsArticle from "@/pages/NewsArticle";
+import Blog from "@/pages/Blog";
+import BlogArticle from "@/pages/BlogArticle";
 import NotFound from "@/pages/not-found";
 import GenericPage from "@/components/layout/GenericPage";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
@@ -156,6 +158,8 @@ function Router() {
         </Route>
         <Route path="/news" component={News} />
         <Route path="/news/:slug" component={NewsArticle} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/blog/:slug" component={BlogArticle} />
         <Route path="/contact">
           {() => (
             <GenericPage title="Contact Us">
