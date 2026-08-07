@@ -20,7 +20,7 @@
 | **Word count** | ~4,300 |
 
 > **Placeholders requiring input before publication**
-> `[FOUNDER NOTE — TO CONFIRM]` · `[ANNUAL PRIORITIES — TO CONFIRM]` · `[REGISTRATION NUMBER — TO CONFIRM]` · `[REFERRAL CONTACT — TO CONFIRM]`
+> `[FOUNDER NOTE — TO CONFIRM]` · `[ANNUAL PRIORITIES — TO CONFIRM]`
 
 ---
 
@@ -266,7 +266,6 @@ If you are assessing us, here is what you need.
 | **Type** | Registered women-led community-based organisation (CBO) |
 | **Founded** | 2018 |
 | **Founder** | Racheal Muggaga Achen |
-| **Registration** | `[REGISTRATION NUMBER — TO CONFIRM]` |
 | **Location** | Walukuba-Masese Road, Jinja District, Uganda |
 | **Email** | treassuredvesselsug@gmail.com |
 | **Telephone** | +256 756 233 041 / +256 774 427 101 |
@@ -313,7 +312,7 @@ If you know a girl or young woman in the Jinja area who needs support, you can c
 
 Please do so carefully. Do not name her publicly, on social media or in a comment. Do not share her photograph or her situation in a group. Contact us privately, and if she is old enough to be involved in the decision, involve her.
 
-`[REFERRAL CONTACT — TO CONFIRM: dedicated confidential number or email for referrals]`
+You can reach us privately on **+256 756 233 041** or **+256 774 427 101**, or by email at **treassuredvesselsug@gmail.com**.
 
 If a girl is in immediate danger, contact the police or local child protection services first.
 
