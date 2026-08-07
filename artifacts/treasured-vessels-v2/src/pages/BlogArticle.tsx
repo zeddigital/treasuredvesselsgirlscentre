@@ -97,8 +97,22 @@ export default function BlogArticle() {
 
       {/* Body */}
       <section className="py-16 md:py-24">
-        <div className="container mx-auto max-w-[800px] px-4 md:px-6 prose prose-lg prose-purple prose-headings:font-serif prose-headings:text-brand-plum prose-a:text-brand-purple prose-blockquote:border-brand-pink prose-blockquote:text-brand-charcoal/80">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.body}</ReactMarkdown>
+        <div className="container mx-auto max-w-[800px] px-4 md:px-6 prose prose-lg prose-purple prose-headings:font-serif prose-headings:text-brand-plum prose-a:text-brand-purple prose-blockquote:border-brand-pink prose-blockquote:text-brand-charcoal/80 prose-img:rounded-[24px] prose-img:shadow-lg prose-img:w-full">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              img: ({ src, alt }) => (
+                <figure className="my-10">
+                  <img src={src as string} alt={alt ?? ""} loading="lazy" className="w-full rounded-[24px] shadow-lg" />
+                  {alt ? (
+                    <figcaption className="mt-3 text-sm text-brand-charcoal/60 text-center">{alt}</figcaption>
+                  ) : null}
+                </figure>
+              ),
+            }}
+          >
+            {post.body}
+          </ReactMarkdown>
         </div>
         <div className="container mx-auto max-w-[800px] px-4 md:px-6 mt-12">
           <Link href="/blog">

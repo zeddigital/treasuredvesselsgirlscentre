@@ -117,6 +117,8 @@ If you are a school, church or organisation considering working with us, we expe
 
 ## The five-stage pathway
 
+![Young women working together on handcrafts during a skills session at the centre](/images/gallery/crochet-workshop.jpg)
+
 Support that arrives once and then stops rarely changes anything. A girl's situation is not a single event to be solved; it is a sequence, and it needs a sequence in reply.
 
 Our work is organised around five stages. In practice they overlap, and girls do not move through them at the same pace or always in the same order. But the shape holds.
@@ -153,6 +155,8 @@ Our School Outreach work also sits here — including menstrual health education
 
 ### Stage four — Economic transition
 
+![A trainee in a Treasured Vessels Girls' Centre shirt working at a knitting machine in Jinja, Uganda](/images/gallery/knitting-machine-training.jpg)
+
 Education without an income route leaves a girl dependent, and dependency is where a great deal of exploitation begins.
 
 This stage is our vocational training: tailoring, hairdressing, baking, soap-making, crafts and shoemaking. It is practical, hands-on, and aimed squarely at work that exists in the local economy.
@@ -186,6 +190,8 @@ That is the point at which support stops being something done *to* a girl and be
 We think organisations should be precise about the difference between what they deliver and what they connect people to. Blurring the two is how donors end up funding something that does not exist.
 
 ### What we run directly
+
+![A trainer presenting a tray of freshly baked rolls to participants in the skills room](/images/gallery/baking-training.jpg)
 
 We currently operate six active programmes:
 
