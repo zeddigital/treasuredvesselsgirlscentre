@@ -14,6 +14,7 @@ const MAPS_URL = "https://maps.app.goo.gl/Z1XvjQeUSutmSnAP8";
 export default function Contact() {
   const [values, setValues] = useState(emptyContactDetails);
   const [sent, setSent] = useState(false);
+  const [showErrors, setShowErrors] = useState(false);
   const complete = isContactComplete(values, true);
 
   useSeo({
@@ -28,7 +29,10 @@ export default function Contact() {
   // an API endpoint later without changing the fields.
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!complete) return;
+    if (!complete) {
+      setShowErrors(true);
+      return;
+    }
     const subject = `Website enquiry from ${values.firstName} ${values.lastName}`;
     const body = [
       `Name: ${values.firstName} ${values.lastName}`,
@@ -79,6 +83,7 @@ export default function Contact() {
                     variant="outline"
                     onClick={() => {
                       setSent(false);
+                      setShowErrors(false);
                       setValues(emptyContactDetails);
                     }}
                     className="mt-5 rounded-full border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white"
@@ -94,11 +99,11 @@ export default function Contact() {
                     onChange={setValues}
                     messageRequired
                     messagePlaceholder="How can we help?"
+                    showErrors={showErrors}
                   />
                   <Button
                     type="submit"
-                    disabled={!complete}
-                    className="w-full h-14 mt-6 rounded-2xl bg-brand-pink hover:bg-brand-pink/90 text-white font-bold text-base shadow-lg gap-2 disabled:opacity-50"
+                    className="w-full h-14 mt-6 rounded-2xl bg-brand-pink hover:bg-brand-pink/90 text-white font-bold text-base shadow-lg gap-2"
                   >
                     <Send className="w-4 h-4" /> Send Message
                   </Button>

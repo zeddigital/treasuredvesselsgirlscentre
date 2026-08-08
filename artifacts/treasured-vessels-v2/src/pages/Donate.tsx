@@ -17,6 +17,7 @@ export default function Donate() {
   const [amount, setAmount] = useState<string>("50");
   const [customAmount, setCustomAmount] = useState("");
   const [details, setDetails] = useState(emptyContactDetails);
+  const [showErrors, setShowErrors] = useState(false);
   const detailsComplete = isContactComplete(details, false);
 
   const amounts = isMonthly ? ["15", "30", "50", "100"] : ["25", "50", "100", "250"];
@@ -102,6 +103,7 @@ export default function Donate() {
                 onChange={setDetails}
                 messageLabel="Message"
                 messagePlaceholder="Anything you would like us to know about your gift"
+                showErrors={showErrors}
               />
             </div>
 
@@ -124,8 +126,10 @@ export default function Donate() {
             </div>
 
             <Button
-              disabled={!detailsComplete}
-              className="w-full h-14 rounded-2xl bg-brand-gold hover:bg-yellow-400 text-brand-charcoal font-bold text-lg shadow-lg mb-6 disabled:opacity-50"
+              onClick={() => {
+                if (!detailsComplete) setShowErrors(true);
+              }}
+              className="w-full h-14 rounded-2xl bg-brand-gold hover:bg-yellow-400 text-brand-charcoal font-bold text-lg shadow-lg mb-6"
             >
               Continue to Payment
             </Button>

@@ -36,6 +36,8 @@ interface ContactFieldsProps {
   messagePlaceholder?: string;
   /** Prefix so ids stay unique if two forms ever appear on one page */
   idPrefix?: string;
+  /** Set after a failed submit so missing fields are called out */
+  showErrors?: boolean;
 }
 
 export function ContactFields({
@@ -45,6 +47,7 @@ export function ContactFields({
   messageLabel = "Message",
   messagePlaceholder,
   idPrefix = "cf",
+  showErrors = false,
 }: ContactFieldsProps) {
   const set = (key: keyof ContactDetails) => (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -61,7 +64,25 @@ export function ContactFields({
     </>
   );
 
-  const inputClass = "h-12 rounded-xl";
+  const baseInput = "h-12 rounded-xl";
+  const errorRing = "border-brand-pink ring-1 ring-brand-pink";
+
+  const emailInvalid =
+    values.email.trim() !== "" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email.trim());
+
+  const err = {
+    firstName: showErrors && values.firstName.trim() === "",
+    lastName: showErrors && values.lastName.trim() === "",
+    email: (showErrors && values.email.trim() === "") || emailInvalid,
+    message: showErrors && messageRequired && values.message.trim() === "",
+  };
+
+  const inputClass = (bad: boolean) => `${baseInput} ${bad ? errorRing : ""}`;
+
+  const Error = ({ show, children }: { show: boolean; children: React.ReactNode }) =>
+    show ? (
+      <p className="text-xs text-brand-pink font-medium">{children}</p>
+    ) : null;
 
   return (
     <div className="space-y-4">
@@ -77,8 +98,10 @@ export function ContactFields({
             required
             value={values.firstName}
             onChange={set("firstName")}
-            className={inputClass}
+            aria-invalid={err.firstName}
+            className={inputClass(err.firstName)}
           />
+          <Error show={err.firstName}>Please enter your first name.</Error>
         </div>
         <div className="space-y-2">
           <Label htmlFor={`${idPrefix}-last`} className="text-brand-plum font-semibold">
@@ -91,8 +114,10 @@ export function ContactFields({
             required
             value={values.lastName}
             onChange={set("lastName")}
-            className={inputClass}
+            aria-invalid={err.lastName}
+            className={inputClass(err.lastName)}
           />
+          <Error show={err.lastName}>Please enter your last name.</Error>
         </div>
       </div>
 
@@ -108,8 +133,12 @@ export function ContactFields({
           required
           value={values.email}
           onChange={set("email")}
-          className={inputClass}
+          aria-invalid={err.email}
+          className={inputClass(err.email)}
         />
+        <Error show={err.email}>
+          {emailInvalid ? "Please enter a valid email address." : "Please enter your email address."}
+        </Error>
       </div>
 
       <div className="space-y-2">
@@ -123,7 +152,7 @@ export function ContactFields({
           autoComplete="tel"
           value={values.phone}
           onChange={set("phone")}
-          className={inputClass}
+          className={baseInput}
         />
       </div>
 
@@ -139,8 +168,10 @@ export function ContactFields({
           placeholder={messagePlaceholder}
           value={values.message}
           onChange={set("message")}
-          className="rounded-xl resize-y"
+          aria-invalid={err.message}
+          className={`rounded-xl resize-y ${err.message ? errorRing : ""}`}
         />
+        <Error show={err.message}>Please enter a message.</Error>
       </div>
     </div>
   );
