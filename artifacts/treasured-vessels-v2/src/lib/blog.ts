@@ -1,4 +1,5 @@
 import treasuredVesselBody from "@/content/what-it-means-to-be-a-treasured-vessel.md?raw";
+import jinjaBusogaBody from "@/content/why-jinja-and-busoga-need-a-girls-support-centre.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -21,6 +22,31 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "why-jinja-and-busoga-need-a-girls-support-centre",
+    title: "Why Jinja and Busoga Need a Girls' Support Centre",
+    eyebrow: "Our Community",
+    date: "11 August 2026",
+    isoDate: "2026-08-11",
+    image: `${import.meta.env.BASE_URL}images/gallery/community-outreach-session.jpg`,
+    imageAlt:
+      "Women and children gathered for a Treasured Vessels community session in Jinja, Uganda",
+    excerpt:
+      "Busoga carries a disproportionate share of Uganda's teenage pregnancy burden — but the district-level variation is the part that matters, and it is what national averages hide.",
+    metaDescription:
+      "Teenage pregnancy in Jinja and Busoga: what the district-level data really shows, why national averages mislead, and how local institutions can work together.",
+    seoTitle:
+      "Why Jinja and Busoga Need a Girls' Support Centre | Treasured Vessels",
+    keywords: [
+      "teenage pregnancy Jinja",
+      "girls support Busoga",
+      "women's empowerment Jinja Uganda",
+      "teenage pregnancy Busoga statistics",
+      "child marriage Jinja",
+    ],
+    readingMinutes: 10,
+    body: jinjaBusogaBody,
+  },
   {
     slug: "what-it-means-to-be-a-treasured-vessel",
     title: "What It Means to Be a Treasured Vessel",
