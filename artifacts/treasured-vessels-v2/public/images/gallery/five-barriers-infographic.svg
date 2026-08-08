@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 880" width="1000" height="880" role="img"
+     aria-label="Five barriers that can push a girl out of school, each paired with a practical response: household cost, pregnancy or marriage, violence and safety, menstrual health, and unpaid care.">
+  <defs>
+    <style>
+      .h  { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .t  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; }
+      .num{ font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #ffffff; }
+      .bar{ font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 25px; }
+      .lbl{ font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 13px; letter-spacing: 1.2px; }
+      .body{ font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 18px; }
+      .foot{ font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 15px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="880" fill="#FFF8F0"/>
+
+  <!-- Header -->
+  <text class="h" x="60" y="78" font-size="40">Five barriers that push a girl out of school</text>
+  <text class="foot" x="60" y="112" font-size="18">Dropout is rarely one decision. These pressures reinforce one another — and each has a practical answer.</text>
+  <line x1="60" y1="140" x2="940" y2="140" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- Row 1 -->
+  <g>
+    <circle cx="96" cy="203" r="30" fill="#A33895"/>
+    <text class="num" x="96" y="212" font-size="26" text-anchor="middle">1</text>
+    <text class="bar" x="152" y="192">Household cost</text>
+    <text class="body" x="152" y="222">Fees, uniforms, books and transport are cut first when income is unpredictable.</text>
+    <text class="lbl" x="152" y="252">WHAT HELPS</text>
+    <text class="body" x="272" y="252" fill="#552050">Targeted fee and material support.</text>
+  </g>
+  <line x1="60" y1="285" x2="940" y2="285" stroke="#EFE6EC" stroke-width="1.5"/>
+
+  <!-- Row 2 -->
+  <g>
+    <circle cx="96" cy="348" r="30" fill="#E43F8C"/>
+    <text class="num" x="96" y="357" font-size="26" text-anchor="middle">2</text>
+    <text class="bar" x="152" y="337">Pregnancy or marriage</text>
+    <text class="body" x="152" y="367">Leaving is often treated as permanent, though return is legally possible.</text>
+    <text class="lbl" x="152" y="397">WHAT HELPS</text>
+    <text class="body" x="272" y="397" fill="#552050">A documented, supported re-entry plan.</text>
+  </g>
+  <line x1="60" y1="430" x2="940" y2="430" stroke="#EFE6EC" stroke-width="1.5"/>
+
+  <!-- Row 3 -->
+  <g>
+    <circle cx="96" cy="493" r="30" fill="#3DAAE1"/>
+    <text class="num" x="96" y="502" font-size="26" text-anchor="middle">3</text>
+    <text class="bar" x="152" y="482">Violence and safety</text>
+    <text class="body" x="152" y="512">A school or journey that feels unsafe is one a girl will avoid.</text>
+    <text class="lbl" x="152" y="542">WHAT HELPS</text>
+    <text class="body" x="272" y="542" fill="#552050">Confidential reporting and referral.</text>
+  </g>
+  <line x1="60" y1="575" x2="940" y2="575" stroke="#EFE6EC" stroke-width="1.5"/>
+
+  <!-- Row 4 -->
+  <g>
+    <circle cx="96" cy="638" r="30" fill="#F1B74B"/>
+    <text class="num" x="96" y="647" font-size="26" text-anchor="middle">4</text>
+    <text class="bar" x="152" y="627">Menstrual health</text>
+    <text class="body" x="152" y="657">Without supplies, water or privacy, days are lost every single month.</text>
+    <text class="lbl" x="152" y="687">WHAT HELPS</text>
+    <text class="body" x="272" y="687" fill="#552050">Supplies, plus water and privacy at school.</text>
+  </g>
+  <line x1="60" y1="720" x2="940" y2="720" stroke="#EFE6EC" stroke-width="1.5"/>
+
+  <!-- Row 5 -->
+  <g>
+    <circle cx="96" cy="783" r="30" fill="#552050"/>
+    <text class="num" x="96" y="792" font-size="26" text-anchor="middle">5</text>
+    <text class="bar" x="152" y="772">Unpaid care and childcare</text>
+    <text class="body" x="152" y="802">Caring for siblings or her own child collides with the school timetable.</text>
+    <text class="lbl" x="152" y="832">WHAT HELPS</text>
+    <text class="body" x="272" y="832" fill="#552050">Family or childcare arrangements.</text>
+  </g>
+
+  <text class="foot" x="940" y="866" text-anchor="end">Treasured Vessels Girls' Centre · Jinja, Uganda</text>
+</svg>

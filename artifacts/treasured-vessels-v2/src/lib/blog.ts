@@ -1,5 +1,6 @@
 import treasuredVesselBody from "@/content/what-it-means-to-be-a-treasured-vessel.md?raw";
 import jinjaBusogaBody from "@/content/why-jinja-and-busoga-need-a-girls-support-centre.md?raw";
+import fiveBarriersBody from "@/content/five-barriers-that-push-a-girl-out-of-school.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -22,6 +23,31 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "five-barriers-that-push-a-girl-out-of-school",
+    title: "Five Barriers That Can Push a Girl Out of School",
+    eyebrow: "Girls' Education",
+    date: "12 August 2026",
+    isoDate: "2026-08-12",
+    image: `${import.meta.env.BASE_URL}images/gallery/handcraft-skills-class.jpg`,
+    imageAlt:
+      "Young women learning practical skills together in a class at Treasured Vessels Girls' Centre, Jinja",
+    excerpt:
+      "Most people assume pregnancy is why girls leave school. The evidence says cost is — by a distance. Here are the five barriers that actually compound, and what answers each one.",
+    metaDescription:
+      "Why girls really leave school in Uganda: cost, not pregnancy, is the leading cause. The five barriers that compound — and the practical response to each.",
+    seoTitle:
+      "Five Barriers That Can Push a Girl Out of School | Treasured Vessels",
+    keywords: [
+      "girls' school dropout Uganda",
+      "keep girls in school",
+      "education sponsorship Uganda",
+      "why girls leave school Uganda",
+      "school dropout causes Uganda",
+    ],
+    readingMinutes: 10,
+    body: fiveBarriersBody,
+  },
   {
     slug: "why-jinja-and-busoga-need-a-girls-support-centre",
     title: "Why Jinja and Busoga Need a Girls' Support Centre",
