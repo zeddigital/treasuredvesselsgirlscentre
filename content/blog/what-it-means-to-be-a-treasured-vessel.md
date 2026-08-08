@@ -19,11 +19,6 @@
 | **Primary CTA** | Read our programmes, then choose one practical way to stand with girls in Jinja |
 | **Word count** | ~4,300 |
 
-> **Placeholders requiring input before publication**
-> `[FOUNDER NOTE — TO CONFIRM]` · `[ANNUAL PRIORITIES — TO CONFIRM]`
-
----
-
 ## H1: What It Means to Be a Treasured Vessel
 
 There is a particular moment that happens often in our work, and it never loses its weight.
@@ -131,15 +126,16 @@ If you are a school, church or organisation considering working with us, we expe
 
 ---
 
-## A note from our founder
+## A note from our founder — Racheal Muggaga Achen
 
-> `[FOUNDER NOTE — TO CONFIRM]`
->
-> *A short personal note from Racheal Muggaga Achen, in her own words — ideally 100–200 words covering: what she saw in the community in 2018 that made her act; what she wants readers to understand about the girls the centre serves; and what she hopes the next few years will bring.*
->
-> *Drafting suggestion for approval, not publication as-is: "I did not set out to start an organisation. I set out to help one girl, and then another. What I have learned since 2018 is that these girls are not broken. They are capable, intelligent and determined, and what most of them lack is not character — it is opportunity, and someone who will not disappear. That is what we try to be."*
+When I began this journey in 2018, I did not set out to start an organisation. I simply saw girls in my community who were vulnerable, struggling and too often being left without the support they needed. I knew I could not solve every problem, but I could help one girl. Then another. And that is where Treasured Vessels began.
 
-*Note: we will not publish any words attributed to our founder without her direct approval.*
+I want people to understand that the girls we serve should never be defined by what has happened to them. They are intelligent, capable, creative and full of potential. What many have lacked is not ability or determination, but opportunity, a safe place to belong, and people who will continue to stand beside them.
+
+My hope for the years ahead is that Treasured Vessels can reach more girls, strengthen the support we provide, and create lasting pathways through education, skills and opportunity. I want every girl who comes through our doors to know that her past does not determine her future — that she is valued, she has purpose, and her life can become something beautiful.
+
+**Racheal Muggaga Achen**
+*Founder, Treasured Vessels Girls' Centre*
 
 ---
 
@@ -292,16 +288,6 @@ Discipleship is available to those who want it. It is offered, never imposed, an
 
 ---
 
-## Our priorities for the year ahead
-
-> `[ANNUAL PRIORITIES — TO CONFIRM]`
->
-> *Three to five specific, costed priorities for the coming twelve months. Concrete beats aspirational: "equip the tailoring room with ten working machines" is more persuasive than "expand vocational training." Suggested format — the priority, why it matters, what it costs, and what changes if it is funded.*
-
-We will publish progress against these priorities rather than quietly replacing them with new ones. That is the point of stating them publicly.
-
----
-
 ## Three ways to stand with girls in Jinja
 
 If this article has persuaded you of anything, we would rather it be one concrete action than a general good feeling.
@@ -426,7 +412,6 @@ Get in touch through our contact page. We work with NGOs, government agencies, s
 - UNICEF Uganda — Adolescent development: https://www.unicef.org/uganda/what-we-do/adolescent-development
 - World Bank — Adolescent fertility rate, Uganda: https://data.worldbank.org/indicator/SP.ADO.TFRT?locations=UG
 - Uganda Bureau of Statistics — 2024 National Population and Housing Census: https://www.ubos.org/
-- `[CBO registration authority or Jinja local-government link — TO CONFIRM]`
 
 ## Suggested categories and tags
 
