@@ -101,14 +101,37 @@ export default function BlogArticle() {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             components={{
-              img: ({ src, alt }) => (
-                <figure className="my-10">
-                  <img src={src as string} alt={alt ?? ""} loading="lazy" className="w-full rounded-[24px] shadow-lg" />
-                  {alt ? (
-                    <figcaption className="mt-3 text-sm text-brand-charcoal/60 text-center">{alt}</figcaption>
-                  ) : null}
-                </figure>
-              ),
+              img: ({ src, alt }) => {
+                // Portraits (e.g. the founder's note) sit beside the text on
+                // wider screens and stack above it on mobile.
+                const isPortrait = /founder/.test(String(src));
+                if (isPortrait) {
+                  return (
+                    <figure className="not-prose sm:float-left sm:w-[46%] sm:mr-8 mb-6 mt-2">
+                      <img
+                        src={src as string}
+                        alt={alt ?? ""}
+                        loading="lazy"
+                        className="w-full rounded-[24px] shadow-lg"
+                      />
+                      {alt ? (
+                        <figcaption className="mt-3 text-sm text-brand-charcoal/60">{alt}</figcaption>
+                      ) : null}
+                    </figure>
+                  );
+                }
+                return (
+                  <figure className="my-10 clear-both">
+                    <img src={src as string} alt={alt ?? ""} loading="lazy" className="w-full rounded-[24px] shadow-lg" />
+                    {alt ? (
+                      <figcaption className="mt-3 text-sm text-brand-charcoal/60 text-center">{alt}</figcaption>
+                    ) : null}
+                  </figure>
+                );
+              },
+              // Stop a floated portrait from bleeding into the next section
+              h2: ({ children }) => <h2 className="clear-both">{children}</h2>,
+              hr: () => <hr className="clear-both" />,
             }}
           >
             {post.body}
