@@ -224,10 +224,6 @@ Because fees are usually one of several barriers operating at once. A girl whose
 | what it means to be a Treasured Vessel | `/blog/what-it-means-to-be-a-treasured-vessel` |
 | contact us | `/contact` |
 
-## Recommended page to create
-
-The Day Three brief calls for an internal **"Education Continuity"** page explaining how Treasured Vessels assesses sponsorship, liaises with schools and tracks attendance. That page does not yet exist; this article currently links to `/programs/girls-education` instead. Creating it would give the CTA a stronger destination.
-
 ## Suggested categories and tags
 
 **Categories:** Girls' Education · Advocacy
