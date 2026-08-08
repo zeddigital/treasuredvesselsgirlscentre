@@ -101,8 +101,6 @@ export function Footer() {
           <p>© {currentYear} Treasured Vessels Girls' Centre. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-4 md:gap-6 justify-center">
             <Link href="/policies/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/policies/safeguarding" className="hover:text-white transition-colors">Safeguarding Policy</Link>
-            <Link href="/policies/donation" className="hover:text-white transition-colors">Donation Policy</Link>
             <Link href="/about/governance" className="hover:text-white transition-colors">Governance & Transparency</Link>
           </div>
         </div>

@@ -1,14 +1,23 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Lock, Heart, Link } from "lucide-react";
+import { CheckCircle2, Lock, Heart } from "lucide-react";
+import { Link } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import {
+  ContactFields,
+  emptyContactDetails,
+  isContactComplete,
+} from "@/components/ui/contact-fields";
+import { PoweredByStripe } from "@/components/ui/powered-by-stripe";
 
 export default function Donate() {
   const [isMonthly, setIsMonthly] = useState(false);
   const [amount, setAmount] = useState<string>("50");
   const [customAmount, setCustomAmount] = useState("");
+  const [details, setDetails] = useState(emptyContactDetails);
+  const detailsComplete = isContactComplete(details, false);
 
   const amounts = isMonthly ? ["15", "30", "50", "100"] : ["25", "50", "100", "250"];
 
@@ -84,6 +93,18 @@ export default function Donate() {
               </div>
             </div>
 
+            {/* Donor details */}
+            <div className="mb-10">
+              <Label className="text-brand-plum font-semibold mb-4 block text-base">Your details</Label>
+              <ContactFields
+                idPrefix="donate"
+                values={details}
+                onChange={setDetails}
+                messageLabel="Message"
+                messagePlaceholder="Anything you would like us to know about your gift"
+              />
+            </div>
+
             {/* Fund Allocation */}
             <div className="mb-10">
               <Label className="text-brand-plum font-semibold mb-4 block text-base">Direct my donation to</Label>
@@ -102,15 +123,21 @@ export default function Donate() {
               </RadioGroup>
             </div>
 
-            <Button className="w-full h-14 rounded-2xl bg-brand-gold hover:bg-yellow-400 text-brand-charcoal font-bold text-lg shadow-lg mb-6">
+            <Button
+              disabled={!detailsComplete}
+              className="w-full h-14 rounded-2xl bg-brand-gold hover:bg-yellow-400 text-brand-charcoal font-bold text-lg shadow-lg mb-6 disabled:opacity-50"
+            >
               Continue to Payment
             </Button>
-            
-            <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground bg-gray-50 py-3 rounded-lg">
-              <Lock className="w-4 h-4" /> Secure, encrypted transaction.
+
+            <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground bg-gray-50 py-4 rounded-lg">
+              <span className="flex items-center gap-2">
+                <Lock className="w-4 h-4" /> Secure, encrypted transaction.
+              </span>
+              <PoweredByStripe />
             </div>
             <p className="text-center text-[11px] text-muted-foreground mt-4">
-              *This is a frontend demonstration site. No real payment processing is wired up.
+              *Payment processing is not yet connected. No card details are collected on this page.
             </p>
 
           </div>
@@ -138,10 +165,9 @@ export default function Donate() {
             <div className="bg-white p-8 rounded-[32px] shadow-sm border border-border">
               <h3 className="font-serif text-xl text-brand-plum mb-4">Financial Transparency</h3>
               <p className="text-sm text-brand-charcoal/70 mb-4">
-                We are committed to accountable stewardship of every donation. Read our policies to understand how funds are allocated and reported.
+                We are committed to accountable stewardship of every donation. Read more about how we are governed and how funds are reported.
               </p>
               <div className="flex flex-col gap-2">
-                <Link href="/policies/donation" className="text-brand-blue text-sm font-semibold hover:underline">Read our Donation Policy</Link>
                 <Link href="/about/governance" className="text-brand-blue text-sm font-semibold hover:underline">Governance & Financial Reporting</Link>
               </div>
             </div>

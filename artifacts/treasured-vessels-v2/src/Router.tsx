@@ -8,6 +8,7 @@ import About from "@/pages/About";
 import News from "@/pages/News";
 import NewsArticle from "@/pages/NewsArticle";
 import Blog from "@/pages/Blog";
+import Contact from "@/pages/Contact";
 import BlogArticle from "@/pages/BlogArticle";
 import NotFound from "@/pages/not-found";
 import GenericPage from "@/components/layout/GenericPage";
@@ -160,34 +161,7 @@ function Router() {
         <Route path="/news/:slug" component={NewsArticle} />
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogArticle} />
-        <Route path="/contact">
-          {() => (
-            <GenericPage title="Contact Us">
-              <p>We'd love to hear from you &mdash; whether you want to volunteer, partner with us, or simply learn more about our work.</p>
-              <ul>
-                <li><strong>Address:</strong> Walukuba-Masese Rd, Jinja District, Uganda</li>
-                <li><strong>Phone:</strong> <a href="tel:+256756233041">+256 756 233 041</a> / <a href="tel:+256774427101">+256 774 427 101</a></li>
-                <li><strong>Email:</strong> <a href="mailto:treassuredvesselsug@gmail.com">treassuredvesselsug@gmail.com</a></li>
-              </ul>
-              <a
-                href="https://maps.app.goo.gl/Z1XvjQeUSutmSnAP8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="not-prose block group no-underline"
-                aria-label="Open the Treasured Vessels Girls' Centre location in Google Maps (opens in a new tab)"
-              >
-                <img
-                  src={`${import.meta.env.BASE_URL}images/map.png`}
-                  alt="Map showing the location of Treasured Vessels Girls' Centre"
-                  className="w-full rounded-[24px] shadow-lg border border-border transition-shadow group-hover:shadow-xl"
-                />
-                <span className="mt-3 block text-sm font-medium text-brand-pink">
-                  Open in Google Maps &#8599;
-                </span>
-              </a>
-            </GenericPage>
-          )}
-        </Route>
+        <Route path="/contact" component={Contact} />
         <Route path="/get-involved/sponsor">
           {() => (
             <GenericPage title="Sponsor a Girl">
@@ -360,14 +334,7 @@ function Router() {
             </GenericPage>
           )}
         </Route>
-        <Route path="/policies/:id">
-          {() => (
-            <GenericPage title="Policy Document">
-              <p>Placeholder content for official policies (Safeguarding, Donation). Let us know what should go here.</p>
-            </GenericPage>
-          )}
-        </Route>
-        
+
         <Route component={NotFound} />
       </Switch>
     </AppLayout>
