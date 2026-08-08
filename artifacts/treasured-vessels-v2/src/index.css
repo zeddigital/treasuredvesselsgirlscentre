@@ -175,6 +175,27 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-normal;
   }
+  /* Tailwind v4 no longer gives buttons `cursor: pointer`, so interactive
+     controls fall back to the browser's arrow. Restore the hand pointer. */
+  button,
+  [role="button"],
+  summary,
+  label[for],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select {
+    cursor: pointer;
+  }
+  button:disabled,
+  [role="button"][aria-disabled="true"],
+  [aria-disabled="true"],
+  input:disabled,
+  select:disabled {
+    cursor: not-allowed;
+  }
 }
 
 /* Phone (tel:) and email (mailto:) links in page content read as normal text —
