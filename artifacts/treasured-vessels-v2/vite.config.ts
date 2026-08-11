@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 
 import runtimeErrorOverlay from '@replit/vite-plugin-runtime-error-modal';
+import { sitemap } from './sitemapPlugin';
 
 // PORT / BASE_PATH are honoured when provided (e.g. Replit) but fall back to
 // sensible defaults so `vite build` works in any CI/host (Cloudflare, etc.)
@@ -24,6 +25,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     runtimeErrorOverlay(),
+    sitemap(),
     ...(process.env.NODE_ENV !== 'production' &&
     process.env.REPL_ID !== undefined
       ? [
