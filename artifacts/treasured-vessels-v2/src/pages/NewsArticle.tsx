@@ -3,10 +3,44 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getNewsPost } from "@/lib/news";
 import NotFound from "./not-found";
+import { useSeo, SITE_ORIGIN, ORG_ID } from "@/lib/seo";
 
 export default function NewsArticle() {
   const params = useParams();
   const post = getNewsPost(params.slug as string);
+
+  useSeo({
+    title: post
+      ? `${post.title} | Treasured Vessels Girls' Centre`
+      : "Story not found | Treasured Vessels Girls' Centre",
+    description: post?.excerpt ?? "",
+    path: post ? `/news/${post.slug}` : "/news",
+    image: post?.image,
+    type: "article",
+    webPageType: "ItemPage",
+    noindex: !post,
+    schema: post
+      ? [
+          {
+            "@type": "NewsArticle",
+            headline: post.title,
+            description: post.excerpt,
+            image: `${SITE_ORIGIN}${post.image}`,
+            author: { "@id": ORG_ID },
+            publisher: { "@id": ORG_ID },
+            mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_ORIGIN}/news/${post.slug}` },
+          },
+          {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: SITE_ORIGIN },
+              { "@type": "ListItem", position: 2, name: "News", item: `${SITE_ORIGIN}/news` },
+              { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_ORIGIN}/news/${post.slug}` },
+            ],
+          },
+        ]
+      : undefined,
+  });
 
   if (!post) {
     return <NotFound />;

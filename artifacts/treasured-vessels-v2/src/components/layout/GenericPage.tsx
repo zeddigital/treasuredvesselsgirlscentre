@@ -1,7 +1,31 @@
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import { useLocation } from "wouter";
+import { useSeo } from "@/lib/seo";
 
-export default function GenericPage({ title, children }: { title: string, children: React.ReactNode }) {
+interface GenericPageProps {
+  title: string;
+  /** Falls back to a generic line if a page hasn't supplied its own */
+  description?: string;
+  webPageType?: string;
+  children: React.ReactNode;
+}
+
+export default function GenericPage({
+  title,
+  description,
+  webPageType,
+  children,
+}: GenericPageProps) {
+  const [location] = useLocation();
+
+  useSeo({
+    title: `${title} | Treasured Vessels Girls' Centre`,
+    description:
+      description ??
+      `${title} — Treasured Vessels Girls' Centre, a women-led community organisation supporting vulnerable girls and women in Jinja, Uganda.`,
+    path: location,
+    webPageType,
+  });
+
   return (
     <div className="pb-24">
       <section className="bg-brand-paleblue py-16">

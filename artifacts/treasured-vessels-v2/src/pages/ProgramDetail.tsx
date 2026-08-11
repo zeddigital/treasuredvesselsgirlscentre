@@ -2,6 +2,7 @@ import { Link, useParams } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import NotFound from "./not-found";
+import { useSeo, SITE_ORIGIN, ORG_ID } from "@/lib/seo";
 
 const programData = {
   "girls-education": {
@@ -82,6 +83,45 @@ export default function ProgramDetail() {
   const params = useParams();
   const id = params.id as keyof typeof programData;
   const program = programData[id];
+
+  useSeo({
+    title: program
+      ? `${program.title} | Treasured Vessels Girls' Centre`
+      : "Program not found | Treasured Vessels Girls' Centre",
+    description: program ? program.need.slice(0, 155) : "",
+    path: `/programs/${id}`,
+    image: program?.image,
+    webPageType: "ItemPage",
+    noindex: !program,
+    schema: program
+      ? [
+          {
+            "@type": "Service",
+            name: program.title,
+            alternateName: program.subtitle,
+            description: program.provides,
+            serviceType: "Charitable programme",
+            provider: { "@id": ORG_ID },
+            areaServed: { "@type": "AdministrativeArea", name: "Jinja District, Uganda" },
+            audience: { "@type": "Audience", audienceType: program.supports },
+            url: `${SITE_ORIGIN}/programs/${id}`,
+          },
+          {
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: SITE_ORIGIN },
+              { "@type": "ListItem", position: 2, name: "Our Programs", item: `${SITE_ORIGIN}/programs` },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: program.title,
+                item: `${SITE_ORIGIN}/programs/${id}`,
+              },
+            ],
+          },
+        ]
+      : undefined,
+  });
 
   if (!program) {
     return <NotFound />;

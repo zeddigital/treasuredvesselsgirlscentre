@@ -2,8 +2,29 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { newsPosts } from "@/lib/news";
+import { useSeo, SITE_ORIGIN } from "@/lib/seo";
 
 export default function News() {
+  useSeo({
+    title: "News & Updates | Treasured Vessels Girls' Centre",
+    description:
+      "The latest stories, milestones and updates from Treasured Vessels Girls' Centre in Jinja, Uganda.",
+    path: "/news",
+    webPageType: "CollectionPage",
+    schema: [
+      {
+        "@type": "ItemList",
+        name: "News & Updates",
+        itemListElement: newsPosts.map((post, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: post.title,
+          url: `${SITE_ORIGIN}/news/${post.slug}`,
+        })),
+      },
+    ],
+  });
+
   return (
     <div>
       {/* Header */}

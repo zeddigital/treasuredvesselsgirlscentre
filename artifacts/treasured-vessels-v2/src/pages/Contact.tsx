@@ -22,6 +22,7 @@ export default function Contact() {
     description:
       "Get in touch with Treasured Vessels Girls' Centre in Jinja, Uganda — to volunteer, partner with us, refer a girl, or learn more about our work.",
     path: "/contact",
+    webPageType: "ContactPage",
   });
 
   // No form backend is connected yet, so the form composes an email the

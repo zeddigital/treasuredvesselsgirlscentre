@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/shared";
 import { BookOpen, Scissors, Baby, Droplets, Shield, Users } from "lucide-react";
+import { useSeo } from "@/lib/seo";
 
 const programs = [
   {
@@ -49,6 +50,15 @@ const programs = [
 ];
 
 export default function ProgramsOverview() {
+  useSeo({
+    title: "Our Programs | Treasured Vessels Girls' Centre, Jinja Uganda",
+    description:
+      "Six programmes supporting girls and women in Jinja: girls' education, vocational skills, teenage mother support, menstrual health, protection and community outreach.",
+    path: "/programs",
+    webPageType: "CollectionPage",
+    image: `${import.meta.env.BASE_URL}images/education.jpg`,
+  });
+
   return (
     <div>
       {/* Header */}

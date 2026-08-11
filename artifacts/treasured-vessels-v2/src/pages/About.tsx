@@ -1,7 +1,17 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useSeo } from "@/lib/seo";
 
 export default function About() {
+  useSeo({
+    title: "About Us | Treasured Vessels Girls' Centre, Jinja Uganda",
+    description:
+      "Founded in 2018 by Racheal Muggaga Achen, Treasured Vessels Girls' Centre is a registered women-led organisation serving girls and women in Jinja, Uganda.",
+    path: "/about",
+    webPageType: "AboutPage",
+    image: `${import.meta.env.BASE_URL}images/story.jpg`,
+  });
+
   return (
     <div className="pb-24">
       {/* Hero */}

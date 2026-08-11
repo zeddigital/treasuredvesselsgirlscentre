@@ -11,6 +11,7 @@ import {
   isContactComplete,
 } from "@/components/ui/contact-fields";
 import { PoweredByStripe } from "@/components/ui/powered-by-stripe";
+import { useSeo } from "@/lib/seo";
 
 export default function Donate() {
   const [isMonthly, setIsMonthly] = useState(false);
@@ -31,6 +32,14 @@ export default function Donate() {
     setCustomAmount(e.target.value);
     setAmount("custom");
   };
+
+  useSeo({
+    title: "Donate | Treasured Vessels Girls' Centre, Jinja Uganda",
+    description:
+      "Your donation funds education, vocational training and safe spaces for vulnerable girls and women in Jinja, Uganda. $15 provides a reusable sanitary kit for a year.",
+    path: "/donate",
+    image: `${import.meta.env.BASE_URL}images/hero.jpg`,
+  });
 
   return (
     <div className="bg-brand-cream min-h-screen pt-12 pb-24">

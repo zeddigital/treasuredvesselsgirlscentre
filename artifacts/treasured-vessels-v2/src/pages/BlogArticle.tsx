@@ -4,7 +4,7 @@ import remarkGfm from "remark-gfm";
 import { ArrowLeft, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getBlogPost } from "@/lib/blog";
-import { useSeo, SITE_ORIGIN, SITE_NAME } from "@/lib/seo";
+import { useSeo, SITE_ORIGIN, ORG_ID } from "@/lib/seo";
 import NotFound from "./not-found";
 
 export default function BlogArticle() {
@@ -17,6 +17,7 @@ export default function BlogArticle() {
     path: post ? `/blog/${post.slug}` : "/blog",
     image: post?.image,
     type: "article",
+    webPageType: "ItemPage",
     keywords: post?.keywords,
     schema: post
       ? [
@@ -27,16 +28,8 @@ export default function BlogArticle() {
             image: `${SITE_ORIGIN}${post.image}`,
             datePublished: post.isoDate,
             dateModified: post.isoDate,
-            author: { "@type": "Organization", name: SITE_NAME, url: SITE_ORIGIN },
-            publisher: {
-              "@type": "Organization",
-              name: SITE_NAME,
-              url: SITE_ORIGIN,
-              logo: {
-                "@type": "ImageObject",
-                url: `${SITE_ORIGIN}/images/logo-icon.png`,
-              },
-            },
+            author: { "@id": ORG_ID },
+            publisher: { "@id": ORG_ID },
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id": `${SITE_ORIGIN}/blog/${post.slug}`,
