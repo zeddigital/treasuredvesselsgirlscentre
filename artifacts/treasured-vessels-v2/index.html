@@ -39,6 +39,18 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#552050" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QF0S5MP1GH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Automatic page_view is off: this is a single-page app, so gtag would
+      // only ever record the first page. src/lib/analytics.ts sends a
+      // page_view on every route change instead, including the first.
+      gtag('config', 'G-QF0S5MP1GH', { send_page_view: false });
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
