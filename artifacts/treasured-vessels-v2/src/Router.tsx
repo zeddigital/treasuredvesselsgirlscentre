@@ -9,6 +9,7 @@ import News from "@/pages/News";
 import NewsArticle from "@/pages/NewsArticle";
 import Blog from "@/pages/Blog";
 import Contact from "@/pages/Contact";
+import GetInvolved from "@/pages/GetInvolved";
 import BlogArticle from "@/pages/BlogArticle";
 import NotFound from "@/pages/not-found";
 import GenericPage from "@/components/layout/GenericPage";
@@ -162,30 +163,7 @@ function Router() {
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogArticle} />
         <Route path="/contact" component={Contact} />
-        <Route path="/get-involved/sponsor">
-          {() => (
-            <GenericPage title="Sponsor a Girl">
-              <p>Direct sponsorship provides ongoing educational support for a vulnerable girl or, in some cases, for a young mother and her child &mdash; covering tuition, scholastic materials, and mentorship so she can stay in school.</p>
-              <p>To discuss sponsoring a girl, please <Link href="/contact">get in touch with us</Link> or make a general contribution through our <Link href="/donate">donation page</Link>.</p>
-            </GenericPage>
-          )}
-        </Route>
-        <Route path="/get-involved/partner">
-          {() => (
-            <GenericPage title="Partner With Us">
-              <p>We partner with NGOs, government agencies, community groups and donors who share our commitment to girls' and women's empowerment. Partners support us with funding, resources and advocacy across our six program areas.</p>
-              <p>If your organisation would like to explore a partnership, please reach out via our <Link href="/contact">contact page</Link>.</p>
-            </GenericPage>
-          )}
-        </Route>
-        <Route path="/get-involved/volunteer">
-          {() => (
-            <GenericPage title="Volunteer">
-              <p>We currently have volunteer opportunities across Jinja City and are always glad of extra hands &mdash; whether for vocational training support, school outreach, or community events.</p>
-              <p>To register your interest, please <Link href="/contact">contact us</Link> with your skills and availability.</p>
-            </GenericPage>
-          )}
-        </Route>
+        <Route path="/get-involved/:type" component={GetInvolved} />
         <Route path="/policies/privacy">
           {() => (
             <GenericPage title="Privacy Policy">
