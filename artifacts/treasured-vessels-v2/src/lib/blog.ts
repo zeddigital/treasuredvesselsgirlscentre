@@ -1,6 +1,7 @@
 import treasuredVesselBody from "@/content/what-it-means-to-be-a-treasured-vessel.md?raw";
 import jinjaBusogaBody from "@/content/why-jinja-and-busoga-need-a-girls-support-centre.md?raw";
 import fiveBarriersBody from "@/content/five-barriers-that-push-a-girl-out-of-school.md?raw";
+import sponsorshipBody from "@/content/what-responsible-education-sponsorship-should-include.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -23,6 +24,31 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "what-responsible-education-sponsorship-should-include",
+    title: "What Responsible Education Sponsorship Should Include",
+    eyebrow: "Sponsorship",
+    date: "11 August 2026",
+    isoDate: "2026-08-11",
+    image: `${import.meta.env.BASE_URL}images/gallery/tailoring-classroom.jpg`,
+    imageAlt:
+      "A learning session in progress at Treasured Vessels Girls' Centre in Jinja, Uganda",
+    excerpt:
+      "What does sponsorship actually buy, who decides, and how would you know it worked? A transparent service model \u2014 and why we will never send you a photograph of the girl.",
+    metaDescription:
+      "What responsible child sponsorship should include: assessment first, nine cost components, termly reporting \u2014 and why photographs are not a donor benefit.",
+    seoTitle:
+      "What Responsible Education Sponsorship Should Include | Treasured Vessels",
+    keywords: [
+      "sponsor a girl's education Uganda",
+      "transparent child sponsorship",
+      "girls education Jinja",
+      "ethical child sponsorship",
+      "education sponsorship Uganda",
+    ],
+    readingMinutes: 10,
+    body: sponsorshipBody,
+  },
   {
     slug: "five-barriers-that-push-a-girl-out-of-school",
     title: "Five Barriers That Can Push a Girl Out of School",

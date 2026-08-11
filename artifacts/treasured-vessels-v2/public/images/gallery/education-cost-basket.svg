@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img"
+     aria-label="The education cost basket: nine components that keep a girl learning — school fees, uniform, learning materials, transport, menstrual supplies, disability access, childcare, family engagement and psychosocial referral. Sponsorship covers the barrier that is actually stopping her, not a fixed package.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .item { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 18px; }
+      .desc { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 14px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 14px; }
+      .tick { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #ffffff; font-size: 15px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="700" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="72" font-size="36">The education cost basket</text>
+  <text class="lead" x="56" y="104">School fees are one line item. These are the others that decide whether a girl actually stays in class.</text>
+  <line x1="56" y1="130" x2="944" y2="130" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- Row 1 -->
+  <g>
+    <circle cx="86" cy="180" r="17" fill="#A33895"/><text class="tick" x="86" y="186" text-anchor="middle">1</text>
+    <text class="item" x="118" y="176">School fees</text>
+    <text class="desc" x="118" y="199">Where they still apply, per term</text>
+  </g>
+  <g>
+    <circle cx="530" cy="180" r="17" fill="#A33895"/><text class="tick" x="530" y="186" text-anchor="middle">2</text>
+    <text class="item" x="562" y="176">Uniform and shoes</text>
+    <text class="desc" x="562" y="199">Often the reason a girl is sent home</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g>
+    <circle cx="86" cy="258" r="17" fill="#E43F8C"/><text class="tick" x="86" y="264" text-anchor="middle">3</text>
+    <text class="item" x="118" y="254">Learning materials</text>
+    <text class="desc" x="118" y="277">Books, pens, exercise books, exam fees</text>
+  </g>
+  <g>
+    <circle cx="530" cy="258" r="17" fill="#E43F8C"/><text class="tick" x="530" y="264" text-anchor="middle">4</text>
+    <text class="item" x="562" y="254">Transport</text>
+    <text class="desc" x="562" y="277">Distance and safety on the journey</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g>
+    <circle cx="86" cy="336" r="17" fill="#3DAAE1"/><text class="tick" x="86" y="342" text-anchor="middle">5</text>
+    <text class="item" x="118" y="332">Menstrual supplies</text>
+    <text class="desc" x="118" y="355">Roughly one lost day in nine without them</text>
+  </g>
+  <g>
+    <circle cx="530" cy="336" r="17" fill="#3DAAE1"/><text class="tick" x="530" y="342" text-anchor="middle">6</text>
+    <text class="item" x="562" y="332">Disability access</text>
+    <text class="desc" x="562" y="355">Aids, adaptations and a reachable classroom</text>
+  </g>
+
+  <!-- Row 4 -->
+  <g>
+    <circle cx="86" cy="414" r="17" fill="#F1B74B"/><text class="tick" x="86" y="420" text-anchor="middle">7</text>
+    <text class="item" x="118" y="410">Childcare</text>
+    <text class="desc" x="118" y="433">So a young mother can sit the school day</text>
+  </g>
+  <g>
+    <circle cx="530" cy="414" r="17" fill="#F1B74B"/><text class="tick" x="530" y="420" text-anchor="middle">8</text>
+    <text class="item" x="562" y="410">Family engagement</text>
+    <text class="desc" x="562" y="433">Bringing parents with the plan, not around it</text>
+  </g>
+
+  <!-- Row 5 -->
+  <g>
+    <circle cx="86" cy="492" r="17" fill="#552050"/><text class="tick" x="86" y="498" text-anchor="middle">9</text>
+    <text class="item" x="118" y="488">Psychosocial referral</text>
+    <text class="desc" x="118" y="511">Counselling and protection when they are needed</text>
+  </g>
+
+  <!-- Closing statement -->
+  <rect x="56" y="556" width="888" height="88" rx="20" fill="#552050"/>
+  <text x="500" y="592" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#ffffff">Sponsorship should fund the barrier that is actually stopping her.</text>
+  <text x="500" y="620" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" fill="#EAD9E6">That is why every plan starts with an assessment, not a fixed package.</text>
+
+  <text class="foot" x="944" y="678" text-anchor="end">Treasured Vessels Girls' Centre · Jinja, Uganda</text>
+</svg>
