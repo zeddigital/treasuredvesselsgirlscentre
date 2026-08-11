@@ -102,6 +102,14 @@ export function Footer() {
           <div className="flex flex-wrap items-center gap-4 md:gap-6 justify-center">
             <Link href="/policies/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/about/governance" className="hover:text-white transition-colors">Governance & Transparency</Link>
+            <a
+              href="https://7marketing.com.au/"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-white transition-colors"
+            >
+              Website By 7M
+            </a>
           </div>
         </div>
       </div>
