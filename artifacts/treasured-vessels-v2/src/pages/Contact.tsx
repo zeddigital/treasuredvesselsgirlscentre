@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Send, Loader2 } from "lucide-react";
 import {
   ContactFields,
   emptyContactDetails,
   isContactComplete,
 } from "@/components/ui/contact-fields";
 import { useSeo } from "@/lib/seo";
+import { trackEvent } from "@/lib/analytics";
 
 const EMAIL = "treassuredvesselsug@gmail.com";
 const MAPS_URL = "https://maps.app.goo.gl/Z1XvjQeUSutmSnAP8";
@@ -15,6 +16,10 @@ export default function Contact() {
   const [values, setValues] = useState(emptyContactDetails);
   const [sent, setSent] = useState(false);
   const [showErrors, setShowErrors] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  // Bots fill hidden fields in; real visitors never see this one.
+  const [honeypot, setHoneypot] = useState("");
   const complete = isContactComplete(values, true);
 
   useSeo({
@@ -25,29 +30,35 @@ export default function Contact() {
     webPageType: "ContactPage",
   });
 
-  // No form backend is connected yet, so the form composes an email the
-  // visitor's own mail client sends. This works today and can be swapped for
-  // an API endpoint later without changing the fields.
-  const handleSubmit = (e: React.FormEvent) => {
+  // Posts to the Cloudflare Pages Function at functions/api/contact.ts, which
+  // sends the enquiry to the centre and a confirmation to the sender via Resend.
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!complete) {
+    if (!complete || sending) {
       setShowErrors(true);
       return;
     }
-    const subject = `Website enquiry from ${values.firstName} ${values.lastName}`;
-    const body = [
-      `Name: ${values.firstName} ${values.lastName}`,
-      `Email: ${values.email}`,
-      values.phone ? `Phone: ${values.phone}` : null,
-      "",
-      values.message,
-    ]
-      .filter((line) => line !== null)
-      .join("\n");
-    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
-    setSent(true);
+    setSending(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ ...values, company: honeypot }),
+      });
+      const data = (await res.json().catch(() => ({}))) as { error?: string };
+      if (!res.ok) throw new Error(data.error || "Something went wrong.");
+      setSent(true);
+      trackEvent("contact_form_submit", { form: "contact" });
+    } catch (err) {
+      setError(
+        err instanceof Error && err.message
+          ? err.message
+          : "We could not send your message just now.",
+      );
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -71,20 +82,19 @@ export default function Contact() {
 
               {sent ? (
                 <div className="rounded-2xl bg-brand-paleblue p-6">
-                  <p className="text-brand-plum font-semibold mb-2">Thank you.</p>
+                  <p className="text-brand-plum font-semibold mb-2">Thank you — your message is on its way.</p>
                   <p className="text-sm text-brand-charcoal/80">
-                    Your email client should have opened with your message ready to send. If it did
-                    not, please email us directly at{" "}
-                    <a href={`mailto:${EMAIL}`} className="font-semibold">
-                      {EMAIL}
-                    </a>
-                    .
+                    We have sent a confirmation to <strong>{values.email}</strong>. Someone from our
+                    team in Jinja will read your message personally and normally replies within a few
+                    working days. If it is urgent, please call{" "}
+                    <a href="tel:+256756233041" className="font-semibold">+256 756 233 041</a>.
                   </p>
                   <Button
                     variant="outline"
                     onClick={() => {
                       setSent(false);
                       setShowErrors(false);
+                      setError(null);
                       setValues(emptyContactDetails);
                     }}
                     className="mt-5 rounded-full border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white"
@@ -93,7 +103,7 @@ export default function Contact() {
                   </Button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} noValidate>
+                <form onSubmit={handleSubmit} noValidate className="relative">
                   <ContactFields
                     idPrefix="contact"
                     values={values}
@@ -102,11 +112,47 @@ export default function Contact() {
                     messagePlaceholder="How can we help?"
                     showErrors={showErrors}
                   />
+
+                  {/* Honeypot — visually hidden, ignored by real users */}
+                  <div aria-hidden="true" className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden">
+                    <label htmlFor="contact-company">Company</label>
+                    <input
+                      id="contact-company"
+                      name="company"
+                      type="text"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={honeypot}
+                      onChange={(e) => setHoneypot(e.target.value)}
+                    />
+                  </div>
+
+                  {error ? (
+                    <div className="mt-6 rounded-2xl border border-brand-pink/40 bg-brand-blush p-4">
+                      <p className="text-sm text-brand-plum">
+                        {error} Please try again, or email us directly at{" "}
+                        <a href={`mailto:${EMAIL}`} className="font-semibold underline">
+                          {EMAIL}
+                        </a>
+                        .
+                      </p>
+                    </div>
+                  ) : null}
+
                   <Button
                     type="submit"
-                    className="w-full h-14 mt-6 rounded-2xl bg-brand-pink hover:bg-brand-pink/90 text-white font-bold text-base shadow-lg gap-2"
+                    disabled={sending}
+                    className="w-full h-14 mt-6 rounded-2xl bg-brand-pink hover:bg-brand-pink/90 text-white font-bold text-base shadow-lg gap-2 disabled:opacity-70"
                   >
-                    <Send className="w-4 h-4" /> Send Message
+                    {sending ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" /> Sending…
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4" /> Send Message
+                      </>
+                    )}
                   </Button>
                   <p className="text-center text-[11px] text-muted-foreground mt-4">
                     Fields marked <span className="text-brand-pink">*</span> are required.
