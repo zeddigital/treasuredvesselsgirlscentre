@@ -27,8 +27,8 @@ export const blogPosts: BlogPost[] = [
     slug: "five-barriers-that-push-a-girl-out-of-school",
     title: "Five Barriers That Can Push a Girl Out of School",
     eyebrow: "Girls' Education",
-    date: "12 August 2026",
-    isoDate: "2026-08-12",
+    date: "10 August 2026",
+    isoDate: "2026-08-10",
     image: `${import.meta.env.BASE_URL}images/gallery/handcraft-skills-class.jpg`,
     imageAlt:
       "Young women learning practical skills together in a class at Treasured Vessels Girls' Centre, Jinja",
@@ -52,8 +52,8 @@ export const blogPosts: BlogPost[] = [
     slug: "why-jinja-and-busoga-need-a-girls-support-centre",
     title: "Why Jinja and Busoga Need a Girls' Support Centre",
     eyebrow: "Our Community",
-    date: "11 August 2026",
-    isoDate: "2026-08-11",
+    date: "9 August 2026",
+    isoDate: "2026-08-09",
     image: `${import.meta.env.BASE_URL}images/gallery/community-outreach-session.jpg`,
     imageAlt:
       "Women and children gathered for a Treasured Vessels community session in Jinja, Uganda",
@@ -77,8 +77,8 @@ export const blogPosts: BlogPost[] = [
     slug: "what-it-means-to-be-a-treasured-vessel",
     title: "What It Means to Be a Treasured Vessel",
     eyebrow: "Who We Are",
-    date: "10 August 2026",
-    isoDate: "2026-08-10",
+    date: "8 August 2026",
+    isoDate: "2026-08-08",
     image: `${import.meta.env.BASE_URL}images/blog-treasured-vessel.jpg`,
     imageAlt:
       "Young women in Treasured Vessels Girls' Centre shirts dancing together at a community celebration in Jinja, Uganda",
