@@ -31,8 +31,14 @@ export default function Home() {
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-plum leading-[1.1] mb-6">
                 Empowering Girls to Build Stronger Futures
               </h2>
+              {/* Names this as the official site: a similarly named domain is
+                  in circulation, so the homepage says plainly which one this
+                  is, and where the organisation actually is. */}
               <p className="text-lg text-brand-charcoal/80 mb-8 leading-relaxed">
-                Treasured Vessels Girls' Centre supports vulnerable girls, teenage mothers and women in Uganda through education, practical skills, mentoring, advocacy and community care.
+                Welcome to the official website of Treasured Vessels Girls&rsquo; Centre, a
+                registered community-based organisation in Jinja, Uganda. We support vulnerable
+                girls, teenage mothers and women through education, practical skills, mentoring,
+                advocacy and community care.
               </p>
               <div className="flex flex-wrap items-center gap-4 mb-8">
                 <Link href="/donate">
