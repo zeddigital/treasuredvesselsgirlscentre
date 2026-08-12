@@ -65,6 +65,15 @@ function replaceRegion(html, name, replacement) {
   return html.slice(0, start) + replacement + html.slice(end + `<!--${name}-end-->`.length);
 }
 
+/**
+ * Routes that must exist as files but are deliberately absent from the sitemap,
+ * so they are not advertised to search engines. Kept short and explicit.
+ */
+const UNLISTED_ROUTES = [
+  // Where Stripe returns a donor after checkout — noindex, not a landing page.
+  '/donate/thank-you',
+];
+
 /** Every <loc> in the emitted sitemap, as site-relative paths. */
 async function routesFromSitemap() {
   const xml = await fs.readFile(path.join(CLIENT_DIR, 'sitemap.xml'), 'utf8');
@@ -86,10 +95,10 @@ async function main() {
   // Unmatched URLs are served this file, with a real 404 status. Pages treats a
   // project with no top-level 404.html as a single-page app and rewrites
   // everything to index.html instead, which would hide the prerendered pages.
-  const targets = [...routes.map((route) => ({ route, file: outputFile(route) })), {
-    route: '/404',
-    file: path.join(CLIENT_DIR, '404.html'),
-  }];
+  const targets = [
+    ...[...routes, ...UNLISTED_ROUTES].map((route) => ({ route, file: outputFile(route) })),
+    { route: '/404', file: path.join(CLIENT_DIR, '404.html') },
+  ];
 
   const failures = [];
   for (const { route, file } of targets) {
@@ -117,7 +126,10 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`\n  prerendered ${targets.length} pages (${routes.length} routes + 404.html)`);
+  console.log(
+    `\n  prerendered ${targets.length} pages ` +
+      `(${routes.length} in the sitemap, ${UNLISTED_ROUTES.length} unlisted, + 404.html)`,
+  );
 }
 
 await main();

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Lock, Heart } from "lucide-react";
+import { CheckCircle2, Lock, Heart, Loader2 } from "lucide-react";
 import { Link } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -12,16 +12,32 @@ import {
 } from "@/components/ui/contact-fields";
 import { PoweredByStripe } from "@/components/ui/powered-by-stripe";
 import { useSeo, SITE_ORIGIN, ORG_ID } from "@/lib/seo";
+import { trackEvent } from "@/lib/analytics";
+
+const FUNDS = [
+  { id: "where-needed", label: "Where needed most" },
+  { id: "education", label: "Girls' Education" },
+  { id: "skills", label: "Skills Training" },
+  { id: "health", label: "Menstrual Health" },
+];
 
 export default function Donate() {
   const [isMonthly, setIsMonthly] = useState(false);
   const [amount, setAmount] = useState<string>("50");
   const [customAmount, setCustomAmount] = useState("");
+  const [fund, setFund] = useState("where-needed");
   const [details, setDetails] = useState(emptyContactDetails);
   const [showErrors, setShowErrors] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  // Bots fill hidden fields in; real donors never see this one.
+  const [honeypot, setHoneypot] = useState("");
   const detailsComplete = isContactComplete(details, false);
 
   const amounts = isMonthly ? ["15", "30", "50", "100"] : ["25", "50", "100", "250"];
+
+  const chosenAmount = amount === "custom" ? customAmount : amount;
+  const amountValid = Number(chosenAmount) >= 2 && Number(chosenAmount) <= 50000;
 
   const handleAmountSelect = (val: string) => {
     setAmount(val);
@@ -31,6 +47,47 @@ export default function Donate() {
   const handleCustomAmount = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCustomAmount(e.target.value);
     setAmount("custom");
+  };
+
+  // Hands off to Stripe Checkout — the card is only ever entered on Stripe's
+  // own page, so no payment details pass through this site.
+  const handleDonate = async () => {
+    if (!detailsComplete || !amountValid || sending) {
+      setShowErrors(true);
+      if (!amountValid) setError("Please choose or enter a donation amount.");
+      return;
+    }
+    setSending(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/donate", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          amount: chosenAmount,
+          monthly: isMonthly,
+          fund,
+          ...details,
+          company: honeypot,
+        }),
+      });
+      const data = (await res.json().catch(() => ({}))) as { url?: string; error?: string };
+      if (!res.ok || !data.url) throw new Error(data.error || "Something went wrong.");
+      trackEvent("begin_checkout", {
+        currency: "USD",
+        value: Number(chosenAmount),
+        frequency: isMonthly ? "monthly" : "one-off",
+        fund,
+      });
+      window.location.href = data.url;
+    } catch (err) {
+      setError(
+        err instanceof Error && err.message
+          ? err.message
+          : "We could not start the payment just now.",
+      );
+      setSending(false);
+    }
   };
 
   useSeo({
@@ -139,28 +196,60 @@ export default function Donate() {
             {/* Fund Allocation */}
             <div className="mb-10">
               <Label className="text-brand-plum font-semibold mb-4 block text-base">Direct my donation to</Label>
-              <RadioGroup defaultValue="where-needed" className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {[
-                  { id: "where-needed", label: "Where needed most" },
-                  { id: "education", label: "Girls' Education" },
-                  { id: "skills", label: "Skills Training" },
-                  { id: "health", label: "Menstrual Health" }
-                ].map(fund => (
-                  <div key={fund.id} className="flex items-center space-x-2 border border-border p-3 rounded-xl hover:bg-brand-paleblue/50 transition-colors">
-                    <RadioGroupItem value={fund.id} id={fund.id} />
-                    <Label htmlFor={fund.id} className="flex-1 cursor-pointer">{fund.label}</Label>
+              <RadioGroup
+                value={fund}
+                onValueChange={setFund}
+                className="grid grid-cols-1 md:grid-cols-2 gap-3"
+              >
+                {FUNDS.map(option => (
+                  <div key={option.id} className="flex items-center space-x-2 border border-border p-3 rounded-xl hover:bg-brand-paleblue/50 transition-colors">
+                    <RadioGroupItem value={option.id} id={option.id} />
+                    <Label htmlFor={option.id} className="flex-1 cursor-pointer">{option.label}</Label>
                   </div>
                 ))}
               </RadioGroup>
             </div>
 
+            {/* Honeypot — visually hidden, ignored by real donors */}
+            <div aria-hidden="true" className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden">
+              <label htmlFor="donate-company">Company</label>
+              <input
+                id="donate-company"
+                name="company"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                value={honeypot}
+                onChange={(e) => setHoneypot(e.target.value)}
+              />
+            </div>
+
+            {error ? (
+              <div className="mb-6 rounded-2xl border border-brand-pink/40 bg-brand-blush p-4">
+                <p className="text-sm text-brand-plum">
+                  {error} If it keeps happening, please email us at{" "}
+                  <a href="mailto:treasuredvesselsug@gmail.com" className="font-semibold underline">
+                    treasuredvesselsug@gmail.com
+                  </a>
+                  .
+                </p>
+              </div>
+            ) : null}
+
             <Button
-              onClick={() => {
-                if (!detailsComplete) setShowErrors(true);
-              }}
-              className="w-full h-14 rounded-2xl bg-brand-gold hover:bg-yellow-400 text-brand-charcoal font-bold text-lg shadow-lg mb-6"
+              onClick={handleDonate}
+              disabled={sending}
+              className="w-full h-14 rounded-2xl bg-brand-gold hover:bg-yellow-400 text-brand-charcoal font-bold text-lg shadow-lg mb-6 gap-2 disabled:opacity-70"
             >
-              Continue to Payment
+              {sending ? (
+                <>
+                  <Loader2 className="w-5 h-5 animate-spin" /> Taking you to Stripe…
+                </>
+              ) : (
+                <>
+                  Donate ${chosenAmount || "0"}{isMonthly ? " a month" : ""}
+                </>
+              )}
             </Button>
 
             <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground bg-gray-50 py-4 rounded-lg">
@@ -170,7 +259,8 @@ export default function Donate() {
               <PoweredByStripe />
             </div>
             <p className="text-center text-[11px] text-muted-foreground mt-4">
-              *Payment processing is not yet connected. No card details are collected on this page.
+              You will be taken to Stripe to complete your donation. Card details are entered on
+              Stripe&rsquo;s secure page and never touch this website. All amounts are in US dollars.
             </p>
 
           </div>

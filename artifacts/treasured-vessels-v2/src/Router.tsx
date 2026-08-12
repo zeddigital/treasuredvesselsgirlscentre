@@ -4,6 +4,7 @@ import Home from "@/pages/Home";
 import ProgramsOverview from "@/pages/ProgramsOverview";
 import ProgramDetail from "@/pages/ProgramDetail";
 import Donate from "@/pages/Donate";
+import DonateThankYou from "@/pages/DonateThankYou";
 import About from "@/pages/About";
 import News from "@/pages/News";
 import NewsArticle from "@/pages/NewsArticle";
@@ -69,6 +70,7 @@ function Router() {
         <Route path="/programs" component={ProgramsOverview} />
         <Route path="/programs/:id" component={ProgramDetail} />
         <Route path="/donate" component={Donate} />
+        <Route path="/donate/thank-you" component={DonateThankYou} />
         
         {/* Real-content routes, filled in from Treasured Vessels' own materials */}
         <Route path="/about/founder">
