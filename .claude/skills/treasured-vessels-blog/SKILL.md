@@ -89,6 +89,34 @@ Every article must include:
 - FAQ section
 - Call to action
 
+## Structured data
+
+Article schema is generated automatically from the post's entry in
+`artifacts/treasured-vessels-v2/src/lib/blog.ts` — do not hand-write JSON-LD
+into the markdown. Every article emits, in one `@graph`:
+
+`BlogPosting` (`#article`) · `WebPage` (`#webpage`) · `ImageObject`
+(`#primaryimage`) · `BreadcrumbList` (`#breadcrumb`) · `FAQPage` (`#faq`),
+alongside the sitewide `NGO` and `WebSite` nodes.
+
+The organisation is always the author — never a named individual.
+`inLanguage` is `en-UG`.
+
+So the graph is complete, each post in `blog.ts` must set:
+
+| Field | Feeds |
+|---|---|
+| `articleSection` | `articleSection` — the primary category |
+| `subject` | `about` → `Thing` |
+| `place` | `about` → `Place` |
+| `citations` | `citation` — the same direct URLs listed under *External authority links* |
+| `modifiedDate` | `dateModified`, only when the article is substantively revised later |
+
+`wordCount` is counted from the body, and the `FAQPage` is extracted from the
+visible **## Frequently asked questions** section — so the schema and the page
+can never disagree. Keep that heading spelled exactly that way, with each
+question as an `###`.
+
 ## Research standards
 
 Whenever facts or statistics are used, **verify them**. Use reliable sources such as:

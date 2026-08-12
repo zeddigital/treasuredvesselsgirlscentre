@@ -143,6 +143,8 @@ export interface SeoOptions {
   schema?: Record<string, unknown>[];
   /** Overrides the default WebPage node type, e.g. "AboutPage", "ContactPage" */
   webPageType?: string;
+  /** Merged into the WebPage node — lets a page point at its own breadcrumb, primary image, etc. */
+  webPage?: Record<string, unknown>;
   /** Keeps a page out of the index (e.g. the 404 route) */
   noindex?: boolean;
 }
@@ -163,11 +165,13 @@ export function useSeo({
   keywords,
   schema,
   webPageType = "WebPage",
+  webPage,
   noindex = false,
 }: SeoOptions) {
   // Stringify the variable parts so the effect doesn't re-run on every render
   // just because the caller passed new array/object literals.
   const schemaKey = useMemo(() => JSON.stringify(schema ?? null), [schema]);
+  const webPageKey = useMemo(() => JSON.stringify(webPage ?? null), [webPage]);
   const keywordsKey = useMemo(() => JSON.stringify(keywords ?? null), [keywords]);
 
   useEffect(() => {
@@ -213,6 +217,7 @@ export function useSeo({
       publisher: { "@id": ORG_ID },
       primaryImageOfPage: image ? { "@type": "ImageObject", url: absoluteImage } : { "@id": LOGO_ID },
       inLanguage: "en",
+      ...(JSON.parse(webPageKey) ?? {}),
     };
 
     document.getElementById(SCHEMA_ID)?.remove();
@@ -228,7 +233,18 @@ export function useSeo({
     return () => {
       document.getElementById(SCHEMA_ID)?.remove();
     };
-  }, [title, description, path, image, type, keywordsKey, schemaKey, webPageType, noindex]);
+  }, [
+    title,
+    description,
+    path,
+    image,
+    type,
+    keywordsKey,
+    schemaKey,
+    webPageType,
+    webPageKey,
+    noindex,
+  ]);
 }
 
 export { SITE_ORIGIN, SITE_NAME };

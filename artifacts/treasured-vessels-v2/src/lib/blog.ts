@@ -20,6 +20,16 @@ export interface BlogPost {
   seoTitle: string;
   keywords: string[];
   readingMinutes: number;
+  /** Set only when the article has been substantively revised after publishing */
+  modifiedDate?: string;
+  /** schema.org articleSection — the primary category */
+  articleSection: string;
+  /** The main subject the article is about, for schema.org `about` */
+  subject: string;
+  /** The place the article concerns, for schema.org `about` */
+  place: string;
+  /** Direct URLs of the sources the article draws on, for schema.org `citation` */
+  citations: string[];
   body: string;
 }
 
@@ -48,6 +58,16 @@ export const blogPosts: BlogPost[] = [
       "adolescent mothers Jinja",
     ],
     readingMinutes: 10,
+    articleSection: "Teenage Mothers",
+    subject: "School re-entry for adolescent mothers",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://www.unicef.org/uganda/topics/teenage-pregnancy",
+      "https://www.ungei.org/publication/revised-guidelines-prevention-and-management-teenage-pregnancy-school-settings-uganda",
+      "https://www.unicef.org/uganda/what-we-do/education",
+      "https://uganda.unfpa.org/en/topics/adolescents-and-youth-9",
+      "https://www.worldbank.org/en/country/uganda/publication/educating-girls-a-way-of-ending-child-marriage-and-teenage-pregnancy",
+    ],
     body: returnToLearningBody,
   },
   {
@@ -73,6 +93,15 @@ export const blogPosts: BlogPost[] = [
       "education sponsorship Uganda",
     ],
     readingMinutes: 10,
+    articleSection: "Sponsorship",
+    subject: "Child education sponsorship",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://www.unicef.org/media/reporting-guidelines",
+      "https://www.unicef.org/eca/media/ethical-guidelines",
+      "https://www.unicef.org/uganda/what-we-do/education",
+      "https://www.worldbank.org/en/country/uganda/publication/educating-girls-a-way-of-ending-child-marriage-and-teenage-pregnancy",
+    ],
     body: sponsorshipBody,
   },
   {
@@ -98,6 +127,16 @@ export const blogPosts: BlogPost[] = [
       "school dropout causes Uganda",
     ],
     readingMinutes: 10,
+    articleSection: "Girls' Education",
+    subject: "School dropout among girls",
+    place: "Uganda",
+    citations: [
+      "https://www.unicef.org/uganda/what-we-do/education",
+      "https://www.unicef.org/uganda/what-we-do/quality-education",
+      "https://www.unicef.org/uganda/media/16861/file/Challenges%20of%20Education%20Sector%20in%20Uganda%20in%20Brief.pdf.pdf",
+      "https://data.worldbank.org/indicator/SE.PRM.CMPT.ZS?locations=UG",
+      "https://www.education-inequalities.org/indicators/comp_prim_v2/uganda",
+    ],
     body: fiveBarriersBody,
   },
   {
@@ -123,6 +162,16 @@ export const blogPosts: BlogPost[] = [
       "child marriage Jinja",
     ],
     readingMinutes: 10,
+    articleSection: "Our Community",
+    subject: "Teenage pregnancy",
+    place: "Busoga sub-region, Uganda",
+    citations: [
+      "https://www.monitor.co.ug/uganda/news/national/busoga-tops-teenage-pregnancies-survey-3713182",
+      "https://www.monitor.co.ug/uganda/news/national/jinja-district-passes-by-laws-to-curb-teen-pregnancies-child-marriages-5220112",
+      "https://uganda.unfpa.org/en/publications/child-marriage-and-teenage-pregnancy-uganda",
+      "https://www.unicef.org/uganda/topics/teenage-pregnancy",
+      "https://www.worldbank.org/en/country/uganda/publication/educating-girls-a-way-of-ending-child-marriage-and-teenage-pregnancy",
+    ],
     body: jinjaBusogaBody,
   },
   {
@@ -148,10 +197,76 @@ export const blogPosts: BlogPost[] = [
       "sponsor a girl Uganda",
     ],
     readingMinutes: 17,
+    articleSection: "Who We Are",
+    subject: "Treasured Vessels Girls' Centre",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://uganda.unfpa.org/en/publications/magnitude-teenage-pregnancy-uganda",
+      "https://www.unicef.org/uganda/what-we-do/adolescent-development",
+      "https://data.worldbank.org/indicator/SP.ADO.TFRT?locations=UG",
+      "https://www.ubos.org/",
+    ],
     body: treasuredVesselBody,
   },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug);
+}
+
+/** Heading text -> the `id` the article renderer gives it, so schema can link to it. */
+export function headingId(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[’']/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/**
+ * Word count of the rendered article, for schema.org `wordCount`. Strips image
+ * markup, links, tables and formatting so the figure reflects what a reader sees.
+ */
+export function countWords(body: string): number {
+  const text = body
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, "") // images
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1") // links -> their text
+    .replace(/^\s*\|.*\|\s*$/gm, "") // tables
+    .replace(/[#>*_`~-]/g, " ");
+  return text.split(/\s+/).filter(Boolean).length;
+}
+
+export interface FaqEntry {
+  question: string;
+  answer: string;
+}
+
+/**
+ * Pulls the visible "Frequently asked questions" section out of the article body
+ * so the FAQPage schema always matches the text on the page — Google requires
+ * the two to agree, and generating it from the copy keeps them from drifting.
+ */
+export function extractFaq(body: string): FaqEntry[] {
+  const section = body.match(
+    /^##\s+Frequently asked questions\s*$([\s\S]*?)(?=^##[^#]|$(?![\s\S]))/im,
+  );
+  if (!section) return [];
+
+  const entries: FaqEntry[] = [];
+  const blocks = section[1].split(/^###\s+/m).slice(1);
+  for (const block of blocks) {
+    const [head, ...rest] = block.split("\n");
+    const answer = rest
+      .join("\n")
+      .replace(/^---+$/gm, "")
+      .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+      .replace(/[*_`]/g, "")
+      .split(/\n\s*\n/)
+      .map((p) => p.replace(/\s+/g, " ").trim())
+      .filter(Boolean)
+      .join(" ");
+    const question = head.replace(/\s+/g, " ").trim();
+    if (question && answer) entries.push({ question, answer });
+  }
+  return entries;
 }

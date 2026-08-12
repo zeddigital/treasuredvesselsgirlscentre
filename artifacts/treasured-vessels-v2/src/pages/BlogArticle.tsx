@@ -1,15 +1,36 @@
+import type { ReactNode } from "react";
 import { Link, useParams } from "wouter";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ArrowLeft, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getBlogPost } from "@/lib/blog";
-import { useSeo, SITE_ORIGIN, ORG_ID } from "@/lib/seo";
+import { countWords, extractFaq, getBlogPost, headingId } from "@/lib/blog";
+import { useSeo, SITE_ORIGIN, SITE_NAME, ORG_ID, WEBSITE_ID } from "@/lib/seo";
 import NotFound from "./not-found";
+
+/** Flattens a heading's children (which may include <strong>, <em>, …) to plain text. */
+function headingText(children: ReactNode): string {
+  if (typeof children === "string" || typeof children === "number") return String(children);
+  if (Array.isArray(children)) return children.map(headingText).join("");
+  if (children && typeof children === "object" && "props" in children) {
+    return headingText((children as { props: { children?: ReactNode } }).props.children);
+  }
+  return "";
+}
 
 export default function BlogArticle() {
   const params = useParams();
   const post = getBlogPost(params.slug as string);
+
+  // Canonical URL and the stable @id anchors hung off it. Every node in the
+  // article graph references these rather than repeating literal URLs.
+  const url = post ? `${SITE_ORIGIN}/blog/${post.slug}` : `${SITE_ORIGIN}/blog`;
+  const articleId = `${url}#article`;
+  const webPageId = `${url}#webpage`;
+  const imageId = `${url}#primaryimage`;
+  const breadcrumbId = `${url}#breadcrumb`;
+  const absoluteImage = post ? `${SITE_ORIGIN}${post.image}` : "";
+  const faq = post ? extractFaq(post.body) : [];
 
   useSeo({
     title: post ? post.seoTitle : "Article not found | Treasured Vessels Girls' Centre",
@@ -17,38 +38,77 @@ export default function BlogArticle() {
     path: post ? `/blog/${post.slug}` : "/blog",
     image: post?.image,
     type: "article",
-    webPageType: "ItemPage",
+    webPageType: "WebPage",
     keywords: post?.keywords,
+    webPage: post
+      ? {
+          "@id": webPageId,
+          isPartOf: { "@id": WEBSITE_ID },
+          primaryImageOfPage: { "@id": imageId },
+          breadcrumb: { "@id": breadcrumbId },
+          inLanguage: "en-UG",
+        }
+      : undefined,
     schema: post
       ? [
           {
             "@type": "BlogPosting",
+            "@id": articleId,
+            url,
+            mainEntityOfPage: { "@id": webPageId },
             headline: post.title,
             description: post.metaDescription,
-            image: `${SITE_ORIGIN}${post.image}`,
+            image: { "@id": imageId },
             datePublished: post.isoDate,
-            dateModified: post.isoDate,
+            dateModified: post.modifiedDate ?? post.isoDate,
             author: { "@id": ORG_ID },
             publisher: { "@id": ORG_ID },
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": `${SITE_ORIGIN}/blog/${post.slug}`,
-            },
-            keywords: post.keywords.join(", "),
+            articleSection: post.articleSection,
+            keywords: post.keywords,
+            wordCount: countWords(post.body),
+            inLanguage: "en-UG",
+            isPartOf: { "@id": `${SITE_ORIGIN}/blog#webpage` },
+            about: [
+              { "@type": "Thing", name: post.subject },
+              { "@type": "Place", name: post.place },
+            ],
+            citation: post.citations,
+          },
+          {
+            "@type": "ImageObject",
+            "@id": imageId,
+            url: absoluteImage,
+            contentUrl: absoluteImage,
+            caption: post.imageAlt,
+            creditText: SITE_NAME,
+            copyrightNotice: `© ${SITE_NAME}`,
           },
           {
             "@type": "BreadcrumbList",
+            "@id": breadcrumbId,
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: SITE_ORIGIN },
+              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_ORIGIN}/` },
               { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_ORIGIN}/blog` },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: post.title,
-                item: `${SITE_ORIGIN}/blog/${post.slug}`,
-              },
+              { "@type": "ListItem", position: 3, name: post.title, item: url },
             ],
           },
+          // Only emitted when the article actually shows an FAQ section — the
+          // questions and answers below are lifted verbatim from the page.
+          ...(faq.length
+            ? [
+                {
+                  "@type": "FAQPage",
+                  "@id": `${url}#faq`,
+                  url: `${url}#frequently-asked-questions`,
+                  isPartOf: { "@id": webPageId },
+                  mainEntity: faq.map((entry) => ({
+                    "@type": "Question",
+                    name: entry.question,
+                    acceptedAnswer: { "@type": "Answer", text: entry.answer },
+                  })),
+                },
+              ]
+            : []),
         ]
       : undefined,
   });
@@ -122,8 +182,14 @@ export default function BlogArticle() {
                   </figure>
                 );
               },
-              // Stop a floated portrait from bleeding into the next section
-              h2: ({ children }) => <h2 className="clear-both">{children}</h2>,
+              // Stop a floated portrait from bleeding into the next section.
+              // The id also gives the FAQPage schema a real anchor to point at.
+              h2: ({ children }) => (
+                <h2 id={headingId(headingText(children))} className="clear-both">
+                  {children}
+                </h2>
+              ),
+              h3: ({ children }) => <h3 id={headingId(headingText(children))}>{children}</h3>,
               hr: () => <hr className="clear-both" />,
             }}
           >
