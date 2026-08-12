@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" width="1000" height="900" role="img"
+     aria-label="A return-to-learning pathway for a young mother: listen to her goals, assess safety and health, then choose between formal school, accelerated learning or vocational training, followed by meeting the school where safe, arranging childcare and materials, and following up for at least two terms.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .step { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 19px; }
+      .desc { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 14px; }
+      .num  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #ffffff; font-size: 16px; }
+      .route{ font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #ffffff; font-size: 16px; }
+      .rdesc{ font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #EAD9E6; font-size: 13px; }
+      .tag  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 13px; letter-spacing: 1.2px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 14px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="900" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="70" font-size="35">A return-to-learning pathway</text>
+  <text class="lead" x="56" y="102">Motherhood interrupts a girl's education. It does not have to end it.</text>
+  <line x1="56" y1="128" x2="944" y2="128" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- connector spine -->
+  <line x1="86" y1="185" x2="86" y2="300" stroke="#E9DCE6" stroke-width="3"/>
+
+  <!-- Step 1 -->
+  <circle cx="86" cy="180" r="21" fill="#A33895"/><text class="num" x="86" y="186" text-anchor="middle">1</text>
+  <text class="step" x="126" y="174">Start with what she wants</text>
+  <text class="desc" x="126" y="197">Her goals first — not an assumption about what is best for her.</text>
+
+  <!-- Step 2 -->
+  <circle cx="86" cy="268" r="21" fill="#A33895"/><text class="num" x="86" y="274" text-anchor="middle">2</text>
+  <text class="step" x="126" y="262">Check safety and health</text>
+  <text class="desc" x="126" y="285">Recovery after birth, and whether home is safe, come before schooling.</text>
+
+  <!-- Branch label -->
+  <text class="tag" x="56" y="345">THEN CHOOSE THE ROUTE THAT FITS — ALL THREE ARE VALID</text>
+
+  <!-- Branch connectors -->
+  <path d="M86 300 L86 366 L200 366" fill="none" stroke="#E9DCE6" stroke-width="3"/>
+  <line x1="200" y1="366" x2="800" y2="366" stroke="#E9DCE6" stroke-width="3"/>
+  <line x1="200" y1="366" x2="200" y2="392" stroke="#E9DCE6" stroke-width="3"/>
+  <line x1="500" y1="366" x2="500" y2="392" stroke="#E9DCE6" stroke-width="3"/>
+  <line x1="800" y1="366" x2="800" y2="392" stroke="#E9DCE6" stroke-width="3"/>
+
+  <!-- Three routes -->
+  <rect x="70" y="392" width="260" height="96" rx="16" fill="#552050"/>
+  <text class="route" x="200" y="428" text-anchor="middle">Formal school</text>
+  <text class="rdesc" x="200" y="452" text-anchor="middle">Return to the classroom,</text>
+  <text class="rdesc" x="200" y="470" text-anchor="middle">with re-entry agreed in advance</text>
+
+  <rect x="370" y="392" width="260" height="96" rx="16" fill="#A33895"/>
+  <text class="route" x="500" y="428" text-anchor="middle">Accelerated learning</text>
+  <text class="rdesc" x="500" y="452" text-anchor="middle">Catch up on missed years</text>
+  <text class="rdesc" x="500" y="470" text-anchor="middle">at a workable pace</text>
+
+  <rect x="670" y="392" width="260" height="96" rx="16" fill="#E43F8C"/>
+  <text class="route" x="800" y="428" text-anchor="middle">Vocational training</text>
+  <text class="rdesc" x="800" y="452" text-anchor="middle">A trade now, with a later</text>
+  <text class="rdesc" x="800" y="470" text-anchor="middle">return still open to her</text>
+
+  <!-- Converge -->
+  <line x1="200" y1="488" x2="200" y2="520" stroke="#E9DCE6" stroke-width="3"/>
+  <line x1="500" y1="488" x2="500" y2="520" stroke="#E9DCE6" stroke-width="3"/>
+  <line x1="800" y1="488" x2="800" y2="520" stroke="#E9DCE6" stroke-width="3"/>
+  <line x1="200" y1="520" x2="800" y2="520" stroke="#E9DCE6" stroke-width="3"/>
+  <path d="M500 520 L500 556 L86 556 L86 600" fill="none" stroke="#E9DCE6" stroke-width="3"/>
+  <line x1="86" y1="600" x2="86" y2="780" stroke="#E9DCE6" stroke-width="3"/>
+
+  <!-- Step 4 -->
+  <circle cx="86" cy="620" r="21" fill="#3DAAE1"/><text class="num" x="86" y="626" text-anchor="middle">4</text>
+  <text class="step" x="126" y="614">Meet the school — where it is safe to</text>
+  <text class="desc" x="126" y="637">Agree the terms of return before she walks back through the gate.</text>
+
+  <!-- Step 5 -->
+  <circle cx="86" cy="708" r="21" fill="#F1B74B"/><text class="num" x="86" y="714" text-anchor="middle">5</text>
+  <text class="step" x="126" y="702">Arrange childcare and materials</text>
+  <text class="desc" x="126" y="725">The practical things that decide whether the plan survives contact with a Monday.</text>
+
+  <!-- Step 6 -->
+  <circle cx="86" cy="796" r="21" fill="#552050"/><text class="num" x="86" y="802" text-anchor="middle">6</text>
+  <text class="step" x="126" y="790">Follow up for at least two terms</text>
+  <text class="desc" x="126" y="813">A plan nobody checks is a donation, not a plan.</text>
+
+  <text class="foot" x="944" y="872" text-anchor="end">Treasured Vessels Girls' Centre · Jinja, Uganda</text>
+</svg>

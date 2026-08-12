@@ -2,6 +2,7 @@ import treasuredVesselBody from "@/content/what-it-means-to-be-a-treasured-vesse
 import jinjaBusogaBody from "@/content/why-jinja-and-busoga-need-a-girls-support-centre.md?raw";
 import fiveBarriersBody from "@/content/five-barriers-that-push-a-girl-out-of-school.md?raw";
 import sponsorshipBody from "@/content/what-responsible-education-sponsorship-should-include.md?raw";
+import returnToLearningBody from "@/content/returning-to-learning-after-teenage-pregnancy.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -24,6 +25,31 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "returning-to-learning-after-teenage-pregnancy",
+    title: "Returning to Learning After Teenage Pregnancy",
+    eyebrow: "Teenage Mothers",
+    date: "12 August 2026",
+    isoDate: "2026-08-12",
+    image: `${import.meta.env.BASE_URL}images/gallery/young-mother-support.jpg`,
+    imageAlt:
+      "A young mother and her baby meeting with a staff member at Treasured Vessels Girls' Centre in Jinja, Uganda",
+    excerpt:
+      "Uganda allows girls to return to school after childbirth. Only about one in three actually does. The barriers in between \u2014 and a pathway back that survives contact with reality.",
+    metaDescription:
+      "Only about a third of Ugandan adolescent mothers return to school after childbirth. The real barriers, and a six-step pathway back to learning.",
+    seoTitle:
+      "Returning to Learning After Teenage Pregnancy | Treasured Vessels",
+    keywords: [
+      "teenage mothers return to school Uganda",
+      "school re-entry after pregnancy",
+      "young mothers education",
+      "teenage pregnancy school guidelines Uganda",
+      "adolescent mothers Jinja",
+    ],
+    readingMinutes: 10,
+    body: returnToLearningBody,
+  },
   {
     slug: "what-responsible-education-sponsorship-should-include",
     title: "What Responsible Education Sponsorship Should Include",
