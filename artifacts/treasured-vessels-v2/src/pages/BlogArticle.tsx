@@ -189,6 +189,18 @@ export default function BlogArticle() {
                   </figure>
                 );
               },
+              // Markdown wraps a standalone image in a paragraph, but the
+              // images below render as <figure> — a block element, which the
+              // HTML parser is required to close the <p> before. That rewrites
+              // the DOM out from under React and breaks hydration, so drop the
+              // wrapper when the paragraph holds nothing but the image.
+              p: ({ node, children }) => {
+                const only = node?.children.length === 1 ? node.children[0] : undefined;
+                if (only?.type === "element" && only.tagName === "img") {
+                  return <>{children}</>;
+                }
+                return <p>{children}</p>;
+              },
               // Stop a floated portrait from bleeding into the next section.
               // The id also gives the FAQPage schema a real anchor to point at.
               h2: ({ children }) => (

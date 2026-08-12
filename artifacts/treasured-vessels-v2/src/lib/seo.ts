@@ -111,7 +111,111 @@ function foundationGraph(): Record<string, unknown>[] {
   ];
 }
 
-function setMeta(selector: string, attr: "name" | "property", key: string, content: string) {
+export interface SeoOptions {
+  title: string;
+  description: string;
+  /** Path beginning with "/" — combined with the site origin for canonical/OG URLs */
+  path: string;
+  image?: string;
+  type?: "website" | "article";
+  keywords?: string[];
+  /** Extra JSON-LD nodes appended to the foundation graph (e.g. BlogPosting) */
+  schema?: Record<string, unknown>[];
+  /** Overrides the default WebPage node type, e.g. "AboutPage", "ContactPage" */
+  webPageType?: string;
+  /** Merged into the WebPage node — lets a page point at its own breadcrumb, primary image, etc. */
+  webPage?: Record<string, unknown>;
+  /** Keeps a page out of the index (e.g. the 404 route) */
+  noindex?: boolean;
+}
+
+export const SCHEMA_ID = "tv-structured-data";
+
+export interface MetaTag {
+  attr: "name" | "property";
+  key: string;
+  content: string;
+}
+
+/** Everything a page contributes to <head>, as plain data. */
+export interface SeoHead {
+  title: string;
+  canonical: string;
+  metas: MetaTag[];
+  jsonLd: Record<string, unknown>;
+}
+
+/**
+ * Pure: turns a page's SEO options into the head it needs. Kept free of any DOM
+ * access so the prerenderer can call it at build time, where there is no
+ * document — see prerender.mjs.
+ */
+export function buildSeoHead({
+  title,
+  description,
+  path,
+  image,
+  type = "website",
+  keywords,
+  schema,
+  webPageType = "WebPage",
+  webPage,
+  noindex = false,
+}: SeoOptions): SeoHead {
+  const url = `${SITE_ORIGIN}${path}`;
+  const absoluteImage = image
+    ? image.startsWith("http")
+      ? image
+      : `${SITE_ORIGIN}${image.startsWith("/") ? "" : "/"}${image}`
+    : `${SITE_ORIGIN}/images/logo.png`;
+
+  const metas: MetaTag[] = [
+    { attr: "name", key: "description", content: description },
+    { attr: "name", key: "robots", content: noindex ? "noindex, follow" : "index, follow" },
+    { attr: "property", key: "og:title", content: title },
+    { attr: "property", key: "og:description", content: description },
+    { attr: "property", key: "og:type", content: type },
+    { attr: "property", key: "og:url", content: url },
+    { attr: "property", key: "og:site_name", content: SITE_NAME },
+    { attr: "property", key: "og:image", content: absoluteImage },
+    { attr: "name", key: "twitter:card", content: "summary_large_image" },
+    { attr: "name", key: "twitter:title", content: title },
+    { attr: "name", key: "twitter:description", content: description },
+    { attr: "name", key: "twitter:image", content: absoluteImage },
+  ];
+  if (keywords?.length) {
+    metas.push({ attr: "name", key: "keywords", content: keywords.join(", ") });
+  }
+
+  const webPageNode = {
+    "@type": webPageType,
+    "@id": `${url}#webpage`,
+    url,
+    name: title,
+    description,
+    isPartOf: { "@id": WEBSITE_ID },
+    about: { "@id": ORG_ID },
+    publisher: { "@id": ORG_ID },
+    primaryImageOfPage: image
+      ? { "@type": "ImageObject", url: absoluteImage }
+      : { "@id": LOGO_ID },
+    inLanguage: "en",
+    ...(webPage ?? {}),
+  };
+
+  return {
+    title,
+    canonical: url,
+    metas,
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [...foundationGraph(), webPageNode, ...(schema ?? [])],
+    },
+  };
+}
+
+function setMeta(attr: "name" | "property", key: string, content: string) {
+  const selector = `meta[${attr}="${key}"]`;
   let el = document.head.querySelector<HTMLMetaElement>(selector);
   if (!el) {
     el = document.createElement("meta");
@@ -131,120 +235,52 @@ function setLink(rel: string, href: string) {
   el.setAttribute("href", href);
 }
 
-export interface SeoOptions {
-  title: string;
-  description: string;
-  /** Path beginning with "/" — combined with the site origin for canonical/OG URLs */
-  path: string;
-  image?: string;
-  type?: "website" | "article";
-  keywords?: string[];
-  /** Extra JSON-LD nodes appended to the foundation graph (e.g. BlogPosting) */
-  schema?: Record<string, unknown>[];
-  /** Overrides the default WebPage node type, e.g. "AboutPage", "ContactPage" */
-  webPageType?: string;
-  /** Merged into the WebPage node — lets a page point at its own breadcrumb, primary image, etc. */
-  webPage?: Record<string, unknown>;
-  /** Keeps a page out of the index (e.g. the 404 route) */
-  noindex?: boolean;
+/** Writes a built head into the live document, replacing whatever is there. */
+function applySeoHead(head: SeoHead) {
+  document.title = head.title;
+  for (const { attr, key, content } of head.metas) setMeta(attr, key, content);
+  setLink("canonical", head.canonical);
+
+  document.getElementById(SCHEMA_ID)?.remove();
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.id = SCHEMA_ID;
+  script.textContent = JSON.stringify(head.jsonLd);
+  document.head.appendChild(script);
 }
 
-const SCHEMA_ID = "tv-structured-data";
+// During prerendering there is no DOM and effects never run, so useSeo hands
+// its head to the server renderer at render time instead. renderToString is
+// synchronous and single-threaded, so one slot is enough.
+let ssrHead: SeoHead | null = null;
+
+export function resetSsrHead() {
+  ssrHead = null;
+}
+
+export function takeSsrHead(): SeoHead | null {
+  return ssrHead;
+}
 
 /**
  * Sets document title, meta description, canonical URL, Open Graph/Twitter tags
  * and JSON-LD for the current page. Every page publishes the organisation and
  * website nodes plus its own WebPage node, so the graph is consistent sitewide.
  */
-export function useSeo({
-  title,
-  description,
-  path,
-  image,
-  type = "website",
-  keywords,
-  schema,
-  webPageType = "WebPage",
-  webPage,
-  noindex = false,
-}: SeoOptions) {
-  // Stringify the variable parts so the effect doesn't re-run on every render
-  // just because the caller passed new array/object literals.
-  const schemaKey = useMemo(() => JSON.stringify(schema ?? null), [schema]);
-  const webPageKey = useMemo(() => JSON.stringify(webPage ?? null), [webPage]);
-  const keywordsKey = useMemo(() => JSON.stringify(keywords ?? null), [keywords]);
+export function useSeo(options: SeoOptions) {
+  // Stringify so the head is only rebuilt when the values change, not on every
+  // render just because the caller passed fresh object/array literals.
+  const key = JSON.stringify(options);
+  const head = useMemo(() => buildSeoHead(JSON.parse(key) as SeoOptions), [key]);
+
+  if (typeof document === "undefined") ssrHead = head;
 
   useEffect(() => {
-    const url = `${SITE_ORIGIN}${path}`;
-    const absoluteImage = image
-      ? image.startsWith("http")
-        ? image
-        : `${SITE_ORIGIN}${image.startsWith("/") ? "" : "/"}${image}`
-      : `${SITE_ORIGIN}/images/logo.png`;
-
-    document.title = title;
-    setMeta('meta[name="description"]', "name", "description", description);
-    setMeta(
-      'meta[name="robots"]',
-      "name",
-      "robots",
-      noindex ? "noindex, follow" : "index, follow",
-    );
-    const kw: string[] | null = JSON.parse(keywordsKey);
-    if (kw?.length) setMeta('meta[name="keywords"]', "name", "keywords", kw.join(", "));
-    setLink("canonical", url);
-
-    setMeta('meta[property="og:title"]', "property", "og:title", title);
-    setMeta('meta[property="og:description"]', "property", "og:description", description);
-    setMeta('meta[property="og:type"]', "property", "og:type", type);
-    setMeta('meta[property="og:url"]', "property", "og:url", url);
-    setMeta('meta[property="og:site_name"]', "property", "og:site_name", SITE_NAME);
-    setMeta('meta[property="og:image"]', "property", "og:image", absoluteImage);
-    setMeta('meta[name="twitter:card"]', "name", "twitter:card", "summary_large_image");
-    setMeta('meta[name="twitter:title"]', "name", "twitter:title", title);
-    setMeta('meta[name="twitter:description"]', "name", "twitter:description", description);
-    setMeta('meta[name="twitter:image"]', "name", "twitter:image", absoluteImage);
-
-    const extra: Record<string, unknown>[] = JSON.parse(schemaKey) ?? [];
-    const webPage = {
-      "@type": webPageType,
-      "@id": `${url}#webpage`,
-      url,
-      name: title,
-      description,
-      isPartOf: { "@id": WEBSITE_ID },
-      about: { "@id": ORG_ID },
-      publisher: { "@id": ORG_ID },
-      primaryImageOfPage: image ? { "@type": "ImageObject", url: absoluteImage } : { "@id": LOGO_ID },
-      inLanguage: "en",
-      ...(JSON.parse(webPageKey) ?? {}),
-    };
-
-    document.getElementById(SCHEMA_ID)?.remove();
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.id = SCHEMA_ID;
-    script.textContent = JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [...foundationGraph(), webPage, ...extra],
-    });
-    document.head.appendChild(script);
-
+    applySeoHead(head);
     return () => {
       document.getElementById(SCHEMA_ID)?.remove();
     };
-  }, [
-    title,
-    description,
-    path,
-    image,
-    type,
-    keywordsKey,
-    schemaKey,
-    webPageType,
-    webPageKey,
-    noindex,
-  ]);
+  }, [head]);
 }
 
 export { SITE_ORIGIN, SITE_NAME };

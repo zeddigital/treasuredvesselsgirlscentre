@@ -37,10 +37,19 @@ interface Entry {
 }
 
 export function sitemap(): Plugin {
+  let isSsrBuild = false;
+
   return {
     name: 'treasured-vessels-sitemap',
     apply: 'build',
+    configResolved(config) {
+      isSsrBuild = Boolean(config.build.ssr);
+    },
     generateBundle() {
+      // The build runs a second time to produce the Node bundle the
+      // prerenderer imports; the sitemap belongs with the client output only.
+      if (isSsrBuild) return;
+
       const src = path.resolve(import.meta.dirname, 'src');
       const today = new Date().toISOString().slice(0, 10);
 
