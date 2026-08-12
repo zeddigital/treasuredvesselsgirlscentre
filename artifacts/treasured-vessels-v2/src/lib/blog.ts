@@ -3,6 +3,7 @@ import jinjaBusogaBody from "@/content/why-jinja-and-busoga-need-a-girls-support
 import fiveBarriersBody from "@/content/five-barriers-that-push-a-girl-out-of-school.md?raw";
 import sponsorshipBody from "@/content/what-responsible-education-sponsorship-should-include.md?raw";
 import returnToLearningBody from "@/content/returning-to-learning-after-teenage-pregnancy.md?raw";
+import sixMythsBody from "@/content/six-myths-about-teenage-mothers.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -39,6 +40,40 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "six-myths-about-teenage-mothers",
+    title: "Six Myths About Teenage Mothers",
+    eyebrow: "Teenage Mothers",
+    date: "13 August 2026",
+    isoDate: "2026-08-13",
+    image: `${import.meta.env.BASE_URL}images/gallery/tvgc-women-and-young-mothers-group.jpg`,
+    imageAlt:
+      "Women and young mothers of Treasured Vessels Girls' Centre standing together outside the centre in Jinja, Uganda",
+    excerpt:
+      "Around one in four Ugandan girls aged 15 to 19 has begun childbearing. What gets said about them in the classroom and the church decides what happens next — and most of it is wrong.",
+    metaDescription:
+      "Six things commonly said about teenage mothers in Uganda, and what the law and the evidence actually say. Child marriage, school re-entry, consent and support.",
+    seoTitle: "Six Myths About Teenage Mothers | Treasured Vessels",
+    keywords: [
+      "myths about teenage mothers",
+      "teenage pregnancy stigma Uganda",
+      "child marriage Uganda law",
+      "adolescent mothers school re-entry",
+      "teenage mothers Jinja",
+    ],
+    readingMinutes: 10,
+    articleSection: "Teenage Mothers",
+    subject: "Stigma against adolescent mothers",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://www.ubos.org/wp-content/uploads/publications/UDHS-2022-Report.pdf",
+      "https://www.unicef.org/uganda/topics/teenage-pregnancy",
+      "https://www.ungei.org/publication/revised-guidelines-prevention-and-management-teenage-pregnancy-school-settings-uganda",
+      "https://www.law.berkeley.edu/wp-content/uploads/2015/10/Uganda_Penal-Code-Amendment-Act_2007.pdf",
+      "https://www.worldbank.org/en/country/uganda/publication/educating-girls-a-way-of-ending-child-marriage-and-teenage-pregnancy",
+    ],
+    body: sixMythsBody,
+  },
   {
     slug: "returning-to-learning-after-teenage-pregnancy",
     title: "Returning to Learning After Teenage Pregnancy",
