@@ -6,6 +6,10 @@ interface GenericPageProps {
   /** Falls back to a generic line if a page hasn't supplied its own */
   description?: string;
   webPageType?: string;
+  /** Extra JSON-LD nodes appended to this page's @graph */
+  schema?: Record<string, unknown>[];
+  /** Merged into this page's WebPage node */
+  webPage?: Record<string, unknown>;
   children: React.ReactNode;
 }
 
@@ -13,6 +17,8 @@ export default function GenericPage({
   title,
   description,
   webPageType,
+  schema,
+  webPage,
   children,
 }: GenericPageProps) {
   const [location] = useLocation();
@@ -24,6 +30,8 @@ export default function GenericPage({
       `${title} — Treasured Vessels Girls' Centre, a women-led community organisation supporting vulnerable girls and women in Jinja, Uganda.`,
     path: location,
     webPageType,
+    schema,
+    webPage,
   });
 
   return (

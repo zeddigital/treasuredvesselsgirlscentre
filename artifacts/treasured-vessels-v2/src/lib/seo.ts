@@ -7,96 +7,69 @@ const SITE_ORIGIN = "https://treasuredvesselsuganda.org";
 export const ORG_ID = `${SITE_ORIGIN}/#organization`;
 export const WEBSITE_ID = `${SITE_ORIGIN}/#website`;
 export const LOGO_ID = `${SITE_ORIGIN}/#logo`;
+export const ORG_IMAGE_ID = `${SITE_ORIGIN}/#primaryimage`;
+/** Defined on /about/founder, referenced here — see that route's schema. */
+export const FOUNDER_ID = `${SITE_ORIGIN}/about/founder#person`;
 
 const ORG_DESCRIPTION =
-  "Treasured Vessels Girls' Centre is a women-led Christian community-based organisation in Jinja, Uganda, supporting vulnerable girls, teenage mothers and women through education, vocational training, menstrual dignity, protection and community outreach.";
+  "A registered, women-led community-based organisation in Jinja, Uganda, supporting vulnerable girls, teenage mothers and women through education, vocational training, menstrual health, protection and community outreach.";
 
 /**
- * Organisation and WebSite nodes. Included on every page so the whole site
- * resolves to a single, consistent entity for search engines.
+ * Organisation, WebSite and the organisation's primary image. Emitted on every
+ * page so the whole site resolves to a single, consistent entity for search
+ * engines; page-specific nodes are appended to the same @graph.
  */
 function foundationGraph(): Record<string, unknown>[] {
   return [
     {
-      "@type": "NGO",
+      "@type": ["Organization", "NGO"],
       "@id": ORG_ID,
       name: SITE_NAME,
-      alternateName: ["Treasured Vessels Girls' Centre Uganda", "Treasured Vessels"],
+      alternateName: ["Treasured Vessels Girls Centre", "Treasured Vessels Uganda"],
       url: `${SITE_ORIGIN}/`,
       logo: {
         "@type": "ImageObject",
         "@id": LOGO_ID,
         url: `${SITE_ORIGIN}/images/logo.png`,
         contentUrl: `${SITE_ORIGIN}/images/logo.png`,
-        width: 512,
-        height: 512,
         caption: SITE_NAME,
       },
-      image: { "@id": LOGO_ID },
+      image: { "@id": ORG_IMAGE_ID },
       description: ORG_DESCRIPTION,
       foundingDate: "2018",
-      nonprofitStatus: "NonprofitType",
-      areaServed: [
-        { "@type": "Country", name: "Uganda" },
-        { "@type": "AdministrativeArea", name: "Jinja District" },
-        { "@type": "AdministrativeArea", name: "Busoga" },
-      ],
+      founder: { "@id": FOUNDER_ID },
+      email: "mailto:treassuredvesselsug@gmail.com",
+      telephone: ["+256756233041", "+256774427101"],
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Walukuba-Masese Road",
         addressLocality: "Jinja",
         addressRegion: "Jinja District",
         addressCountry: "UG",
       },
-      email: "treassuredvesselsug@gmail.com",
-      telephone: "+256756233041",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+256756233041",
-          email: "treassuredvesselsug@gmail.com",
-          contactType: "customer support",
-          areaServed: "UG",
-          availableLanguage: ["en"],
-        },
-        {
-          "@type": "ContactPoint",
-          telephone: "+256774427101",
-          contactType: "customer support",
-          areaServed: "UG",
-          availableLanguage: ["en"],
-        },
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Jinja District" },
+        { "@type": "AdministrativeArea", name: "Busoga Sub-region" },
+        { "@type": "Country", name: "Uganda" },
       ],
-      founder: { "@type": "Person", name: "Racheal Muggaga Achen" },
       knowsAbout: [
         "Girls' education",
-        "Women's empowerment",
+        "Vocational skills training",
         "Teenage mother support",
         "Menstrual health and dignity",
-        "Gender-based violence support",
-        "Vocational training",
-        "Christian ministry",
-        "Community development",
+        "Protection of vulnerable girls and women",
+        "Community outreach",
       ],
       sameAs: [
         "https://www.facebook.com/p/Treasured-Vessels-Girls-Center-61577348832518/",
         "https://www.instagram.com/treasuredvesselsgirls/",
         "https://www.linkedin.com/in/racheal-achen-muggaga-912b4330a/",
       ],
-      potentialAction: {
-        "@type": "DonateAction",
-        name: "Donate to Treasured Vessels Girls' Centre",
-        description:
-          "Support the education, vocational training and protection of vulnerable girls and women in Jinja, Uganda.",
-        recipient: { "@id": ORG_ID },
-        target: {
-          "@type": "EntryPoint",
-          urlTemplate: `${SITE_ORIGIN}/donate`,
-          actionPlatform: [
-            "https://schema.org/DesktopWebPlatform",
-            "https://schema.org/MobileWebPlatform",
-          ],
-        },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "general enquiries",
+        telephone: "+256756233041",
+        email: "treassuredvesselsug@gmail.com",
+        availableLanguage: ["English"],
       },
     },
     {
@@ -104,9 +77,18 @@ function foundationGraph(): Record<string, unknown>[] {
       "@id": WEBSITE_ID,
       url: `${SITE_ORIGIN}/`,
       name: SITE_NAME,
-      description: `The official website of ${SITE_NAME}.`,
+      alternateName: "Treasured Vessels Uganda",
+      description: `The official website of ${SITE_NAME} in Jinja, Uganda.`,
       publisher: { "@id": ORG_ID },
-      inLanguage: "en",
+      inLanguage: "en-UG",
+    },
+    {
+      "@type": "ImageObject",
+      "@id": ORG_IMAGE_ID,
+      url: `${SITE_ORIGIN}/images/hero.jpg`,
+      contentUrl: `${SITE_ORIGIN}/images/hero.jpg`,
+      caption:
+        "Treasured Vessels Girls' Centre supporting girls and women in Jinja, Uganda",
     },
   ];
 }
@@ -198,8 +180,8 @@ export function buildSeoHead({
     publisher: { "@id": ORG_ID },
     primaryImageOfPage: image
       ? { "@type": "ImageObject", url: absoluteImage }
-      : { "@id": LOGO_ID },
-    inLanguage: "en",
+      : { "@id": ORG_IMAGE_ID },
+    inLanguage: "en-UG",
     ...(webPage ?? {}),
   };
 

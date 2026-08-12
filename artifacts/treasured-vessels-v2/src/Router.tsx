@@ -13,6 +13,7 @@ import GetInvolved from "@/pages/GetInvolved";
 import BlogArticle from "@/pages/BlogArticle";
 import NotFound from "@/pages/not-found";
 import GenericPage from "@/components/layout/GenericPage";
+import { FOUNDER_ID, ORG_ID, SITE_ORIGIN } from "@/lib/seo";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
 
 function Router() {
@@ -29,7 +30,29 @@ function Router() {
         {/* Real-content routes, filled in from Treasured Vessels' own materials */}
         <Route path="/about/founder">
           {() => (
-            <GenericPage title="Our Founder">
+            <GenericPage
+              title="Our Founder"
+              webPageType="ProfilePage"
+              webPage={{ mainEntity: { "@id": FOUNDER_ID } }}
+              // The organisation node's `founder` points at this @id, so this
+              // is where the person is actually described.
+              schema={[
+                {
+                  "@type": "Person",
+                  "@id": FOUNDER_ID,
+                  name: "Racheal Muggaga Achen",
+                  jobTitle: "Founder",
+                  description:
+                    "Founder of Treasured Vessels Girls' Centre, a women-led community-based organisation in Jinja District, Uganda.",
+                  worksFor: { "@id": ORG_ID },
+                  image: `${SITE_ORIGIN}/images/founder.jpg`,
+                  nationality: { "@type": "Country", name: "Uganda" },
+                  sameAs: [
+                    "https://www.linkedin.com/in/racheal-achen-muggaga-912b4330a/",
+                  ],
+                },
+              ]}
+            >
               <img
                 src={`${import.meta.env.BASE_URL}images/founder.jpg`}
                 alt="Racheal Muggaga Achen, Founder of Treasured Vessels Girls' Centre"
