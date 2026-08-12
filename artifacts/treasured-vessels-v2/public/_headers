@@ -1,0 +1,18 @@
+# Cloudflare Pages response headers.
+#
+# Every route is prerendered to its own HTML file, so publishing a post changes
+# the HTML for several URLs at once. Those must revalidate, or the edge serves
+# yesterday's page from the custom domain until someone purges the cache by hand.
+#
+# Rules are matched on the request path, not the file on disk — /blog/a-post has
+# no .html extension even though it serves blog/a-post/index.html — so the
+# default below is deliberately everything, with the fingerprinted build assets
+# opted back out underneath it.
+
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Vite fingerprints these (index-D8YDSLiX.js), so the name changes whenever the
+# contents do and they can be held indefinitely.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
