@@ -189,8 +189,9 @@ export const onRequest = async ({ request, env }: RequestContext): Promise<Respo
     headers: {
       authorization: `Bearer ${env.STRIPE_SECRET_KEY}`,
       "content-type": "application/x-www-form-urlencoded",
-      // Ties this request to the API shape the code was written against.
-      "stripe-version": "2024-06-20",
+      // Pinned to the same version the webhook endpoint delivers events in, so
+      // the session we create and the event we receive describe it identically.
+      "stripe-version": "2026-07-29.dahlia",
     },
     body: formEncode(session).toString(),
   });
