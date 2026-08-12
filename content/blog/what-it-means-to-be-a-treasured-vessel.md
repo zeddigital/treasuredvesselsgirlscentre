@@ -265,7 +265,7 @@ If you are assessing us, here is what you need.
 | **Founded** | 2018 |
 | **Founder** | Racheal Muggaga Achen |
 | **Location** | Walukuba-Masese Road, Jinja District, Uganda |
-| **Email** | treassuredvesselsug@gmail.com |
+| **Email** | treasuredvesselsug@gmail.com |
 | **Telephone** | +256 756 233 041 / +256 774 427 101 |
 | **Active programmes** | Six (listed above) |
 | **Regular volunteers** | Approximately 30 |
@@ -300,7 +300,7 @@ If you know a girl or young woman in the Jinja area who needs support, you can c
 
 Please do so carefully. Do not name her publicly, on social media or in a comment. Do not share her photograph or her situation in a group. Contact us privately, and if she is old enough to be involved in the decision, involve her.
 
-You can reach us privately on **+256 756 233 041** or **+256 774 427 101**, or by email at **treassuredvesselsug@gmail.com**.
+You can reach us privately on **+256 756 233 041** or **+256 774 427 101**, or by email at **treasuredvesselsug@gmail.com**.
 
 If a girl is in immediate danger, contact the police or local child protection services first.
 
@@ -344,7 +344,7 @@ Treasured Vessels Girls' Centre is a registered, women-led Christian community-b
 
 ### Where are you based?
 
-We are on Walukuba-Masese Road in Jinja District, Uganda. You can reach us on +256 756 233 041 or at treassuredvesselsug@gmail.com.
+We are on Walukuba-Masese Road in Jinja District, Uganda. You can reach us on +256 756 233 041 or at treasuredvesselsug@gmail.com.
 
 ### What does the name "Treasured Vessels" mean?
 

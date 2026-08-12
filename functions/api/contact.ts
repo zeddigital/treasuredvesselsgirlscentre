@@ -28,7 +28,7 @@ interface RequestContext {
   env: Env;
 }
 
-const DEFAULT_TO = "treassuredvesselsug@gmail.com";
+const DEFAULT_TO = "treasuredvesselsug@gmail.com";
 const DEFAULT_FROM = "Treasured Vessels Girls' Centre <noreply@treasuredvesselsuganda.org>";
 
 const SITE = "https://treasuredvesselsuganda.org";

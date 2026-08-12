@@ -265,7 +265,7 @@ Reuse these rather than inventing new ones. If something material is missing, as
 
 - Founded 2018 by Racheal Muggaga Achen; registered women-led CBO
 - Located Walukuba-Masese Rd, Jinja District, Uganda
-- Contact: treassuredvesselsug@gmail.com (the org's own spelling — keep as-is),
+- Contact: treasuredvesselsug@gmail.com,
   +256 756 233 041 / +256 774 427 101
 - Org-reported figures: 13 successful donations, 30 regular volunteers, 6 active
   programmes, 8 years in mission (as of 2026). Prefer these over invented larger numbers.

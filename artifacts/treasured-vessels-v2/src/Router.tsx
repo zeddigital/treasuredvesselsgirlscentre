@@ -264,7 +264,7 @@ function Router() {
                 <li><strong>Organisation:</strong> Treasured Vessels Girls' Centre</li>
                 <li><strong>Address:</strong> Walukuba-Masese Rd, Jinja District, Uganda</li>
                 <li><strong>Phone:</strong> <a href="tel:+256756233041">+256 756 233 041</a> / <a href="tel:+256774427101">+256 774 427 101</a></li>
-                <li><strong>Email:</strong> <a href="mailto:treassuredvesselsug@gmail.com">treassuredvesselsug@gmail.com</a></li>
+                <li><strong>Email:</strong> <a href="mailto:treasuredvesselsug@gmail.com">treasuredvesselsug@gmail.com</a></li>
               </ul>
 
               <h2>2. Information We Collect</h2>
@@ -389,7 +389,7 @@ function Router() {
               <p>
                 <strong>Treasured Vessels Girls' Centre</strong><br />
                 Walukuba-Masese Rd, Jinja District, Uganda<br />
-                <a href="mailto:treassuredvesselsug@gmail.com">treassuredvesselsug@gmail.com</a><br />
+                <a href="mailto:treasuredvesselsug@gmail.com">treasuredvesselsug@gmail.com</a><br />
                 <a href="tel:+256756233041">+256 756 233 041</a> / <a href="tel:+256774427101">+256 774 427 101</a>
               </p>
 

@@ -84,7 +84,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 flex-shrink-0 text-brand-pink" />
-                <a href="mailto:treassuredvesselsug@gmail.com" className="hover:text-white transition-colors break-all">treassuredvesselsug@gmail.com</a>
+                <a href="mailto:treasuredvesselsug@gmail.com" className="hover:text-white transition-colors break-all">treasuredvesselsug@gmail.com</a>
               </li>
             </ul>
             <Link href="/donate">

@@ -4,7 +4,7 @@ description: Verified real-world facts, contact info, and media sourced from the
 ---
 
 Org: fully registered women-led CBO, founded 2018 by Racheal Muggaga Achen, Masese-Walukuba, Jinja District, Eastern Uganda.
-Contact: treassuredvesselsug@gmail.com (note the org's own typo — keep as-is), +256 756 233 041 / +256 774 427 101.
+Contact: treasuredvesselsug@gmail.com (one "s" — an earlier double-"s" spelling was wrong and has been corrected sitewide), +256 756 233 041 / +256 774 427 101.
 Real stats (small, org-reported, prefer these over invented big numbers): 13 successful donations, 30 regular volunteers, 6 active programs, 8 years in mission (as of 2026).
 Real cause areas (don't map 1:1 to the site's 6 program pages): Girls Empowerment Projects (soap/tailoring/crafts/hairdressing/shoe making), Pregnancy Centre (antenatal support), Sponsorship, School Outreach (menstrual hygiene), Women Assessments, Helping the Elderly (Mbale flood relief).
 

@@ -39,7 +39,7 @@ function foundationGraph(): Record<string, unknown>[] {
       description: ORG_DESCRIPTION,
       foundingDate: "2018",
       founder: { "@id": FOUNDER_ID },
-      email: "mailto:treassuredvesselsug@gmail.com",
+      email: "mailto:treasuredvesselsug@gmail.com",
       telephone: ["+256756233041", "+256774427101"],
       address: {
         "@type": "PostalAddress",
@@ -69,7 +69,7 @@ function foundationGraph(): Record<string, unknown>[] {
         "@type": "ContactPoint",
         contactType: "general enquiries",
         telephone: "+256756233041",
-        email: "treassuredvesselsug@gmail.com",
+        email: "treasuredvesselsug@gmail.com",
         availableLanguage: ["English"],
       },
     },

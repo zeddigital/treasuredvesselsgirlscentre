@@ -9,7 +9,7 @@ import {
 import { useSeo, ORG_ID } from "@/lib/seo";
 import { trackEvent } from "@/lib/analytics";
 
-const EMAIL = "treassuredvesselsug@gmail.com";
+const EMAIL = "treasuredvesselsug@gmail.com";
 const MAPS_URL = "https://maps.app.goo.gl/Z1XvjQeUSutmSnAP8";
 
 export default function Contact() {
