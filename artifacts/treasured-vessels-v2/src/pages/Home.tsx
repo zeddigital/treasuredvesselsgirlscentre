@@ -2,7 +2,7 @@ import { BookOpen, Scissors, Baby, Droplets, Shield, Users, ArrowRight, CheckCir
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SectionHeading, ProgramCard } from "@/components/ui/shared";
-import { useSeo } from "@/lib/seo";
+import { useSeo, ORG_IMAGE_ID } from "@/lib/seo";
 
 export default function Home() {
   useSeo({
@@ -11,6 +11,7 @@ export default function Home() {
       "A women-led community organisation in Jinja, Uganda, supporting vulnerable girls, teenage mothers and women through education, vocational training and advocacy.",
     path: "/",
     image: `${import.meta.env.BASE_URL}images/hero.jpg`,
+    webPage: { primaryImageOfPage: { "@id": ORG_IMAGE_ID } },
   });
 
   return (

@@ -1,5 +1,5 @@
 import { useLocation } from "wouter";
-import { useSeo } from "@/lib/seo";
+import { useSeo, type Crumb } from "@/lib/seo";
 
 interface GenericPageProps {
   title: string;
@@ -10,6 +10,10 @@ interface GenericPageProps {
   schema?: Record<string, unknown>[];
   /** Merged into this page's WebPage node */
   webPage?: Record<string, unknown>;
+  /** Trail below Home for the BreadcrumbList */
+  breadcrumb?: Crumb[];
+  /** Set only where the page has a meaningful, known last-edited date */
+  dateModified?: string;
   children: React.ReactNode;
 }
 
@@ -19,6 +23,8 @@ export default function GenericPage({
   webPageType,
   schema,
   webPage,
+  breadcrumb,
+  dateModified,
   children,
 }: GenericPageProps) {
   const [location] = useLocation();
@@ -32,6 +38,8 @@ export default function GenericPage({
     webPageType,
     schema,
     webPage,
+    breadcrumb,
+    dateModified,
   });
 
   return (

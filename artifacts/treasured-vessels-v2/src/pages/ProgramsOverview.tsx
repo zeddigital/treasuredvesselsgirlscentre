@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/shared";
 import { BookOpen, Scissors, Baby, Droplets, Shield, Users } from "lucide-react";
-import { useSeo } from "@/lib/seo";
+import { useSeo, SITE_ORIGIN } from "@/lib/seo";
 
 const programs = [
   {
@@ -57,6 +57,23 @@ export default function ProgramsOverview() {
     path: "/programs",
     webPageType: "CollectionPage",
     image: `${import.meta.env.BASE_URL}images/education.jpg`,
+    webPage: { mainEntity: { "@id": `${SITE_ORIGIN}/programs#program-list` } },
+    breadcrumb: [{ name: "Programmes", path: "/programs" }],
+    schema: [
+      {
+        "@type": "ItemList",
+        "@id": `${SITE_ORIGIN}/programs#program-list`,
+        name: "Treasured Vessels programmes",
+        numberOfItems: programs.length,
+        itemListOrder: "https://schema.org/ItemListUnordered",
+        itemListElement: programs.map((program, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: program.title,
+          url: `${SITE_ORIGIN}/programs/${program.id}`,
+        })),
+      },
+    ],
   });
 
   return (

@@ -10,6 +10,7 @@ export const LOGO_ID = `${SITE_ORIGIN}/#logo`;
 export const ORG_IMAGE_ID = `${SITE_ORIGIN}/#primaryimage`;
 /** Defined on /about/founder, referenced here — see that route's schema. */
 export const FOUNDER_ID = `${SITE_ORIGIN}/about/founder#person`;
+export const FOUNDER_IMAGE_ID = `${SITE_ORIGIN}/about/founder#primaryimage`;
 
 const ORG_DESCRIPTION =
   "A registered, women-led community-based organisation in Jinja, Uganda, supporting vulnerable girls, teenage mothers and women through education, vocational training, menstrual health, protection and community outreach.";
@@ -107,8 +108,21 @@ export interface SeoOptions {
   webPageType?: string;
   /** Merged into the WebPage node — lets a page point at its own breadcrumb, primary image, etc. */
   webPage?: Record<string, unknown>;
+  /**
+   * Trail below Home, which is prepended automatically. Emits a BreadcrumbList
+   * and points the WebPage node at it.
+   */
+  breadcrumb?: Crumb[];
+  /** Set only where a page has a meaningful, known last-edited date */
+  dateModified?: string;
   /** Keeps a page out of the index (e.g. the 404 route) */
   noindex?: boolean;
+}
+
+export interface Crumb {
+  name: string;
+  /** Path beginning with "/" */
+  path: string;
 }
 
 export const SCHEMA_ID = "tv-structured-data";
@@ -142,6 +156,8 @@ export function buildSeoHead({
   schema,
   webPageType = "WebPage",
   webPage,
+  breadcrumb,
+  dateModified,
   noindex = false,
 }: SeoOptions): SeoHead {
   const url = `${SITE_ORIGIN}${path}`;
@@ -169,6 +185,19 @@ export function buildSeoHead({
     metas.push({ attr: "name", key: "keywords", content: keywords.join(", ") });
   }
 
+  // Home is always position 1; a page supplies only the trail below it.
+  const trail: Crumb[] = [{ name: "Home", path: "/" }, ...(breadcrumb ?? [])];
+  const breadcrumbNode = {
+    "@type": "BreadcrumbList",
+    "@id": `${url}#breadcrumb`,
+    itemListElement: trail.map((crumb, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: crumb.name,
+      item: `${SITE_ORIGIN}${crumb.path}`,
+    })),
+  };
+
   const webPageNode = {
     "@type": webPageType,
     "@id": `${url}#webpage`,
@@ -181,6 +210,8 @@ export function buildSeoHead({
     primaryImageOfPage: image
       ? { "@type": "ImageObject", url: absoluteImage }
       : { "@id": ORG_IMAGE_ID },
+    breadcrumb: { "@id": `${url}#breadcrumb` },
+    ...(dateModified ? { dateModified } : {}),
     inLanguage: "en-UG",
     ...(webPage ?? {}),
   };
@@ -191,7 +222,12 @@ export function buildSeoHead({
     metas,
     jsonLd: {
       "@context": "https://schema.org",
-      "@graph": [...foundationGraph(), webPageNode, ...(schema ?? [])],
+      "@graph": [
+        ...foundationGraph(),
+        webPageNode,
+        breadcrumbNode,
+        ...(schema ?? []),
+      ],
     },
   };
 }

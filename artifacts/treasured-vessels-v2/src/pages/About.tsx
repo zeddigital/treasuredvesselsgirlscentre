@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { useSeo } from "@/lib/seo";
+import { useSeo, ORG_ID } from "@/lib/seo";
 
 export default function About() {
   useSeo({
@@ -10,6 +10,8 @@ export default function About() {
     path: "/about",
     webPageType: "AboutPage",
     image: `${import.meta.env.BASE_URL}images/story.jpg`,
+    webPage: { mainEntity: { "@id": ORG_ID } },
+    breadcrumb: [{ name: "About", path: "/about" }],
   });
 
   return (

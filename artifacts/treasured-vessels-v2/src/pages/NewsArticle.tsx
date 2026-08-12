@@ -1,13 +1,18 @@
 import { Link, useParams } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getNewsPost } from "@/lib/news";
+import { getNewsPost, newsTimestamp } from "@/lib/news";
 import NotFound from "./not-found";
 import { useSeo, SITE_ORIGIN, ORG_ID } from "@/lib/seo";
 
 export default function NewsArticle() {
   const params = useParams();
   const post = getNewsPost(params.slug as string);
+
+  const newsUrl = `${SITE_ORIGIN}/news/${post?.slug ?? ""}`;
+  const articleId = `${newsUrl}#article`;
+  const webPageId = `${newsUrl}#webpage`;
+  const imageId = `${newsUrl}#primaryimage`;
 
   useSeo({
     title: post
@@ -17,26 +22,43 @@ export default function NewsArticle() {
     path: post ? `/news/${post.slug}` : "/news",
     image: post?.image,
     type: "article",
-    webPageType: "ItemPage",
     noindex: !post,
+    breadcrumb: post
+      ? [
+          { name: "News", path: "/news" },
+          { name: post.title, path: `/news/${post.slug}` },
+        ]
+      : undefined,
+    webPage: post ? { primaryImageOfPage: { "@id": imageId } } : undefined,
     schema: post
       ? [
           {
             "@type": "NewsArticle",
+            "@id": articleId,
+            url: `${SITE_ORIGIN}/news/${post.slug}`,
+            mainEntityOfPage: { "@id": webPageId },
             headline: post.title,
             description: post.excerpt,
-            image: `${SITE_ORIGIN}${post.image}`,
+            image: { "@id": imageId },
+            ...(post.isoDate
+              ? {
+                  datePublished: newsTimestamp(post.isoDate),
+                  dateModified: newsTimestamp(post.isoDate),
+                }
+              : {}),
             author: { "@id": ORG_ID },
             publisher: { "@id": ORG_ID },
-            mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_ORIGIN}/news/${post.slug}` },
+            articleSection: "News",
+            inLanguage: "en-UG",
+            isPartOf: { "@id": `${SITE_ORIGIN}/news#webpage` },
+            locationCreated: { "@type": "Place", name: "Jinja, Uganda" },
           },
           {
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: SITE_ORIGIN },
-              { "@type": "ListItem", position: 2, name: "News", item: `${SITE_ORIGIN}/news` },
-              { "@type": "ListItem", position: 3, name: post.title, item: `${SITE_ORIGIN}/news/${post.slug}` },
-            ],
+            "@type": "ImageObject",
+            "@id": imageId,
+            url: `${SITE_ORIGIN}${post.image}`,
+            contentUrl: `${SITE_ORIGIN}${post.image}`,
+            caption: post.imageAlt ?? post.title,
           },
         ]
       : undefined,

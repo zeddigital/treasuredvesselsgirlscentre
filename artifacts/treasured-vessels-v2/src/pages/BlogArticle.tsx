@@ -47,6 +47,12 @@ export default function BlogArticle() {
     type: "article",
     webPageType: "WebPage",
     keywords: post?.keywords,
+    breadcrumb: post
+      ? [
+          { name: "Blog", path: "/blog" },
+          { name: post.title, path: `/blog/${post.slug}` },
+        ]
+      : undefined,
     webPage: post
       ? {
           "@id": webPageId,
@@ -89,15 +95,6 @@ export default function BlogArticle() {
             caption: post.imageAlt,
             creditText: SITE_NAME,
             copyrightNotice: `© ${SITE_NAME}`,
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": breadcrumbId,
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_ORIGIN}/` },
-              { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_ORIGIN}/blog` },
-              { "@type": "ListItem", position: 3, name: post.title, item: url },
-            ],
           },
           // Only emitted when the article actually shows an FAQ section — the
           // questions and answers below are lifted verbatim from the page.

@@ -6,6 +6,7 @@ import { useSeo, SITE_ORIGIN, ORG_ID } from "@/lib/seo";
 
 const programData = {
   "girls-education": {
+    serviceType: "Girls' education support",
     title: "Girls' Education",
     subtitle: "Keeping Girls in the Classroom",
     image: `${import.meta.env.BASE_URL}images/education.jpg`,
@@ -18,6 +19,7 @@ const programData = {
     story: "After my father passed away, my mother couldn't afford school fees. Treasured Vessels stepped in, and today I am completing my secondary education with dreams of becoming a nurse."
   },
   "skills-training": {
+    serviceType: "Vocational skills training",
     title: "Vocational Skills & Economic Empowerment",
     subtitle: "Building Independence Through Trade",
     image: `${import.meta.env.BASE_URL}images/tailoring.jpg`,
@@ -30,6 +32,7 @@ const programData = {
     story: "I felt useless when I had to leave school. Now, I make and sell clothes. I can feed my child and I have a skill no one can take away from me."
   },
   "teenage-mother-support": {
+    serviceType: "Teenage mother support",
     title: "Teenage Mother Support",
     subtitle: "A Second Chance for Young Mothers",
     image: `${import.meta.env.BASE_URL}images/teen-mothers.jpg`,
@@ -42,6 +45,7 @@ const programData = {
     story: "When I got pregnant, I thought my life was over. Treasured Vessels gave me a safe place to cry, learn how to care for my baby, and finally start learning a trade."
   },
   "menstrual-health": {
+    serviceType: "Menstrual health education and support",
     title: "Menstrual Health & School Outreach",
     subtitle: "Ending Period Poverty",
     image: `${import.meta.env.BASE_URL}images/health.jpg`,
@@ -54,6 +58,7 @@ const programData = {
     story: "I used to stay home and miss exams because I had nothing to use. With my reusable kit, I don't have to feel ashamed or miss class anymore."
   },
   "protection": {
+    serviceType: "Protection, safeguarding and referral support",
     title: "Protection & Rehabilitation",
     subtitle: "Safety and Healing for Survivors",
     image: `${import.meta.env.BASE_URL}images/protection.jpg`,
@@ -66,6 +71,7 @@ const programData = {
     story: "They were arranging my marriage, but I wanted to study. The Centre helped intervene, and now I am safe and back in the classroom."
   },
   "community-outreach": {
+    serviceType: "Community outreach and education",
     title: "Community Outreach",
     subtitle: "Changing the Narrative Together",
     image: `${import.meta.env.BASE_URL}images/community-outreach.jpg`,
@@ -84,6 +90,10 @@ export default function ProgramDetail() {
   const id = params.id as keyof typeof programData;
   const program = programData[id];
 
+  const programUrl = `${SITE_ORIGIN}/programs/${id}`;
+  const serviceId = `${programUrl}#service`;
+  const imageId = `${programUrl}#primaryimage`;
+
   useSeo({
     title: program
       ? `${program.title} | Treasured Vessels Girls' Centre`
@@ -91,33 +101,43 @@ export default function ProgramDetail() {
     description: program ? program.need.slice(0, 155) : "",
     path: `/programs/${id}`,
     image: program?.image,
-    webPageType: "ItemPage",
     noindex: !program,
+    breadcrumb: program
+      ? [
+          { name: "Programmes", path: "/programs" },
+          { name: program.title, path: `/programs/${id}` },
+        ]
+      : undefined,
+    // The page is about the programme, so the Service — not the organisation —
+    // is what it points at.
+    webPage: program
+      ? {
+          about: { "@id": serviceId },
+          mainEntity: { "@id": serviceId },
+          primaryImageOfPage: { "@id": imageId },
+        }
+      : undefined,
     schema: program
       ? [
           {
             "@type": "Service",
+            "@id": serviceId,
             name: program.title,
             alternateName: program.subtitle,
+            url: `${SITE_ORIGIN}/programs/${id}`,
             description: program.provides,
-            serviceType: "Charitable programme",
+            serviceType: program.serviceType,
             provider: { "@id": ORG_ID },
             areaServed: { "@type": "AdministrativeArea", name: "Jinja District, Uganda" },
             audience: { "@type": "Audience", audienceType: program.supports },
-            url: `${SITE_ORIGIN}/programs/${id}`,
+            image: { "@id": imageId },
           },
           {
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: SITE_ORIGIN },
-              { "@type": "ListItem", position: 2, name: "Our Programs", item: `${SITE_ORIGIN}/programs` },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: program.title,
-                item: `${SITE_ORIGIN}/programs/${id}`,
-              },
-            ],
+            "@type": "ImageObject",
+            "@id": imageId,
+            url: `${SITE_ORIGIN}${program.image}`,
+            contentUrl: `${SITE_ORIGIN}${program.image}`,
+            caption: `${program.title} at Treasured Vessels Girls' Centre, Jinja, Uganda`,
           },
         ]
       : undefined,

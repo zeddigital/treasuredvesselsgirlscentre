@@ -10,24 +10,18 @@ export default function Blog() {
     description:
       "Evidence-based writing on girls' education, women's empowerment and community development in Jinja, Uganda, from Treasured Vessels Girls' Centre.",
     path: "/blog",
-    schema: [
-      {
-        "@type": "Blog",
-        "@id": `${SITE_ORIGIN}/blog#blog`,
-        name: "Treasured Vessels Girls' Centre Blog",
-        url: `${SITE_ORIGIN}/blog`,
-        // Each entry carries the @id of the article's own BlogPosting node, so
-        // the listing and the article page describe one entity, not two.
-        blogPost: blogPosts.map((post) => ({
-          "@type": "BlogPosting",
-          "@id": `${SITE_ORIGIN}/blog/${post.slug}#article`,
-          headline: post.title,
-          datePublished: publishedAt(post),
-          dateModified: modifiedAt(post),
-          url: `${SITE_ORIGIN}/blog/${post.slug}`,
-        })),
-      },
-    ],
+    // The archive is itself the Blog entity, so it takes the #webpage @id that
+    // every article's isPartOf points at rather than sitting beside a WebPage.
+    webPageType: "Blog",
+    breadcrumb: [{ name: "Blog", path: "/blog" }],
+    webPage: {
+      name: "Treasured Vessels Blog",
+      // Reference only: each article's own page carries the full BlogPosting,
+      // so the listing points at it instead of describing it a second time.
+      blogPost: blogPosts.map((post) => ({
+        "@id": `${SITE_ORIGIN}/blog/${post.slug}#article`,
+      })),
+    },
   });
 
   return (

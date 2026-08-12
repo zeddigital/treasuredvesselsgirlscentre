@@ -11,10 +11,15 @@ export default function News() {
       "The latest stories, milestones and updates from Treasured Vessels Girls' Centre in Jinja, Uganda.",
     path: "/news",
     webPageType: "CollectionPage",
+    webPage: { mainEntity: { "@id": `${SITE_ORIGIN}/news#news-list` } },
+    breadcrumb: [{ name: "News", path: "/news" }],
     schema: [
       {
         "@type": "ItemList",
+        "@id": `${SITE_ORIGIN}/news#news-list`,
         name: "News & Updates",
+        numberOfItems: newsPosts.length,
+        itemListOrder: "https://schema.org/ItemListOrderDescending",
         itemListElement: newsPosts.map((post, i) => ({
           "@type": "ListItem",
           position: i + 1,

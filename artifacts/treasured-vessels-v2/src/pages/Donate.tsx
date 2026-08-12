@@ -11,7 +11,7 @@ import {
   isContactComplete,
 } from "@/components/ui/contact-fields";
 import { PoweredByStripe } from "@/components/ui/powered-by-stripe";
-import { useSeo } from "@/lib/seo";
+import { useSeo, SITE_ORIGIN, ORG_ID } from "@/lib/seo";
 
 export default function Donate() {
   const [isMonthly, setIsMonthly] = useState(false);
@@ -39,6 +39,26 @@ export default function Donate() {
       "Your donation funds education, vocational training and safe spaces for vulnerable girls and women in Jinja, Uganda. $15 provides a reusable sanitary kit for a year.",
     path: "/donate",
     image: `${import.meta.env.BASE_URL}images/hero.jpg`,
+    webPage: { potentialAction: { "@id": `${SITE_ORIGIN}/donate#donateaction` } },
+    breadcrumb: [{ name: "Donate", path: "/donate" }],
+    schema: [
+      {
+        "@type": "DonateAction",
+        "@id": `${SITE_ORIGIN}/donate#donateaction`,
+        name: "Donate to Treasured Vessels Girls' Centre",
+        description:
+          "Make a donation to support Treasured Vessels Girls' Centre and its programmes in Jinja, Uganda.",
+        recipient: { "@id": ORG_ID },
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${SITE_ORIGIN}/donate`,
+          actionPlatform: [
+            "https://schema.org/DesktopWebPlatform",
+            "https://schema.org/MobileWebPlatform",
+          ],
+        },
+      },
+    ],
   });
 
   return (

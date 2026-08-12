@@ -15,6 +15,8 @@ interface GetInvolvedPage {
   title: string;
   subtitle: string;
   metaDescription: string;
+  /** Name of this page's schema.org action */
+  actionName: string;
   image: string;
   imageAlt: string;
   intro: string[];
@@ -29,6 +31,7 @@ interface GetInvolvedPage {
 
 const pages: Record<string, GetInvolvedPage> = {
   sponsor: {
+    actionName: "Sponsor a girl through Treasured Vessels Girls' Centre",
     title: "Sponsor a Girl",
     subtitle: "Fund a plan, not a package",
     metaDescription:
@@ -89,6 +92,7 @@ const pages: Record<string, GetInvolvedPage> = {
   },
 
   partner: {
+    actionName: "Discuss a partnership with Treasured Vessels Girls' Centre",
     title: "Partner With Us",
     subtitle: "What a good partner brings",
     metaDescription:
@@ -155,6 +159,7 @@ const pages: Record<string, GetInvolvedPage> = {
   },
 
   volunteer: {
+    actionName: "Enquire about volunteering with Treasured Vessels Girls' Centre",
     title: "Volunteer",
     subtitle: "Practical help, given reliably",
     metaDescription:
@@ -236,6 +241,7 @@ export default function GetInvolved() {
   const params = useParams();
   const key = params.type as string;
   const page = pages[key];
+  const actionId = `${SITE_ORIGIN}/get-involved/${key}#action`;
 
   useSeo({
     title: page
@@ -245,27 +251,27 @@ export default function GetInvolved() {
     path: `/get-involved/${key}`,
     image: page ? `${import.meta.env.BASE_URL}${page.image}` : undefined,
     noindex: !page,
+    breadcrumb: page
+      ? [{ name: page.title, path: `/get-involved/${key}` }]
+      : undefined,
+    webPage: page ? { potentialAction: { "@id": actionId } } : undefined,
     schema: page
       ? [
           {
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: SITE_ORIGIN },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: page.title,
-                item: `${SITE_ORIGIN}/get-involved/${key}`,
-              },
-            ],
-          },
-          {
-            "@type": "Service",
-            name: page.title,
-            description: page.metaDescription,
-            provider: { "@id": ORG_ID },
-            areaServed: { "@type": "AdministrativeArea", name: "Jinja District, Uganda" },
-            url: `${SITE_ORIGIN}/get-involved/${key}`,
+            // Sponsorship is financial, so it is a DonateAction; partnering and
+            // volunteering start as an enquiry, so they are CommunicateAction.
+            "@type": key === "sponsor" ? "DonateAction" : "CommunicateAction",
+            "@id": actionId,
+            name: page.actionName,
+            recipient: { "@id": ORG_ID },
+            target: {
+              "@type": "EntryPoint",
+              urlTemplate: `${SITE_ORIGIN}/get-involved/${key}`,
+              actionPlatform: [
+                "https://schema.org/DesktopWebPlatform",
+                "https://schema.org/MobileWebPlatform",
+              ],
+            },
           },
         ]
       : undefined,

@@ -13,8 +13,51 @@ import GetInvolved from "@/pages/GetInvolved";
 import BlogArticle from "@/pages/BlogArticle";
 import NotFound from "@/pages/not-found";
 import GenericPage from "@/components/layout/GenericPage";
-import { FOUNDER_ID, ORG_ID, SITE_ORIGIN } from "@/lib/seo";
+import { FOUNDER_ID, FOUNDER_IMAGE_ID, ORG_ID, SITE_ORIGIN } from "@/lib/seo";
 import { ScrollToTop } from "@/components/ui/scroll-to-top";
+
+const FAQS = [
+  {
+    q: "What is Treasured Vessels Girls' Centre?",
+    a: "Treasured Vessels Girls' Centre is a women-led, non-governmental community based organisation founded in 2018, dedicated to empowering girls and young women in Jinja District, Uganda."
+  },
+  {
+    q: "What are your main programs?",
+    a: "We run five core areas of work: education support (scholarships, school re-entry and mentorship), economic empowerment (vocational skills and entrepreneurship training), girls' rights advocacy, health and reproductive rights (including menstrual hygiene), and social support and rehabilitation (counselling, shelter and support for vulnerable girls)."
+  },
+  {
+    q: "Who benefits from your programs?",
+    a: "Vulnerable girls and young women facing poverty, abuse or school dropout; teenage mothers; survivors of gender-based violence and early marriage; and young women seeking economic empowerment."
+  },
+  {
+    q: "How do you support girls who have dropped out of school?",
+    a: "We provide alternative education and vocational training, counselling, and reintegration support to help girls return to school or build an independent livelihood."
+  },
+  {
+    q: "How do you support teenage mothers?",
+    a: "We offer counselling, life skills and parenting education, alongside economic empowerment opportunities so young mothers can provide for themselves and their children."
+  },
+  {
+    q: "What role can parents and the community play?",
+    a: "Parents and community members help by raising awareness, working to prevent early marriage and gender-based violence, and providing mentorship to girls at risk."
+  },
+  {
+    q: "How can I support or donate?",
+    a: "You can donate funds or resources such as school materials, sanitary pads and vocational tools, sponsor a girl's education, or volunteer your time and skills."
+  },
+  {
+    q: "Do you provide shelter?",
+    a: "Yes. We provide temporary shelter and emergency support to girls facing abuse, abandonment, or unsupported pregnancy."
+  },
+  {
+    q: "How does a girl join your programs?",
+    a: "Girls can reach out to us directly, be referred by community leaders, or apply through our local office."
+  },
+  {
+    q: "Do you partner with other organisations?",
+    a: "Yes. We partner with NGOs, government agencies, community groups and donors who support us with funding, resources and advocacy."
+  },
+];
 
 function Router() {
   return (
@@ -32,8 +75,17 @@ function Router() {
           {() => (
             <GenericPage
               title="Our Founder"
+              description="Meet Racheal Muggaga Achen, founder of Treasured Vessels Girls' Centre in Jinja District, Uganda."
               webPageType="ProfilePage"
-              webPage={{ mainEntity: { "@id": FOUNDER_ID } }}
+              webPage={{
+                mainEntity: { "@id": FOUNDER_ID },
+                about: { "@id": FOUNDER_ID },
+                primaryImageOfPage: { "@id": FOUNDER_IMAGE_ID },
+              }}
+              breadcrumb={[
+                { name: "About", path: "/about" },
+                { name: "Our Founder", path: "/about/founder" },
+              ]}
               // The organisation node's `founder` points at this @id, so this
               // is where the person is actually described.
               schema={[
@@ -41,15 +93,27 @@ function Router() {
                   "@type": "Person",
                   "@id": FOUNDER_ID,
                   name: "Racheal Muggaga Achen",
+                  url: `${SITE_ORIGIN}/about/founder`,
+                  image: { "@id": FOUNDER_IMAGE_ID },
                   jobTitle: "Founder",
-                  description:
-                    "Founder of Treasured Vessels Girls' Centre, a women-led community-based organisation in Jinja District, Uganda.",
                   worksFor: { "@id": ORG_ID },
-                  image: `${SITE_ORIGIN}/images/founder.jpg`,
-                  nationality: { "@type": "Country", name: "Uganda" },
+                  founder: { "@id": ORG_ID },
                   sameAs: [
                     "https://www.linkedin.com/in/racheal-achen-muggaga-912b4330a/",
                   ],
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Jinja",
+                    addressCountry: "UG",
+                  },
+                },
+                {
+                  "@type": "ImageObject",
+                  "@id": FOUNDER_IMAGE_ID,
+                  url: `${SITE_ORIGIN}/images/founder.jpg`,
+                  contentUrl: `${SITE_ORIGIN}/images/founder.jpg`,
+                  caption:
+                    "Racheal Muggaga Achen, founder of Treasured Vessels Girls' Centre",
                 },
               ]}
             >
@@ -66,7 +130,16 @@ function Router() {
         </Route>
         <Route path="/about/governance">
           {() => (
-            <GenericPage title="Governance & Transparency">
+            <GenericPage
+              title="Governance & Transparency"
+              description="Learn about the governance, accountability and organisational oversight of Treasured Vessels Girls' Centre in Jinja, Uganda."
+              webPageType="AboutPage"
+              webPage={{ mainEntity: { "@id": ORG_ID } }}
+              breadcrumb={[
+                { name: "About", path: "/about" },
+                { name: "Governance", path: "/about/governance" },
+              ]}
+            >
               <p>Treasured Vessels Girls' Centre is a fully registered, women-led community based organisation (CBO) operating in Jinja District, Uganda.</p>
               <p>Accountability and transparency is one of our core values. We are committed to being answerable for our decisions and to being honest, trustworthy stewards of every resource entrusted to us by donors, partners and the communities we serve.</p>
               <p>We welcome partnership and scrutiny from NGOs, government agencies, community groups and donors who share our commitment to girls' and women's empowerment. For specific questions about our governance or financial reporting, please <Link href="/contact">contact us</Link> directly.</p>
@@ -75,49 +148,24 @@ function Router() {
         </Route>
         <Route path="/about/faqs">
           {() => (
-            <GenericPage title="Frequently Asked Questions">
-              {[
-                {
-                  q: "What is Treasured Vessels Girls' Centre?",
-                  a: "Treasured Vessels Girls' Centre is a women-led, non-governmental community based organisation founded in 2018, dedicated to empowering girls and young women in Jinja District, Uganda."
-                },
-                {
-                  q: "What are your main programs?",
-                  a: "We run five core areas of work: education support (scholarships, school re-entry and mentorship), economic empowerment (vocational skills and entrepreneurship training), girls' rights advocacy, health and reproductive rights (including menstrual hygiene), and social support and rehabilitation (counselling, shelter and support for vulnerable girls)."
-                },
-                {
-                  q: "Who benefits from your programs?",
-                  a: "Vulnerable girls and young women facing poverty, abuse or school dropout; teenage mothers; survivors of gender-based violence and early marriage; and young women seeking economic empowerment."
-                },
-                {
-                  q: "How do you support girls who have dropped out of school?",
-                  a: "We provide alternative education and vocational training, counselling, and reintegration support to help girls return to school or build an independent livelihood."
-                },
-                {
-                  q: "How do you support teenage mothers?",
-                  a: "We offer counselling, life skills and parenting education, alongside economic empowerment opportunities so young mothers can provide for themselves and their children."
-                },
-                {
-                  q: "What role can parents and the community play?",
-                  a: "Parents and community members help by raising awareness, working to prevent early marriage and gender-based violence, and providing mentorship to girls at risk."
-                },
-                {
-                  q: "How can I support or donate?",
-                  a: "You can donate funds or resources such as school materials, sanitary pads and vocational tools, sponsor a girl's education, or volunteer your time and skills."
-                },
-                {
-                  q: "Do you provide shelter?",
-                  a: "Yes. We provide temporary shelter and emergency support to girls facing abuse, abandonment, or unsupported pregnancy."
-                },
-                {
-                  q: "How does a girl join your programs?",
-                  a: "Girls can reach out to us directly, be referred by community leaders, or apply through our local office."
-                },
-                {
-                  q: "Do you partner with other organisations?",
-                  a: "Yes. We partner with NGOs, government agencies, community groups and donors who support us with funding, resources and advocacy."
-                },
-              ].map((item, i) => (
+            <GenericPage
+              title="Frequently Asked Questions"
+              webPageType="FAQPage"
+              // The questions and answers below are the ones rendered on the
+              // page, so the markup cannot disagree with what a reader sees.
+              webPage={{
+                mainEntity: FAQS.map((item) => ({
+                  "@type": "Question",
+                  name: item.q,
+                  acceptedAnswer: { "@type": "Answer", text: item.a },
+                })),
+              }}
+              breadcrumb={[
+                { name: "About", path: "/about" },
+                { name: "FAQs", path: "/about/faqs" },
+              ]}
+            >
+              {FAQS.map((item, i) => (
                 <div key={i}>
                   <h3>{item.q}</h3>
                   <p>{item.a}</p>
@@ -128,7 +176,11 @@ function Router() {
         </Route>
         <Route path="/impact">
           {() => (
-            <GenericPage title="Our Impact">
+            <GenericPage
+              title="Our Impact"
+              description="See how Treasured Vessels Girls' Centre supports girls, teenage mothers, women and communities through practical programmes in Jinja, Uganda."
+              breadcrumb={[{ name: "Impact", path: "/impact" }]}
+            >
               <p>Since our founding in 2018, we've focused our energy on practical, community-led causes:</p>
               <ul>
                 <li><strong>Girls Empowerment Projects</strong> &mdash; soap making, tailoring, crafts, hairdressing and shoe making.</li>
@@ -161,7 +213,12 @@ function Router() {
         </Route>
         <Route path="/stories">
           {() => (
-            <GenericPage title="Stories of Change">
+            <GenericPage
+              title="Stories of Change"
+              description="Stories from the girls, women and communities Treasured Vessels Girls' Centre works alongside in Jinja, Uganda."
+              webPageType="CollectionPage"
+              breadcrumb={[{ name: "Stories", path: "/stories" }]}
+            >
               <p>Alongside the personal journeys of the girls and women we support, here are a couple of recent moments from our work in the community.</p>
               <h3>Water in the Community</h3>
               <img
@@ -189,7 +246,13 @@ function Router() {
         <Route path="/get-involved/:type" component={GetInvolved} />
         <Route path="/policies/privacy">
           {() => (
-            <GenericPage title="Privacy Policy">
+            <GenericPage
+              title="Privacy Policy"
+              description="Privacy policy for the Treasured Vessels Girls' Centre website."
+              breadcrumb={[{ name: "Privacy Policy", path: "/policies/privacy" }]}
+              // Matches the effective date shown at the top of the page.
+              dateModified="2026-07-15"
+            >
               <p className="text-sm text-muted-foreground"><strong>Effective Date:</strong> 15 July 2026</p>
               <p>Treasured Vessels Girls' Centre ("we", "our", or "us") is committed to protecting the privacy of our website visitors, supporters, donors, volunteers, sponsors, and partners. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
               <p>By using our website, you agree to the terms outlined in this Privacy Policy.</p>

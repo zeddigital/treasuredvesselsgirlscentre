@@ -6,7 +6,7 @@ import {
   emptyContactDetails,
   isContactComplete,
 } from "@/components/ui/contact-fields";
-import { useSeo } from "@/lib/seo";
+import { useSeo, ORG_ID } from "@/lib/seo";
 import { trackEvent } from "@/lib/analytics";
 
 const EMAIL = "treassuredvesselsug@gmail.com";
@@ -28,6 +28,8 @@ export default function Contact() {
       "Get in touch with Treasured Vessels Girls' Centre in Jinja, Uganda — to volunteer, partner with us, refer a girl, or learn more about our work.",
     path: "/contact",
     webPageType: "ContactPage",
+    webPage: { mainEntity: { "@id": ORG_ID } },
+    breadcrumb: [{ name: "Contact", path: "/contact" }],
   });
 
   // Posts to the Cloudflare Pages Function at functions/api/contact.ts, which

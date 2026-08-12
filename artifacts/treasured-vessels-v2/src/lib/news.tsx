@@ -4,10 +4,23 @@ export interface NewsPost {
   slug: string;
   title: string;
   eyebrow: string;
+  /** Human-readable date shown on the page */
   date?: string;
+  /**
+   * Publication date as YYYY-MM-DD, for schema.org. Left unset where the real
+   * date is not known — a NewsArticle is better without datePublished than
+   * with an invented one.
+   */
+  isoDate?: string;
   image: string;
+  imageAlt?: string;
   excerpt: string;
   body: ReactNode;
+}
+
+/** A bare date plus a local time, as the full ISO 8601 stamp schema.org expects. */
+export function newsTimestamp(date: string, time = "09:00:00"): string {
+  return `${date}T${time}+03:00`;
 }
 
 // Add new stories to the top of this array — the News page and article
@@ -18,6 +31,8 @@ export const newsPosts: NewsPost[] = [
     title: "Hope Restored: Joan's Story",
     eyebrow: "How We Started",
     image: `${import.meta.env.BASE_URL}images/joan-story.jpg`,
+    imageAlt:
+      "Joan with her child at Treasured Vessels Girls' Centre in Jinja, Uganda",
     excerpt:
       "At Treasured Vessels Girls' Centre, every transformed life reminds us why this ministry exists. Joan's story is one of restoration, resilience, and renewed purpose.",
     body: (
@@ -81,6 +96,8 @@ export const newsPosts: NewsPost[] = [
     eyebrow: "Our First Success Story",
     date: "2024",
     image: `${import.meta.env.BASE_URL}images/graduation-2024.jpg`,
+    imageAlt:
+      "Graduands at the first Treasured Skills Graduation Ceremony, Treasured Vessels Girls' Centre, Jinja",
     excerpt:
       "This past year marked a significant milestone for Treasured Vessels Girls' Centre as we celebrated our very first Treasured Skills Graduation Ceremony.",
     body: (
