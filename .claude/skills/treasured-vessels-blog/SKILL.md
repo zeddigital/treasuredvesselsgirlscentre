@@ -112,6 +112,11 @@ So the graph is complete, each post in `blog.ts` must set:
 | `citations` | `citation` — the same direct URLs listed under *External authority links* |
 | `modifiedDate` | `dateModified`, only when the article is substantively revised later |
 
+`datePublished` and `dateModified` are emitted as full ISO 8601 stamps with a
+timezone offset — `2026-08-12T09:00:00+03:00` — built from `isoDate` plus East
+Africa Time. Override the time of day with `publishTime` if an article goes
+live at a different hour; a bare date is not sufficient for Google.
+
 `wordCount` is counted from the body, and the `FAQPage` is extracted from the
 visible **## Frequently asked questions** section — so the schema and the page
 can never disagree. Keep that heading spelled exactly that way, with each

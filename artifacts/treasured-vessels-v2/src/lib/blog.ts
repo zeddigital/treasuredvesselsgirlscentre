@@ -10,8 +10,10 @@ export interface BlogPost {
   /** Short label shown above the title, e.g. the content pillar */
   eyebrow: string;
   date: string;
-  /** ISO date used for schema.org and <time> elements */
+  /** Publication date, YYYY-MM-DD. Combined with `publishTime` for schema.org. */
   isoDate: string;
+  /** Local time of day the article went live. Defaults to 09:00 East Africa Time. */
+  publishTime?: string;
   image: string;
   imageAlt: string;
   excerpt: string;
@@ -22,6 +24,8 @@ export interface BlogPost {
   readingMinutes: number;
   /** Set only when the article has been substantively revised after publishing */
   modifiedDate?: string;
+  /** Local time of the revision. Defaults to `publishTime`. */
+  modifiedTime?: string;
   /** schema.org articleSection — the primary category */
   articleSection: string;
   /** The main subject the article is about, for schema.org `about` */
@@ -212,6 +216,31 @@ export const blogPosts: BlogPost[] = [
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug);
+}
+
+/**
+ * East Africa Time. The centre is in Jinja, so articles are stamped in the
+ * local time they actually went live rather than in UTC.
+ */
+const TIME_ZONE_OFFSET = "+03:00";
+const DEFAULT_PUBLISH_TIME = "09:00:00";
+
+/** A bare date plus a local time, as the full ISO 8601 stamp schema.org expects. */
+function timestamp(date: string, time = DEFAULT_PUBLISH_TIME): string {
+  return `${date}T${time}${TIME_ZONE_OFFSET}`;
+}
+
+/** `datePublished` — full ISO 8601 with offset, e.g. 2026-08-12T09:00:00+03:00 */
+export function publishedAt(post: BlogPost): string {
+  return timestamp(post.isoDate, post.publishTime);
+}
+
+/** `dateModified` — the publication stamp unless the article has been revised. */
+export function modifiedAt(post: BlogPost): string {
+  return timestamp(
+    post.modifiedDate ?? post.isoDate,
+    post.modifiedTime ?? post.publishTime,
+  );
 }
 
 /** Heading text -> the `id` the article renderer gives it, so schema can link to it. */

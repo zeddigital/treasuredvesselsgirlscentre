@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { blogPosts } from "@/lib/blog";
+import { blogPosts, modifiedAt, publishedAt } from "@/lib/blog";
 import { useSeo, SITE_ORIGIN } from "@/lib/seo";
 
 export default function Blog() {
@@ -12,14 +12,18 @@ export default function Blog() {
     path: "/blog",
     schema: [
       {
-        "@context": "https://schema.org",
         "@type": "Blog",
+        "@id": `${SITE_ORIGIN}/blog#blog`,
         name: "Treasured Vessels Girls' Centre Blog",
         url: `${SITE_ORIGIN}/blog`,
+        // Each entry carries the @id of the article's own BlogPosting node, so
+        // the listing and the article page describe one entity, not two.
         blogPost: blogPosts.map((post) => ({
           "@type": "BlogPosting",
+          "@id": `${SITE_ORIGIN}/blog/${post.slug}#article`,
           headline: post.title,
-          datePublished: post.isoDate,
+          datePublished: publishedAt(post),
+          dateModified: modifiedAt(post),
           url: `${SITE_ORIGIN}/blog/${post.slug}`,
         })),
       },

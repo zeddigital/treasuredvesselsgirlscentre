@@ -4,7 +4,14 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ArrowLeft, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { countWords, extractFaq, getBlogPost, headingId } from "@/lib/blog";
+import {
+  countWords,
+  extractFaq,
+  getBlogPost,
+  headingId,
+  modifiedAt,
+  publishedAt,
+} from "@/lib/blog";
 import { useSeo, SITE_ORIGIN, SITE_NAME, ORG_ID, WEBSITE_ID } from "@/lib/seo";
 import NotFound from "./not-found";
 
@@ -59,8 +66,8 @@ export default function BlogArticle() {
             headline: post.title,
             description: post.metaDescription,
             image: { "@id": imageId },
-            datePublished: post.isoDate,
-            dateModified: post.modifiedDate ?? post.isoDate,
+            datePublished: publishedAt(post),
+            dateModified: modifiedAt(post),
             author: { "@id": ORG_ID },
             publisher: { "@id": ORG_ID },
             articleSection: post.articleSection,
@@ -140,7 +147,7 @@ export default function BlogArticle() {
             {post.title}
           </h1>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-white/80 text-sm">
-            <time dateTime={post.isoDate}>{post.date}</time>
+            <time dateTime={publishedAt(post)}>{post.date}</time>
             <span className="inline-flex items-center gap-2">
               <Clock className="w-4 h-4" /> {post.readingMinutes} min read
             </span>
