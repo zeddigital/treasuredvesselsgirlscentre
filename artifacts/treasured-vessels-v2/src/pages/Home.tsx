@@ -22,12 +22,15 @@ export default function Home() {
         <div className="container mx-auto max-w-[1240px] px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             <div className="max-w-xl">
-              <span className="inline-block py-1 px-3 rounded-full bg-brand-purple/10 text-brand-purple text-sm font-semibold tracking-wide mb-6">
-                Girls deserve safety, opportunity and a future.
-              </span>
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-plum leading-[1.1] mb-6">
-                Empowering Girls to Build Stronger Futures
+              {/* The organisation's name carries the h1 so the page's heading
+                  names the organisation, while the display line below stays the
+                  visual focus of the hero. */}
+              <h1 className="inline-block py-1 px-3 rounded-full bg-brand-purple/10 text-brand-purple text-sm font-semibold tracking-wide mb-6">
+                Treasured Vessels Girls&rsquo; Centre, Uganda
               </h1>
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-plum leading-[1.1] mb-6">
+                Empowering Girls to Build Stronger Futures
+              </h2>
               <p className="text-lg text-brand-charcoal/80 mb-8 leading-relaxed">
                 Treasured Vessels Girls' Centre supports vulnerable girls, teenage mothers and women in Uganda through education, practical skills, mentoring, advocacy and community care.
               </p>
@@ -43,6 +46,9 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
+              <p className="text-base text-brand-purple font-medium mb-4">
+                Girls deserve safety, opportunity and a future.
+              </p>
               <div className="flex items-center gap-3 text-sm text-brand-charcoal/70 font-medium">
                 <CheckCircle2 className="w-5 h-5 text-brand-blue" />
                 <p>A registered, women-led community organisation serving girls and families since 2018.</p>
