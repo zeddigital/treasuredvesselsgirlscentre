@@ -4,6 +4,7 @@ import fiveBarriersBody from "@/content/five-barriers-that-push-a-girl-out-of-sc
 import sponsorshipBody from "@/content/what-responsible-education-sponsorship-should-include.md?raw";
 import returnToLearningBody from "@/content/returning-to-learning-after-teenage-pregnancy.md?raw";
 import sixMythsBody from "@/content/six-myths-about-teenage-mothers.md?raw";
+import skillsRoomBody from "@/content/inside-the-skills-room.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -40,6 +41,38 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "inside-the-skills-room",
+    title: "Inside the Skills Room: Learning Tailoring, Baking and Hairdressing",
+    eyebrow: "Vocational Training",
+    date: "14 August 2026",
+    isoDate: "2026-08-14",
+    image: `${import.meta.env.BASE_URL}images/gallery/skills-room-tailoring-lesson.jpg`,
+    imageAlt:
+      "Trainees working through a tailoring lesson in the skills room at Treasured Vessels Girls' Centre, Jinja, with treadle sewing machines along the wall",
+    excerpt:
+      "What a vocational class actually involves — the blackboard, the exercise books, the quality standard, and why a $150 treadle machine decides whether six months of training was worth anything.",
+    metaDescription:
+      "Inside a vocational training class in Jinja, Uganda: one tailoring lesson start to finish, what we run, what equipment costs, and how businesses can help.",
+    seoTitle:
+      "Inside the Skills Room: Tailoring, Baking and Hairdressing | Treasured Vessels",
+    keywords: [
+      "vocational training Uganda",
+      "tailoring training Jinja",
+      "skills training for women Uganda",
+      "sewing machine donation Uganda",
+      "women's economic empowerment Jinja",
+    ],
+    readingMinutes: 10,
+    articleSection: "Vocational Training",
+    subject: "Vocational skills training",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://www.unicef.org/uganda/what-we-do/education",
+      "https://www.worldbank.org/en/country/uganda/publication/educating-girls-a-way-of-ending-child-marriage-and-teenage-pregnancy",
+    ],
+    body: skillsRoomBody,
+  },
   {
     slug: "six-myths-about-teenage-mothers",
     title: "Six Myths About Teenage Mothers",
