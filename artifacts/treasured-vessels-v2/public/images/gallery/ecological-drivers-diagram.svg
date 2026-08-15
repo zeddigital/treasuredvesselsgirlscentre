@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="1000" height="720" role="img"
+     aria-label="An ecological model of what drives child marriage and adolescent pregnancy in Uganda, arranged as six nested layers around the girl at the centre: individual vulnerability, family pressure, community norms, service gaps, economic conditions, and policy implementation. Each layer is described alongside the point at which it can be interrupted.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .ring { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 13px; }
+      .name { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 17px; }
+      .desc { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 14px; }
+      .lever{ font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #A33895; font-size: 13.5px; font-style: italic; }
+      .tag  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 12.5px; letter-spacing: 1.2px; }
+      .core { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 18px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="720" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="64" font-size="33">What actually drives it</text>
+  <text class="lead" x="56" y="95">No single cause. Six layers, each of which can be interrupted.</text>
+  <line x1="56" y1="120" x2="944" y2="120" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- Nested rings -->
+  <g transform="translate(258,432)">
+    <circle r="216" fill="#F8F0F6"/>
+    <circle r="185" fill="#F2E4EF"/>
+    <circle r="152" fill="#EAD5E6"/>
+    <circle r="120" fill="#E0C4DA"/>
+    <circle r="90"  fill="#D3AECB"/>
+    <circle r="60"  fill="#BE86B4"/>
+    <circle r="32"  fill="#552050"/>
+    <text class="core" y="6" text-anchor="middle">Girl</text>
+
+    <text class="ring" y="-46"  text-anchor="middle" fill="#ffffff">INDIVIDUAL</text>
+    <text class="ring" y="-76"  text-anchor="middle" fill="#552050">FAMILY</text>
+    <text class="ring" y="-106" text-anchor="middle" fill="#552050">COMMUNITY</text>
+    <text class="ring" y="-136" text-anchor="middle" fill="#552050">SERVICES</text>
+    <text class="ring" y="-168" text-anchor="middle" fill="#552050">ECONOMY</text>
+    <text class="ring" y="-200" text-anchor="middle" fill="#552050">POLICY</text>
+  </g>
+
+  <!-- Legend -->
+  <text class="tag" x="500" y="164">LAYER &#183; WHAT IT LOOKS LIKE &#183; WHERE IT BREAKS</text>
+
+  <g>
+    <circle cx="512" cy="200" r="7" fill="#BE86B4"/>
+    <text class="name" x="532" y="205">Individual vulnerability</text>
+    <text class="desc" x="532" y="227">Out of school, orphaned, disabled, or without a trusted adult.</text>
+    <text class="lever" x="532" y="247">Interrupted by: someone who notices, early.</text>
+  </g>
+
+  <g>
+    <circle cx="512" cy="290" r="7" fill="#D3AECB"/>
+    <text class="name" x="532" y="295">Family pressure</text>
+    <text class="desc" x="532" y="317">A household that cannot pay fees, or sees marriage as security.</text>
+    <text class="lever" x="532" y="337">Interrupted by: the cost of keeping her in school being met.</text>
+  </g>
+
+  <g>
+    <circle cx="512" cy="380" r="7" fill="#E0C4DA"/>
+    <text class="name" x="532" y="385">Community norms</text>
+    <text class="desc" x="532" y="407">Shame directed at the girl; silence directed at the man.</text>
+    <text class="lever" x="532" y="427">Interrupted by: leaders who say something different, publicly.</text>
+  </g>
+
+  <g>
+    <circle cx="512" cy="470" r="7" fill="#EAD5E6"/>
+    <text class="name" x="532" y="475">Service gaps</text>
+    <text class="desc" x="532" y="497">No adolescent-friendly health service, no confidential referral.</text>
+    <text class="lever" x="532" y="517">Interrupted by: one named contact she can actually reach.</text>
+  </g>
+
+  <g>
+    <circle cx="512" cy="560" r="7" fill="#F2E4EF" stroke="#D3AECB" stroke-width="2"/>
+    <text class="name" x="532" y="565">Economic conditions</text>
+    <text class="desc" x="532" y="587">Poverty that makes a transactional relationship look like a solution.</text>
+    <text class="lever" x="532" y="607">Interrupted by: an income of her own, or her family&#8217;s.</text>
+  </g>
+
+  <g>
+    <circle cx="512" cy="650" r="7" fill="#F8F0F6" stroke="#D3AECB" stroke-width="2"/>
+    <text class="name" x="532" y="655">Policy implementation</text>
+    <text class="desc" x="532" y="677">Good law and national strategy; uneven delivery on the ground.</text>
+    <text class="lever" x="532" y="697">Interrupted by: making the permitted thing happen for one girl.</text>
+  </g>
+
+  <text class="foot" x="56" y="694">Treasured Vessels Girls&#8217; Centre</text>
+</svg>

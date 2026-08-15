@@ -5,6 +5,7 @@ import sponsorshipBody from "@/content/what-responsible-education-sponsorship-sh
 import returnToLearningBody from "@/content/returning-to-learning-after-teenage-pregnancy.md?raw";
 import sixMythsBody from "@/content/six-myths-about-teenage-mothers.md?raw";
 import skillsRoomBody from "@/content/inside-the-skills-room.md?raw";
+import endingChildMarriageBody from "@/content/ending-child-marriage-and-teenage-pregnancy-in-uganda.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -41,6 +42,42 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "ending-child-marriage-and-teenage-pregnancy-in-uganda",
+    title: "Ending Child Marriage and Teenage Pregnancy in Uganda",
+    eyebrow: "Advocacy",
+    date: "15 August 2026",
+    isoDate: "2026-08-15",
+    image: `${import.meta.env.BASE_URL}images/gallery/tvgc-women-and-young-mothers-group.jpg`,
+    imageAlt:
+      "Women and young mothers of Treasured Vessels Girls' Centre standing together outside the centre in Jinja, Uganda",
+    excerpt:
+      "Three figures get quoted as though they describe the same girls. They do not. What Uganda's numbers actually measure, what the law requires, why it keeps happening, and what a serious response in Busoga looks like.",
+    metaDescription:
+      "Child marriage and teenage pregnancy in Uganda: what the statistics really measure, what the law says, the six drivers behind them, and a prevention framework.",
+    seoTitle:
+      "Ending Child Marriage and Teenage Pregnancy in Uganda | Treasured Vessels",
+    keywords: [
+      "child marriage Uganda statistics",
+      "teenage pregnancy Uganda 2026",
+      "end child marriage Busoga",
+      "legal marriage age Uganda",
+      "adolescent pregnancy Uganda data",
+    ],
+    readingMinutes: 22,
+    articleSection: "Advocacy",
+    subject: "Child marriage and adolescent pregnancy",
+    place: "Busoga sub-region, Uganda",
+    citations: [
+      "https://www.ubos.org/wp-content/uploads/publications/UDHS-2022-Report.pdf",
+      "https://www.unicef.org/uganda/reports/national-strategy-end-child-marriage-and-teenage-pregnancy-20222023-20262027",
+      "https://www.girlsnotbrides.org/en/learning-resources/child-marriage-atlas/regions-and-countries/uganda/",
+      "https://www.law.berkeley.edu/wp-content/uploads/2015/10/Uganda_Penal-Code-Amendment-Act_2007.pdf",
+      "https://www.unicef.org/uganda/topics/teenage-pregnancy",
+      "https://www.worldbank.org/en/country/uganda/publication/educating-girls-a-way-of-ending-child-marriage-and-teenage-pregnancy",
+    ],
+    body: endingChildMarriageBody,
+  },
   {
     slug: "inside-the-skills-room",
     title: "Inside the Skills Room: Learning Tailoring, Baking and Hairdressing",

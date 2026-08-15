@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" role="img"
+     aria-label="A timeline of Uganda's legal and policy framework on child marriage and adolescent pregnancy. 1995: the Constitution sets the minimum marriage age at eighteen and requires free consent. 2007: the Penal Code Amendment Act makes a sexual act with anyone under eighteen the felony of defilement, carrying up to life imprisonment. 2016: the Children Amendment Act defines and criminalises child marriage, including informal unions. 2022 to 2027: the National Strategy to End Child Marriage and Teenage Pregnancy sets a coordinated national response. Alongside these sit revised national guidelines on managing teenage pregnancy in school settings.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .yr   { font-family: Georgia, 'Times New Roman', serif; fill: #552050; font-size: 25px; }
+      .ttl  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #25222B; font-size: 14.5px; }
+      .txt  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13px; }
+      .note { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 13.5px; font-style: italic; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="470" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="62" font-size="31">The law has been in place for years</text>
+  <text class="lead" x="56" y="92">Each step below is already binding. None of them is waiting to be passed.</text>
+
+  <line x1="86" y1="168" x2="914" y2="168" stroke="#E9DCE6" stroke-width="4"/>
+
+  <!-- 1995 -->
+  <circle cx="130" cy="168" r="13" fill="#552050"/>
+  <text class="yr"  x="130" y="146" text-anchor="middle">1995</text>
+  <text class="ttl" x="130" y="208" text-anchor="middle">Constitution</text>
+  <text class="txt" x="130" y="230" text-anchor="middle">Article 31: marriage</text>
+  <text class="txt" x="130" y="248" text-anchor="middle">at 18 or above, with</text>
+  <text class="txt" x="130" y="266" text-anchor="middle">the free consent</text>
+  <text class="txt" x="130" y="284" text-anchor="middle">of both parties.</text>
+
+  <!-- 2007 -->
+  <circle cx="371" cy="168" r="13" fill="#A33895"/>
+  <text class="yr"  x="371" y="146" text-anchor="middle">2007</text>
+  <text class="ttl" x="371" y="208" text-anchor="middle">Penal Code (Amendment) Act</text>
+  <text class="txt" x="371" y="230" text-anchor="middle">A sexual act with anyone</text>
+  <text class="txt" x="371" y="248" text-anchor="middle">under 18 is defilement,</text>
+  <text class="txt" x="371" y="266" text-anchor="middle">carrying up to life</text>
+  <text class="txt" x="371" y="284" text-anchor="middle">imprisonment.</text>
+
+  <!-- 2016 -->
+  <circle cx="629" cy="168" r="13" fill="#E43F8C"/>
+  <text class="yr"  x="629" y="146" text-anchor="middle">2016</text>
+  <text class="ttl" x="629" y="208" text-anchor="middle">Children (Amendment) Act</text>
+  <text class="txt" x="629" y="230" text-anchor="middle">Child marriage defined</text>
+  <text class="txt" x="629" y="248" text-anchor="middle">and criminalised &#8212;</text>
+  <text class="txt" x="629" y="266" text-anchor="middle">including informal,</text>
+  <text class="txt" x="629" y="284" text-anchor="middle">unregistered unions.</text>
+
+  <!-- 2022-27 -->
+  <circle cx="870" cy="168" r="13" fill="#3DAAE1"/>
+  <text class="yr"  x="870" y="146" text-anchor="middle">2022&#8211;27</text>
+  <text class="ttl" x="870" y="208" text-anchor="middle">National Strategy</text>
+  <text class="txt" x="870" y="230" text-anchor="middle">Coordinated response</text>
+  <text class="txt" x="870" y="248" text-anchor="middle">across law, education,</text>
+  <text class="txt" x="870" y="266" text-anchor="middle">health, community</text>
+  <text class="txt" x="870" y="284" text-anchor="middle">and economics.</text>
+
+  <rect x="56" y="330" width="888" height="76" rx="16" fill="#F7EDF4" stroke="#E9DCE6" stroke-width="2"/>
+  <text class="note" x="84" y="362">Alongside these sit revised national guidelines on preventing and managing teenage</text>
+  <text class="note" x="84" y="386">pregnancy in schools. The gap has never been the law. It is delivery, girl by girl.</text>
+
+  <text class="foot" x="944" y="440" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>

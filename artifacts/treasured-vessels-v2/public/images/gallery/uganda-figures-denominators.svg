@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" width="1000" height="660" role="img"
+     aria-label="Three commonly quoted Ugandan figures and what each one actually measures. Around 24 per cent of girls aged 15 to 19 have begun childbearing, from the Uganda Demographic and Health Survey 2022. Around 34 to 35 per cent of women aged 20 to 24 were married before their eighteenth birthday, from UNICEF and Girls Not Brides. Around one third of adolescent mothers return to school after childbirth, from UNICEF Uganda. The three figures describe different populations and cannot be added together or compared directly.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .big  { font-family: Georgia, 'Times New Roman', serif; font-size: 46px; }
+      .lab  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #25222B; font-size: 16px; }
+      .den  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 14px; }
+      .cap  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+      .tag  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 12.5px; letter-spacing: 1.2px; }
+      .warn { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 15px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="660" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="66" font-size="33">Three figures, three different populations</text>
+  <text class="lead" x="56" y="97">These numbers are often quoted side by side. They do not describe the same girls.</text>
+  <line x1="56" y1="122" x2="944" y2="122" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- Card 1 -->
+  <rect x="56" y="152" width="280" height="290" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="152" width="280" height="6" rx="3" fill="#A33895"/>
+  <text class="tag" x="80" y="188">ADOLESCENT CHILDBEARING</text>
+  <text class="big" x="80" y="248" fill="#A33895">~24%</text>
+  <text class="lab" x="80" y="284">have begun childbearing</text>
+  <line x1="80" y1="300" x2="312" y2="300" stroke="#EFE6EC" stroke-width="1.5"/>
+  <text class="den" x="80" y="326" font-weight="700">Denominator</text>
+  <text class="den" x="80" y="348">All girls aged 15–19</text>
+  <text class="den" x="80" y="370">in Uganda</text>
+  <text class="cap" x="80" y="400">Counts girls already mothers</text>
+  <text class="cap" x="80" y="418">or pregnant with a first child.</text>
+  <text class="cap" x="80" y="436">Source: UDHS 2022 (UBOS)</text>
+
+  <!-- Card 2 -->
+  <rect x="360" y="152" width="280" height="290" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="360" y="152" width="280" height="6" rx="3" fill="#E43F8C"/>
+  <text class="tag" x="384" y="188" fill="#E43F8C">CHILD MARRIAGE</text>
+  <text class="big" x="384" y="248" fill="#E43F8C">~34%</text>
+  <text class="lab" x="384" y="284">married before age 18</text>
+  <line x1="384" y1="300" x2="616" y2="300" stroke="#EFE6EC" stroke-width="1.5"/>
+  <text class="den" x="384" y="326" font-weight="700">Denominator</text>
+  <text class="den" x="384" y="348">Women aged 20–24,</text>
+  <text class="den" x="384" y="370">looking back</text>
+  <text class="cap" x="384" y="400">A completed history, not a</text>
+  <text class="cap" x="384" y="418">current rate. Includes informal unions.</text>
+  <text class="cap" x="384" y="436">Source: UNICEF / Girls Not Brides</text>
+
+  <!-- Card 3 -->
+  <rect x="664" y="152" width="280" height="290" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="664" y="152" width="280" height="6" rx="3" fill="#3DAAE1"/>
+  <text class="tag" x="688" y="188" fill="#3DAAE1">RETURN TO SCHOOL</text>
+  <text class="big" x="688" y="248" fill="#3DAAE1">~1 in 3</text>
+  <text class="lab" x="688" y="284">return after childbirth</text>
+  <line x1="688" y1="300" x2="920" y2="300" stroke="#EFE6EC" stroke-width="1.5"/>
+  <text class="den" x="688" y="326" font-weight="700">Denominator</text>
+  <text class="den" x="688" y="348">Adolescent mothers,</text>
+  <text class="den" x="688" y="370">not all girls</text>
+  <text class="cap" x="688" y="400">A much smaller group than the</text>
+  <text class="cap" x="688" y="418">other two, and a different question.</text>
+  <text class="cap" x="688" y="436">Source: UNICEF Uganda</text>
+
+  <!-- Warning band -->
+  <rect x="56" y="474" width="888" height="112" rx="16" fill="#F7EDF4" stroke="#E9DCE6" stroke-width="2"/>
+  <text class="tag" x="84" y="508">WHY THIS MATTERS</text>
+  <text class="warn" x="84" y="536">These three percentages cannot be added, subtracted or compared with one another.</text>
+  <text class="warn" x="84" y="560">A girl can appear in one, two or none of them. Quoting them together as though they</text>
+  <text class="warn" x="84" y="562" opacity="0"> </text>
+  <text class="warn" x="84" y="584">describe a single group overstates the problem and obscures what would actually help.</text>
+
+  <text class="foot" x="944" y="628" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>
