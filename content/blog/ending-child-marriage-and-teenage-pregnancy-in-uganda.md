@@ -450,10 +450,20 @@ Keeping girls in school. The evidence on this is unusually consistent: girls who
 | teenage mother support | `/programs/teenage-mother-support` |
 | contact us | `/contact` |
 
-## Outstanding
+## Downloadable asset
 
-- The brief's CTA names a **downloadable community action checklist**. The checklist is published
-  in full on the page and is printable as-is; a separate downloadable file has not been produced.
+The brief's CTA names a **downloadable community action checklist**. It is produced and linked
+from the article:
+
+- **File:** `/downloads/tvgc-community-action-checklist.pdf` — two A4 pages, ~104 kB
+- **Source:** `content/downloads/community-action-checklist.html`
+- **Rebuild:** `node scripts/build-checklist-pdf.mjs`
+
+Page 1 is the checklist by role, with tick boxes. Page 2 carries the Uganda Child Helpline
+number, an explicit "never" list, and the four legal points in brief. Designed to photocopy in
+black and white; nothing depends on colour. Marked as free to copy and share.
+
+## Outstanding
 - Day Nine's brief requires review by a Ugandan lawyer or qualified child-protection partner
   before publication. The legal section here is deliberately conservative and flagged as general
   information, but the same review would strengthen it.

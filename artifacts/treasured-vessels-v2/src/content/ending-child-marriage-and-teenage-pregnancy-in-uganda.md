@@ -315,6 +315,8 @@ If you are a head teacher, a church or mosque leader, a health worker, a local o
 
 None of that requires a budget. Nearly all of it requires someone to go first.
 
+**[Download the checklist as a printable PDF →](/downloads/tvgc-community-action-checklist.pdf)** — two A4 pages, designed to photocopy in black and white. The second page carries the Uganda Child Helpline number, what never to do, and the four things the law already says. Print it for a staff room, a vestry or a health centre noticeboard. It may be freely copied.
+
 ---
 
 ## Where we fit
