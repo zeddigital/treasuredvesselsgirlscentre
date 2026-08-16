@@ -7,6 +7,7 @@ import sixMythsBody from "@/content/six-myths-about-teenage-mothers.md?raw";
 import skillsRoomBody from "@/content/inside-the-skills-room.md?raw";
 import endingChildMarriageBody from "@/content/ending-child-marriage-and-teenage-pregnancy-in-uganda.md?raw";
 import childMarriageLawBody from "@/content/what-ugandan-law-says-about-child-marriage.md?raw";
+import oneThousandADayBody from "@/content/one-thousand-teenage-pregnancies-a-day.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -43,6 +44,41 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "one-thousand-teenage-pregnancies-a-day",
+    title: "What \u2018One Thousand Teenage Pregnancies a Day\u2019 Really Means",
+    eyebrow: "Advocacy",
+    date: "17 August 2026",
+    isoDate: "2026-08-17",
+    image: `${import.meta.env.BASE_URL}images/gallery/tvgc-women-and-young-mothers-group.jpg`,
+    imageAlt:
+      "Women and young mothers of Treasured Vessels Girls' Centre standing together outside the centre in Jinja, Uganda",
+    excerpt:
+      "It is a real figure from a credible source, and it is almost always shared without one. Where it comes from, the three things it is not, and the four investments that change the outcome behind it.",
+    metaDescription:
+      "UNICEF Uganda reports around 1,000 teenage pregnancies a day. Where the figure comes from, what it does and does not measure, and four things that change it.",
+    seoTitle:
+      "What \u2018One Thousand Teenage Pregnancies a Day\u2019 Really Means | Treasured Vessels",
+    keywords: [
+      "1,000 teenage pregnancies Uganda",
+      "adolescent pregnancy statistics Uganda",
+      "teenage pregnancy solutions",
+      "UNICEF Uganda teenage pregnancy figure",
+      "teenage pregnancy rate Uganda",
+    ],
+    readingMinutes: 9,
+    articleSection: "Advocacy",
+    subject: "Adolescent pregnancy statistics",
+    place: "Uganda",
+    citations: [
+      "https://www.unicef.org/uganda/blog/teenage-pregnancy-should-not-end-girls-education",
+      "https://www.unicef.org/uganda/topics/teenage-pregnancy",
+      "https://www.ubos.org/wp-content/uploads/publications/UDHS-2022-Report.pdf",
+      "https://mglsd.go.ug/uganda-child-helpline-116-2/",
+      "https://www.worldbank.org/en/country/uganda/publication/educating-girls-a-way-of-ending-child-marriage-and-teenage-pregnancy",
+    ],
+    body: oneThousandADayBody,
+  },
   {
     slug: "what-ugandan-law-says-about-child-marriage",
     title: "What Ugandan Law Says About Child Marriage",

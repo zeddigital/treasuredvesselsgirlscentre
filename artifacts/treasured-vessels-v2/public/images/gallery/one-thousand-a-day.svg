@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620" role="img"
+     aria-label="A source-labelled graphic explaining the figure of one thousand teenage pregnancies a day in Uganda. The figure comes from UNICEF Uganda, which reports that approximately 24 per cent of girls aged 10 to 19 have experienced pregnancy, translating to around one thousand teenage pregnancies each day. Three cautions: it is an average derived from survey prevalence, not a count of reported cases; risk is not identical in every district; and the underlying 24 per cent is a cumulative measure of girls who have ever been pregnant, across the whole ten to nineteen age band.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .huge { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 118px; }
+      .unit { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #F6DCEB; font-size: 22px; font-weight: 700; letter-spacing: 2px; }
+      .from { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #EAD9E6; font-size: 15px; }
+      .src  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #ffffff; font-size: 14px; }
+      .tag  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 12.5px; letter-spacing: 1.2px; }
+      .cn   { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 15px; }
+      .cd   { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13.5px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="620" fill="#FFF8F0"/>
+
+  <!-- The number -->
+  <rect x="56" y="48" width="888" height="230" rx="22" fill="#552050"/>
+  <text class="huge" x="96" y="168">1,000</text>
+  <text class="unit" x="98" y="206">TEENAGE PREGNANCIES A DAY</text>
+  <text class="from" x="98" y="238">in Uganda &#8212; an average, not a daily case count</text>
+
+  <line x1="600" y1="88" x2="600" y2="240" stroke="#7A3C74" stroke-width="2"/>
+  <text class="src" x="632" y="110" font-weight="700">Where it comes from</text>
+  <text class="src" x="632" y="140">Approximately 24% of girls aged</text>
+  <text class="src" x="632" y="162">10&#8211;19 have experienced pregnancy,</text>
+  <text class="src" x="632" y="184">which UNICEF Uganda translates to</text>
+  <text class="src" x="632" y="206">roughly 1,000 each day.</text>
+  <text class="src" x="632" y="238" fill="#C9AEC4">Source: UNICEF Uganda</text>
+
+  <!-- Cautions -->
+  <text class="tag" x="56" y="322">READ IT WITH THESE THREE THINGS IN MIND</text>
+
+  <rect x="56" y="342" width="280" height="176" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <circle cx="86" cy="376" r="13" fill="#A33895"/>
+  <text class="cn" x="86" y="381" text-anchor="middle" fill="#ffffff">1</text>
+  <text class="cn" x="110" y="381">It is an average</text>
+  <text class="cd" x="80" y="414">Derived from survey prevalence,</text>
+  <text class="cd" x="80" y="434">not a tally of cases reported</text>
+  <text class="cd" x="80" y="454">yesterday. Nobody counted</text>
+  <text class="cd" x="80" y="474">1,000 girls on any given day.</text>
+
+  <rect x="360" y="342" width="280" height="176" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <circle cx="390" cy="376" r="13" fill="#E43F8C"/>
+  <text class="cn" x="390" y="381" text-anchor="middle" fill="#ffffff">2</text>
+  <text class="cn" x="414" y="381">Risk is not even</text>
+  <text class="cd" x="384" y="414">A national average hides wide</text>
+  <text class="cd" x="384" y="434">district variation. Busoga has</text>
+  <text class="cd" x="384" y="454">repeatedly reported among the</text>
+  <text class="cd" x="384" y="474">highest rates in the country.</text>
+
+  <rect x="664" y="342" width="280" height="176" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <circle cx="694" cy="376" r="13" fill="#3DAAE1"/>
+  <text class="cn" x="694" y="381" text-anchor="middle" fill="#ffffff">3</text>
+  <text class="cn" x="718" y="381">24% is cumulative</text>
+  <text class="cd" x="688" y="414">It counts girls who have</text>
+  <text class="cd" x="688" y="434"><tspan font-style="italic">ever</tspan> been pregnant across the</text>
+  <text class="cd" x="688" y="454">whole 10&#8211;19 band &#8212; not the</text>
+  <text class="cd" x="688" y="474">share pregnant right now.</text>
+
+  <text class="foot" x="56" y="562">Every one of them is a girl who may need health care, safety, an education and support &#8212; today.</text>
+  <text class="foot" x="944" y="592" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>

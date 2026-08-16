@@ -38,9 +38,12 @@
 | ~1 in 3 return to school | Adolescent mothers only | UNICEF Uganda |
 
 **Note on the brief.** The brief specified "approximately 24% of girls aged 10–19 have experienced
-pregnancy". That exact figure could not be independently verified, and 10–19 is a different
-denominator from the UBOS 15–19 series. The article uses the verifiable UDHS 2022 figure and
-explains the denominator problem directly — which is the article's central argument.
+pregnancy". At the time of writing this article that figure could not be independently verified,
+and 10–19 is a different denominator from the UBOS 15–19 series, so the article uses the
+verifiable UDHS 2022 figure and explains the denominator problem directly — which is its central
+argument. **Since verified:** UNICEF Uganda states the 10–19 figure in *Teenage pregnancy should
+not end a girl's education*, and Day Ten cites it and sets the two series side by side. Nothing
+in this article needs to change as a result.
 
 ### Deliberately not claimed
 

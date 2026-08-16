@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img"
+     aria-label="Four investments that change the outcome behind the statistic. First, keep girls learning: cost is the leading reason a girl leaves school, and fifty dollars covers a term. Second, adolescent-friendly health referral: one service she can reach without her family knowing, at a time she is not in class. Third, protection from coercion and violence: ask who the father is and how old he is, and keep a reporting route that works. Fourth, reintegration for young mothers: childcare, materials and follow-up for at least two terms, since only about one in three returns to school.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .n    { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 30px; }
+      .t    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 18px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 14px; }
+      .k    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 13.5px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="560" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="62" font-size="31">Four investments that change the outcome</text>
+  <text class="lead" x="56" y="92">Scale is the easy part to share. This is the part that alters it.</text>
+  <line x1="56" y1="116" x2="944" y2="116" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- 1 -->
+  <rect x="56" y="146" width="430" height="164" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="146" width="430" height="6" rx="3" fill="#A33895"/>
+  <circle cx="94" cy="190" r="20" fill="#A33895"/><text class="n" x="94" y="200" text-anchor="middle">1</text>
+  <text class="t" x="128" y="196">Keep girls learning</text>
+  <text class="d" x="82" y="234">Cost, not pregnancy, is the leading reason a girl</text>
+  <text class="d" x="82" y="254">leaves school &#8212; and a girl who stays marries later</text>
+  <text class="d" x="82" y="274">and has children later.</text>
+  <text class="k" x="82" y="298">$50 covers a full term.</text>
+
+  <!-- 2 -->
+  <rect x="514" y="146" width="430" height="164" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="146" width="430" height="6" rx="3" fill="#E43F8C"/>
+  <circle cx="552" cy="190" r="20" fill="#E43F8C"/><text class="n" x="552" y="200" text-anchor="middle">2</text>
+  <text class="t" x="586" y="196">Health she can actually reach</text>
+  <text class="d" x="540" y="234">One adolescent-friendly service, open at a time she</text>
+  <text class="d" x="540" y="254">is not in class, staffed by someone who will not</text>
+  <text class="d" x="540" y="274">lecture her or tell her family.</text>
+  <text class="k" x="540" y="298">Confidentiality, said out loud.</text>
+
+  <!-- 3 -->
+  <rect x="56" y="330" width="430" height="164" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="330" width="430" height="6" rx="3" fill="#3DAAE1"/>
+  <circle cx="94" cy="374" r="20" fill="#3DAAE1"/><text class="n" x="94" y="384" text-anchor="middle">3</text>
+  <text class="t" x="128" y="380">Protection from coercion</text>
+  <text class="d" x="82" y="418">Ask who the father is and how old he is. A sexual</text>
+  <text class="d" x="82" y="438">act with anyone under 18 is defilement, and some</text>
+  <text class="d" x="82" y="458">of these girls are crime victims.</text>
+  <text class="k" x="82" y="482">A reporting route that works.</text>
+
+  <!-- 4 -->
+  <rect x="514" y="330" width="430" height="164" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="330" width="430" height="6" rx="3" fill="#F1B74B"/>
+  <circle cx="552" cy="374" r="20" fill="#F1B74B"/><text class="n" x="552" y="384" text-anchor="middle">4</text>
+  <text class="t" x="586" y="380">Reintegration that lasts</text>
+  <text class="d" x="540" y="418">Only about one in three adolescent mothers returns</text>
+  <text class="d" x="540" y="438">to school. Childcare, materials and follow-up for at</text>
+  <text class="d" x="540" y="458">least two terms is what changes that.</text>
+  <text class="k" x="540" y="482">Longer than one term.</text>
+
+  <text class="foot" x="944" y="534" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>
