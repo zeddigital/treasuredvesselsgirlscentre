@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img"
+     aria-label="A rights card summarising the position of anyone under eighteen in Uganda. She cannot lawfully be married, whether the union is formal or informal. She cannot in law consent to a sexual act, so an offence has been committed against her, not by her. Her agreement does not remove anyone's duty to protect her. She may return to school after childbirth under national guidelines. And she can call the Uganda Child Helpline on 116, free on any network, at any hour.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #EAD9E6; font-size: 16px; }
+      .item { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #ffffff; font-size: 17px; }
+      .sub  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #EAD9E6; font-size: 14px; }
+      .call { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 17px; }
+      .num  { font-family: Georgia, 'Times New Roman', serif; fill: #552050; font-size: 40px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #C9AEC4; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="520" fill="#552050"/>
+  <rect x="0" y="0" width="1000" height="8" fill="#E43F8C"/>
+
+  <text class="h" x="56" y="72" font-size="32">If you are under 18 in Uganda</text>
+  <text class="lead" x="56" y="102">Five things that are true whatever anyone tells you.</text>
+  <line x1="56" y1="126" x2="640" y2="126" stroke="#7A3C74" stroke-width="2"/>
+
+  <circle cx="70" cy="166" r="6" fill="#E43F8C"/>
+  <text class="item" x="92" y="172">You cannot lawfully be married.</text>
+  <text class="sub"  x="92" y="194">Formal or informal, ceremony or none. Constitution, Article 31.</text>
+
+  <circle cx="70" cy="232" r="6" fill="#E43F8C"/>
+  <text class="item" x="92" y="238">You cannot in law consent to a sexual act.</text>
+  <text class="sub"  x="92" y="260">If it happened, an offence was committed against you &#8212; not by you.</text>
+
+  <circle cx="70" cy="298" r="6" fill="#E43F8C"/>
+  <text class="item" x="92" y="304">Agreeing does not remove your protection.</text>
+  <text class="sub"  x="92" y="326">Nobody&#8217;s duty to protect you depends on what you said or did.</text>
+
+  <circle cx="70" cy="364" r="6" fill="#E43F8C"/>
+  <text class="item" x="92" y="370">You may return to school after a birth.</text>
+  <text class="sub"  x="92" y="392">National guidelines say so. Being a mother does not end your education.</text>
+
+  <circle cx="70" cy="430" r="6" fill="#E43F8C"/>
+  <text class="item" x="92" y="436">You can ask for help without your family knowing.</text>
+  <text class="sub"  x="92" y="458">You do not need money, a phone plan or anyone&#8217;s permission to call.</text>
+
+  <rect x="680" y="150" width="264" height="230" rx="20" fill="#FFF8F0"/>
+  <text class="call" x="812" y="196" text-anchor="middle">Uganda Child Helpline</text>
+  <text class="num"  x="812" y="262" text-anchor="middle">116</text>
+  <text class="call" x="812" y="298" text-anchor="middle" font-size="15">Free on any network</text>
+  <text class="call" x="812" y="322" text-anchor="middle" font-size="15">24 hours, every day</text>
+  <text x="812" y="352" text-anchor="middle" font-size="13" fill="#6b6672" font-family="Inter, Arial, sans-serif">Ministry of Gender, Labour</text>
+  <text x="812" y="370" text-anchor="middle" font-size="13" fill="#6b6672" font-family="Inter, Arial, sans-serif">and Social Development</text>
+
+  <text class="foot" x="680" y="424">Treasured Vessels Girls&#8217; Centre, Jinja</text>
+  <text class="foot" x="680" y="444">+256 756 233 041 &#183; +256 774 427 101</text>
+  <text class="foot" x="680" y="472">General information, not legal advice.</text>
+
+  <text class="foot" x="56" y="500">treasuredvesselsuganda.org</text>
+</svg>

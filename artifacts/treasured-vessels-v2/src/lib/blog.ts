@@ -6,6 +6,7 @@ import returnToLearningBody from "@/content/returning-to-learning-after-teenage-
 import sixMythsBody from "@/content/six-myths-about-teenage-mothers.md?raw";
 import skillsRoomBody from "@/content/inside-the-skills-room.md?raw";
 import endingChildMarriageBody from "@/content/ending-child-marriage-and-teenage-pregnancy-in-uganda.md?raw";
+import childMarriageLawBody from "@/content/what-ugandan-law-says-about-child-marriage.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -42,6 +43,40 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "what-ugandan-law-says-about-child-marriage",
+    title: "What Ugandan Law Says About Child Marriage",
+    eyebrow: "Advocacy",
+    date: "16 August 2026",
+    isoDate: "2026-08-16",
+    image: `${import.meta.env.BASE_URL}images/gallery/community-outreach-session.jpg`,
+    imageAlt:
+      "A community session in progress at Treasured Vessels Girls' Centre in Jinja, Uganda",
+    excerpt:
+      "The law is clearer than most people think, and that clarity helps nobody who has not heard it. What it says, the four things people get wrong, and what to do if you suspect a child is about to be married.",
+    metaDescription:
+      "Uganda's child marriage law in plain language: the minimum age, informal unions, defilement, and what to do if you suspect a child marriage. General information.",
+    seoTitle: "What Ugandan Law Says About Child Marriage | Treasured Vessels",
+    keywords: [
+      "child marriage law Uganda",
+      "legal marriage age Uganda",
+      "report forced marriage Uganda",
+      "Uganda Child Helpline 116",
+      "Children Amendment Act child marriage",
+    ],
+    readingMinutes: 12,
+    articleSection: "Advocacy",
+    subject: "Child marriage law",
+    place: "Uganda",
+    citations: [
+      "https://juruga.org/constitution/article/31/rights-of-the-family",
+      "https://www.law.berkeley.edu/wp-content/uploads/2015/10/Uganda_Penal-Code-Amendment-Act_2007.pdf",
+      "https://mglsd.go.ug/uganda-child-helpline-116-2/",
+      "https://www.unicef.org/uganda/stories/sauti-116-bolsters-government-response-violence-and-abuse-homes-and-communities-uganda",
+      "https://www.girlsnotbrides.org/en/learning-resources/child-marriage-atlas/regions-and-countries/uganda/",
+    ],
+    body: childMarriageLawBody,
+  },
   {
     slug: "ending-child-marriage-and-teenage-pregnancy-in-uganda",
     title: "Ending Child Marriage and Teenage Pregnancy in Uganda",
