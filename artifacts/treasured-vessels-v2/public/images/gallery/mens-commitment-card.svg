@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" role="img"
+     aria-label="A commitment card template for men and boys attending an accountability session. Six commitments, each with a tick box: I will not arrange or bless a marriage involving anyone under eighteen. I will pay school fees before discretionary spending. I will do a named share of the care work at home. I will not repeat talk that shames a girl, and I will ask about the man. I will accompany a referral without taking over the decision. I will buy from women-led businesses at a fair price. Below, three lines to be completed: one thing I will do this month, who will ask me about it, and by when. Signed and dated, with a note that the card is a promise to a household, not to the centre.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 15px; }
+      .c    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 15px; }
+      .tag  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 12px; letter-spacing: 1.2px; }
+      .fl   { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 13px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12px; }
+    </style>
+  </defs>
+  <rect width="1000" height="640" fill="#FFF8F0"/>
+  <rect x="40" y="32" width="920" height="576" rx="20" fill="#ffffff" stroke="#552050" stroke-width="3"/>
+
+  <text class="h" x="72" y="86" font-size="27">My commitment</text>
+  <text class="lead" x="72" y="112">Accountability session &#183; Treasured Vessels Girls&#8217; Centre, Jinja</text>
+  <line x1="72" y1="132" x2="928" y2="132" stroke="#E9DCE6" stroke-width="2"/>
+
+  <rect x="72" y="158" width="20" height="20" rx="4" fill="none" stroke="#A33895" stroke-width="2"/>
+  <text class="c" x="106" y="174">I will not arrange, attend or bless a marriage involving anyone under 18.</text>
+
+  <rect x="72" y="200" width="20" height="20" rx="4" fill="none" stroke="#A33895" stroke-width="2"/>
+  <text class="c" x="106" y="216">I will pay school fees before discretionary spending.</text>
+
+  <rect x="72" y="242" width="20" height="20" rx="4" fill="none" stroke="#A33895" stroke-width="2"/>
+  <text class="c" x="106" y="258">I will do a named share of the care work at home &#8212; not &#8220;help&#8221;.</text>
+
+  <rect x="72" y="284" width="20" height="20" rx="4" fill="none" stroke="#A33895" stroke-width="2"/>
+  <text class="c" x="106" y="300">I will not repeat talk that shames a girl, and I will ask about the man.</text>
+
+  <rect x="72" y="326" width="20" height="20" rx="4" fill="none" stroke="#A33895" stroke-width="2"/>
+  <text class="c" x="106" y="342">I will accompany a referral without taking over the decision.</text>
+
+  <rect x="72" y="368" width="20" height="20" rx="4" fill="none" stroke="#A33895" stroke-width="2"/>
+  <text class="c" x="106" y="384">I will buy from women-led businesses, at a fair price.</text>
+
+  <line x1="72" y1="416" x2="928" y2="416" stroke="#E9DCE6" stroke-width="2"/>
+  <text class="tag" x="72" y="442">MAKE IT SPECIFIC &#8212; A PROMISE NOBODY CAN CHECK IS NOT A PROMISE</text>
+
+  <text class="fl" x="72" y="480">One thing I will do this month</text>
+  <line x1="290" y1="484" x2="928" y2="484" stroke="#C9AEC4" stroke-width="1.5"/>
+
+  <text class="fl" x="72" y="518">Who will ask me about it</text>
+  <line x1="290" y1="522" x2="928" y2="522" stroke="#C9AEC4" stroke-width="1.5"/>
+
+  <text class="fl" x="72" y="556">By when</text>
+  <line x1="290" y1="560" x2="560" y2="560" stroke="#C9AEC4" stroke-width="1.5"/>
+  <text class="fl" x="596" y="556">Signed</text>
+  <line x1="660" y1="560" x2="928" y2="560" stroke="#C9AEC4" stroke-width="1.5"/>
+
+  <text class="foot" x="72" y="590">This card is a promise to your household and your community &#8212; not to the centre. Nobody will collect it.</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img"
+     aria-label="Practical roles for men and boys who want to be allies, by relationship. A father shares the care work, pays the fees before anything else, and refuses a marriage offer out loud. A partner treats her income and her decisions as hers. A brother does his share of the housework and does not repeat what is said about a girl at school. A male teacher states the school's re-entry position and never identifies a returning mother. A faith leader says from the front that shame belongs to no girl, and asks about the responsibility of adult men. A local official makes the by-laws known and ensures one person owns a case. The test in every case is whether a girl is safer, freer and more able to choose.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .who  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #ffffff; font-size: 15px; }
+      .act  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 14px; }
+      .tag  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 12.5px; letter-spacing: 1.2px; }
+      .test { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 15.5px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+  </defs>
+  <rect width="1000" height="700" fill="#FFF8F0"/>
+  <text class="h" x="56" y="62" font-size="32">What an ally actually does</text>
+  <text class="lead" x="56" y="92">Not a statement of support. A change in conduct, by relationship.</text>
+  <line x1="56" y1="116" x2="944" y2="116" stroke="#E9DCE6" stroke-width="2"/>
+
+  <rect x="56" y="146" width="180" height="34" rx="17" fill="#552050"/>
+  <text class="who" x="146" y="169" text-anchor="middle">A FATHER</text>
+  <text class="act" x="256" y="160">Shares the care work rather than supervising it. Pays her fees</text>
+  <text class="act" x="256" y="180">before the discretionary spending. Refuses a marriage offer out loud.</text>
+
+  <rect x="56" y="212" width="180" height="34" rx="17" fill="#7A3C74"/>
+  <text class="who" x="146" y="235" text-anchor="middle">A PARTNER</text>
+  <text class="act" x="256" y="226">Treats her income as hers and her decisions as hers. Does not</text>
+  <text class="act" x="256" y="246">require an account of where she has been.</text>
+
+  <rect x="56" y="278" width="180" height="34" rx="17" fill="#A33895"/>
+  <text class="who" x="146" y="301" text-anchor="middle">A BROTHER</text>
+  <text class="act" x="256" y="292">Does his share of the housework, so her study time is not the</text>
+  <text class="act" x="256" y="312">household&#8217;s spare capacity. Does not repeat what is said about a girl.</text>
+
+  <rect x="56" y="344" width="180" height="34" rx="17" fill="#C24CA3"/>
+  <text class="who" x="146" y="367" text-anchor="middle">A TEACHER</text>
+  <text class="act" x="256" y="358">States the school&#8217;s re-entry position before anyone asks. Never</text>
+  <text class="act" x="256" y="378">identifies a returning mother. Treats clinic visits as legitimate.</text>
+
+  <rect x="56" y="410" width="180" height="34" rx="17" fill="#E43F8C"/>
+  <text class="who" x="146" y="433" text-anchor="middle">A FAITH LEADER</text>
+  <text class="act" x="256" y="424">Says from the front that shame belongs to no girl. Asks openly</text>
+  <text class="act" x="256" y="444">about the responsibility of adult men. Will not bless an under-age union.</text>
+
+  <rect x="56" y="476" width="180" height="34" rx="17" fill="#3DAAE1"/>
+  <text class="who" x="146" y="499" text-anchor="middle">AN OFFICIAL</text>
+  <text class="act" x="256" y="490">Makes the by-laws known in a form people read. Ensures one person</text>
+  <text class="act" x="256" y="510">owns a case from referral to resolution.</text>
+
+  <rect x="56" y="556" width="888" height="94" rx="16" fill="#F7EDF4" stroke="#E9DCE6" stroke-width="2"/>
+  <text class="tag" x="84" y="588">THE TEST, IN EVERY CASE</text>
+  <text class="test" x="84" y="618">Is she safer, freer, and more able to choose her own future than she was before?</text>
+  <text class="test" x="84" y="640" fill="#6b6672" font-size="14">If the honest answer is no, it was not allyship. It was a new person deciding for her.</text>
+
+  <text class="foot" x="944" y="686" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>

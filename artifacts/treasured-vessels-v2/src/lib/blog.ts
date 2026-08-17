@@ -8,6 +8,7 @@ import skillsRoomBody from "@/content/inside-the-skills-room.md?raw";
 import endingChildMarriageBody from "@/content/ending-child-marriage-and-teenage-pregnancy-in-uganda.md?raw";
 import childMarriageLawBody from "@/content/what-ugandan-law-says-about-child-marriage.md?raw";
 import oneThousandADayBody from "@/content/one-thousand-teenage-pregnancies-a-day.md?raw";
+import maleAlliesBody from "@/content/fathers-men-and-boys-as-allies.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -44,6 +45,40 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "fathers-men-and-boys-as-allies",
+    title: "Fathers, Men and Boys as Allies for Girls' Futures",
+    eyebrow: "Community",
+    date: "18 August 2026",
+    isoDate: "2026-08-18",
+    image: `${import.meta.env.BASE_URL}images/gallery/community-outreach-session.jpg`,
+    imageAlt:
+      "A facilitated community session in progress at Treasured Vessels Girls' Centre in Jinja, Uganda",
+    excerpt:
+      "Speeches are made, photographs are taken, and nothing in any household changes. What allyship looks like when it is real \u2014 and the four ways \u201cmale involvement\u201d makes a girl\u2019s situation worse.",
+    metaDescription:
+      "Practical roles for fathers, brothers, teachers and faith leaders in ending child marriage in Uganda \u2014 and how male involvement goes wrong.",
+    seoTitle:
+      "Fathers, Men and Boys as Allies for Girls' Futures | Treasured Vessels",
+    keywords: [
+      "men ending child marriage Uganda",
+      "fathers support girls education",
+      "male allies against GBV",
+      "engaging men and boys Uganda",
+      "male involvement girls rights Jinja",
+    ],
+    readingMinutes: 10,
+    articleSection: "Community",
+    subject: "Engaging men and boys",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://www.unicef.org/uganda/reports/national-strategy-end-child-marriage-and-teenage-pregnancy-20222023-20262027",
+      "https://www.law.berkeley.edu/wp-content/uploads/2015/10/Uganda_Penal-Code-Amendment-Act_2007.pdf",
+      "https://juruga.org/constitution/article/31/rights-of-the-family",
+      "https://mglsd.go.ug/uganda-child-helpline-116-2/",
+    ],
+    body: maleAlliesBody,
+  },
   {
     slug: "one-thousand-teenage-pregnancies-a-day",
     title: "What \u2018One Thousand Teenage Pregnancies a Day\u2019 Really Means",
