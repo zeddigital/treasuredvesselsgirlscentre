@@ -24,6 +24,37 @@ function slugsWithDates(file: string): Array<{ slug: string; date?: string }> {
   }));
 }
 
+/**
+ * No hero image may front more than this many articles. A blog that reuses the
+ * same photograph across a run of posts reads as though nothing is happening,
+ * and the drift is easy to miss one article at a time — so the build refuses it
+ * rather than leaving it to be noticed later.
+ */
+const MAX_HERO_REUSE = 2;
+
+function assertHeroVariety(file: string): void {
+  const src = fs.readFileSync(file, 'utf8');
+  const entries = [
+    ...src.matchAll(/slug:\s*"([a-z0-9-]+)"[\s\S]*?image:\s*`\$\{import\.meta\.env\.BASE_URL\}([^`]+)`/g),
+  ].map((m) => ({ slug: m[1], image: m[2] }));
+
+  const byImage = new Map<string, string[]>();
+  for (const { slug, image } of entries) {
+    byImage.set(image, [...(byImage.get(image) ?? []), slug]);
+  }
+
+  const overused = [...byImage].filter(([, slugs]) => slugs.length > MAX_HERO_REUSE);
+  if (overused.length) {
+    const detail = overused
+      .map(([image, slugs]) => `    ${image}\n      used by: ${slugs.join(', ')}`)
+      .join('\n');
+    throw new Error(
+      `Hero images may front at most ${MAX_HERO_REUSE} articles. Over the limit:\n${detail}\n` +
+        `  Give one of them a different image from public/images/gallery/.`,
+    );
+  }
+}
+
 function programIds(file: string): string[] {
   const src = fs.readFileSync(file, 'utf8');
   return [...src.matchAll(/id:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]);
@@ -52,6 +83,8 @@ export function sitemap(): Plugin {
 
       const src = path.resolve(import.meta.dirname, 'src');
       const today = new Date().toISOString().slice(0, 10);
+
+      assertHeroVariety(path.join(src, 'lib/blog.ts'));
 
       const entries: Entry[] = [
         { loc: '/', changefreq: 'weekly', priority: '1.0' },

@@ -205,6 +205,23 @@ never AI-looking.
 Authentic photographs outperform generated imagery for both trust and EEAT; use prompts
 only to fill genuine gaps.
 
+### Hero variety
+
+**No photograph may be the hero of more than two articles.** A run of posts fronted by the
+same image reads as though nothing is happening at the centre, and the repetition is easy to
+miss one article at a time.
+
+The build enforces this: `sitemapPlugin.ts` fails with a named list if any hero is used a
+third time. Before assigning a hero, check what is already taken:
+
+```
+grep -o 'images/gallery/[a-z0-9-]*\.jpg' artifacts/treasured-vessels-v2/src/lib/blog.ts | sort | uniq -c
+```
+
+New photographs arrive in `attached_assets/TVGC New Pics/`. Convert them into
+`public/images/gallery/` with descriptive names — never camera-roll numbers — and prefer a
+fresh image over a second use of an existing one.
+
 ## Internal linking
 
 Whenever possible, suggest links to: About Us · Programs · Sponsor a Girl · Donate ·

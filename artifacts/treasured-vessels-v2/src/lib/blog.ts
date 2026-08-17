@@ -85,9 +85,9 @@ export const blogPosts: BlogPost[] = [
     eyebrow: "Advocacy",
     date: "16 August 2026",
     isoDate: "2026-08-16",
-    image: `${import.meta.env.BASE_URL}images/gallery/community-outreach-session.jpg`,
+    image: `${import.meta.env.BASE_URL}images/gallery/programme-briefing-at-the-centre.jpg`,
     imageAlt:
-      "A community session in progress at Treasured Vessels Girls' Centre in Jinja, Uganda",
+      "Treasured Vessels staff briefing visitors on the centre's programmes in Jinja, Uganda",
     excerpt:
       "The law is clearer than most people think, and that clarity helps nobody who has not heard it. What it says, the four things people get wrong, and what to do if you suspect a child is about to be married.",
     metaDescription:
@@ -187,9 +187,9 @@ export const blogPosts: BlogPost[] = [
     eyebrow: "Teenage Mothers",
     date: "13 August 2026",
     isoDate: "2026-08-13",
-    image: `${import.meta.env.BASE_URL}images/gallery/tvgc-women-and-young-mothers-group.jpg`,
+    image: `${import.meta.env.BASE_URL}images/gallery/sewing-machines-full-class.jpg`,
     imageAlt:
-      "Women and young mothers of Treasured Vessels Girls' Centre standing together outside the centre in Jinja, Uganda",
+      "A full sewing class at Treasured Vessels Girls' Centre in Jinja, with young women working at treadle machines",
     excerpt:
       "Around one in four Ugandan girls aged 15 to 19 has begun childbearing. What gets said about them in the classroom and the church decides what happens next — and most of it is wrong.",
     metaDescription:
