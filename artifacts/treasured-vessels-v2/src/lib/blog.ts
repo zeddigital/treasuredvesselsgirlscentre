@@ -9,6 +9,7 @@ import endingChildMarriageBody from "@/content/ending-child-marriage-and-teenage
 import childMarriageLawBody from "@/content/what-ugandan-law-says-about-child-marriage.md?raw";
 import oneThousandADayBody from "@/content/one-thousand-teenage-pregnancies-a-day.md?raw";
 import maleAlliesBody from "@/content/fathers-men-and-boys-as-allies.md?raw";
+import adolescentHealthBody from "@/content/adolescent-friendly-health-services-uganda.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -45,6 +46,42 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "adolescent-friendly-health-services-uganda",
+    title:
+      "Adolescent-Friendly Health Services: Why a Phone Number Is Not a Referral",
+    eyebrow: "Health",
+    date: "19 August 2026",
+    isoDate: "2026-08-19",
+    image: `${import.meta.env.BASE_URL}images/gallery/young-mother-support.jpg`,
+    imageAlt:
+      "A young mother and her baby sitting with a member of staff at Treasured Vessels Girls' Centre in Jinja, Uganda, working through paperwork together",
+    excerpt:
+      "Between a number written on the corner of an exercise book and a health worker who actually examines her, nine separate things have to go right. What adolescent-friendly care really means \u2014 and why we record whether she arrived.",
+    metaDescription:
+      "What adolescent-friendly health care means in practice, why referrals fail between the phone number and the door, and how to close the loop.",
+    seoTitle:
+      "Adolescent-Friendly Health Services in Uganda | Treasured Vessels",
+    keywords: [
+      "adolescent-friendly health services Uganda",
+      "teenage pregnancy health support Jinja",
+      "maternal referral Uganda",
+      "youth friendly health services Uganda",
+      "adolescent health referral pathway",
+    ],
+    readingMinutes: 12,
+    articleSection: "Health",
+    subject: "Adolescent health referral",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://www.who.int/publications/i/item/9789240114012",
+      "https://library.health.go.ug/sexual-and-reproductive-health/adolescent-health/adolescent-health-policy-guidelines-and-service",
+      "https://ntihc.or.ug/about-us/",
+      "https://www.ubos.org/wp-content/uploads/publications/UDHS-2022-Report.pdf",
+      "https://mglsd.go.ug/uganda-child-helpline-116-2/",
+    ],
+    body: adolescentHealthBody,
+  },
   {
     slug: "fathers-men-and-boys-as-allies",
     title: "Fathers, Men and Boys as Allies for Girls' Futures",

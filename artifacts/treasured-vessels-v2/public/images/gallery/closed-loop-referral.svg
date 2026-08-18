@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" role="img"
+     aria-label="A closed-loop referral pathway in five recorded steps. Step one, consent: that she agreed, to what, and on what date. Step two, destination: which facility and which service. Step three, service sought: the category of help, in general terms. Step four, completion: did she get there, and was she seen. Step five, follow-up: what is still outstanding and who is responsible for it. An arrow returns from step five to step one, because the loop only closes when arrival is confirmed and anything outstanding goes back into the plan. A separate panel lists what is deliberately never written down: clinical details, diagnoses, the specifics of an assault, and what she said about her family. Detail of that kind belongs with the statutory services. A file cannot leak what it never held.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .n    { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 19px; }
+      .t    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 15px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 12.5px; }
+      .loop { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 13.5px; }
+      .nt   { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #B3123C; font-size: 14px; letter-spacing: 0.06em; }
+      .nd   { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13.5px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+    <marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 z" fill="#A33895"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="640" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="58" font-size="30">A referral that closes the loop</text>
+  <text class="lead" x="56" y="88">Five lines on a record. The one that matters is the fourth.</text>
+  <line x1="56" y1="112" x2="944" y2="112" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- 1 -->
+  <rect x="56" y="146" width="164" height="152" rx="14" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <circle cx="88" cy="178" r="14" fill="#A33895"/><text class="n" x="88" y="185" text-anchor="middle">1</text>
+  <text class="t" x="112" y="184">Consent</text>
+  <text class="d" x="76" y="220">That she agreed,</text>
+  <text class="d" x="76" y="238">to what, and on</text>
+  <text class="d" x="76" y="256">what date.</text>
+
+  <!-- 2 -->
+  <rect x="237" y="146" width="164" height="152" rx="14" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <circle cx="269" cy="178" r="14" fill="#E43F8C"/><text class="n" x="269" y="185" text-anchor="middle">2</text>
+  <text class="t" x="293" y="184">Destination</text>
+  <text class="d" x="257" y="220">Which facility,</text>
+  <text class="d" x="257" y="238">and which</text>
+  <text class="d" x="257" y="256">service.</text>
+
+  <!-- 3 -->
+  <rect x="418" y="146" width="164" height="152" rx="14" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <circle cx="450" cy="178" r="14" fill="#3DAAE1"/><text class="n" x="450" y="185" text-anchor="middle">3</text>
+  <text class="t" x="474" y="184">Service</text>
+  <text class="d" x="438" y="220">The category of</text>
+  <text class="d" x="438" y="238">help, in general</text>
+  <text class="d" x="438" y="256">terms only.</text>
+
+  <!-- 4 — the one that matters -->
+  <rect x="599" y="146" width="164" height="152" rx="14" fill="#ffffff" stroke="#A33895" stroke-width="3"/>
+  <circle cx="631" cy="178" r="14" fill="#552050"/><text class="n" x="631" y="185" text-anchor="middle">4</text>
+  <text class="t" x="655" y="184">Completion</text>
+  <text class="d" x="619" y="220">Did she get there?</text>
+  <text class="d" x="619" y="238">Was she seen?</text>
+  <text class="loop" x="619" y="266">The whole point.</text>
+
+  <!-- 5 -->
+  <rect x="780" y="146" width="164" height="152" rx="14" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <circle cx="812" cy="178" r="14" fill="#F1B74B"/><text class="n" x="812" y="185" text-anchor="middle">5</text>
+  <text class="t" x="836" y="184">Follow-up</text>
+  <text class="d" x="800" y="220">What is still</text>
+  <text class="d" x="800" y="238">outstanding, and</text>
+  <text class="d" x="800" y="256">who owns it.</text>
+
+  <!-- forward chevrons -->
+  <path d="M225 222 L232 222" stroke="#A33895" stroke-width="2.5" marker-end="url(#arw)"/>
+  <path d="M406 222 L413 222" stroke="#A33895" stroke-width="2.5" marker-end="url(#arw)"/>
+  <path d="M587 222 L594 222" stroke="#A33895" stroke-width="2.5" marker-end="url(#arw)"/>
+  <path d="M768 222 L775 222" stroke="#A33895" stroke-width="2.5" marker-end="url(#arw)"/>
+
+  <!-- return arc -->
+  <path d="M862 298 L862 336 Q862 348 850 348 L150 348 Q138 348 138 336 L138 312"
+        fill="none" stroke="#A33895" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#arw)"/>
+  <rect x="366" y="332" width="268" height="32" rx="16" fill="#FFF8F0"/>
+  <text class="loop" x="500" y="353" text-anchor="middle">Anything outstanding goes back in</text>
+
+  <!-- what is never recorded -->
+  <rect x="56" y="396" width="888" height="152" rx="16" fill="#ffffff" stroke="#B3123C" stroke-width="2"/>
+  <text class="nt" x="82" y="430">WHAT IS NEVER WRITTEN DOWN</text>
+  <text class="nd" x="82" y="462">Clinical details &#183; diagnoses &#183; the specifics of an assault &#183; what she said about her family</text>
+  <text class="nd" x="82" y="490">Detail of that kind belongs with the statutory services &#8212; the health worker conducting the examination, the</text>
+  <text class="nd" x="82" y="510">police Child and Family Protection Unit, the district probation and social welfare officer.</text>
+  <text class="loop" x="82" y="534">A file cannot leak what it never held.</text>
+
+  <text class="foot" x="944" y="606" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="1000" height="760" role="img"
+     aria-label="Eight marks of adolescent-friendly health care, described from the perspective of the young person using the service. One, privacy that is real: a room she cannot be overheard in and a waiting area she is not displayed in. Two, respectful communication: she is spoken to rather than spoken about, and her questions get answered. Three, non-judgement: no lecture about how she got here, which is the commonest reason young people stay away. Four, clear information: what is wrong, what to take, for how long, and what would mean coming back urgently. Five, safeguarding: a girl under eighteen who has been sexually active is a possible crime, not only a clinical presentation. Six, reachability: open at hours she can attend, near enough to travel, at a cost she can meet. Seven, timely maternal care: antenatal care beginning early, a skilled birth attendant, and postnatal follow-up that does not stop at the birth. Eight, the right services in one place: being sent onwards a second time is where most referrals die.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .n    { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 21px; }
+      .t    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 17px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13.5px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="760" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="60" font-size="30">Eight marks of adolescent-friendly care</text>
+  <text class="lead" x="56" y="90">Not the policy language &#8212; what it looks like from where she is standing.</text>
+  <line x1="56" y1="114" x2="944" y2="114" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- 1 -->
+  <rect x="56" y="150" width="430" height="122" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="150" width="430" height="5" rx="2.5" fill="#A33895"/>
+  <circle cx="90" cy="188" r="15" fill="#A33895"/><text class="n" x="90" y="195" text-anchor="middle">1</text>
+  <text class="t" x="118" y="194">Privacy that is real</text>
+  <text class="d" x="80" y="228">A room she cannot be overheard in, and a waiting area</text>
+  <text class="d" x="80" y="248">she is not displayed in.</text>
+
+  <!-- 2 -->
+  <rect x="514" y="150" width="430" height="122" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="150" width="430" height="5" rx="2.5" fill="#E43F8C"/>
+  <circle cx="548" cy="188" r="15" fill="#E43F8C"/><text class="n" x="548" y="195" text-anchor="middle">2</text>
+  <text class="t" x="576" y="194">Respectful communication</text>
+  <text class="d" x="538" y="228">She is spoken to, not spoken about. Her questions get</text>
+  <text class="d" x="538" y="248">answered &#8212; including the naive ones.</text>
+
+  <!-- 3 -->
+  <rect x="56" y="288" width="430" height="122" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="288" width="430" height="5" rx="2.5" fill="#3DAAE1"/>
+  <circle cx="90" cy="326" r="15" fill="#3DAAE1"/><text class="n" x="90" y="333" text-anchor="middle">3</text>
+  <text class="t" x="118" y="332">Non-judgement</text>
+  <text class="d" x="80" y="366">No lecture about how she got here. The commonest</text>
+  <text class="d" x="80" y="386">stated reason young people stay away.</text>
+
+  <!-- 4 -->
+  <rect x="514" y="288" width="430" height="122" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="288" width="430" height="5" rx="2.5" fill="#F1B74B"/>
+  <circle cx="548" cy="326" r="15" fill="#F1B74B"/><text class="n" x="548" y="333" text-anchor="middle">4</text>
+  <text class="t" x="576" y="332">Clear information</text>
+  <text class="d" x="538" y="366">What is wrong, what to take, for how long, and what</text>
+  <text class="d" x="538" y="386">would mean coming back urgently.</text>
+
+  <!-- 5 -->
+  <rect x="56" y="426" width="430" height="122" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="426" width="430" height="5" rx="2.5" fill="#A33895"/>
+  <circle cx="90" cy="464" r="15" fill="#A33895"/><text class="n" x="90" y="471" text-anchor="middle">5</text>
+  <text class="t" x="118" y="470">Safeguarding</text>
+  <text class="d" x="80" y="504">Under 18 and sexually active is a possible crime, not</text>
+  <text class="d" x="80" y="524">only a clinical presentation.</text>
+
+  <!-- 6 -->
+  <rect x="514" y="426" width="430" height="122" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="426" width="430" height="5" rx="2.5" fill="#E43F8C"/>
+  <circle cx="548" cy="464" r="15" fill="#E43F8C"/><text class="n" x="548" y="471" text-anchor="middle">6</text>
+  <text class="t" x="576" y="470">Reachability</text>
+  <text class="d" x="538" y="504">Open when she can come, near enough to travel, at a</text>
+  <text class="d" x="538" y="524">cost she can actually meet.</text>
+
+  <!-- 7 -->
+  <rect x="56" y="564" width="430" height="122" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="564" width="430" height="5" rx="2.5" fill="#3DAAE1"/>
+  <circle cx="90" cy="602" r="15" fill="#3DAAE1"/><text class="n" x="90" y="609" text-anchor="middle">7</text>
+  <text class="t" x="118" y="608">Timely maternal care</text>
+  <text class="d" x="80" y="642">Antenatal care that starts early, a skilled birth attendant,</text>
+  <text class="d" x="80" y="662">and follow-up that does not stop at the birth.</text>
+
+  <!-- 8 -->
+  <rect x="514" y="564" width="430" height="122" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="564" width="430" height="5" rx="2.5" fill="#F1B74B"/>
+  <circle cx="548" cy="602" r="15" fill="#F1B74B"/><text class="n" x="548" y="609" text-anchor="middle">8</text>
+  <text class="t" x="576" y="608">The right services, in one place</text>
+  <text class="d" x="538" y="642">Being sent onwards a second time &#8212; from the place she</text>
+  <text class="d" x="538" y="662">was already sent &#8212; is where most referrals die.</text>
+
+  <text class="foot" x="944" y="726" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>
