@@ -130,6 +130,8 @@ The design is deliberate in two respects. The commitments are **specific enough 
 
 Nobody collects the cards. A promise made to the centre is worth much less than one made to a household.
 
+**[Download the commitment card as a printable PDF →](/downloads/tvgc-mens-commitment-card.pdf)** — two A4 pages. The first holds two identical cards to a sheet, so one photocopy serves two men; the second is a facilitator's sheet with the two-hour run order, the four things to watch for, and the referral numbers. It photocopies in black and white and may be freely copied.
+
 > *"Learn to do good; seek justice, rebuke the oppressor; defend the fatherless, plead for the widow."*
 > — Isaiah 1:17, NKJV
 

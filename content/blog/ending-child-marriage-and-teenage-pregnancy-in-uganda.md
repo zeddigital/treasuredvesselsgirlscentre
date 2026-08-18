@@ -460,7 +460,7 @@ from the article:
 
 - **File:** `/downloads/tvgc-community-action-checklist.pdf` — two A4 pages, ~104 kB
 - **Source:** `content/downloads/community-action-checklist.html`
-- **Rebuild:** `node scripts/build-checklist-pdf.mjs`
+- **Rebuild:** `node scripts/build-pdfs.mjs`
 
 Page 1 is the checklist by role, with tick boxes. Page 2 carries the Uganda Child Helpline
 number, an explicit "never" list, and the four legal points in brief. Designed to photocopy in

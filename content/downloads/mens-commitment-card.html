@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Men's Commitment Card</title>
+<style>
+  /* Page 1 prints two identical cards to be cut apart — half the paper for a
+     session of any size. Page 2 is the facilitator's sheet, printed once.
+     Everything survives a mono photocopier: no meaning depends on colour. */
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #25222B;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm; height: 297mm; padding: 10mm 12mm;
+    position: relative; page-break-after: always; background: #fff;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* ---- the card ---- */
+  .card {
+    border: 1.5pt solid #552050; border-radius: 3mm;
+    padding: 7mm 8mm; height: 131mm; position: relative;
+  }
+  .card h1 {
+    font-family: Georgia, "Times New Roman", serif; color: #552050;
+    font-size: 18pt; margin: 0 0 1mm; font-weight: normal;
+  }
+  .card .sub { font-size: 8.5pt; color: #6b6672; margin: 0 0 4mm; }
+  .rule { border-top: 1pt solid #E9DCE6; margin: 0 0 4mm; }
+
+  ul { list-style: none; margin: 0 0 4mm; padding: 0; }
+  li {
+    display: flex; align-items: flex-start; gap: 3mm;
+    font-size: 9.5pt; line-height: 1.35; margin-bottom: 2.4mm;
+  }
+  .box {
+    flex: 0 0 auto; width: 3.6mm; height: 3.6mm; margin-top: 0.5mm;
+    border: 1.1pt solid #A33895; border-radius: 0.7mm;
+  }
+
+  .tag {
+    font-size: 7.5pt; font-weight: bold; color: #A33895;
+    letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 3mm;
+  }
+  .field { display: flex; align-items: baseline; gap: 3mm; margin-bottom: 3.4mm; font-size: 8.5pt; color: #6b6672; }
+  .field .lab { flex: 0 0 46mm; }
+  .field .line { flex: 1 1 auto; border-bottom: 0.8pt solid #C9AEC4; height: 4.5mm; }
+  .foot { position: absolute; left: 8mm; right: 8mm; bottom: 5mm; font-size: 7pt; color: #6b6672; }
+
+  .cut {
+    border-top: 1pt dashed #C9AEC4; margin: 6mm 0;
+    text-align: center; position: relative;
+  }
+  .cut span {
+    position: absolute; top: -2.2mm; left: 50%; transform: translateX(-50%);
+    background: #fff; padding: 0 3mm; font-size: 7pt; color: #6b6672;
+  }
+
+  /* ---- facilitator page ---- */
+  .fac h1 {
+    font-family: Georgia, "Times New Roman", serif; color: #552050;
+    font-size: 23pt; margin: 0 0 1.5mm; font-weight: normal;
+  }
+  .fac .sub { color: #6b6672; font-size: 9.5pt; margin: 0 0 5mm; }
+  .fac h2 {
+    font-size: 10.5pt; color: #552050; text-transform: uppercase;
+    letter-spacing: 0.06em; margin: 0 0 2.5mm;
+    border-bottom: 1pt solid #E9DCE6; padding-bottom: 1.5mm;
+  }
+  .fac .block { margin-bottom: 5.5mm; }
+  .fac p, .fac li.plain { font-size: 9.5pt; line-height: 1.45; margin: 0 0 2mm; }
+  .run { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+  .run td { padding: 1.6mm 0; vertical-align: top; border-bottom: 0.6pt solid #EFE6EC; }
+  .run td:first-child { width: 18mm; color: #A33895; font-weight: bold; }
+  .warn { border: 1.2pt solid #B3261E; border-radius: 3mm; padding: 4mm 5mm; }
+  .warn h2 { color: #B3261E; border: 0; margin-bottom: 2mm; }
+  .warn li { font-size: 9.5pt; margin-bottom: 1.6mm; }
+  .warn .box { border-color: #B3261E; border-radius: 50%; }
+  .contacts { background: #552050; color: #fff; border-radius: 3mm; padding: 5mm 6mm; }
+  .contacts h2 { color: #fff; border: 0; margin-bottom: 2.5mm; }
+  .contacts p { font-size: 9.5pt; line-height: 1.55; margin: 0; }
+  .contacts .big { font-family: Georgia, serif; font-size: 20pt; }
+</style>
+</head>
+<body>
+
+<!-- ---------------------------------------------- page 1: two cards -->
+<div class="page">
+  <div class="card">
+    <h1>My commitment</h1>
+    <p class="sub">Accountability session &middot; Treasured Vessels Girls&rsquo; Centre, Jinja</p>
+    <div class="rule"></div>
+    <ul>
+      <li><span class="box"></span><span>I will not arrange, attend or bless a marriage involving anyone under 18.</span></li>
+      <li><span class="box"></span><span>I will pay school fees before discretionary spending.</span></li>
+      <li><span class="box"></span><span>I will do a named share of the care work at home &mdash; not &ldquo;help&rdquo;.</span></li>
+      <li><span class="box"></span><span>I will not repeat talk that shames a girl, and I will ask about the man.</span></li>
+      <li><span class="box"></span><span>I will accompany a referral without taking over the decision.</span></li>
+      <li><span class="box"></span><span>I will buy from women-led businesses, at a fair price.</span></li>
+    </ul>
+    <p class="tag">Make it specific &mdash; a promise nobody can check is not a promise</p>
+    <div class="field"><span class="lab">One thing I will do this month</span><span class="line"></span></div>
+    <div class="field"><span class="lab">Who will ask me about it</span><span class="line"></span></div>
+    <div class="field"><span class="lab">By when</span><span class="line"></span></div>
+    <p class="foot">A promise to your household and your community &mdash; not to the centre. Nobody will collect this card.</p>
+  </div>
+
+  <div class="cut"><span>cut here</span></div>
+
+  <div class="card">
+    <h1>My commitment</h1>
+    <p class="sub">Accountability session &middot; Treasured Vessels Girls&rsquo; Centre, Jinja</p>
+    <div class="rule"></div>
+    <ul>
+      <li><span class="box"></span><span>I will not arrange, attend or bless a marriage involving anyone under 18.</span></li>
+      <li><span class="box"></span><span>I will pay school fees before discretionary spending.</span></li>
+      <li><span class="box"></span><span>I will do a named share of the care work at home &mdash; not &ldquo;help&rdquo;.</span></li>
+      <li><span class="box"></span><span>I will not repeat talk that shames a girl, and I will ask about the man.</span></li>
+      <li><span class="box"></span><span>I will accompany a referral without taking over the decision.</span></li>
+      <li><span class="box"></span><span>I will buy from women-led businesses, at a fair price.</span></li>
+    </ul>
+    <p class="tag">Make it specific &mdash; a promise nobody can check is not a promise</p>
+    <div class="field"><span class="lab">One thing I will do this month</span><span class="line"></span></div>
+    <div class="field"><span class="lab">Who will ask me about it</span><span class="line"></span></div>
+    <div class="field"><span class="lab">By when</span><span class="line"></span></div>
+    <p class="foot">A promise to your household and your community &mdash; not to the centre. Nobody will collect this card.</p>
+  </div>
+</div>
+
+<!-- ---------------------------------------------- page 2: facilitator -->
+<div class="page fac">
+  <h1>Running the session</h1>
+  <p class="sub">Facilitator&rsquo;s sheet &middot; about two hours &middot; print one, copy the cards</p>
+
+  <div class="block">
+    <h2>Shape of the two hours</h2>
+    <table class="run">
+      <tr><td>15 min</td><td>Why we are here. State the test up front: <strong>is she safer, freer, and more able to choose than she was before?</strong> Everything is measured against it.</td></tr>
+      <tr><td>30 min</td><td>Facilitated discussion, in small groups. What do men here actually do when a marriage is proposed for a girl under 18? Let the disagreement happen &mdash; it is the useful part.</td></tr>
+      <tr><td>20 min</td><td>The law, plainly. Minimum age 18 (Constitution, Article 31). Informal unions count (Children (Amendment) Act 2016). A sexual act with anyone under 18 is defilement (Penal Code s.129). Most of this is news to most rooms.</td></tr>
+      <tr><td>20 min</td><td>Positive parenting under real financial pressure. &ldquo;Do not marry her off&rdquo; is not advice unless something replaces it. Discuss what does.</td></tr>
+      <tr><td>20 min</td><td>Violence prevention, concretely. What is not acceptable; what to do when another man is doing it; why &ldquo;it is a family matter&rdquo; protects the person causing harm.</td></tr>
+      <tr><td>15 min</td><td>Commitment cards and referral contacts. Everyone leaves with both.</td></tr>
+    </table>
+  </div>
+
+  <div class="block warn">
+    <h2>Watch for these four</h2>
+    <ul>
+      <li><span class="box"></span><span><strong>Decisions transferring to men.</strong> An ally removes obstacles; he does not choose destinations. Pay the fee, do not pick the school.</span></li>
+      <li><span class="box"></span><span><strong>Pressure to reconcile.</strong> Nobody in this room should be brokering a return to a partner who has caused harm. That is her decision alone.</span></li>
+      <li><span class="box"></span><span><strong>Performance.</strong> If involvement is visible to the community but nothing changes in his own household, it is a performance.</span></li>
+      <li><span class="box"></span><span><strong>Men becoming the heroes.</strong> Not marrying off a 14-year-old is the floor, not an achievement.</span></li>
+    </ul>
+  </div>
+
+  <div class="block contacts">
+    <h2>Everyone leaves with these</h2>
+    <p>
+      <span class="big">116</span> &nbsp; Uganda Child Helpline &mdash; free on any network, 24 hours<br />
+      Treasured Vessels Girls&rsquo; Centre, Jinja &mdash; +256 756 233 041 &middot; +256 774 427 101<br />
+      Your district probation and social welfare officer &middot; the Child and Family Protection Unit at your nearest police station
+    </p>
+  </div>
+
+  <div class="block">
+    <h2>Two rules for the facilitator</h2>
+    <p><strong>Do not collect the cards.</strong> A promise made to a visiting organisation is worth much less than one made to a household. Ask each man to name who will hold him to it instead.</p>
+    <p><strong>Let it be uncomfortable.</strong> A session where everyone agrees with everything has not touched anything. Your job is to keep it honest and on time, not to keep it pleasant.</p>
+  </div>
+
+  <p style="font-size:7.5pt;color:#6b6672;position:absolute;left:12mm;right:12mm;bottom:9mm;border-top:1pt solid #E9DCE6;padding-top:3mm;">
+    General information, not legal advice &middot; treasuredvesselsuganda.org/blog/fathers-men-and-boys-as-allies &middot; May be freely copied
+  </p>
+</div>
+
+</body>
+</html>

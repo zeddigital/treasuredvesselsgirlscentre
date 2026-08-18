@@ -240,6 +240,20 @@ Yes. Get in touch. There is no charge, and we will fit your timetable — but we
 - Penal Code (Amendment) Act 2007, section 129: https://www.law.berkeley.edu/wp-content/uploads/2015/10/Uganda_Penal-Code-Amendment-Act_2007.pdf
 - Ministry of Gender, Labour and Social Development — Uganda Child Helpline 116: https://mglsd.go.ug/uganda-child-helpline-116-2/
 
+## Downloadable asset
+
+The commitment card described in the article is produced as a printable PDF and linked from it:
+
+- **File:** `/downloads/tvgc-mens-commitment-card.pdf` — two A4 pages, ~100 kB
+- **Source:** `content/downloads/mens-commitment-card.html`
+- **Rebuild:** `node scripts/build-pdfs.mjs`
+
+Page 1 holds **two identical cards to a sheet**, separated by a cut line, so one photocopy
+serves two men. Page 2 is a facilitator's sheet: the two-hour run order with timings, the four
+failure modes to watch for, the referral contacts everyone leaves with, and two rules for the
+facilitator — do not collect the cards, and let it be uncomfortable. Photocopies in black and
+white; nothing depends on colour. Marked as free to copy.
+
 ## Internal linking suggestions
 
 | Anchor text | Target |
