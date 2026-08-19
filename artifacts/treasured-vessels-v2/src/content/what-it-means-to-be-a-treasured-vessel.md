@@ -1,19 +1,19 @@
 There is a particular moment that happens often in our work, and it never loses its weight.
 
-A girl arrives at the centre convinced that she is the problem. Not that she *has* a problem — that she *is* one. She has absorbed a message, from somewhere or someone, that what has happened to her has reduced her worth. That she is now less than she was.
+A girl arrives at the centre convinced that she is the problem. Not that she *has* a problem, but that she *is* one. She has absorbed a message, from somewhere or someone, that what has happened to her has reduced her worth. That she is now less than she was.
 
 Almost everything we do exists to answer that idea.
 
 Our name is not decoration. It is our argument, and it comes from a line in Scripture that has shaped how we see every girl and woman who walks through our door.
 
 > *"But we have this treasure in earthen vessels, that the excellence of the power may be of God and not of us."*
-> — 2 Corinthians 4:7 (NKJV)
+> 2 Corinthians 4:7 (NKJV)
 
-An earthen vessel is ordinary. It is clay. It can be chipped, cracked, or set aside as worthless. And yet the passage insists that what such a vessel carries is treasure — and that the treasure was never dependent on the container looking impressive.
+An earthen vessel is ordinary. It is clay. It can be chipped, cracked, or set aside as worthless. And yet the passage insists that what such a vessel carries is treasure, and that the treasure was never dependent on the container looking impressive.
 
 That is the whole idea. A girl's value is not created by her circumstances, and it cannot be destroyed by them. It was there before the crisis and it remains after.
 
-This article explains who we are, why we exist, how our work is structured, what we can honestly do today, what we are still building, and how you can be part of it. It is deliberately detailed. If you are considering trusting us — with a referral, a donation, or a partnership — you deserve more than a slogan.
+This article explains who we are, why we exist, how our work is structured, what we can honestly do today, what we are still building, and how you can be part of it. It is deliberately detailed. If you are considering trusting us with a referral, a donation or a partnership, you deserve more than a slogan.
 
 ---
 
@@ -37,9 +37,9 @@ That is what the centre was built to be.
 
 We are not the whole answer to a national challenge, and we do not claim to be. But it is worth understanding the environment we work in.
 
-Uganda's Ministry of Health recorded a teenage pregnancy rate of around 24% nationally in its Annual Health Sector Performance Report for 2023/24 — 21% in urban areas and 25% in rural areas. UNFPA describes the position plainly: roughly one in four Ugandan girls aged 15 to 19 has had a child or is pregnant.
+Uganda's Ministry of Health recorded a teenage pregnancy rate of around 24% nationally in its Annual Health Sector Performance Report for 2023/24: 21% in urban areas and 25% in rural areas. UNFPA describes the position plainly: roughly one in four Ugandan girls aged 15 to 19 has had a child or is pregnant.
 
-The consequences are not only personal. UNFPA has estimated that Uganda loses in the region of 24% of its potential each year as a result of adolescent childbearing, in a country where — according to the 2024 National Population and Housing Census — around 73% of the population is under 30.
+The consequences are not only personal. UNFPA has estimated that Uganda loses in the region of 24% of its potential each year as a result of adolescent childbearing, in a country where, according to the 2024 National Population and Housing Census, around 73% of the population is under 30.
 
 Education outcomes reflect the same pressure. World Bank and UNESCO Institute for Statistics data indicate that only about 25% of Ugandan girls completed lower secondary education in 2017, with roughly 4% enrolling in tertiary education in 2016.
 
@@ -49,13 +49,13 @@ Behind each of those percentages is a girl who had plans.
 
 National averages are useful, and they also conceal a great deal.
 
-Jinja sits within the Busoga sub-region of eastern Uganda. It is a city with real economic activity — industry, trade, tourism along the Nile — and that activity sits alongside communities where household income is precarious and services are stretched.
+Jinja sits within the Busoga sub-region of eastern Uganda. It is a city with real economic activity in industry, trade and tourism along the Nile, and that activity sits alongside communities where household income is precarious and services are stretched.
 
 Busoga has been identified in Uganda's own national planning as a region reporting high numbers of teenage pregnancies, particularly during the disruption of the pandemic period. We would caution against reading that as a statement about every family or community here; it is not, and treating a whole region as a problem is both inaccurate and insulting to the many households doing an excellent job in difficult conditions.
 
 What it does mean is that the pressures we described above tend to arrive together in particular neighbourhoods, and that early, local intervention has more effect here than it might elsewhere.
 
-The area we work in — Masese-Walukuba — is a densely populated part of Jinja where many households depend on informal, day-to-day earnings. When income is unpredictable, school fees are the first thing to go, and girls' fees go before boys'. That is not a claim about parental affection. It is arithmetic under pressure, and it is exactly the kind of decision that a modest, well-timed intervention can change.
+The area we work in, Masese-Walukuba, is a densely populated part of Jinja where many households depend on informal, day-to-day earnings. When income is unpredictable, school fees are the first thing to go, and girls' fees go before boys'. That is not a claim about parental affection. It is arithmetic under pressure, and it is exactly the kind of decision that a modest, well-timed intervention can change.
 
 A community-based organisation has one significant advantage over a larger, more distant one: we notice earlier. We hear that a girl has stopped attending before it becomes a statistic. We know which families are under strain. Proximity is not a substitute for expertise, but it is very difficult to replicate from a capital city.
 
@@ -71,11 +71,11 @@ There is a well-established way of raising money for work like ours. You find th
 
 We are not willing to do it, for three reasons.
 
-**It costs the girl something.** A story published today does not expire. It follows her — to school, to a job interview, into her marriage, into her children's lives. She may consent at seventeen, when she is grateful and vulnerable and being asked by people who helped her, to something she would never consent to at thirty. We do not think that consent is reliable enough to justify the trade.
+**It costs the girl something.** A story published today does not expire. It follows her to school, to a job interview, into her marriage, into her children's lives. She may consent at seventeen, when she is grateful and vulnerable and being asked by people who helped her, to something she would never consent to at thirty. We do not think that consent is reliable enough to justify the trade.
 
 **It is often inaccurate.** The story of a girl at her lowest point is a story about one week of her life, presented as though it were her identity. It leaves out that she is funny, or stubborn, or better at mathematics than her teacher expects. Reducing a person to their worst experience is not honesty. It is editing.
 
-**It shapes how you see her.** A donor who has only ever seen Ugandan girls depicted as helpless will believe they are helpless. That belief affects how people give, what they expect, and whether they treat these young women as partners or as recipients. The imagery does not just reflect a view — it manufactures one.
+**It shapes how you see her.** A donor who has only ever seen Ugandan girls depicted as helpless will believe they are helpless. That belief affects how people give, what they expect, and whether they treat these young women as partners or as recipients. The imagery does not just reflect a view. It manufactures one.
 
 So we will show you hands at work, classrooms, training rooms, equipment, staff and the centre itself. Where we tell a personal story, it will be with genuine, informed permission, told with the young woman's agency intact, and focused on where she is going rather than only where she has been.
 
@@ -103,7 +103,7 @@ If you are a school, church or organisation considering working with us, we expe
 
 ---
 
-## A note from our founder — Racheal Muggaga Achen
+## A note from our founder, Racheal Muggaga Achen
 
 ![Racheal Muggaga Achen, founder of Treasured Vessels Girls' Centre](/images/founder.jpg)
 
@@ -111,7 +111,7 @@ When I began this journey in 2018, I did not set out to start an organisation. I
 
 I want people to understand that the girls we serve should never be defined by what has happened to them. They are intelligent, capable, creative and full of potential. What many have lacked is not ability or determination, but opportunity, a safe place to belong, and people who will continue to stand beside them.
 
-My hope for the years ahead is that Treasured Vessels can reach more girls, strengthen the support we provide, and create lasting pathways through education, skills and opportunity. I want every girl who comes through our doors to know that her past does not determine her future — that she is valued, she has purpose, and her life can become something beautiful.
+My hope for the years ahead is that Treasured Vessels can reach more girls, strengthen the support we provide, and create lasting pathways through education, skills and opportunity. I want every girl who comes through our doors to know that her past does not determine her future: that she is valued, she has purpose, and her life can become something beautiful.
 
 **Racheal Muggaga Achen**
 *Founder, Treasured Vessels Girls' Centre*
@@ -126,7 +126,7 @@ Support that arrives once and then stops rarely changes anything. A girl's situa
 
 Our work is organised around five stages. In practice they overlap, and girls do not move through them at the same pace or always in the same order. But the shape holds.
 
-### Stage one — Safety
+### Stage one: Safety
 
 Nothing else can begin while a girl is in danger.
 
@@ -136,17 +136,17 @@ This stage is not about planning her future. It is about ensuring she has one.
 
 We take this stage seriously in a specific way: safety includes confidentiality. A girl who fears her situation will become public is a girl who will not ask for help. Protecting her privacy is part of protecting her.
 
-### Stage two — Recovery
+### Stage two: Recovery
 
 Once a girl is safe, there is a period where very little visible progress happens. This stage is easy to underestimate and impossible to skip.
 
 Recovery is counselling. It is rest. It is regular food. It is antenatal care for a girl who is pregnant. It is the slow work of a young person deciding whether she can trust adults again.
 
-It is also where the belief we described at the start gets rebuilt — not through a speech, but through being treated consistently as someone who matters.
+It is also where the belief we described at the start gets rebuilt, not through a speech, but through being treated consistently as someone who matters.
 
 Girls often arrive expecting to be lectured. Being listened to instead is, for many, the unfamiliar part.
 
-### Stage three — Education
+### Stage three: Education
 
 Education is the stage most likely to change a girl's long-term trajectory, and the one most often interrupted.
 
@@ -154,9 +154,9 @@ For some girls this means returning to formal school, which can require negotiat
 
 We do not treat returning to a classroom as the only legitimate outcome. We treat a girl continuing to learn as the outcome.
 
-Our School Outreach work also sits here — including menstrual health education and reusable sanitary kits, because a girl who cannot manage her period safely will miss school regardless of how well her fees are paid.
+Our School Outreach work also sits here, including menstrual health education and reusable sanitary kits, because a girl who cannot manage her period safely will miss school regardless of how well her fees are paid.
 
-### Stage four — Economic transition
+### Stage four: Economic transition
 
 ![A trainee in a Treasured Vessels Girls' Centre shirt working at a knitting machine in Jinja, Uganda](/images/gallery/knitting-machine-training.jpg)
 
@@ -168,19 +168,19 @@ The goal is not a certificate. The goal is a girl who can earn.
 
 That distinction matters more than it might appear, because a great deal of vocational training worldwide produces qualified graduates who never earn anything. A young woman who has learned to sew still needs three things she usually does not have.
 
-She needs **equipment** — a machine of her own, or reliable access to one. Skill without a tool is not a livelihood.
+She needs **equipment**: a machine of her own, or reliable access to one. Skill without a tool is not a livelihood.
 
 She needs **customers**, which means knowing how to price work, where to find buyers, and how to be found. Many talented graduates fail here rather than at the sewing.
 
-And she needs **control of her money** — a place to keep it, a basic understanding of saving, and enough standing in her own household that her earnings are not simply absorbed by someone else.
+And she needs **control of her money**: a place to keep it, a basic understanding of saving, and enough standing in her own household that her earnings are not simply absorbed by someone else.
 
 We are candid that we do these three things less completely than we do the training itself. Equipment provision depends on funding. Market access is an area where we actively want partners. This is one of the clearest places where a business, rather than a donor, could change outcomes for our graduates.
 
-### Stage five — Voice
+### Stage five: Voice
 
 The final stage is the one most organisations leave out, and it is the one that determines whether anything lasts.
 
-Voice means a young woman who can advocate for herself — who knows her rights, can speak to a school, a health worker, a landlord or a family member, and expect to be heard.
+Voice means a young woman who can advocate for herself, who knows her rights, can speak to a school, a health worker, a landlord or a family member, and expect to be heard.
 
 It also means her participation in the community changes. Girls who have come through our programmes become the people who notice the next girl at risk. Several of our volunteers arrived first as participants.
 
@@ -198,14 +198,14 @@ We think organisations should be precise about the difference between what they 
 
 We currently operate six active programmes:
 
-- **Girls' education support** — tuition assistance, scholastic materials and mentorship
-- **Vocational skills and economic empowerment** — tailoring, hairdressing, baking, soap-making, crafts and shoemaking
-- **Teenage mother support** — parenting guidance, emotional support and routes back into learning or income
-- **Menstrual health and school outreach** — reusable sanitary kits and menstrual health education, delivered to girls and boys
-- **Protection and rehabilitation** — counselling, safe spaces, and advocacy against early marriage and gender-based violence
-- **Community outreach** — engaging local leaders, parents, men and boys to shift the norms that put girls at risk
+- **Girls' education support**: tuition assistance, scholastic materials and mentorship
+- **Vocational skills and economic empowerment**: tailoring, hairdressing, baking, soap-making, crafts and shoemaking
+- **Teenage mother support**: parenting guidance, emotional support and routes back into learning or income
+- **Menstrual health and school outreach**: reusable sanitary kits and menstrual health education, delivered to girls and boys
+- **Protection and rehabilitation**: counselling, safe spaces, and advocacy against early marriage and gender-based violence
+- **Community outreach**: engaging local leaders, parents, men and boys to shift the norms that put girls at risk
 
-Alongside these, our documented cause areas include a pregnancy centre offering antenatal support and guidance through delivery, sponsorship of girls and their children's education, women's needs assessments in the community, and support for elderly community members — including flood relief in Mbale.
+Alongside these, our documented cause areas include a pregnancy centre offering antenatal support and guidance through delivery, sponsorship of girls and their children's education, women's needs assessments in the community, and support for elderly community members, including flood relief in Mbale.
 
 ### What we refer
 
@@ -213,7 +213,7 @@ We are a community-based organisation, not a hospital, a law firm or a governmen
 
 We refer for specialist medical care, formal legal proceedings, statutory child protection intervention, and specialist mental health treatment. Our role in those cases is to identify the need, make the connection, accompany the girl through it where appropriate, and stay involved afterwards.
 
-Being the organisation that knows *who to call* — and that follows up — is genuinely useful. It is also honest about our limits.
+Being the organisation that knows *who to call*, and that follows up, is genuinely useful. It is also honest about our limits.
 
 ---
 
@@ -221,9 +221,9 @@ Being the organisation that knows *who to call* — and that follows up — is g
 
 This section is unusual for an organisation's introductory article. We have included it deliberately.
 
-We could describe our impact using large, confident numbers. Many organisations do. We would rather tell you accurately where we are, because we think candour earns more trust than claims we cannot yet evidence — and because anyone considering a serious partnership will find out anyway.
+We could describe our impact using large, confident numbers. Many organisations do. We would rather tell you accurately where we are, because we think candour earns more trust than claims we cannot yet evidence, and because anyone considering a serious partnership will find out anyway.
 
-**Our measurement systems are improving, and they are not yet where they should be.** We can tell you what we do, who we work with, and what we have observed. We are still building the systematic tracking that would let us report longitudinal outcomes — how many girls remained in school two years on, how many vocational graduates were still earning after twelve months — with the rigour those claims deserve.
+**Our measurement systems are improving, and they are not yet where they should be.** We can tell you what we do, who we work with, and what we have observed. We are still building the systematic tracking that would let us report longitudinal outcomes with the rigour those claims deserve: how many girls remained in school two years on, how many vocational graduates were still earning after twelve months.
 
 We are working on it. We are not going to pretend it is finished.
 
@@ -233,7 +233,7 @@ We are working on it. We are not going to pretend it is finished.
 
 What we offer is not scale. It is proximity. We live in this community. We know these families. We are still here after the visiting team has gone home, and we will be here next year.
 
-For some funders that will not be enough, and we understand that. For others — particularly those who want to see exactly where money goes and speak to the people spending it — it is precisely the point.
+For some funders that will not be enough, and we understand that. For others, particularly those who want to see exactly where money goes and speak to the people spending it, it is precisely the point.
 
 ---
 
@@ -259,7 +259,7 @@ We welcome scrutiny from NGOs, government agencies, community groups and donors.
 
 ## What being a Christian organisation means in practice
 
-We are a Christian ministry, and we would rather be clear about what that does and does not mean — partly because it matters to the churches who support us, and partly because it matters to families deciding whether to send us their daughters.
+We are a Christian ministry, and we would rather be clear about what that does and does not mean, partly because it matters to the churches who support us, and partly because it matters to families deciding whether to send us their daughters.
 
 **It shapes why we do this.** The conviction at the centre of our work is the one we began with: that a person's worth is given rather than earned, and that hardship does not diminish it. That belief is not a nice sentiment we attach to the work afterwards. It is the reason a girl who arrives convinced she is worthless is treated, from the first hour, as though she is not.
 
@@ -331,7 +331,7 @@ We are on Walukuba-Masese Road in Jinja District, Uganda. You can reach us on +2
 
 ### What does the name "Treasured Vessels" mean?
 
-It comes from 2 Corinthians 4:7 — "we have this treasure in earthen vessels." The idea is that a person's value is inherent rather than earned, and that it is not destroyed by hardship. It reflects how we see every girl who comes to us.
+It comes from 2 Corinthians 4:7: "we have this treasure in earthen vessels." The idea is that a person's value is inherent rather than earned, and that it is not destroyed by hardship. It reflects how we see every girl who comes to us.
 
 ### Do you only help Christians?
 
@@ -343,7 +343,7 @@ Contact us privately using the details above. Please do not identify her publicl
 
 ### Can I choose which girl my sponsorship supports?
 
-We match sponsorship to assessed need, and we report on how funds are used and what changed. We do not offer photographs of, or direct access to, individual children as a benefit of donating — protecting a child's privacy is not something a donation can purchase.
+We match sponsorship to assessed need, and we report on how funds are used and what changed. We do not offer photographs of, or direct access to, individual children as a benefit of donating. Protecting a child's privacy is not something a donation can purchase.
 
 ### How big is the organisation?
 

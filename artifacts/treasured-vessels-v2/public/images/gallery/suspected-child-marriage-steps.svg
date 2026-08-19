@@ -27,15 +27,15 @@
 
   <!-- YES branch -->
   <rect x="56" y="234" width="430" height="132" rx="16" fill="#B3261E"/>
-  <text class="yes" x="80" y="266">YES &#8212; act now</text>
+  <text class="yes" x="80" y="266">YES: act now</text>
   <text class="urg" x="80" y="294">Call the Uganda Child Helpline on <tspan font-weight="700" font-size="22">116</tspan></text>
-  <text class="urg" x="80" y="318">&#8212; free on any network, 24 hours &#8212; or go</text>
+  <text class="urg" x="80" y="318">free on any network, 24 hours, or go</text>
   <text class="urg" x="80" y="340">to the nearest police Child and Family</text>
   <text class="urg" x="80" y="362">Protection Unit.</text>
 
   <!-- NO branch -->
   <rect x="514" y="234" width="430" height="132" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
-  <text class="step" x="538" y="266">NO &#8212; still act, carefully</text>
+  <text class="step" x="538" y="266">NO: still act, carefully</text>
   <text class="desc" x="538" y="296">There is time to do this properly.</text>
   <text class="desc" x="538" y="320">Work through the steps below rather</text>
   <text class="desc" x="538" y="342">than raising it with the family first.</text>

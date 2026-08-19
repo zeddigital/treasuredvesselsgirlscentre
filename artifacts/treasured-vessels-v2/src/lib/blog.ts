@@ -57,7 +57,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "A young mother and her baby sitting with a member of staff at Treasured Vessels Girls' Centre in Jinja, Uganda, working through paperwork together",
     excerpt:
-      "Between a number written on the corner of an exercise book and a health worker who actually examines her, nine separate things have to go right. What adolescent-friendly care really means \u2014 and why we record whether she arrived.",
+      "Between a number written on the corner of an exercise book and a health worker who actually examines her, nine separate things have to go right. What adolescent-friendly care really means, and why we record whether she arrived.",
     metaDescription:
       "What adolescent-friendly health care means in practice, why referrals fail between the phone number and the door, and how to close the loop.",
     seoTitle:
@@ -92,9 +92,9 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "A facilitated community session in progress at Treasured Vessels Girls' Centre in Jinja, Uganda",
     excerpt:
-      "Speeches are made, photographs are taken, and nothing in any household changes. What allyship looks like when it is real \u2014 and the four ways \u201cmale involvement\u201d makes a girl\u2019s situation worse.",
+      "Speeches are made, photographs are taken, and nothing in any household changes. What allyship looks like when it is real, and the four ways \u201cmale involvement\u201d makes a girl\u2019s situation worse.",
     metaDescription:
-      "Practical roles for fathers, brothers, teachers and faith leaders in ending child marriage in Uganda \u2014 and how male involvement goes wrong.",
+      "Practical roles for fathers, brothers, teachers and faith leaders in ending child marriage in Uganda, and how male involvement goes wrong.",
     seoTitle:
       "Fathers, Men and Boys as Allies for Girls' Futures | Treasured Vessels",
     keywords: [
@@ -231,7 +231,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "Trainees working through a tailoring lesson in the skills room at Treasured Vessels Girls' Centre, Jinja, with treadle sewing machines along the wall",
     excerpt:
-      "What a vocational class actually involves — the blackboard, the exercise books, the quality standard, and why a $150 treadle machine decides whether six months of training was worth anything.",
+      "What a vocational class actually involves: the blackboard, the exercise books, the quality standard, and why a $150 treadle machine decides whether six months of training was worth anything.",
     metaDescription:
       "Inside a vocational training class in Jinja, Uganda: one tailoring lesson start to finish, what we run, what equipment costs, and how businesses can help.",
     seoTitle:
@@ -263,7 +263,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "A full sewing class at Treasured Vessels Girls' Centre in Jinja, with young women working at treadle machines",
     excerpt:
-      "Around one in four Ugandan girls aged 15 to 19 has begun childbearing. What gets said about them in the classroom and the church decides what happens next — and most of it is wrong.",
+      "Around one in four Ugandan girls aged 15 to 19 has begun childbearing. What gets said about them in the classroom and the church decides what happens next, and most of it is wrong.",
     metaDescription:
       "Six things commonly said about teenage mothers in Uganda, and what the law and the evidence actually say. Child marriage, school re-entry, consent and support.",
     seoTitle: "Six Myths About Teenage Mothers | Treasured Vessels",
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "A young mother and her baby meeting with a staff member at Treasured Vessels Girls' Centre in Jinja, Uganda",
     excerpt:
-      "Uganda allows girls to return to school after childbirth. Only about one in three actually does. The barriers in between \u2014 and a pathway back that survives contact with reality.",
+      "Uganda allows girls to return to school after childbirth. Only about one in three actually does. The barriers in between, and a pathway back that survives contact with reality.",
     metaDescription:
       "Only about a third of Ugandan adolescent mothers return to school after childbirth. The real barriers, and a six-step pathway back to learning.",
     seoTitle:
@@ -332,9 +332,9 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "A learning session in progress at Treasured Vessels Girls' Centre in Jinja, Uganda",
     excerpt:
-      "What does sponsorship actually buy, who decides, and how would you know it worked? A transparent service model \u2014 and why we will never send you a photograph of the girl.",
+      "What does sponsorship actually buy, who decides, and how would you know it worked? A transparent service model, and why we will never send you a photograph of the girl.",
     metaDescription:
-      "What responsible child sponsorship should include: assessment first, nine cost components, termly reporting \u2014 and why photographs are not a donor benefit.",
+      "What responsible child sponsorship should include: assessment first, nine cost components, termly reporting, and why photographs are not a donor benefit.",
     seoTitle:
       "What Responsible Education Sponsorship Should Include | Treasured Vessels",
     keywords: [
@@ -366,9 +366,9 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "Young women learning practical skills together in a class at Treasured Vessels Girls' Centre, Jinja",
     excerpt:
-      "Most people assume pregnancy is why girls leave school. The evidence says cost is — by a distance. Here are the five barriers that actually compound, and what answers each one.",
+      "Most people assume pregnancy is why girls leave school. The evidence says cost is, by a distance. Here are the five barriers that actually compound, and what answers each one.",
     metaDescription:
-      "Why girls really leave school in Uganda: cost, not pregnancy, is the leading cause. The five barriers that compound — and the practical response to each.",
+      "Why girls really leave school in Uganda: cost, not pregnancy, is the leading cause. The five barriers that compound, and the practical response to each.",
     seoTitle:
       "Five Barriers That Can Push a Girl Out of School | Treasured Vessels",
     keywords: [
@@ -401,7 +401,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "Women and children gathered for a Treasured Vessels community session in Jinja, Uganda",
     excerpt:
-      "Busoga carries a disproportionate share of Uganda's teenage pregnancy burden — but the district-level variation is the part that matters, and it is what national averages hide.",
+      "Busoga carries a disproportionate share of Uganda's teenage pregnancy burden, but the district-level variation is the part that matters, and it is what national averages hide.",
     metaDescription:
       "Teenage pregnancy in Jinja and Busoga: what the district-level data really shows, why national averages mislead, and how local institutions can work together.",
     seoTitle:
@@ -436,7 +436,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt:
       "Young women in Treasured Vessels Girls' Centre shirts dancing together at a community celebration in Jinja, Uganda",
     excerpt:
-      "Who we are, why the centre exists, how our five-stage pathway works, what we can honestly do today — and how you can stand with girls in Jinja.",
+      "Who we are, why the centre exists, how our five-stage pathway works, what we can honestly do today, and how you can stand with girls in Jinja.",
     metaDescription:
       "Treasured Vessels Girls' Centre supports vulnerable girls and women in Jinja, Uganda. Who we are, how our five-stage pathway works, and how to help.",
     seoTitle:

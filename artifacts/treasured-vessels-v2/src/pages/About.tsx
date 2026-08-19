@@ -38,10 +38,10 @@ export default function About() {
               <div>
                 <h2 className="font-serif text-3xl text-brand-plum mb-4">Our Story</h2>
                 <p className="text-brand-charcoal/80 leading-relaxed mb-4">
-                  Treasured Vessels Girls' Centre was founded in 2018 by Racheal Muggaga Achen in Jinja District, Uganda, in response to the number of girls and women left without adequate care and support &mdash; among them children affected by the loss of parents to HIV/AIDS, women navigating remarriage, divorce or widowhood, families in dispute, and girls at risk of trafficking and sexual exploitation.
+                  Treasured Vessels Girls' Centre was founded in 2018 by Racheal Muggaga Achen in Jinja District, Uganda, in response to the number of girls and women left without adequate care and support, among them children affected by the loss of parents to HIV/AIDS, women navigating remarriage, divorce or widowhood, families in dispute, and girls at risk of trafficking and sexual exploitation.
                 </p>
                 <p className="text-brand-charcoal/80 leading-relaxed">
-                  Today, as a fully registered community based organisation (CBO), we work in schools, institutions and directly with communities &mdash; training girls and women in practical skills, supporting survivors of gender-based violence, and addressing the health and social challenges facing our community.
+                  Today, as a fully registered community based organisation (CBO), we work in schools, institutions and directly with communities, training girls and women in practical skills, supporting survivors of gender-based violence, and addressing the health and social challenges facing our community.
                 </p>
               </div>
 
@@ -56,7 +56,7 @@ export default function About() {
                 <div className="bg-brand-blush p-8 rounded-[24px] border border-brand-pink/20">
                   <h3 className="font-semibold text-brand-pink uppercase tracking-wider text-sm mb-2">Our Mission</h3>
                   <p className="font-serif text-xl text-brand-plum leading-snug">
-                    To mobilise school girls and women in our community to achieve equal opportunity, access to self-actualisation, and the chance to realise the girl-child's contribution to society &mdash; through training and initiatives that build a strong girl, and in turn a stronger world.
+                    To mobilise school girls and women in our community to achieve equal opportunity, access to self-actualisation, and the chance to realise the girl-child's contribution to society, through training and initiatives that build a strong girl, and in turn a stronger world.
                   </p>
                 </div>
               </div>

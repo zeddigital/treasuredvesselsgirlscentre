@@ -16,7 +16,7 @@
 
   <!-- Header -->
   <text class="h" x="60" y="78" font-size="40">Five barriers that push a girl out of school</text>
-  <text class="foot" x="60" y="112" font-size="18">Dropout is rarely one decision. These pressures reinforce one another — and each has a practical answer.</text>
+  <text class="foot" x="60" y="112" font-size="18">Dropout is rarely one decision. These pressures reinforce one another, and each has a practical answer.</text>
   <line x1="60" y1="140" x2="940" y2="140" stroke="#E9DCE6" stroke-width="2"/>
 
   <!-- Row 1 -->

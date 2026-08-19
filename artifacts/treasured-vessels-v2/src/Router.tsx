@@ -125,7 +125,7 @@ function Router() {
                 className="w-full max-w-sm rounded-[24px] shadow-lg mb-8 not-prose"
               />
               <p><strong>Racheal Muggaga Achen</strong> founded Treasured Vessels Girls' Centre in 2018 in Jinja District, Uganda.</p>
-              <p>She established the Centre in response to the number of girls and women in her community left without adequate care and support &mdash; including children affected by the loss of parents to HIV/AIDS, women navigating remarriage, divorce or widowhood, families in dispute, and girls at risk of trafficking and sexual exploitation.</p>
+              <p>She established the Centre in response to the number of girls and women in her community left without adequate care and support, including children affected by the loss of parents to HIV/AIDS, women navigating remarriage, divorce or widowhood, families in dispute, and girls at risk of trafficking and sexual exploitation.</p>
               <p>Under her leadership, Treasured Vessels has grown from grassroots community support into a fully registered community based organisation (CBO) running six active programs and drawing on around 30 regular volunteers.</p>
             </GenericPage>
           )}
@@ -185,12 +185,12 @@ function Router() {
             >
               <p>Since our founding in 2018, we've focused our energy on practical, community-led causes:</p>
               <ul>
-                <li><strong>Girls Empowerment Projects</strong> &mdash; soap making, tailoring, crafts, hairdressing and shoe making.</li>
-                <li><strong>Pregnancy Centre</strong> &mdash; antenatal support and guidance through the delivery process.</li>
-                <li><strong>Sponsorship</strong> &mdash; supporting girls and their children's education.</li>
-                <li><strong>School Outreach</strong> &mdash; menstrual hygiene teaching and sanitary kit distribution.</li>
-                <li><strong>Women Assessments</strong> &mdash; understanding the needs of women in our community.</li>
-                <li><strong>Helping the Elderly</strong> &mdash; community outreach, including flood relief support in Mbale.</li>
+                <li><strong>Girls Empowerment Projects</strong>: soap making, tailoring, crafts, hairdressing and shoe making.</li>
+                <li><strong>Pregnancy Centre</strong>: antenatal support and guidance through the delivery process.</li>
+                <li><strong>Sponsorship</strong>: supporting girls and their children's education.</li>
+                <li><strong>School Outreach</strong>: menstrual hygiene teaching and sanitary kit distribution.</li>
+                <li><strong>Women Assessments</strong>: understanding the needs of women in our community.</li>
+                <li><strong>Helping the Elderly</strong>: community outreach, including flood relief support in Mbale.</li>
               </ul>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 not-prose my-10">
                 {[
@@ -235,7 +235,7 @@ function Router() {
                 alt="Women and children celebrating together at a Treasured Vessels event"
                 className="w-full rounded-[24px] shadow-lg not-prose mb-4"
               />
-              <p>We marked Women's Day together with mothers, babies and girls from across our community &mdash; a celebration of resilience and togetherness.</p>
+              <p>We marked Women's Day together with mothers, babies and girls from across our community, a celebration of resilience and togetherness.</p>
               <p className="text-sm text-muted-foreground">Individual testimonial stories will be added here as they are documented.</p>
             </GenericPage>
           )}

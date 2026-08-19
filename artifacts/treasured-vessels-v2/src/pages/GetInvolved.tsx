@@ -40,14 +40,14 @@ const pages: Record<string, GetInvolvedPage> = {
     imageAlt:
       "A young mother and her baby meeting with a staff member at Treasured Vessels Girls' Centre in Jinja, Uganda",
     intro: [
-      "Sponsorship keeps a girl learning. That sounds simple, and the money genuinely does that — but only if it is spent on the thing that is actually stopping her.",
+      "Sponsorship keeps a girl learning. That sounds simple, and the money genuinely does that, but only if it is spent on the thing that is actually stopping her.",
       "For one girl that is unpaid fees. For another it is a uniform she has outgrown, or a period she has nothing to manage, or a baby with no one to mind him during the school day. Send all four the same package and you solve one problem four times and three problems never.",
     ],
     sections: [
       {
         heading: "How it works",
         body: [
-          "Every plan begins with a documented assessment rather than a fixed bundle. We look at what interrupted her learning, what her household can realistically contribute, what is already covered by someone else, whether there are safety concerns to address first — and what she says she needs.",
+          "Every plan begins with a documented assessment rather than a fixed bundle. We look at what interrupted her learning, what her household can realistically contribute, what is already covered by someone else, whether there are safety concerns to address first, and what she says she needs.",
         ],
         points: [
           { label: "Assess", text: "Understand what is actually blocking her, in her situation." },
@@ -78,7 +78,7 @@ const pages: Record<string, GetInvolvedPage> = {
         heading: "What we will not offer",
         body: [
           "We do not send photographs of a sponsored girl, her personal details, or direct contact with her. This is deliberate. A name, a face and a school are enough to locate someone, and consent given at seventeen to the people helping you is not consent freely given.",
-          "You get full accountability for the money — restricted, receipted and reported every term. She keeps her privacy. Both are possible at once, and we protect both.",
+          "You get full accountability for the money: restricted, receipted and reported every term. She keeps her privacy. Both are possible at once, and we protect both.",
         ],
       },
     ],
@@ -96,12 +96,12 @@ const pages: Record<string, GetInvolvedPage> = {
     title: "Partner With Us",
     subtitle: "What a good partner brings",
     metaDescription:
-      "Partner with Treasured Vessels Girls' Centre in Jinja, Uganda — schools, health providers, businesses, churches, NGOs and foundations working together for girls.",
+      "Partner with Treasured Vessels Girls' Centre in Jinja, Uganda. Schools, health providers, businesses, churches, NGOs and foundations working together for girls.",
     image: "images/gallery/tailoring-workshop.jpg",
     imageAlt:
       "The tailoring workshop at Treasured Vessels Girls' Centre, with sewing machines and trainees at work",
     intro: [
-      "Most of what a girl in difficulty needs already exists somewhere in Jinja — schools, health services, probation officers, legal support, training. The barrier is rarely that these things are absent. It is that they are not connected, and she cannot reach them alone.",
+      "Most of what a girl in difficulty needs already exists somewhere in Jinja: schools, health services, probation officers, legal support, training. The barrier is rarely that these things are absent. It is that they are not connected, and she cannot reach them alone.",
       "That is where partnership does its work. We are a small, registered community-based organisation running six programmes with around 30 regular volunteers. What we offer is proximity and continuity. What we need from partners is the reach and specialist capability we do not have.",
     ],
     sections: [
@@ -169,7 +169,7 @@ const pages: Record<string, GetInvolvedPage> = {
       "A hairdressing training session in progress at Treasured Vessels Girls' Centre in Jinja, Uganda",
     intro: [
       "Around 30 regular volunteers already keep this centre running. They are the reason a skills class happens on a Tuesday and a school outreach happens on a Thursday.",
-      "We are always glad of more hands — but the most useful thing a volunteer offers is not enthusiasm. It is turning up, consistently, for long enough that the girls come to expect you.",
+      "We are always glad of more hands, but the most useful thing a volunteer offers is not enthusiasm. It is turning up, consistently, for long enough that the girls come to expect you.",
     ],
     sections: [
       {
@@ -178,7 +178,7 @@ const pages: Record<string, GetInvolvedPage> = {
         points: [
           {
             label: "Vocational training support",
-            text: "Tailoring, hairdressing, baking, soap-making, crafts and shoemaking — assisting a trainer, or teaching a skill yourself.",
+            text: "Tailoring, hairdressing, baking, soap-making, crafts and shoemaking. Assist a trainer, or teach a skill yourself.",
           },
           {
             label: "School outreach",
@@ -194,7 +194,7 @@ const pages: Record<string, GetInvolvedPage> = {
           },
           {
             label: "Skills we lack",
-            text: "Bookkeeping, record-keeping, photography, and help with our digital systems — some of which can be done remotely.",
+            text: "Bookkeeping, record-keeping, photography, and help with our digital systems, some of which can be done remotely.",
           },
         ],
       },
@@ -225,7 +225,7 @@ const pages: Record<string, GetInvolvedPage> = {
       {
         heading: "Volunteering from outside Jinja",
         body: [
-          "Most of our volunteering is hands-on and local. If you are elsewhere in Uganda or overseas and want to help, the honest answer is that remote, skills-based support — administration, record-keeping, design, fundraising — is usually far more valuable to us than a short visit.",
+          "Most of our volunteering is hands-on and local. If you are elsewhere in Uganda or overseas and want to help, the honest answer is that remote, skills-based support in administration, record-keeping, design or fundraising is usually far more valuable to us than a short visit.",
         ],
       },
     ],
@@ -336,7 +336,7 @@ export default function GetInvolved() {
                       </span>
                       <span className="text-brand-charcoal/80 leading-relaxed">
                         <strong className="text-brand-plum">{point.label}</strong>
-                        {" — "}
+                        {": "}
                         {point.text}
                       </span>
                     </li>

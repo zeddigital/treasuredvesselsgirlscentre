@@ -33,7 +33,7 @@ export default function GenericPage({
     title: `${title} | Treasured Vessels Girls' Centre`,
     description:
       description ??
-      `${title} — Treasured Vessels Girls' Centre, a women-led community organisation supporting vulnerable girls and women in Jinja, Uganda.`,
+      `${title} at Treasured Vessels Girls' Centre, a women-led community organisation supporting vulnerable girls and women in Jinja, Uganda.`,
     path: location,
     webPageType,
     schema,

@@ -47,7 +47,7 @@
   <text class="d" x="438" y="238">help, in general</text>
   <text class="d" x="438" y="256">terms only.</text>
 
-  <!-- 4 — the one that matters -->
+  <!-- 4: the one that matters -->
   <rect x="599" y="146" width="164" height="152" rx="14" fill="#ffffff" stroke="#A33895" stroke-width="3"/>
   <circle cx="631" cy="178" r="14" fill="#552050"/><text class="n" x="631" y="185" text-anchor="middle">4</text>
   <text class="t" x="655" y="184">Completion</text>
@@ -79,7 +79,7 @@
   <rect x="56" y="396" width="888" height="152" rx="16" fill="#ffffff" stroke="#B3123C" stroke-width="2"/>
   <text class="nt" x="82" y="430">WHAT IS NEVER WRITTEN DOWN</text>
   <text class="nd" x="82" y="462">Clinical details &#183; diagnoses &#183; the specifics of an assault &#183; what she said about her family</text>
-  <text class="nd" x="82" y="490">Detail of that kind belongs with the statutory services &#8212; the health worker conducting the examination, the</text>
+  <text class="nd" x="82" y="490">Detail of that kind belongs with the statutory services: the health worker conducting the examination, the</text>
   <text class="nd" x="82" y="510">police Child and Family Protection Unit, the district probation and social welfare officer.</text>
   <text class="loop" x="82" y="534">A file cannot leak what it never held.</text>
 

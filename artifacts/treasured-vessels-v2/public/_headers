@@ -4,8 +4,8 @@
 # the HTML for several URLs at once. Those must revalidate, or the edge serves
 # yesterday's page from the custom domain until someone purges the cache by hand.
 #
-# Rules are matched on the request path, not the file on disk — /blog/a-post has
-# no .html extension even though it serves blog/a-post/index.html — so the
+# Rules are matched on the request path, not the file on disk. /blog/a-post has
+# no .html extension even though it serves blog/a-post/index.html, so the
 # default below is deliberately everything, with the fingerprinted build assets
 # opted back out underneath it.
 

@@ -33,7 +33,7 @@ export default function Blog() {
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-plum mb-6">Blog</h1>
             <p className="text-lg text-brand-charcoal/80 leading-relaxed">
               Evidence-based writing on girls' education, women's empowerment and life in our
-              community &mdash; from the team in Jinja, Uganda.
+              community, from the team in Jinja, Uganda.
             </p>
           </div>
         </div>

@@ -62,6 +62,29 @@ Never sound preachy. Never sound like marketing. Never sound like AI.
 Write for a Year 8 to Year 10 reading level. Use short paragraphs. Avoid jargon.
 Explain difficult terms naturally. Write conversationally.
 
+### No em or en dashes
+
+**Never use an em dash (—) or an en dash (–).** A dash used as a stylistic pause is the
+single most recognisable tell of machine-written copy, and a reader who spots one stops
+trusting the rest of the page. Hyphens inside words (`re-entry`, `adolescent-friendly`)
+are fine; these two characters are not.
+
+Do not swap a dash for a comma by reflex. Ask what the sentence was doing:
+
+| The dash was… | Use instead |
+|---|---|
+| introducing a list or an explanation | a colon |
+| adding a second, harder sentence | a full stop |
+| a parenthetical pair | commas, or rewrite without the aside |
+| joining two clauses | `and`, `but`, `which`, `because` |
+| a range (`10–19`, `2022–27`) | `10 to 19`, or a hyphen in a short year label |
+| attributing a quotation | nothing — just the name on its own line |
+
+The build enforces this. `sitemapPlugin.ts` fails with the file, line and text of every
+offending line across `src/` and `public/images/gallery/`, including HTML entities
+(`&mdash;`) and JS escapes (`\u2014`). Code comments are exempt, since they are not
+published.
+
 ## Length
 
 - Standard blogs: **2,000–3,000 words**
@@ -264,6 +287,7 @@ Before completing every article, ensure:
 - [ ] Facts are verified
 - [ ] Grammar is perfect
 - [ ] **UK English** is used
+- [ ] **No em or en dashes** anywhere in the copy
 - [ ] Safeguarding standards are maintained
 - [ ] Internal links are suggested
 - [ ] External sources are included

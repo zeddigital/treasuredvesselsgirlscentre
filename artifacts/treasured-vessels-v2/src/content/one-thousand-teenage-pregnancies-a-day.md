@@ -1,10 +1,10 @@
 You have probably seen it shared: **one thousand teenage pregnancies a day in Uganda.**
 
-It is a real figure from a credible source, and it is almost always posted without one. Stripped of where it came from, a number like that does two unhelpful things at once — it invites disbelief from anyone inclined to doubt it, and it invites despair from everyone else.
+It is a real figure from a credible source, and it is almost always posted without one. Stripped of where it came from, a number like that does two unhelpful things at once. It invites disbelief from anyone inclined to doubt it, and it invites despair from everyone else.
 
 Neither reaction helps a single girl.
 
-So here is the figure with its source attached, an honest account of what it does and does not measure, and — the part that matters — the four things that actually change the outcome behind it.
+So here is the figure with its source attached, an honest account of what it does and does not measure, and, the part that matters, the four things that actually change the outcome behind it.
 
 ---
 
@@ -28,7 +28,7 @@ None of what follows makes the situation less serious. It makes the claim more d
 
 Nobody counted a thousand girls yesterday. There is no register being tallied at the end of each day.
 
-The figure is an **average derived from survey prevalence** — a rate observed across a population, converted into a per-day expression to make it comprehensible. That conversion is a legitimate way to communicate scale. It is not a measurement of any particular day.
+The figure is an **average derived from survey prevalence**: a rate observed across a population, converted into a per-day expression to make it comprehensible. That conversion is a legitimate way to communicate scale. It is not a measurement of any particular day.
 
 The practical implication: if someone challenges you to produce yesterday's thousand girls, they have misunderstood the figure, but so has anyone who presented it as though such a list existed.
 
@@ -36,7 +36,7 @@ The practical implication: if someone challenges you to produce yesterday's thou
 
 A national average describes the country and no district within it.
 
-Busoga has repeatedly been reported among the highest sub-regions in Uganda for teenage pregnancy. Other areas sit well below the national figure. Presenting one number as though risk were evenly spread makes prevention look like a vague national problem rather than something with a geography — and it is the geography that tells you where to put a programme.
+Busoga has repeatedly been reported among the highest sub-regions in Uganda for teenage pregnancy. Other areas sit well below the national figure. Presenting one number as though risk were evenly spread makes prevention look like a vague national problem rather than something with a geography, and it is the geography that tells you where to put a programme.
 
 ### The 24% is cumulative, not current
 
@@ -46,7 +46,7 @@ This one is subtle and it is the most commonly missed.
 
 A cumulative measure and a daily flow are different kinds of quantity, and translating between them requires assumptions about how pregnancies distribute across those ten years. That translation is reasonable. It is still a translation, and it deserves the word "approximately" that UNICEF gives it.
 
-We set out the wider version of this problem — three different figures, three different denominators, routinely quoted as one — in [ending child marriage and teenage pregnancy in Uganda](/blog/ending-child-marriage-and-teenage-pregnancy-in-uganda).
+We set out the wider version of this problem, three different figures with three different denominators routinely quoted as one, in [ending child marriage and teenage pregnancy in Uganda](/blog/ending-child-marriage-and-teenage-pregnancy-in-uganda).
 
 ---
 
@@ -66,19 +66,19 @@ Precision is not the opposite of urgency here. It is what makes urgency credible
 
 Now the part that should follow every statistic and usually does not.
 
-A thousand a day, on average, means that in the time it takes to read this article, girls in Uganda have become pregnant. Not statistics — individual girls, each of whom now needs some combination of five things: **medical care, physical safety, an education that continues, a family that stays with her, and protection from whoever is responsible if she was coerced.**
+A thousand a day, on average, means that in the time it takes to read this article, girls in Uganda have become pregnant. Not statistics, but individual girls, each of whom now needs some combination of five things: **medical care, physical safety, an education that continues, a family that stays with her, and protection from whoever is responsible if she was coerced.**
 
 Which of those five she needs, and in what order, is not something a national figure can tell you. It is why the work is done girl by girl, and why organisations that only publish numbers should be treated with mild suspicion.
 
 It is worth taking each of the five seriously for a moment, because they are genuinely different problems requiring different people.
 
-**Medical care** is the most time-sensitive. Adolescent pregnancy carries elevated risk — obstructed labour, anaemia, complications that are more common in younger mothers — and antenatal attendance is often late, when it happens at all. The window in which a health worker can change the outcome opens early and closes.
+**Medical care** is the most time-sensitive. Adolescent pregnancy carries elevated risk, including obstructed labour, anaemia and complications that are more common in younger mothers, and antenatal attendance is often late, when it happens at all. The window in which a health worker can change the outcome opens early and closes.
 
 **Physical safety** is a separate question, and asking it is not intrusive. Is she safe at home? Is the person responsible still in contact with her? A girl who is pregnant and unsafe needs protection before she needs anything else on this list.
 
 **An education that continues** is the difference between a pregnancy that interrupts a life and one that redirects it. This is the need most often written off on her behalf, by people who have decided the matter is settled.
 
-**A family that stays with her** is the one outsiders can least control and most easily damage. Handled badly — publicly, accusingly — an intervention can turn a wavering family into a hostile one. Handled well, the household becomes the thing holding the plan together.
+**A family that stays with her** is the one outsiders can least control and most easily damage. Handled badly, publicly and accusingly, an intervention can turn a wavering family into a hostile one. Handled well, the household becomes the thing holding the plan together.
 
 **Protection from whoever is responsible**, where she was coerced. This is the need that a shame-based response erases completely, because it starts from the assumption that the question has already been answered.
 
@@ -92,7 +92,7 @@ Since this whole article is really about provenance, here is the method, which t
 
 **Ask who published it, not who posted it.** A screenshot of a number is not a source. The organisation whose research produced it is.
 
-**Ask what the denominator is.** Twenty-four per cent *of whom* — all girls, girls of a particular age band, women looking back on their adolescence? Two figures can share a percentage and describe entirely different populations, which is precisely what happens with this one.
+**Ask what the denominator is.** Twenty-four per cent *of whom*: all girls, girls of a particular age band, women looking back on their adolescence? Two figures can share a percentage and describe entirely different populations, which is precisely what happens with this one.
 
 **Ask when it was collected**, not when it was published. Survey data is often several years old by the time it circulates, which matters enormously if you are claiming a trend.
 
@@ -112,7 +112,7 @@ If you want to do something with this statistic other than share it, here is whe
 
 The single highest-return intervention, and the least dramatic.
 
-Cost — not pregnancy — is the leading reason a girl leaves school in Uganda, and a girl who stays in education marries later and has children later. Prevention, in most cases, looks like a paid school fee rather than a campaign.
+Cost, not pregnancy, is the leading reason a girl leaves school in Uganda, and a girl who stays in education marries later and has children later. Prevention, in most cases, looks like a paid school fee rather than a campaign.
 
 **$50 keeps a girl in school for a full term.** We set out the five obstacles this addresses in [five barriers that push a girl out of school](/blog/five-barriers-that-push-a-girl-out-of-school).
 
@@ -126,7 +126,7 @@ That means open at a time she is not in class, staffed by someone who will not l
 
 Any response that treats every adolescent pregnancy as the result of a choice a girl made will fail the substantial share that involved pressure, exploitation or force.
 
-A sexual act with anyone under eighteen is defilement under Ugandan law. Asking who the father is and how old he is should be routine, not intrusive — and there needs to be a reporting route that a frightened girl believes will work. The plain-language version is in [what Ugandan law says about child marriage](/blog/what-ugandan-law-says-about-child-marriage).
+A sexual act with anyone under eighteen is defilement under Ugandan law. Asking who the father is and how old he is should be routine, not intrusive, and there needs to be a reporting route that a frightened girl believes will work. The plain-language version is in [what Ugandan law says about child marriage](/blog/what-ugandan-law-says-about-child-marriage).
 
 ### 4. Reintegration that outlasts the goodwill
 
@@ -142,7 +142,7 @@ By all means share the statistic. We would ask two things.
 
 **Share the source with it.** "UNICEF Uganda reports approximately 1,000 teenage pregnancies a day." One clause, and the claim survives contact with a sceptic.
 
-**Share an action, not only the alarm.** A number on its own produces a feeling that fades by the afternoon. A number with one concrete thing attached — a term of school fees, a checklist for a head teacher, a helpline number — occasionally produces something else.
+**Share an action, not only the alarm.** A number on its own produces a feeling that fades by the afternoon. A number with one concrete thing attached, whether a term of school fees, a checklist for a head teacher or a helpline number, occasionally produces something else.
 
 If you want a single thing to attach, the **Uganda Child Helpline is 116**: free from any network, 24 hours, run by the Ministry of Gender, Labour and Social Development. Someone reading your post may need it more than they need the statistic.
 
@@ -180,7 +180,7 @@ Girls who have ever experienced a pregnancy at any point in that ten-year age ba
 
 ### Is this the same as the 24% figure from the Uganda Demographic and Health Survey?
 
-They are similar numbers measuring different things, which causes real confusion. The UDHS 2022 figure of around 24% refers to girls aged 15–19 who have begun childbearing — already mothers or pregnant with a first child. The UNICEF figure covers ages 10–19 and asks about ever having experienced pregnancy. Same percentage, different question, different age band.
+They are similar numbers measuring different things, which causes real confusion. The UDHS 2022 figure of around 24% refers to girls aged 15 to 19 who have begun childbearing: already mothers or pregnant with a first child. The UNICEF figure covers ages 10 to 19 and asks about ever having experienced pregnancy. Same percentage, different question, different age band.
 
 ### What is the most effective thing to fund?
 
@@ -188,4 +188,4 @@ Keeping girls in school. The evidence is unusually consistent: girls who remain 
 
 ### What should I do if I am worried about a specific girl?
 
-Call the Uganda Child Helpline on 116 — free from any network, 24 hours. Please do not name or identify a child on social media, which can increase the danger to her.
+Call the Uganda Child Helpline on 116, free from any network, 24 hours. Please do not name or identify a child on social media, which can increase the danger to her.

@@ -20,12 +20,12 @@
   <rect x="56" y="48" width="888" height="230" rx="22" fill="#552050"/>
   <text class="huge" x="96" y="168">1,000</text>
   <text class="unit" x="98" y="206">TEENAGE PREGNANCIES A DAY</text>
-  <text class="from" x="98" y="238">in Uganda &#8212; an average, not a daily case count</text>
+  <text class="from" x="98" y="238">in Uganda: an average, not a daily case count</text>
 
   <line x1="600" y1="88" x2="600" y2="240" stroke="#7A3C74" stroke-width="2"/>
   <text class="src" x="632" y="110" font-weight="700">Where it comes from</text>
   <text class="src" x="632" y="140">Approximately 24% of girls aged</text>
-  <text class="src" x="632" y="162">10&#8211;19 have experienced pregnancy,</text>
+  <text class="src" x="632" y="162">10 to 19 have experienced pregnancy,</text>
   <text class="src" x="632" y="184">which UNICEF Uganda translates to</text>
   <text class="src" x="632" y="206">roughly 1,000 each day.</text>
   <text class="src" x="632" y="238" fill="#C9AEC4">Source: UNICEF Uganda</text>
@@ -57,9 +57,9 @@
   <text class="cn" x="718" y="381">24% is cumulative</text>
   <text class="cd" x="688" y="414">It counts girls who have</text>
   <text class="cd" x="688" y="434"><tspan font-style="italic">ever</tspan> been pregnant across the</text>
-  <text class="cd" x="688" y="454">whole 10&#8211;19 band &#8212; not the</text>
+  <text class="cd" x="688" y="454">whole 10 to 19 band, not the</text>
   <text class="cd" x="688" y="474">share pregnant right now.</text>
 
-  <text class="foot" x="56" y="562">Every one of them is a girl who may need health care, safety, an education and support &#8212; today.</text>
+  <text class="foot" x="56" y="562">Every one of them is a girl who may need health care, safety, an education and support, today.</text>
   <text class="foot" x="944" y="592" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
 </svg>

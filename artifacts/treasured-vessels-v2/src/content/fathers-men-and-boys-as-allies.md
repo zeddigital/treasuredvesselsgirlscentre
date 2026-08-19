@@ -4,7 +4,7 @@ We have been to those events. We have probably helped organise one.
 
 The problem is not that the sentiments are wrong. It is that praise is being handed out for holding an opinion, when what a girl actually needs is for somebody's **conduct** to be different on Tuesday.
 
-So this article is not an appreciation of good men. It is a description of what allyship looks like when it is real, who it is for, and — the part that gets left out — the specific ways that "male involvement" can make a girl's situation worse.
+So this article is not an appreciation of good men. It is a description of what allyship looks like when it is real, who it is for, and, the part that gets left out, the specific ways that "male involvement" can make a girl's situation worse.
 
 ---
 
@@ -14,7 +14,7 @@ Before any list of roles, one question, which applies to every action described 
 
 > **Is she safer, freer, and more able to choose her own future than she was before?**
 
-If the honest answer is no, it was not allyship. Whatever else it was — well-intentioned, culturally appropriate, publicly admired — it did not help.
+If the honest answer is no, it was not allyship. Whatever else it was, whether well-intentioned, culturally appropriate or publicly admired, it did not help.
 
 That test does real work, because it rules out a great deal of what commonly passes for male involvement. A father who decides his daughter will return to school has not made her freer if she wanted a trade. A pastor who reconciles a woman with a violent husband has not made her safer. A committee of men convened to protect girls, containing no girls, has not made anyone more able to choose.
 
@@ -24,7 +24,7 @@ That test does real work, because it rules out a great deal of what commonly pas
 
 Roles differ by relationship, and vague encouragement helps nobody. Here is the specific version.
 
-![Practical roles for men and boys by relationship — father, partner, brother, teacher, faith leader and local official — each with concrete actions, and the test of whether a girl is safer, freer and more able to choose](/images/gallery/what-an-ally-does.svg)
+![Practical roles for men and boys by relationship, covering father, partner, brother, teacher, faith leader and local official, each with concrete actions, and the test of whether a girl is safer, freer and more able to choose](/images/gallery/what-an-ally-does.svg)
 
 ### If you are a father
 
@@ -38,7 +38,7 @@ Roles differ by relationship, and vague encouragement helps nobody. Here is the 
 
 **Treat her income as hers.** A woman who completes vocational training and then hands over her earnings has swapped one dependency for another.
 
-**Treat her decisions as hers**, including the ones you would have made differently. And do not require an account of where she has been — that is not concern, whatever it is called.
+**Treat her decisions as hers**, including the ones you would have made differently. And do not require an account of where she has been. That is not concern, whatever it is called.
 
 ### If you are a brother
 
@@ -52,9 +52,9 @@ State the school's re-entry position before anyone has to ask. Never identify a 
 
 ### If you are a religious or cultural leader
 
-You are, in practice, the person most likely to be consulted before an early marriage happens — long before any official hears of it.
+You are, in practice, the person most likely to be consulted before an early marriage happens, long before any official hears of it.
 
-**Say from the front, once, that shame belongs to no girl.** **Ask openly about the responsibility of adult men**, because the silence on that is doing more damage than anything said about the girls. And do not officiate or bless a union involving anyone under eighteen — beyond the harm to her, it associates you with conduct the Penal Code treats as a felony.
+**Say from the front, once, that shame belongs to no girl.** **Ask openly about the responsibility of adult men**, because the silence on that is doing more damage than anything said about the girls. And do not officiate or bless a union involving anyone under eighteen. Beyond the harm to her, it associates you with conduct the Penal Code treats as a felony.
 
 ### If you are a local official
 
@@ -82,7 +82,7 @@ Male-led community mediation has a strong tendency to treat the restoration of a
 
 ### 3. It becomes a performance
 
-Commitment ceremonies, pledges, photographs, matching shirts. These are not useless — public commitment does shift norms — but they are extremely easy to substitute for the private, unphotographed work of doing the washing or handing over money.
+Commitment ceremonies, pledges, photographs, matching shirts. These are not useless, and public commitment does shift norms, but they are extremely easy to substitute for the private, unphotographed work of doing the washing or handing over money.
 
 A useful diagnostic: if a man's involvement is visible to his community but produces no observable change in his own household, it is a performance.
 
@@ -100,7 +100,7 @@ Given all four of those, a reasonable person might ask why bother.
 
 Because the alternative fails. A prevention strategy aimed only at girls places the entire burden on the people with the least power in the situation. It asks a fifteen-year-old to negotiate her way out of circumstances created by adults, and then treats her failure to do so as a failure of empowerment.
 
-Uganda's **National Strategy to End Child Marriage and Teenage Pregnancy (2022/23–2026/27)** makes community engagement one of its pillars, alongside legal reform, education, health services and economic empowerment. Engaging men and boys sits inside that work, together with positive parenting and stronger community systems.
+Uganda's **National Strategy to End Child Marriage and Teenage Pregnancy (2022/23 to 2026/27)** makes community engagement one of its pillars, alongside legal reform, education, health services and economic empowerment. Engaging men and boys sits inside that work, together with positive parenting and stronger community systems.
 
 The practical case is narrower and harder to argue with. In a community where an adult man faces no social consequence for a relationship with a schoolgirl, no amount of girls' empowerment closes that gap. The consequence has to come from other men.
 
@@ -118,7 +118,7 @@ Here is what we would propose running with a church, a mosque, a school or a vil
 
 **Violence prevention, stated concretely.** Not a general condemnation, but the specific commitments: what is not acceptable, what to do when another man is doing it, and why "it is a family matter" is the sentence that protects the person causing harm.
 
-**Referral information everyone leaves with.** The Uganda Child Helpline is **116** — free from any network, 24 hours. Our numbers. Who the district probation and social welfare officer is. A session that produces goodwill and no phone numbers has not finished.
+**Referral information everyone leaves with.** The Uganda Child Helpline is **116**, free from any network, 24 hours. Our numbers. Who the district probation and social welfare officer is. A session that produces goodwill and no phone numbers has not finished.
 
 ### The commitment card
 
@@ -126,14 +126,14 @@ At the end, each man completes one of these. It is not collected.
 
 ![A commitment card template with six specific commitments and space to name one action for the month, who will ask about it, and by when](/images/gallery/mens-commitment-card.svg)
 
-The design is deliberate in two respects. The commitments are **specific enough to fail** — "I will pay school fees before discretionary spending" can be checked; "I will support girls' education" cannot. And each man names **who will ask him about it**, because a commitment with no one attached to it is a feeling.
+The design is deliberate in two respects. The commitments are **specific enough to fail**: "I will pay school fees before discretionary spending" can be checked; "I will support girls' education" cannot. And each man names **who will ask him about it**, because a commitment with no one attached to it is a feeling.
 
 Nobody collects the cards. A promise made to the centre is worth much less than one made to a household.
 
-**[Download the commitment card as a printable PDF →](/downloads/tvgc-mens-commitment-card.pdf)** — two A4 pages. The first holds two identical cards to a sheet, so one photocopy serves two men; the second is a facilitator's sheet with the two-hour run order, the four things to watch for, and the referral numbers. It photocopies in black and white and may be freely copied.
+**[Download the commitment card as a printable PDF →](/downloads/tvgc-mens-commitment-card.pdf)**: two A4 pages. The first holds two identical cards to a sheet, so one photocopy serves two men; the second is a facilitator's sheet with the two-hour run order, the four things to watch for, and the referral numbers. It photocopies in black and white and may be freely copied.
 
 > *"Learn to do good; seek justice, rebuke the oppressor; defend the fatherless, plead for the widow."*
-> — Isaiah 1:17, NKJV
+> Isaiah 1:17, NKJV
 
 The verb in that verse is *rebuke*, and its object is another person with power. It is not a call to feel sympathetic.
 
@@ -187,4 +187,4 @@ Pay school fees before discretionary spending, and refuse a marriage offer out l
 
 ### Can our church or school arrange a session?
 
-Yes. Get in touch. There is no charge, and we will fit your timetable — but we ask that the men who most need to be there are genuinely invited.
+Yes. Get in touch. There is no charge, and we will fit your timetable, but we ask that the men who most need to be there are genuinely invited.

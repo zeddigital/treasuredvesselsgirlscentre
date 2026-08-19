@@ -55,6 +55,51 @@ function assertHeroVariety(file: string): void {
   }
 }
 
+/**
+ * Em and en dashes are the most recognisable tell of machine-written copy, and
+ * one slipping back in is easy to miss in a 3,000-word article. Hyphens inside
+ * words are fine; these two characters are not. Rewrite the sentence rather
+ * than swapping in a comma blindly — a colon, a full stop or a rephrase is
+ * usually what the sentence actually wanted.
+ */
+const DASHES = /[\u2013\u2014]|&mdash;|&ndash;|&#8211;|&#8212;|\\u201[34]/g;
+
+function assertNoDashes(files: string[]): void {
+  const hits: string[] = [];
+
+  for (const file of files) {
+    const lines = fs.readFileSync(file, 'utf8').split('\n');
+    lines.forEach((line, i) => {
+      // Code comments are not published, so they are none of this check's business.
+      const code = /\.(ts|tsx)$/.test(file);
+      if (code && /^\s*(\/\/|\*|\/\*|\{\/\*)/.test(line)) return;
+      if (DASHES.test(line)) {
+        hits.push(`    ${path.relative(import.meta.dirname, file)}:${i + 1}  ${line.trim().slice(0, 100)}`);
+      }
+      DASHES.lastIndex = 0;
+    });
+  }
+
+  if (hits.length) {
+    throw new Error(
+      `Em and en dashes read as machine-written. Rewrite these ${hits.length} line(s):\n${hits.join('\n')}\n` +
+        `  A colon, a full stop or a rephrase is usually better than a comma.`,
+    );
+  }
+}
+
+function publishedText(): string[] {
+  const src = path.resolve(import.meta.dirname, 'src');
+  const gallery = path.resolve(import.meta.dirname, 'public/images/gallery');
+  const walk = (dir: string): string[] =>
+    fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
+      const full = path.join(dir, e.name);
+      if (e.isDirectory()) return e.name === 'ui' ? [] : walk(full);
+      return /\.(md|tsx?|svg)$/.test(e.name) ? [full] : [];
+    });
+  return [...walk(src), ...walk(gallery)];
+}
+
 function programIds(file: string): string[] {
   const src = fs.readFileSync(file, 'utf8');
   return [...src.matchAll(/id:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]);
@@ -85,6 +130,7 @@ export function sitemap(): Plugin {
       const today = new Date().toISOString().slice(0, 10);
 
       assertHeroVariety(path.join(src, 'lib/blog.ts'));
+      assertNoDashes(publishedText());
 
       const entries: Entry[] = [
         { loc: '/', changefreq: 'weekly', priority: '1.0' },

@@ -6,7 +6,7 @@ Between the number in her hand and a health worker who actually examines her, th
 
 Hand her a number, and you have solved none of the nine.
 
-This article is about closing that gap — what adolescent-friendly health care actually means, why so many referrals quietly fail somewhere between the number and the door, and what a small organisation in Jinja can honestly do about it.
+This article is about closing that gap: what adolescent-friendly health care actually means, why so many referrals quietly fail somewhere between the number and the door, and what a small organisation in Jinja can honestly do about it.
 
 ---
 
@@ -24,7 +24,7 @@ That may sound modest next to a clinic. It is not modest to her, and there is a 
 
 **It also protects her from us.** A girl who thinks she has already seen "the people who deal with this" may not seek the assessment she needs. Being clear that we are the bridge and not the destination is part of making sure she reaches the destination.
 
-**And it makes partnership possible.** Health facilities work with organisations that know the limits of their role. They are wary — reasonably — of the ones that do not.
+**And it makes partnership possible.** Health facilities work with organisations that know the limits of their role. They are wary, reasonably enough, of the ones that do not.
 
 ---
 
@@ -40,7 +40,7 @@ The phrase gets used loosely. It is worth setting out what it means from where s
 
 **Non-judgement.** No lecture, no sighing, no comments about how she got here. This is the single most commonly reported reason young people avoid services, and it costs nothing to fix.
 
-**Clear information.** What is wrong, what the options are, what the medicine is for, how long to take it, what would mean coming back urgently — in a language she speaks, at a pace she can follow, checked by asking her to say it back.
+**Clear information.** What is wrong, what the options are, what the medicine is for, how long to take it, what would mean coming back urgently, all in a language she speaks, at a pace she can follow, checked by asking her to say it back.
 
 **Safeguarding.** Where a girl is under eighteen and has been sexually active, a health worker is looking at a possible crime, not only a clinical presentation. Adolescent-friendly does not mean incurious. It means her disclosure is handled carefully rather than either ignored or broadcast.
 
@@ -48,9 +48,9 @@ The phrase gets used loosely. It is worth setting out what it means from where s
 
 **Timely maternal care.** Antenatal care that begins early rather than in the last weeks, delivery with a skilled attendant, and postnatal follow-up that does not stop at the birth.
 
-**The right services, in one place.** Being sent onwards a second time — from the place she was already sent — is where most referrals die.
+**The right services, in one place.** Being sent onwards a second time, from the place she was already sent, is where most referrals die.
 
-Those eight are how it feels. Underneath them sits a formal framework: the World Health Organization's **eight global standards for quality health-care services for adolescents**, which cover health literacy, community support, an appropriate package of services, provider competencies, facility characteristics, equity and non-discrimination, data and quality improvement, and adolescents' own participation in shaping services. Uganda has its own version too — the Ministry of Health's **Adolescent Health Policy Guidelines and Service Standards** set out what adolescent-friendly provision should look like in Ugandan facilities.
+Those eight are how it feels. Underneath them sits a formal framework: the World Health Organization's **eight global standards for quality health-care services for adolescents**, which cover health literacy, community support, an appropriate package of services, provider competencies, facility characteristics, equity and non-discrimination, data and quality improvement, and adolescents' own participation in shaping services. Uganda has its own version too. The Ministry of Health's **Adolescent Health Policy Guidelines and Service Standards** set out what adolescent-friendly provision should look like in Ugandan facilities.
 
 The standards exist. The gap is rarely in the guidance.
 
@@ -62,7 +62,7 @@ Here is the argument at the centre of this article, and it applies far beyond he
 
 **A referral is not an event. It is a chain, and it is only as strong as the weakest link.**
 
-There is a useful national illustration of this. According to the Uganda Demographic and Health Survey 2022, around **95% of pregnant women in Uganda receive antenatal care from a skilled provider at least once** — but only about **72% attend the recommended four or more visits**. Almost everybody makes contact. Roughly a quarter do not complete.
+There is a useful national illustration of this. According to the Uganda Demographic and Health Survey 2022, around **95% of pregnant women in Uganda receive antenatal care from a skilled provider at least once**, but only about **72% attend the recommended four or more visits**. Almost everybody makes contact. Roughly a quarter do not complete.
 
 Making contact was never the hard part. Completing is.
 
@@ -70,7 +70,7 @@ Now go back to the nine things that have to go right, and look at where they act
 
 ### She has to be allowed to go
 
-For an adolescent living in someone else's household, a clinic visit is rarely her decision alone. Someone controls the money, someone notices the absence, and someone may have a strong interest in the visit not happening — particularly where a pregnancy involves a man who would prefer no record of it.
+For an adolescent living in someone else's household, a clinic visit is rarely her decision alone. Someone controls the money, someone notices the absence, and someone may have a strong interest in the visit not happening, particularly where a pregnancy involves a man who would prefer no record of it.
 
 This is the link that fails silently, because from the outside it looks like she simply did not bother.
 
@@ -92,7 +92,7 @@ Instructions given quickly, in a language she is not fluent in, to a frightened 
 
 ### She has to be able to come back
 
-Most useful health care is not one visit. Antenatal care is a series. Treatment is a course. Every additional visit multiplies the cost, the permission problem and the chance of being recognised — which is why completion rates fall away so steeply.
+Most useful health care is not one visit. Antenatal care is a series. Treatment is a course. Every additional visit multiplies the cost, the permission problem and the chance of being recognised, which is why completion rates fall away so steeply.
 
 ### She has to get home safely
 
@@ -110,7 +110,7 @@ The World Health Organization reports that mothers aged 10 to 19 face **higher r
 
 We put that here carefully, because it is easy to misuse. It is not a reason to frighten a pregnant fifteen-year-old, and it is certainly not a reason to treat her as a tragedy. She is far more likely to be fine than not.
 
-It is a reason to move quickly, and to keep moving. Early antenatal contact and completed follow-up are among the most reliably useful things anybody can arrange for her — more useful than sympathy, and more useful than advice.
+It is a reason to move quickly, and to keep moving. Early antenatal contact and completed follow-up are among the most reliably useful things anybody can arrange for her, more useful than sympathy and more useful than advice.
 
 ---
 
@@ -124,11 +124,11 @@ We are building what is sometimes called a **closed-loop referral**: a short rec
 
 Five entries, and no more:
 
-1. **Consent** — that she agreed, what she agreed to, and on what date.
-2. **Destination** — where she was referred to, and to which service.
-3. **Service sought** — the category of help, in general terms.
-4. **Completion** — whether she got there and was seen.
-5. **Follow-up** — what, if anything, still needs doing, and who is responsible for it.
+1. **Consent**: that she agreed, what she agreed to, and on what date.
+2. **Destination**: where she was referred to, and to which service.
+3. **Service sought**: the category of help, in general terms.
+4. **Completion**: whether she got there and was seen.
+5. **Follow-up**: what, if anything, still needs doing, and who is responsible for it.
 
 That is the whole system. Its value is entirely in the fourth line. A referral log that records only the sending is a record of our own activity; a log that records arrival is a record of whether anything happened to her.
 
@@ -138,7 +138,7 @@ This part matters as much as the rest, and it usually gets less thought.
 
 We do not record clinical details. We do not record diagnoses. We do not record the specifics of an assault. We do not record what she said about her family. **A file cannot leak what it never held**, and every unnecessary field in a record is a risk we chose to take with somebody else's safety.
 
-Where an under-eighteen may have been harmed, the correct destination for detail is the statutory route — the police Child and Family Protection Unit, the district probation and social welfare officer, the health worker conducting the examination — not our filing cabinet.
+Where an under-eighteen may have been harmed, the correct destination for detail is the statutory route, not our filing cabinet: the police Child and Family Protection Unit, the district probation and social welfare officer, or the health worker conducting the examination.
 
 We hold the least we can hold and still be useful. Our full approach is in our [privacy policy](/policies/privacy).
 
@@ -146,7 +146,7 @@ We hold the least we can hold and still be useful. Our full approach is in our [
 
 Before any of that, she has to agree, and agreement has to mean something.
 
-She should know **who will be told, and who will not**. She should know **what happens if she says no** — which is that we keep helping her with everything else, without sulking about it. She should know she can **change her mind afterwards**, including about follow-up.
+She should know **who will be told, and who will not**. She should know **what happens if she says no**, which is that we keep helping her with everything else, without sulking about it. She should know she can **change her mind afterwards**, including about follow-up.
 
 A girl who has been coerced into a pregnancy does not need a second experience of being managed by adults who know best. If our referral process feels like the thing that happened to her, we have got it wrong, however good the clinic at the end of it is.
 
@@ -194,7 +194,7 @@ The same applies to emergency arrangements. Knowing where to go at two in the mo
 
 Do not wait for our directory.
 
-**The Uganda Child Helpline is 116** — free from any network, 24 hours, run by the Ministry of Gender, Labour and Social Development. If a child is in immediate danger, that call comes before everything else on this page.
+**The Uganda Child Helpline is 116**, free from any network, 24 hours, run by the Ministry of Gender, Labour and Social Development. If a child is in immediate danger, that call comes before everything else on this page.
 
 Three things not to do, which we say in every article of this kind because they keep happening:
 
@@ -209,7 +209,7 @@ Three things not to do, which we say in every article of this kind because they 
 Our work is Christian, and this is one of the places where that is more than a label.
 
 > *"But a certain Samaritan, as he journeyed, came where he was. And when he saw him, he had compassion. So he went to him and bandaged his wounds… Then he set him on his own animal, brought him to an inn, and took care of him."*
-> — Luke 10:33–34, NKJV
+> Luke 10:33-34, NKJV
 
 The detail that gets skipped in that story is the transport. The Samaritan does not point out the inn. He puts the man on the animal, walks him there, and comes back afterwards to settle what is owed.
 
@@ -221,7 +221,7 @@ That is accompaniment, and it is roughly the whole of our role in adolescent hea
 
 This is the one thing we are asking for from this article.
 
-A verified adolescent-health referral fund and directory needs two things: the **verification work** to build the list, and a small **fund** that removes the money barrier at the moment it matters — the fare, the consultation, the medicine that was out of stock, the second visit that completes the course.
+A verified adolescent-health referral fund and directory needs two things: the **verification work** to build the list, and a small **fund** that removes the money barrier at the moment it matters: the fare, the consultation, the medicine that was out of stock, the second visit that completes the course.
 
 We are not publishing unit costs for it yet, because we have not verified them, and we would rather be late than wrong. When those figures are checked, we will publish them here alongside what the fund actually paid for.
 
@@ -233,7 +233,7 @@ In the meantime, our published costs remain what they have always been:
 
 [**Support the referral fund →**](/donate)
 
-If your organisation runs or works with a health service in the Jinja area — a facility, a clinic, a midwife, a counsellor — we would rather verify you than guess. Please [get in touch](/contact).
+If your organisation runs or works with a health service in the Jinja area, whether a facility, a clinic, a midwife or a counsellor, we would rather verify you than guess. Please [get in touch](/contact).
 
 ---
 
@@ -249,7 +249,7 @@ In practice: real privacy, respectful and non-judgemental communication, clear i
 
 ### Why is a phone number not enough?
 
-Because a referral is a chain. She has to be allowed to go, get there, afford it, find it open, tolerate being recognised, understand what she is told, be treated respectfully, be able to return for follow-up, and get home safely. A number solves none of those. Nationally, around 95% of pregnant women in Uganda make at least one antenatal contact but only about 72% complete four or more visits — contact is not the difficulty, completion is.
+Because a referral is a chain. She has to be allowed to go, get there, afford it, find it open, tolerate being recognised, understand what she is told, be treated respectfully, be able to return for follow-up, and get home safely. A number solves none of those. Nationally, around 95% of pregnant women in Uganda make at least one antenatal contact but only about 72% complete four or more visits. Contact is not the difficulty, completion is.
 
 ### What is a closed-loop referral?
 
@@ -261,7 +261,7 @@ As little as possible: that she consented, where she was referred, the general c
 
 ### Why does this article not list health facilities in Jinja?
 
-Because we have not finished verifying them. Naming a facility is an implied recommendation, and an out-of-date entry costs a girl a wasted journey she may not be able to repeat. Each entry has to pass five checks — service currently offered, hours and costs confirmed, a named contact, willingness to accept our referrals, and a visit in person — before it goes on the list.
+Because we have not finished verifying them. Naming a facility is an implied recommendation, and an out-of-date entry costs a girl a wasted journey she may not be able to repeat. Each entry has to pass five checks before it goes on the list: service currently offered, hours and costs confirmed, a named contact, willingness to accept our referrals, and a visit in person.
 
 ### Can a girl under 18 get health care without a parent in Uganda?
 

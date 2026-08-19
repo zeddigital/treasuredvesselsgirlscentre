@@ -37,7 +37,7 @@ export default function DonateThankYou() {
           </p>
           <p className="text-brand-charcoal/70 leading-relaxed mb-8">
             Stripe will email you a receipt shortly. If you set up a monthly gift, you can
-            change or cancel it at any time &mdash; just get in touch and we will sort it
+            change or cancel it at any time. Just get in touch and we will sort it
             out, no questions asked.
           </p>
 

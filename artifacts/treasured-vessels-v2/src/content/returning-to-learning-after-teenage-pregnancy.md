@@ -2,7 +2,7 @@ In Uganda, a girl who becomes pregnant is legally allowed to go back to school a
 
 And only about **one in three** adolescent mothers actually returns.
 
-That gap — between what the policy permits and what happens in practice — is where this article sits. It is not a gap made of one big obstacle. It is made of seven or eight ordinary ones, each of which looks manageable on its own and which together are enough to close the door for good.
+That gap, between what the policy permits and what happens in practice, is where this article sits. It is not a gap made of one big obstacle. It is made of seven or eight ordinary ones, each of which looks manageable on its own and which together are enough to close the door for good.
 
 ---
 
@@ -12,7 +12,7 @@ Uganda has approved **Revised Guidelines for the Prevention and Management of Te
 
 They are genuinely good guidelines. The problem, as UNICEF and others have noted, is a persistent gap in implementation.
 
-That distinction matters for anyone trying to help. The task is usually not to win an argument about whether a girl is *allowed* back. It is to make the permitted thing actually happen for one specific girl at one specific school — which is quieter, slower work.
+That distinction matters for anyone trying to help. The task is usually not to win an argument about whether a girl is *allowed* back. It is to make the permitted thing actually happen for one specific girl at one specific school, which is quieter, slower work.
 
 It is worth saying plainly what the figure means, too. **One in three returning is not a statement about the ambition of the other two.** Nearly every young mother we meet wants to keep learning. What she lacks is a route back that survives contact with reality.
 
@@ -44,7 +44,7 @@ Notice how these compound. A girl who fears mistreatment is less likely to argue
 
 It is worth being clear about the stakes, because "she can always go back later" is a comforting phrase that is often untrue.
 
-A girl who does not return rarely returns at all. Her earning capacity is set early, and set low. She is more exposed to a second early pregnancy, and to a relationship she cannot afford to leave. Her own children are then statistically less likely to complete school — which is how a single interrupted education becomes a two-generation problem.
+A girl who does not return rarely returns at all. Her earning capacity is set early, and set low. She is more exposed to a second early pregnancy, and to a relationship she cannot afford to leave. Her own children are then statistically less likely to complete school, which is how a single interrupted education becomes a two-generation problem.
 
 The national picture reflects this. Around 25% of Ugandan girls completed lower secondary education in 2017, and roughly 4% entered tertiary education in 2016, according to World Bank and UNESCO Institute for Statistics data. UNFPA estimates Uganda loses in the region of 24% of its potential each year as a result of adolescent childbearing.
 
@@ -58,7 +58,7 @@ Families often do not know what is available, so it is worth naming.
 
 Alongside the national re-entry guidelines, UNICEF launched an **Adolescent Youth and Empowerment Project** in May 2025, in partnership with Uganda's Ministry of Gender, Labour and Social Development and the Office of the Prime Minister. It combines peer mentorship, referral into skilling, education re-entry and health services, and a monthly cash transfer of **UGX 45,000** (roughly US$12) for vulnerable teenage mothers.
 
-We mention it for two reasons. First, some young mothers reading this may be eligible and unaware. Second, it makes a wider point: a girl in this position is not dependent on one organisation's goodwill. There is a system — patchy and hard to navigate, but real — and a large part of useful local work is simply connecting her to it.
+We mention it for two reasons. First, some young mothers reading this may be eligible and unaware. Second, it makes a wider point: a girl in this position is not dependent on one organisation's goodwill. There is a system, patchy and hard to navigate but real, and a large part of useful local work is simply connecting her to it.
 
 If you are a young mother in the Jinja area and unsure what you might be entitled to, contact us and we will help you find out.
 
@@ -72,7 +72,7 @@ Because the barriers arrive together, the response has to be a sequence rather t
 
 ### 1. Start with what she wants
 
-Before anything else, ask her. Not her mother, not the head teacher — her.
+Before anything else, ask her. Not her mother, not the head teacher. Her.
 
 Young mothers are used to being discussed rather than consulted, and a plan she has not agreed to is one she has little reason to sustain. She is also frequently the best-informed person about what will and will not work in her household.
 
@@ -82,19 +82,19 @@ Whether she has recovered from the birth. Whether she and the baby are well. Whe
 
 If the answer to any of those is no, education is not yet the right conversation. It is easy to rush this stage because the school term is starting; it is a mistake.
 
-### 3. Identify the honest options — all three are valid
+### 3. Identify the honest options: all three are valid
 
 This is the point where most well-meaning support goes wrong, by assuming there is only one acceptable destination.
 
 **Formal school** is right for many girls and should never be written off on her behalf.
 
-**Accelerated learning** suits a girl who has lost a year or more and would be placed with children much younger than her — a situation that drives its own kind of dropout.
+**Accelerated learning** suits a girl who has lost a year or more and would be placed with children much younger than her, a situation that drives its own kind of dropout.
 
 **Vocational training** is the right answer for some young mothers, and choosing it is not a lesser outcome. A young woman earning from a trade at nineteen, with the option of returning to study later, has not failed at anything.
 
 What matters is that she chooses with accurate information, rather than having a route chosen for her by whoever is paying.
 
-### 4. Meet the school — where it is safe to
+### 4. Meet the school, where it is safe to
 
 If formal school is the route, someone should talk to the school *before* she turns up. Confirm the terms of return. Establish who she can go to if there is a problem. Get the position on absences for clinic appointments.
 
@@ -114,13 +114,13 @@ A plan nobody checks is a donation, not a plan.
 
 ## What this looks like in practice
 
-The following is a composite. It is not one identifiable girl, and no real names or schools are used — but every element of it is ordinary.
+The following is a composite. It is not one identifiable girl, and no real names or schools are used, but every element of it is ordinary.
 
 *A girl leaves school in S2 when she becomes pregnant. Her father has died; her mother sells produce and cannot cover fees for her and her younger brothers. After the birth she assumes school is over, because nobody has told her otherwise.*
 
 *The first conversation is not about school at all. It is about whether she and the baby are well, and whether home is safe. Both are, more or less.*
 
-*Asked what she wants, she says she wants to finish school — but she is realistic that she cannot manage a full day yet, and she is a year behind her class.*
+*Asked what she wants, she says she wants to finish school, but she is realistic that she cannot manage a full day yet, and she is a year behind her class.*
 
 *So the plan is staged. She starts with a skills course two mornings a week while her aunt minds the baby. The centre covers the materials. After two terms she is earning a little, the baby is older, and she moves to an accelerated programme to catch up the year she lost. A conversation with the school happens before she attends, not after.*
 
@@ -135,7 +135,7 @@ That is a realistic outcome, and it took nearly a year. Support that is only ava
 If you are a head teacher, four things make an enormous difference and cost very little:
 
 - **State your re-entry position clearly**, so girls and families know it before they ask.
-- **Do not identify a returning mother publicly** — not in assembly, not to the class.
+- **Do not identify a returning mother publicly**, not in assembly and not to the class.
 - **Allow for clinic appointments** without treating them as ordinary truancy.
 - **Name one confidential contact** a girl can go to when there is a problem.
 
@@ -147,7 +147,7 @@ We would gladly agree something along those lines in writing with schools in Jin
 
 The most common thing we hear from a parent is that education is now unaffordable and impractical. Frequently that is simply true, and it deserves a practical answer rather than a lecture.
 
-But it is worth weighing the other side. A young mother who completes an education or a trade is far better placed to support her child — and her family — than one who does not. The short-term arithmetic and the long-term arithmetic point in different directions.
+But it is worth weighing the other side. A young mother who completes an education or a trade is far better placed to support her child, and her family, than one who does not. The short-term arithmetic and the long-term arithmetic point in different directions.
 
 Where the resistance is about shame rather than money, we would ask one thing: she is the same person she was a year ago. Her value has not changed.
 
@@ -161,7 +161,7 @@ Every plan is different, so the useful thing is not a fixed package but a commit
 - **$50** covers a term
 - **$150** provides a sewing machine for a young woman building a trade
 
-If you are able to sustain something for a full academic year rather than a single term, say so — that is the support that actually gets a young mother to the far side of this.
+If you are able to sustain something for a full academic year rather than a single term, say so. That is the support that actually gets a young mother to the far side of this.
 
 [**Support a young mother's return to learning →**](/programs/teenage-mother-support)
 

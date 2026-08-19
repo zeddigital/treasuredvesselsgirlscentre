@@ -25,7 +25,7 @@ export default function Contact() {
   useSeo({
     title: "Contact Us | Treasured Vessels Girls' Centre, Jinja Uganda",
     description:
-      "Get in touch with Treasured Vessels Girls' Centre in Jinja, Uganda — to volunteer, partner with us, refer a girl, or learn more about our work.",
+      "Get in touch with Treasured Vessels Girls' Centre in Jinja, Uganda to volunteer, partner with us, refer a girl, or learn more about our work.",
     path: "/contact",
     webPageType: "ContactPage",
     webPage: { mainEntity: { "@id": ORG_ID } },
@@ -69,7 +69,7 @@ export default function Contact() {
         <div className="container mx-auto max-w-[1240px] px-4 md:px-6">
           <h1 className="font-serif text-4xl md:text-5xl text-brand-plum mb-4">Contact Us</h1>
           <p className="text-lg text-brand-charcoal/80 max-w-2xl leading-relaxed">
-            We&rsquo;d love to hear from you &mdash; whether you want to volunteer, partner with us,
+            We&rsquo;d love to hear from you, whether you want to volunteer, partner with us,
             or simply learn more about our work.
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function Contact() {
 
               {sent ? (
                 <div className="rounded-2xl bg-brand-paleblue p-6">
-                  <p className="text-brand-plum font-semibold mb-2">Thank you — your message is on its way.</p>
+                  <p className="text-brand-plum font-semibold mb-2">Thank you. Your message is on its way.</p>
                   <p className="text-sm text-brand-charcoal/80">
                     We have sent a confirmation to <strong>{values.email}</strong>. Someone from our
                     team in Jinja will read your message personally and normally replies within a few

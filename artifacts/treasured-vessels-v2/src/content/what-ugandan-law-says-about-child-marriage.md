@@ -1,4 +1,4 @@
-> **This article is general information, not legal advice.** It cannot account for the facts of any particular case. If a child may be at risk, contact the Uganda Child Helpline on **116** — free on any network, 24 hours — or a probation and social welfare officer, the police Child and Family Protection Unit, or a legal aid provider.
+> **This article is general information, not legal advice.** It cannot account for the facts of any particular case. If a child may be at risk, contact the Uganda Child Helpline on **116**, free on any network and available 24 hours, or a probation and social welfare officer, the police Child and Family Protection Unit, or a legal aid provider.
 
 Most people we speak with in Jinja are surprised by two things about Ugandan law on child marriage.
 
@@ -6,7 +6,7 @@ The first is how clear it is. There is no ambiguity about the minimum age, no ex
 
 The second is how little that clarity helps if nobody knows about it. A law that is plain on the page and unknown in the village protects nobody.
 
-So this is the plain-language version: what the law actually says, the four misunderstandings we hear most often, and — the part that matters most — what to do if you think a child is about to be married.
+So this is the plain-language version: what the law actually says, the four misunderstandings we hear most often, and, the part that matters most, what to do if you think a child is about to be married.
 
 ---
 
@@ -62,7 +62,7 @@ Calling it an arrangement changes the vocabulary. It does not change the legal p
 
 Marriage is not a remedy for pregnancy, and attempting to use it as one makes the situation worse in three distinct ways.
 
-It is not lawful — the age requirement has no pregnancy exception. It does not undo the offence that the pregnancy of a girl under eighteen evidences. And practically, it moves her out of reach: away from her own family, out of school, and into a household where the person who harmed her has authority over her.
+It is not lawful. The age requirement has no pregnancy exception. It does not undo the offence that the pregnancy of a girl under eighteen evidences. And practically, it moves her out of reach: away from her own family, out of school, and into a household where the person who harmed her has authority over her.
 
 Families who suggest this are usually trying to solve shame and money. Both of those are real problems and both have other answers.
 
@@ -70,7 +70,7 @@ Families who suggest this are usually trying to solve shame and money. Both of t
 
 A child's apparent agreement does not remove anyone's duty to protect her.
 
-The law does not recognise consent below eighteen for the purposes of a sexual act — that is the entire basis of the defilement offence. And "agreement" in these circumstances is rarely what the word implies. A fifteen-year-old told by her family that this is what will happen, with no money and nowhere else to go, is not exercising a free choice in any sense the Constitution would recognise.
+The law does not recognise consent below eighteen for the purposes of a sexual act, which is the entire basis of the defilement offence. And "agreement" in these circumstances is rarely what the word implies. A fifteen-year-old told by her family that this is what will happen, with no money and nowhere else to go, is not exercising a free choice in any sense the Constitution would recognise.
 
 The practical version: **if you find yourself weighing whether she consented, you are asking the wrong question.** The question is whether she is under eighteen.
 
@@ -78,7 +78,7 @@ The practical version: **if you find yourself weighing whether she consented, yo
 
 Culture is real and worth taking seriously. It does not create an exception to the Penal Code.
 
-It is also worth being accurate about what tradition actually requires. In our experience, when families are asked directly, the reasons given are far more often economic than cultural — school fees, food, a household under strain. Culture is frequently the language used to describe a financial decision, which matters, because a financial problem has practical solutions and an inherited obligation appears not to.
+It is also worth being accurate about what tradition actually requires. In our experience, when families are asked directly, the reasons given are far more often economic than cultural: school fees, food, a household under strain. Culture is frequently the language used to describe a financial decision, which matters, because a financial problem has practical solutions and an inherited obligation appears not to.
 
 ---
 
@@ -100,7 +100,7 @@ You do not need to be certain. You do not need evidence. Reporting a concern is 
 
 Both instincts are understandable and both are dangerous.
 
-Confronting a family tends to accelerate matters rather than stop them — a marriage that was planned for next month can happen next week, somewhere you cannot see it. It also identifies you as the person who interfered, which removes you as someone she can turn to later.
+Confronting a family tends to accelerate matters rather than stop them. A marriage that was planned for next month can happen next week, somewhere you cannot see it. It also identifies you as the person who interfered, which removes you as someone she can turn to later.
 
 Posting about it on social media is worse. It can identify a child to her entire community, it can reach the family before any official does, and it can permanently attach the matter to her name in a way no outcome will remove. **Never name a child publicly.** Not with initials, not with a photograph, not with enough detail that anyone local could work it out.
 
@@ -108,7 +108,7 @@ Posting about it on social media is worse. It can identify a child to her entire
 
 If you can talk to her without anyone noticing, do.
 
-Ask what she wants to happen. This is not a formality. A girl who has been decided about all her life is far more likely to engage with a plan she has helped shape, and she often knows things about her household that no outsider does — who might help, who must not be told, where the real pressure is coming from.
+Ask what she wants to happen. This is not a formality. A girl who has been decided about all her life is far more likely to engage with a plan she has helped shape, and she often knows things about her household that no outsider does: who might help, who must not be told, where the real pressure is coming from.
 
 Do not promise that you will keep it secret. You may not be able to, and a promise you break is worse than one you never made. What you can say honestly is that you will tell her before you tell anyone else, and that you will not do anything without explaining it to her first.
 
@@ -116,7 +116,7 @@ Do not promise that you will keep it secret. You may not be able to, and a promi
 
 The people whose job this actually is:
 
-- **Uganda Child Helpline — 116.** Free, any network, 24 hours. The simplest place to start if you are unsure of anything.
+- **Uganda Child Helpline: 116.** Free, any network, 24 hours. The simplest place to start if you are unsure of anything.
 - **The district probation and social welfare officer.** The statutory child protection role at district level.
 - **The police Child and Family Protection Unit** at your nearest station.
 - **A legal aid provider**, where the question is genuinely legal rather than protective.
@@ -127,7 +127,7 @@ Pick a route that does not run through anyone connected to the family.
 
 Dates, what was said, who said it, what you observed. Write it while you remember it accurately.
 
-Keep it somewhere the family cannot find, and share it only with the people in step four. This is not about building a case — that is not your job — but about the fact that memory degrades and details matter later.
+Keep it somewhere the family cannot find, and share it only with the people in step four. This is not about building a case, which is not your job, but about the fact that memory degrades and details matter later.
 
 ### What not to do
 
@@ -150,12 +150,12 @@ Nothing that has happened is your fault, and nothing you agreed to changes your 
 
 You are, in practice, the people best placed to stop this.
 
-A family considering an early marriage will very often consult a pastor, an imam or a clan elder before anyone else — and long before any official hears about it. What you say at that moment carries more weight than any law.
+A family considering an early marriage will very often consult a pastor, an imam or a clan elder before anyone else, and long before any official hears about it. What you say at that moment carries more weight than any law.
 
-Two things are worth knowing. Officiating or blessing a union involving someone under eighteen associates you with conduct the Penal Code treats as a felony. And saying so plainly, once, from the front, changes what families believe is expected of them — which is the single most useful contribution available to anyone in your position.
+Two things are worth knowing. Officiating or blessing a union involving someone under eighteen associates you with conduct the Penal Code treats as a felony. And saying so plainly, once, from the front, changes what families believe is expected of them, which is the single most useful contribution available to anyone in your position.
 
 > *"Learn to do good; seek justice, rebuke the oppressor; defend the fatherless, plead for the widow."*
-> — Isaiah 1:17, NKJV
+> Isaiah 1:17, NKJV
 
 ---
 
@@ -163,7 +163,7 @@ Two things are worth knowing. Officiating or blessing a union involving someone 
 
 The most useful thing you can do today takes one minute: put the helpline in your phone before you need it.
 
-- **Uganda Child Helpline: 116** — free, any network, 24 hours
+- **Uganda Child Helpline: 116.** Free, any network, 24 hours
 - **Treasured Vessels Girls' Centre, Jinja: +256 756 233 041 / +256 774 427 101**
 - Your district probation and social welfare officer
 - Your nearest police Child and Family Protection Unit
@@ -194,7 +194,7 @@ A child's apparent agreement does not remove the duty to protect her, and the la
 
 ### Who do I report a suspected child marriage to?
 
-Start with the Uganda Child Helpline on 116 — free from any network, 24 hours. You can also contact the district probation and social welfare officer, or the Child and Family Protection Unit at your nearest police station.
+Start with the Uganda Child Helpline on 116, free from any network, 24 hours. You can also contact the district probation and social welfare officer, or the Child and Family Protection Unit at your nearest police station.
 
 ### Should I post about it on social media to get help?
 

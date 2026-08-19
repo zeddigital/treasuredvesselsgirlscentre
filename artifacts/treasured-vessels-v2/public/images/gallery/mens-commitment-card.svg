@@ -24,7 +24,7 @@
   <text class="c" x="106" y="216">I will pay school fees before discretionary spending.</text>
 
   <rect x="72" y="242" width="20" height="20" rx="4" fill="none" stroke="#A33895" stroke-width="2"/>
-  <text class="c" x="106" y="258">I will do a named share of the care work at home &#8212; not &#8220;help&#8221;.</text>
+  <text class="c" x="106" y="258">I will do a named share of the care work at home, not &#8220;help&#8221;.</text>
 
   <rect x="72" y="284" width="20" height="20" rx="4" fill="none" stroke="#A33895" stroke-width="2"/>
   <text class="c" x="106" y="300">I will not repeat talk that shames a girl, and I will ask about the man.</text>
@@ -36,7 +36,7 @@
   <text class="c" x="106" y="384">I will buy from women-led businesses, at a fair price.</text>
 
   <line x1="72" y1="416" x2="928" y2="416" stroke="#E9DCE6" stroke-width="2"/>
-  <text class="tag" x="72" y="442">MAKE IT SPECIFIC &#8212; A PROMISE NOBODY CAN CHECK IS NOT A PROMISE</text>
+  <text class="tag" x="72" y="442">MAKE IT SPECIFIC: A PROMISE NOBODY CAN CHECK IS NOT A PROMISE</text>
 
   <text class="fl" x="72" y="480">One thing I will do this month</text>
   <line x1="290" y1="484" x2="928" y2="484" stroke="#C9AEC4" stroke-width="1.5"/>
@@ -49,5 +49,5 @@
   <text class="fl" x="596" y="556">Signed</text>
   <line x1="660" y1="560" x2="928" y2="560" stroke="#C9AEC4" stroke-width="1.5"/>
 
-  <text class="foot" x="72" y="590">This card is a promise to your household and your community &#8212; not to the centre. Nobody will collect it.</text>
+  <text class="foot" x="72" y="590">This card is a promise to your household and your community, not to the centre. Nobody will collect it.</text>
 </svg>

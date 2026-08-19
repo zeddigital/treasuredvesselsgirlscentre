@@ -14,7 +14,7 @@
   <rect width="1000" height="760" fill="#FFF8F0"/>
 
   <text class="h" x="56" y="60" font-size="30">Eight marks of adolescent-friendly care</text>
-  <text class="lead" x="56" y="90">Not the policy language &#8212; what it looks like from where she is standing.</text>
+  <text class="lead" x="56" y="90">Not the policy language, but what it looks like from where she is standing.</text>
   <line x1="56" y1="114" x2="944" y2="114" stroke="#E9DCE6" stroke-width="2"/>
 
   <!-- 1 -->
@@ -31,7 +31,7 @@
   <circle cx="548" cy="188" r="15" fill="#E43F8C"/><text class="n" x="548" y="195" text-anchor="middle">2</text>
   <text class="t" x="576" y="194">Respectful communication</text>
   <text class="d" x="538" y="228">She is spoken to, not spoken about. Her questions get</text>
-  <text class="d" x="538" y="248">answered &#8212; including the naive ones.</text>
+  <text class="d" x="538" y="248">answered, including the naive ones.</text>
 
   <!-- 3 -->
   <rect x="56" y="288" width="430" height="122" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
@@ -78,8 +78,8 @@
   <rect x="514" y="564" width="430" height="5" rx="2.5" fill="#F1B74B"/>
   <circle cx="548" cy="602" r="15" fill="#F1B74B"/><text class="n" x="548" y="609" text-anchor="middle">8</text>
   <text class="t" x="576" y="608">The right services, in one place</text>
-  <text class="d" x="538" y="642">Being sent onwards a second time &#8212; from the place she</text>
-  <text class="d" x="538" y="662">was already sent &#8212; is where most referrals die.</text>
+  <text class="d" x="538" y="642">Being sent onwards a second time, from the place she</text>
+  <text class="d" x="538" y="662">was already sent, is where most referrals die.</text>
 
   <text class="foot" x="944" y="726" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
 </svg>

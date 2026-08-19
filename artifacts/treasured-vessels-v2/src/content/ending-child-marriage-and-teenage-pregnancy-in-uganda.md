@@ -1,6 +1,6 @@
 If you search for the scale of this problem in Uganda, you will find three numbers repeated everywhere: **24%**, **34%**, and **one in three**.
 
-They get quoted in the same paragraph, often in the same sentence, as though they describe one group of girls. They do not. They measure three different things, about three different populations, from three different surveys — and treating them as interchangeable is the most common error in writing about this subject.
+They get quoted in the same paragraph, often in the same sentence, as though they describe one group of girls. They do not. They measure three different things, about three different populations, from three different surveys, and treating them as interchangeable is the most common error in writing about this subject.
 
 That matters beyond pedantry. Get the numbers wrong and you design the wrong response. A programme built to prevent marriages will not help a girl who is already a mother. A programme built to get mothers back into school will not stop a fourteen-year-old being married next month.
 
@@ -25,9 +25,9 @@ This article is the long version: what the figures actually say, what Ugandan la
 
 ## Three words that are not synonyms
 
-**Child marriage** is a union — formal or informal — involving a person under eighteen. It includes customary and religious arrangements that were never registered anywhere. It can happen to a girl who has never been pregnant.
+**Child marriage** is a union, formal or informal, involving a person under eighteen. It includes customary and religious arrangements that were never registered anywhere. It can happen to a girl who has never been pregnant.
 
-**Adolescent pregnancy** is a pregnancy in a girl aged, depending on the survey, 10–19 or 15–19. It can happen to a girl who is not married and never will be.
+**Adolescent pregnancy** is a pregnancy in a girl aged, depending on the survey, 10 to 19 or 15 to 19. It can happen to a girl who is not married and never will be.
 
 **Adolescent birth** is a live birth to a girl in that age range. It is a subset of adolescent pregnancy, because not every pregnancy results in a birth.
 
@@ -45,19 +45,19 @@ Here are the three figures, with the denominator each one is calculated against.
 
 ### "Around 24%"
 
-The **Uganda Demographic and Health Survey 2022**, conducted by the Uganda Bureau of Statistics, found that approximately **24% of girls aged 15–19 have begun childbearing** — meaning they are already mothers or are pregnant with their first child. The figure was around 25% in rural areas and 21% in urban ones.
+The **Uganda Demographic and Health Survey 2022**, conducted by the Uganda Bureau of Statistics, found that approximately **24% of girls aged 15 to 19 have begun childbearing**, meaning they are already mothers or are pregnant with their first child. The figure was around 25% in rural areas and 21% in urban ones.
 
-Three things to notice. The denominator is *all girls aged 15–19*, not all girls. It is a snapshot of a moment, not a lifetime risk. And "begun childbearing" is a specific composite: mothers plus currently-pregnant first-timers. It is not the same as "have ever been pregnant", which would be a larger number, because it excludes pregnancies that ended.
+Three things to notice. The denominator is *all girls aged 15 to 19*, not all girls. It is a snapshot of a moment, not a lifetime risk. And "begun childbearing" is a specific composite: mothers plus currently-pregnant first-timers. It is not the same as "have ever been pregnant", which would be a larger number, because it excludes pregnancies that ended.
 
-You will also see the figure quoted for ages **10–19**. That is a different denominator, covering four additional years in which pregnancy is rare, and it will not produce the same percentage. If a source does not tell you the age band, the figure is not usable.
+You will also see the figure quoted for ages **10 to 19**. That is a different denominator, covering four additional years in which pregnancy is rare, and it will not produce the same percentage. If a source does not tell you the age band, the figure is not usable.
 
 ### "Around 34%"
 
-Roughly **34% of Ugandan women aged 20–24 were married or in union before their eighteenth birthday**, according to UNICEF's compilations and Girls Not Brides.
+Roughly **34% of Ugandan women aged 20 to 24 were married or in union before their eighteenth birthday**, according to UNICEF's compilations and Girls Not Brides.
 
 This is a retrospective measure. It asks women who have already passed through adolescence what happened to them, which means it describes the recent past rather than the present. If prevention efforts started working three years ago, this number would not show it yet.
 
-It also includes informal unions. A customary arrangement with no paperwork counts, which is correct — the harm does not depend on registration — but it means the figure captures something broader than a marriage certificate count would.
+It also includes informal unions. A customary arrangement with no paperwork counts, which is correct, because the harm does not depend on registration, but it means the figure captures something broader than a marriage certificate count would.
 
 ### "Around one in three"
 
@@ -69,7 +69,7 @@ The denominator here is the smallest of the three and the most specific: girls w
 
 These three percentages cannot be added, subtracted or compared with one another. A girl may appear in one, two, or none of them.
 
-Quoting them together as a single crisis figure inflates the apparent scale and — more damagingly — hides which intervention would help. The 24% figure points at prevention and health services. The 34% figure points at family economics and community norms. The one-in-three figure points at school re-entry, which is a completely different operational problem requiring different people.
+Quoting them together as a single crisis figure inflates the apparent scale and, more damagingly, hides which intervention would help. The 24% figure points at prevention and health services. The 34% figure points at family economics and community norms. The one-in-three figure points at school re-entry, which is a completely different operational problem requiring different people.
 
 We wrote about that last one in detail in [returning to learning after teenage pregnancy](/blog/returning-to-learning-after-teenage-pregnancy).
 
@@ -114,7 +114,7 @@ The oldest of these provisions is over thirty years old. A girl born the year th
 
 ### The national strategy
 
-Uganda has a **National Strategy to End Child Marriage and Teenage Pregnancy (2022/23–2026/27)**, which sets out a coordinated national response across legal reform, education, health services, community engagement and economic empowerment.
+Uganda has a **National Strategy to End Child Marriage and Teenage Pregnancy (2022/23 to 2026/27)**, which sets out a coordinated national response across legal reform, education, health services, community engagement and economic empowerment.
 
 It is a credible document. As with the school re-entry guidelines, the gap is between what is written and what reaches a village in Busoga on a Tuesday.
 
@@ -132,7 +132,7 @@ The answer is that no single cause is doing the work. Six layers operate at once
 
 Some girls are markedly more exposed than others: those already out of school, those who have lost one or both parents, those with a disability, and those without a single trusted adult who would notice a change in their circumstances.
 
-The absence of that last one — someone who would notice — is a better predictor than almost anything else.
+The absence of that last one, someone who would notice, is a better predictor than almost anything else.
 
 ### Family pressure
 
@@ -146,21 +146,21 @@ This is why cost-of-schooling interventions do more than they appear to. They ar
 
 Norms operate in two directions, and the asymmetry is the problem.
 
-Shame attaches to the girl. Silence attaches to the man — very often an adult man, sometimes a considerably older one. A community that is scandalised by a pregnant fifteen-year-old and incurious about who made her pregnant has, in effect, decided that the offence is hers.
+Shame attaches to the girl. Silence attaches to the man, very often an adult man, sometimes a considerably older one. A community that is scandalised by a pregnant fifteen-year-old and incurious about who made her pregnant has, in effect, decided that the offence is hers.
 
-Norms are also the layer most people assume cannot be changed. In our experience they are among the most changeable, because they are held less firmly than they are expressed. What is missing is usually not persuasion but permission — someone respected saying the different thing first, in public.
+Norms are also the layer most people assume cannot be changed. In our experience they are among the most changeable, because they are held less firmly than they are expressed. What is missing is usually not persuasion but permission: someone respected saying the different thing first, in public.
 
 ### Service gaps
 
 A girl who cannot get accurate information, cannot access an adolescent-friendly health service, and does not know one confidential number to call is not making informed choices. She is guessing.
 
-The gap is rarely total absence of services. It is more often services that exist but are not reachable by a fifteen-year-old — because staff know her family, because the clinic is open only when she is in school, or because she has no reason to believe a conversation would stay private.
+The gap is rarely total absence of services. It is more often services that exist but are not reachable by a fifteen-year-old, because staff know her family, because the clinic is open only when she is in school, or because she has no reason to believe a conversation would stay private.
 
 ### Economic conditions
 
 Poverty is the substrate under all of this. It determines whether school fees are payable, whether an older man's offer of support looks like exploitation or like a solution, and whether a family can absorb another mouth.
 
-It also explains why so many adolescent pregnancies are transactional rather than romantic — a distinction that matters enormously for how a girl should be treated afterwards, and one that shame-based responses erase entirely.
+It also explains why so many adolescent pregnancies are transactional rather than romantic, a distinction that matters enormously for how a girl should be treated afterwards, and one that shame-based responses erase entirely.
 
 ### Policy implementation
 
@@ -178,7 +178,7 @@ We want to set this out carefully. The consequences are serious and there is no 
 
 ### Health
 
-Adolescent pregnancy carries elevated risk for both mother and child — obstructed labour, obstetric fistula, anaemia, and higher rates of complications in younger mothers, particularly those under sixteen whose pelvic growth is incomplete. Antenatal attendance is often late and incomplete, which compounds each of these.
+Adolescent pregnancy carries elevated risk for both mother and child: obstructed labour, obstetric fistula, anaemia, and higher rates of complications in younger mothers, particularly those under sixteen whose pelvic growth is incomplete. Antenatal attendance is often late and incomplete, which compounds each of these.
 
 ### Schooling
 
@@ -208,11 +208,11 @@ An article like this should be as clear about the limits of the evidence as abou
 
 **How much the three groups overlap.** We have said repeatedly that child marriage and adolescent pregnancy are distinct. What we cannot give you is a reliable figure for how many girls experience both, in what order, in Busoga. National surveys are not designed to answer that at sub-regional level.
 
-**How old the fathers are.** This is arguably the most important missing number in the whole subject. Where a pregnancy involves a schoolgirl and an adult man, that is a criminal matter rather than a public health statistic — but the routine data collection does not capture partner age in a way that makes the scale visible. The absence is itself telling.
+**How old the fathers are.** This is arguably the most important missing number in the whole subject. Where a pregnancy involves a schoolgirl and an adult man, that is a criminal matter rather than a public health statistic, but the routine data collection does not capture partner age in a way that makes the scale visible. The absence is itself telling.
 
-**Whether the numbers are moving.** The child marriage figure is retrospective, describing women who are now 20–24. Even a highly effective programme starting today would not show in it for several years. Anyone claiming a recent national trend from that number is over-reading it.
+**Whether the numbers are moving.** The child marriage figure is retrospective, describing women who are now 20 to 24. Even a highly effective programme starting today would not show in it for several years. Anyone claiming a recent national trend from that number is over-reading it.
 
-**What is happening between surveys.** The UDHS runs every few years. District-level reporting in between is patchy, sometimes drawn from health facility records that only capture girls who attended a facility — which systematically misses the most isolated.
+**What is happening between surveys.** The UDHS runs every few years. District-level reporting in between is patchy, sometimes drawn from health facility records that only capture girls who attended a facility, which systematically misses the most isolated.
 
 **How many girls are never counted at all.** A girl who leaves school, is placed in an informal union in a rural village, and never presents at a health centre may not appear in any dataset. Our own experience suggests this group is not small.
 
@@ -224,15 +224,15 @@ None of this is a reason to disbelieve the figures. It is a reason to treat them
 
 National averages hide a great deal, and Busoga is where the hiding matters most.
 
-The sub-region has repeatedly been reported among the highest in Uganda for teenage pregnancy, and Jinja District has taken local legislative steps in response — passing by-laws aimed at curbing teenage pregnancy and child marriage. We covered the district-level picture in [why Jinja and Busoga need a girls' support centre](/blog/why-jinja-and-busoga-need-a-girls-support-centre).
+The sub-region has repeatedly been reported among the highest in Uganda for teenage pregnancy, and Jinja District has taken local legislative steps in response, passing by-laws aimed at curbing teenage pregnancy and child marriage. We covered the district-level picture in [why Jinja and Busoga need a girls' support centre](/blog/why-jinja-and-busoga-need-a-girls-support-centre).
 
 Three features of the local context shape what works here:
 
-**Density and mobility.** Jinja is a city with a large surrounding rural district. Girls move between the two for school, work and family, which makes them harder for any single institution to keep track of — and easier to lose.
+**Density and mobility.** Jinja is a city with a large surrounding rural district. Girls move between the two for school, work and family, which makes them harder for any single institution to keep track of, and easier to lose.
 
 **Economic structure.** Fishing communities, markets and casual labour create environments where transactional relationships between adult men and adolescent girls are normalised and largely unremarked.
 
-**Institutional density.** This one is in our favour. Busoga has schools, health centres, churches, mosques, district officials and a considerable number of community organisations. The raw material for a coordinated response exists. What is usually missing is coordination itself — a girl referred by a teacher to a health centre and then lost, because nobody owned the case.
+**Institutional density.** This one is in our favour. Busoga has schools, health centres, churches, mosques, district officials and a considerable number of community organisations. The raw material for a coordinated response exists. What is usually missing is coordination itself: a girl referred by a teacher to a health centre and then lost, because nobody owned the case.
 
 ---
 
@@ -242,7 +242,7 @@ What follows is what we believe a serious effort in Busoga looks like. It is del
 
 ### 1. Keep girls learning
 
-This is the single highest-return intervention and it is not close. Girls who remain in education marry later, have children later and have fewer of them — a finding the World Bank has set out at length in its work on educating girls as a way of ending child marriage and teenage pregnancy.
+This is the single highest-return intervention and it is not close. Girls who remain in education marry later, have children later and have fewer of them, a finding the World Bank has set out at length in its work on educating girls as a way of ending child marriage and teenage pregnancy.
 
 In practice this means removing the specific obstacle facing one girl, which is usually cost, and sometimes menstrual supplies, transport, or a uniform. See [five barriers that push a girl out of school](/blog/five-barriers-that-push-a-girl-out-of-school) for what these look like in detail.
 
@@ -275,7 +275,7 @@ Every one of the above depends on a girl, or someone near her, being able to rai
 That requires named contacts rather than institutions, routes that do not run through the person most likely to be implicated, and a visible track record of confidentiality being kept. It is slow to build and easy to destroy.
 
 > *"Speak up for those who cannot speak for themselves, for the rights of all who are destitute."*
-> — Proverbs 31:8
+> Proverbs 31:8
 
 ---
 
@@ -315,7 +315,7 @@ If you are a head teacher, a church or mosque leader, a health worker, a local o
 
 None of that requires a budget. Nearly all of it requires someone to go first.
 
-**[Download the checklist as a printable PDF →](/downloads/tvgc-community-action-checklist.pdf)** — two A4 pages, designed to photocopy in black and white. The second page carries the Uganda Child Helpline number, what never to do, and the four things the law already says. Print it for a staff room, a vestry or a health centre noticeboard. It may be freely copied.
+**[Download the checklist as a printable PDF →](/downloads/tvgc-community-action-checklist.pdf)**: two A4 pages, designed to photocopy in black and white. The second page carries the Uganda Child Helpline number, what never to do, and the four things the law already says. Print it for a staff room, a vestry or a health centre noticeboard. It may be freely copied.
 
 ---
 
@@ -325,7 +325,7 @@ Treasured Vessels Girls' Centre is one small organisation in Jinja District. We 
 
 What we do is at the individual level, repeatedly: [education sponsorship](/get-involved/sponsor) that removes the cost obstacle for a specific girl; [vocational training](/programs/skills-training) for young women who are out of school; support for teenage mothers; menstrual health outreach so periods do not cost a girl a week of school a month; and referral for protection concerns.
 
-We are also clear about what we are not. We are not a legal service, a clinic, or a child protection authority. Where a case needs one of those, our job is to get the girl to it and stay alongside her — not to attempt it ourselves.
+We are also clear about what we are not. We are not a legal service, a clinic, or a child protection authority. Where a case needs one of those, our job is to get the girl to it and stay alongside her, not to attempt it ourselves.
 
 ---
 
@@ -333,8 +333,8 @@ We are also clear about what we are not. We are not a legal service, a clinic, o
 
 The checklist above costs nothing. If you can also fund something, these are the specific costs:
 
-- **$15** provides a reusable sanitary kit for a year — prevention, in the most literal sense
-- **$50** keeps a girl in school for a full term — the single highest-return intervention there is
+- **$15** provides a reusable sanitary kit for a year: prevention, in the most literal sense
+- **$50** keeps a girl in school for a full term: the single highest-return intervention there is
 - **$150** provides a sewing machine for a young mother building an income
 
 [**Keep a girl in school this term →**](/get-involved/sponsor)
@@ -353,11 +353,11 @@ Yes. The Children (Amendment) Act 2016 defines child marriage to include formal 
 
 ### How many girls in Uganda become pregnant as teenagers?
 
-The Uganda Demographic and Health Survey 2022 found that around 24% of girls aged 15–19 had begun childbearing, meaning they were already mothers or pregnant with a first child. Figures quoted for ages 10–19 use a different denominator and are not directly comparable.
+The Uganda Demographic and Health Survey 2022 found that around 24% of girls aged 15 to 19 had begun childbearing, meaning they were already mothers or pregnant with a first child. Figures quoted for ages 10 to 19 use a different denominator and are not directly comparable.
 
 ### How common is child marriage in Uganda?
 
-Around 34% of women aged 20–24 report having been married or in union before the age of eighteen. Note that this is a retrospective figure about women who have already passed through adolescence, so it describes the recent past rather than the current rate.
+Around 34% of women aged 20 to 24 report having been married or in union before the age of eighteen. Note that this is a retrospective figure about women who have already passed through adolescence, so it describes the recent past rather than the current rate.
 
 ### Is teenage pregnancy the same thing as child marriage?
 
@@ -365,11 +365,11 @@ No. They overlap but are distinct. A girl can be married under eighteen without 
 
 ### What should I do if I think a child is about to be married?
 
-Do not confront the family publicly or identify the child on social media — both can increase the danger to her. Assess whether she is in immediate danger, then contact a probation and social welfare officer, the police Child and Family Protection Unit, or a legal aid provider. Where possible, be guided by what the child herself says she wants.
+Do not confront the family publicly or identify the child on social media. Both can increase the danger to her. Assess whether she is in immediate danger, then contact a probation and social welfare officer, the police Child and Family Protection Unit, or a legal aid provider. Where possible, be guided by what the child herself says she wants.
 
 ### Does Uganda have a national plan for this?
 
-Yes. The National Strategy to End Child Marriage and Teenage Pregnancy (2022/23–2026/27) sets out a coordinated response across legal reform, education, health services, community engagement and economic empowerment. The persistent difficulty is implementation at local level rather than the content of the strategy.
+Yes. The National Strategy to End Child Marriage and Teenage Pregnancy (2022/23 to 2026/27) sets out a coordinated response across legal reform, education, health services, community engagement and economic empowerment. The persistent difficulty is implementation at local level rather than the content of the strategy.
 
 ### What is the single most effective thing to fund?
 

@@ -263,7 +263,7 @@ export default function Home() {
                 "I never thought I could return to school. Now, I am learning tailoring and starting my own business."
               </h2>
               <p className="text-brand-paleblue/80 mb-8 italic">
-                — Sarah, Vocational Program Participant
+                Sarah, Vocational Program Participant
               </p>
               <div className="mt-auto">
                 <Link href="/stories" className="inline-flex items-center text-brand-gold font-semibold hover:text-white transition-colors group">

@@ -216,7 +216,7 @@ export default function ProgramDetail() {
                     {program.story}
                   </p>
                   <p className="text-sm font-semibold text-brand-charcoal/60 uppercase tracking-wider">
-                    — Program Participant
+                    Program Participant
                   </p>
                   <p className="text-[10px] text-muted-foreground mt-2">*Illustrative placeholder story</p>
                 </div>
