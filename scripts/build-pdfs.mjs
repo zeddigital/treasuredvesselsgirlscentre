@@ -57,6 +57,7 @@ const outDir = path.join(root, 'artifacts/treasured-vessels-v2/public/downloads'
 const OUTPUT_NAMES = {
   'community-action-checklist.html': 'tvgc-community-action-checklist.pdf',
   'mens-commitment-card.html': 'tvgc-mens-commitment-card.pdf',
+  'menstrual-dignity-check.html': 'tvgc-menstrual-dignity-check.pdf',
 };
 
 const sources = (await fs.readdir(sourceDir)).filter((f) => f.endsWith('.html')).sort();

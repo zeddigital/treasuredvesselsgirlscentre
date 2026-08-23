@@ -10,6 +10,7 @@ import childMarriageLawBody from "@/content/what-ugandan-law-says-about-child-ma
 import oneThousandADayBody from "@/content/one-thousand-teenage-pregnancies-a-day.md?raw";
 import maleAlliesBody from "@/content/fathers-men-and-boys-as-allies.md?raw";
 import adolescentHealthBody from "@/content/adolescent-friendly-health-services-uganda.md?raw";
+import menstrualDignityBody from "@/content/menstrual-dignity-checklist-for-schools.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -46,6 +47,41 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "menstrual-dignity-checklist-for-schools",
+    title: "Ten Things a Menstrual-Friendly School Needs (Only One of Them Is Pads)",
+    eyebrow: "Menstrual Dignity",
+    date: "20 August 2026",
+    isoDate: "2026-08-20",
+    image: `${import.meta.env.BASE_URL}images/gallery/programme-briefing-at-the-centre.jpg`,
+    imageAlt:
+      "Treasured Vessels Girls' Centre staff briefing visitors on the organisation's school outreach and community programmes in Jinja, Uganda",
+    excerpt:
+      "A school receives a delivery of pads, photographs are taken, and on Thursday a girl still goes home at eleven. A ten-point check drawn from Uganda's own national guidance, and an honest look at what the evidence does and does not show.",
+    metaDescription:
+      "A ten-point menstrual-dignity check for Ugandan schools, drawn from national guidance, plus an honest look at what the attendance evidence shows.",
+    seoTitle:
+      "Menstrual Hygiene in Ugandan Schools | Treasured Vessels",
+    keywords: [
+      "menstrual hygiene schools Uganda",
+      "menstrual health checklist",
+      "period poverty Jinja",
+      "menstrual dignity Uganda schools",
+      "MHM guidelines Uganda schools",
+    ],
+    readingMinutes: 11,
+    articleSection: "Menstrual Dignity",
+    subject: "Menstrual health in schools",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://www.education.go.ug/wp-content/uploads/2025/05/FINAL-GUIDELINES-FOR-PRINTING-2024.pdf",
+      "https://www.education.go.ug/circulars/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12041187/",
+      "https://journals.plos.org/globalpublichealth/article?id=10.1371%2Fjournal.pgph.0002665",
+      "https://healtheducationresources.unesco.org/library/documents/menstrual-health-guidelines-schools-and-education-institutions-uganda",
+    ],
+    body: menstrualDignityBody,
+  },
   {
     slug: "adolescent-friendly-health-services-uganda",
     title:

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" width="1000" height="900" role="img"
+     aria-label="The ten-point menstrual-dignity check for schools. One, emergency supplies she can reach without an ordeal. Two, water and soap at the toilets, all day. Three, toilets that are private, sex-separated and lockable. Four, somewhere to change that is not a cubicle with a queue. Five, storage and somewhere private to dry a reusable pad. Six, disposal that actually works, with a covered bin in each cubicle. Seven, pain taken seriously, with simple relief and permission to rest. Eight, accurate education for boys as well as girls. Nine, one named adult every girl can identify. Ten, a referral route for severe pain or bleeding that will not stop. Only point one is about pads.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .n    { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 19px; }
+      .t    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 16px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13px; }
+      .tag  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 13.5px; letter-spacing: 0.05em; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="900" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="60" font-size="30">Ten things a menstrual-friendly school needs</text>
+  <text class="lead" x="56" y="90">Only one of them is pads. About twenty minutes to score honestly.</text>
+  <line x1="56" y1="114" x2="944" y2="114" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- 1 -->
+  <rect x="56" y="148" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="148" width="430" height="5" rx="2.5" fill="#A33895"/>
+  <circle cx="90" cy="186" r="15" fill="#A33895"/><text class="n" x="90" y="193" text-anchor="middle">1</text>
+  <text class="t" x="118" y="192">Emergency supplies</text>
+  <text class="d" x="80" y="224">Kept where a thirteen-year-old would actually go and</text>
+  <text class="d" x="80" y="243">ask, which is rarely a locked office.</text>
+
+  <!-- 2 -->
+  <rect x="514" y="148" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="148" width="430" height="5" rx="2.5" fill="#E43F8C"/>
+  <circle cx="548" cy="186" r="15" fill="#E43F8C"/><text class="n" x="548" y="193" text-anchor="middle">2</text>
+  <text class="t" x="576" y="192">Water and soap</text>
+  <text class="d" x="538" y="224">At the toilets, all day. The most commonly missing</text>
+  <text class="d" x="538" y="243">item, and the one everything else depends on.</text>
+
+  <!-- 3 -->
+  <rect x="56" y="280" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="280" width="430" height="5" rx="2.5" fill="#3DAAE1"/>
+  <circle cx="90" cy="318" r="15" fill="#3DAAE1"/><text class="n" x="90" y="325" text-anchor="middle">3</text>
+  <text class="t" x="118" y="324">Private, separate, lockable</text>
+  <text class="d" x="80" y="356">A door that closes, a latch that works, walls she</text>
+  <text class="d" x="80" y="375">cannot be seen over, and enough light.</text>
+
+  <!-- 4 -->
+  <rect x="514" y="280" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="280" width="430" height="5" rx="2.5" fill="#F1B74B"/>
+  <circle cx="548" cy="318" r="15" fill="#F1B74B"/><text class="n" x="548" y="325" text-anchor="middle">4</text>
+  <text class="t" x="576" y="324">Somewhere to change</text>
+  <text class="d" x="538" y="356">Not the same three minutes of pressure as the toilet</text>
+  <text class="d" x="538" y="375">queue at break. A partitioned corner will do.</text>
+
+  <!-- 5 -->
+  <rect x="56" y="412" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="412" width="430" height="5" rx="2.5" fill="#A33895"/>
+  <circle cx="90" cy="450" r="15" fill="#A33895"/><text class="n" x="90" y="457" text-anchor="middle">5</text>
+  <text class="t" x="118" y="456">Storage and drying</text>
+  <text class="d" x="80" y="488">A reusable pad that cannot be dried out of sight will</text>
+  <text class="d" x="80" y="507">be dried badly, hidden damp, or abandoned.</text>
+
+  <!-- 6 -->
+  <rect x="514" y="412" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="412" width="430" height="5" rx="2.5" fill="#E43F8C"/>
+  <circle cx="548" cy="450" r="15" fill="#E43F8C"/><text class="n" x="548" y="457" text-anchor="middle">6</text>
+  <text class="t" x="576" y="456">Disposal that works</text>
+  <text class="d" x="538" y="488">A covered bin in each cubicle, emptied by someone</text>
+  <text class="d" x="538" y="507">whose job it explicitly is.</text>
+
+  <!-- 7 -->
+  <rect x="56" y="544" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="544" width="430" height="5" rx="2.5" fill="#3DAAE1"/>
+  <circle cx="90" cy="582" r="15" fill="#3DAAE1"/><text class="n" x="90" y="589" text-anchor="middle">7</text>
+  <text class="t" x="118" y="588">Pain taken seriously</text>
+  <text class="d" x="80" y="620">Simple relief, permission to rest, and staff who do</text>
+  <text class="d" x="80" y="639">not treat period pain as an excuse.</text>
+
+  <!-- 8 -->
+  <rect x="514" y="544" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="544" width="430" height="5" rx="2.5" fill="#F1B74B"/>
+  <circle cx="548" cy="582" r="15" fill="#F1B74B"/><text class="n" x="548" y="589" text-anchor="middle">8</text>
+  <text class="t" x="576" y="588">Education, boys included</text>
+  <text class="d" x="538" y="620">Teasing is a leading reason girls stay away, and the</text>
+  <text class="d" x="538" y="639">cheapest thing on this list to fix.</text>
+
+  <!-- 9 -->
+  <rect x="56" y="676" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="676" width="430" height="5" rx="2.5" fill="#A33895"/>
+  <circle cx="90" cy="714" r="15" fill="#A33895"/><text class="n" x="90" y="721" text-anchor="middle">9</text>
+  <text class="t" x="118" y="720">One named adult</text>
+  <text class="d" x="80" y="752">Usually the senior woman teacher. Name her, then</text>
+  <text class="d" x="80" y="771">give her supplies, a budget and a private room.</text>
+
+  <!-- 10 -->
+  <rect x="514" y="676" width="430" height="116" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="676" width="430" height="5" rx="2.5" fill="#E43F8C"/>
+  <circle cx="548" cy="714" r="15" fill="#E43F8C"/><text class="n" x="548" y="721" text-anchor="middle">10</text>
+  <text class="t" x="580" y="720">A referral route</text>
+  <text class="d" x="538" y="752">For severe pain, very heavy bleeding, or bleeding</text>
+  <text class="d" x="538" y="771">that will not stop.</text>
+
+  <text class="tag" x="56" y="832">FIX THE CHEAPEST FAILING POINT FIRST. IT IS VERY OFTEN THE SOAP.</text>
+  <text class="foot" x="944" y="866" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>

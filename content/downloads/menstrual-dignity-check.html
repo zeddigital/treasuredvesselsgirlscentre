@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Ten-Point Menstrual-Dignity Check</title>
+<style>
+  /* A4 handout. Designed to survive a cheap mono photocopier: every colour
+     block still reads as a tint, and no meaning depends on hue alone. Page 1
+     is the check itself, so a school can score it and keep it on a wall. */
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #25222B;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    padding: 13mm 15mm 12mm;
+    position: relative;
+    page-break-after: always;
+    background: #fff;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  .masthead {
+    border-bottom: 2.5pt solid #552050;
+    padding-bottom: 4.5mm; margin-bottom: 5mm;
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #552050; font-size: 20pt; margin: 0 0 1.5mm; font-weight: normal;
+  }
+  .sub { color: #6b6672; font-size: 9.5pt; margin: 0; }
+  .org { text-align: right; font-size: 8pt; color: #6b6672; line-height: 1.5; flex: 0 0 auto; padding-left: 8mm; }
+  .org strong { display: block; color: #552050; font-size: 9.5pt; white-space: nowrap; }
+
+  .intro {
+    font-size: 9.5pt; line-height: 1.5; margin: 0 0 5mm;
+    padding: 3.5mm 5mm; background: #FDF4FA; border-left: 3pt solid #A33895;
+  }
+  .intro strong { color: #552050; }
+
+  /* The check itself: numbered rows with a tick box and a short test. */
+  ol.check { list-style: none; margin: 0; padding: 0; }
+  ol.check > li {
+    display: flex; align-items: flex-start; gap: 3.5mm;
+    padding: 2.6mm 0; border-bottom: 0.75pt solid #EFE6EC;
+    break-inside: avoid;
+  }
+  ol.check > li:first-child { border-top: 0.75pt solid #EFE6EC; }
+  .num {
+    flex: 0 0 auto; width: 6.5mm; height: 6.5mm; margin-top: 0.2mm;
+    border-radius: 50%; background: #552050; color: #fff;
+    font-family: Georgia, serif; font-size: 10pt;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .body { flex: 1 1 auto; }
+  .body .lbl { font-size: 10.5pt; font-weight: bold; color: #552050; display: block; margin-bottom: 0.8mm; }
+  .body .test { font-size: 9pt; line-height: 1.45; color: #3A3540; }
+  .box {
+    flex: 0 0 auto; width: 5mm; height: 5mm; margin-top: 1mm;
+    border: 1.2pt solid #A33895; border-radius: 0.8mm;
+  }
+
+  .score {
+    margin-top: 5mm; padding: 4mm 5mm;
+    border: 1.5pt solid #A33895; border-radius: 3mm;
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 10pt;
+  }
+  .score .out { font-family: Georgia, serif; font-size: 15pt; color: #552050; }
+  .score .rule { display: inline-block; width: 22mm; border-bottom: 1pt solid #552050; }
+
+  h2 {
+    font-size: 11pt; color: #552050; margin: 0 0 3mm;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    border-bottom: 1pt solid #E9DCE6; padding-bottom: 1.5mm;
+  }
+  .block { margin-bottom: 6mm; break-inside: avoid; }
+
+  .two { display: flex; gap: 6mm; }
+  .col { flex: 1 1 0; }
+  .col h3 {
+    font-size: 9.5pt; margin: 0 0 1mm; letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .col .when { font-size: 8.5pt; font-style: italic; color: #6b6672; margin: 0 0 2.5mm; }
+  .col ul { list-style: none; margin: 0; padding: 0; }
+  .col li { font-size: 9.5pt; line-height: 1.45; margin-bottom: 1.8mm; padding-left: 4mm; position: relative; }
+  .col li::before {
+    content: ""; position: absolute; left: 0; top: 1.6mm;
+    width: 1.6mm; height: 1.6mm; border-radius: 50%;
+  }
+  .col.cons h3 { color: #C2185B; }
+  .col.cons li::before { background: #C2185B; }
+  .col.infra h3 { color: #A33895; }
+  .col.infra li::before { background: #A33895; }
+  .col .after { font-size: 8.5pt; font-style: italic; color: #6b6672; margin-top: 2.5mm; padding-top: 2mm; border-top: 0.75pt solid #EFE6EC; }
+
+  .fixes { font-size: 9.5pt; line-height: 1.5; }
+  .fixes p { margin: 0 0 3mm; }
+  .fixes strong { color: #552050; }
+
+  .contacts { background: #552050; color: #fff; border-radius: 3mm; padding: 5mm 6mm; margin-top: 5mm; }
+  .contacts h2 { color: #fff; border: 0; margin-bottom: 3mm; }
+  .contacts p { margin: 0 0 2mm; font-size: 9.5pt; line-height: 1.55; }
+  .contacts p:last-child { margin-bottom: 0; }
+
+  .note {
+    font-size: 9pt; font-style: italic; color: #6b6672;
+    margin-top: 4mm; text-align: center;
+  }
+
+  .footer {
+    position: absolute; left: 15mm; right: 15mm; bottom: 9mm;
+    border-top: 1pt solid #E9DCE6; padding-top: 3mm;
+    font-size: 7.5pt; color: #6b6672;
+    display: flex; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<!-- ------------------------------------------------ page 1: the check -->
+<div class="page">
+  <div class="masthead">
+    <div>
+      <h1>The Ten-Point Menstrual-Dignity Check</h1>
+      <p class="sub">A twenty-minute self-assessment for schools</p>
+    </div>
+    <div class="org">
+      <strong>Treasured Vessels Girls&rsquo; Centre</strong>
+      Walukuba-Masese Road, Jinja, Uganda<br />
+      treasuredvesselsuganda.org
+    </div>
+  </div>
+
+  <p class="intro">
+    Tick only what is true today, not what is planned. <strong>A school that scores four is not a bad
+    school.</strong> It is a school that now knows which four things to fix first. No names, no
+    photographs, no need to send this to anyone.
+  </p>
+
+  <ol class="check">
+    <li>
+      <span class="num">1</span>
+      <span class="body">
+        <span class="lbl">Emergency supplies she can get without an ordeal</span>
+        <span class="test">Test: would a thirteen-year-old actually go and ask? A locked cupboard in a male
+        teacher&rsquo;s office does not count.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+    <li>
+      <span class="num">2</span>
+      <span class="body">
+        <span class="lbl">Water and soap, at the toilets, all day</span>
+        <span class="test">Not water at a tank across the compound. Not soap that ran out in February.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+    <li>
+      <span class="num">3</span>
+      <span class="body">
+        <span class="lbl">Toilets that are private, sex-separated and lockable</span>
+        <span class="test">A door that closes, a latch that works, walls she cannot be seen over, enough light.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+    <li>
+      <span class="num">4</span>
+      <span class="body">
+        <span class="lbl">Somewhere to change that is not a cubicle with a queue</span>
+        <span class="test">A partitioned corner of an existing room is enough. It does not need to be a new building.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+    <li>
+      <span class="num">5</span>
+      <span class="body">
+        <span class="lbl">Storage, and somewhere private to dry</span>
+        <span class="test">A reusable pad that cannot be dried out of sight will be dried badly, hidden damp, or abandoned.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+    <li>
+      <span class="num">6</span>
+      <span class="body">
+        <span class="lbl">Disposal that actually works</span>
+        <span class="test">A covered bin in each cubicle, emptied by someone whose job it explicitly is.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+    <li>
+      <span class="num">7</span>
+      <span class="body">
+        <span class="lbl">Pain taken seriously</span>
+        <span class="test">Simple relief available, permission to rest briefly, and staff who do not treat period pain as an excuse.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+    <li>
+      <span class="num">8</span>
+      <span class="body">
+        <span class="lbl">Accurate education, including for the boys</span>
+        <span class="test">Taught before it starts, not after. A school that teaches only the girls has taught the wrong half.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+    <li>
+      <span class="num">9</span>
+      <span class="body">
+        <span class="lbl">One named adult every girl can identify</span>
+        <span class="test">Usually the senior woman teacher. Name her, then give her supplies, a small budget and a private room.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+    <li>
+      <span class="num">10</span>
+      <span class="body">
+        <span class="lbl">A referral route for when it is not normal</span>
+        <span class="test">Somewhere to send a girl with severe pain, very heavy bleeding, or bleeding that will not stop.</span>
+      </span>
+      <span class="box"></span>
+    </li>
+  </ol>
+
+  <div class="score">
+    <span>Score today <span class="out">&nbsp;<span class="rule"></span>&nbsp; out of 10</span></span>
+    <span>Date <span class="rule"></span> &nbsp; Completed by <span class="rule"></span></span>
+  </div>
+
+  <p class="note">Fix the cheapest failing point first. It is very often the soap.</p>
+
+  <div class="footer">
+    <span>Treasured Vessels Girls&rsquo; Centre &middot; Jinja, Uganda</span>
+    <span>Page 1 of 2 &middot; May be freely copied and shared</span>
+  </div>
+</div>
+
+<!-- ------------------------------------------------ page 2: what to buy, what to fix -->
+<div class="page">
+  <div class="masthead">
+    <div>
+      <h1>What to buy, and what to fix</h1>
+      <p class="sub">Two lists that behave very differently</p>
+    </div>
+    <div class="org">
+      <strong>Treasured Vessels Girls&rsquo; Centre</strong>
+      +256 756 233 041<br />
+      +256 774 427 101
+    </div>
+  </div>
+
+  <div class="block two">
+    <div class="col cons">
+      <h3>Consumables</h3>
+      <p class="when">Recur every term, forever</p>
+      <ul>
+        <li>Disposable pads for the emergency stock</li>
+        <li>Soap</li>
+        <li>Simple pain relief</li>
+        <li>Replacement reusable kits as they wear out</li>
+        <li>Bin liners</li>
+      </ul>
+      <p class="after">A one-off gift solves one term, then stops.</p>
+    </div>
+    <div class="col infra">
+      <h3>Infrastructure</h3>
+      <p class="when">Bought once, then maintained</p>
+      <ul>
+        <li>A door, and a latch that works</li>
+        <li>Water tank or connection near the latrines</li>
+        <li>A partition to make a changing space</li>
+        <li>Covered bins, and a private drying line</li>
+        <li>Locks and lighting</li>
+      </ul>
+      <p class="after">Still there in five years.</p>
+    </div>
+  </div>
+
+  <p class="intro">
+    <strong>Infrastructure is the better gift.</strong> A school can usually carry the consumables
+    once the infrastructure exists. It is almost never the other way round.
+  </p>
+
+  <div class="block">
+    <h2>The three most common failures, and what to do</h2>
+    <div class="fixes">
+      <p><strong>No soap.</strong> The cheapest and most frequently missing item on the whole list, and the
+      one that makes most of the others unusable. Put it in the termly budget as a named line rather than
+      leaving it to whoever remembers. Soap on a rope, tied at the tap, survives longer than a loose bar.</p>
+
+      <p><strong>No door or no latch.</strong> A latrine without a working door is not a facility with a minor
+      defect. For this purpose it is not a facility at all. This is usually a carpenter and an afternoon,
+      and it unlocks points three, four and six at once.</p>
+
+      <p><strong>Nowhere to dry.</strong> The problem most often reported by senior women teachers and the one
+      most often left out of programme budgets. A screened line in a corner the boys do not pass is enough.
+      Without it, do not distribute reusable kits: disposables will serve the girls better.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <h2>What the national guidance already says</h2>
+    <div class="fixes">
+      <p>The Ministry of Education and Sports circular of 2015 called for clean, private toilets, a regular
+      supply of water and soap, emergency supplies of pads and painkillers, training for teachers and
+      inspectors, and the involvement of parents. Fuller Menstrual Health Guidelines for schools have since
+      been published. A review of 137 Ugandan schools found <strong>94% had received the 2015 circular and
+      17% were implementing it</strong>. The gap has never been the guidance.</p>
+    </div>
+  </div>
+
+  <div class="contacts">
+    <h2>If your school is in or near Jinja</h2>
+    <p>We provide menstrual health education for girls and boys, reusable kits, and help completing this
+    check. There is no charge.</p>
+    <p>Treasured Vessels Girls&rsquo; Centre, Walukuba-Masese Road, Jinja &middot; treasuredvesselsug@gmail.com
+    &middot; +256 756 233 041 &middot; +256 774 427 101</p>
+    <p>We do not photograph students receiving supplies, and we will not ask you to arrange it. A completed
+    anonymous check tells us more than a distribution photograph ever did.</p>
+  </div>
+
+  <div class="footer">
+    <span>treasuredvesselsuganda.org/blog/menstrual-dignity-checklist-for-schools</span>
+    <span>Page 2 of 2 &middot; May be freely copied</span>
+  </div>
+</div>
+
+</body>
+</html>
