@@ -51,8 +51,8 @@ export const blogPosts: BlogPost[] = [
     slug: "menstrual-dignity-checklist-for-schools",
     title: "Ten Things a Menstrual-Friendly School Needs (Only One of Them Is Pads)",
     eyebrow: "Menstrual Dignity",
-    date: "20 August 2026",
-    isoDate: "2026-08-20",
+    date: "24 August 2026",
+    isoDate: "2026-08-24",
     image: `${import.meta.env.BASE_URL}images/gallery/programme-briefing-at-the-centre.jpg`,
     imageAlt:
       "Treasured Vessels Girls' Centre staff briefing visitors on the organisation's school outreach and community programmes in Jinja, Uganda",
