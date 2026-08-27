@@ -135,6 +135,31 @@ So the graph is complete, each post in `blog.ts` must set:
 | `citations` | `citation` — the same direct URLs listed under *External authority links* |
 | `modifiedDate` | `dateModified`, only when the article is substantively revised later |
 
+### Dating a post
+
+**Use the real calendar date the article is written and published on.** Not the
+programme sequence date, not the day number, not a date carried forward from the
+last post. Day Twenty published on 3 September carries 3 September.
+
+Ask the user for today's date, or take it from the most recent date they have
+stated in the conversation. Do not infer it from the previous post's `isoDate`
+and do not assume the campaign runs one article per calendar day, because it does
+not.
+
+Set both fields together and keep them consistent:
+
+| Field | Example | Note |
+|---|---|---|
+| `date` | `"27 August 2026"` | The human-readable line under the title |
+| `isoDate` | `"2026-08-27"` | Feeds `datePublished` and the sitemap `lastmod` |
+
+If two articles genuinely publish on the same day, give the second one a
+`publishTime` a few hours later so the ordering is unambiguous.
+
+Days One to Twelve carry their original programme sequence dates by the user's
+decision, so leave those alone. Everything from Day Thirteen onwards is stamped
+with its real publication date.
+
 `datePublished` and `dateModified` are emitted as full ISO 8601 stamps with a
 timezone offset — `2026-08-12T09:00:00+03:00` — built from `isoDate` plus East
 Africa Time. Override the time of day with `publishTime` if an article goes
