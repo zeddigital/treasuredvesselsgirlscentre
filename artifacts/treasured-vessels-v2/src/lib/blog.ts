@@ -11,6 +11,7 @@ import oneThousandADayBody from "@/content/one-thousand-teenage-pregnancies-a-da
 import maleAlliesBody from "@/content/fathers-men-and-boys-as-allies.md?raw";
 import adolescentHealthBody from "@/content/adolescent-friendly-health-services-uganda.md?raw";
 import menstrualDignityBody from "@/content/menstrual-dignity-checklist-for-schools.md?raw";
+import reusablePadsBody from "@/content/reusable-pads-choice-quality-and-safe-use.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -47,6 +48,40 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "reusable-pads-choice-quality-and-safe-use",
+    title: "Reusable Pads: Choice, Quality and Safe Use",
+    eyebrow: "Menstrual Dignity",
+    date: "24 August 2026",
+    isoDate: "2026-08-24",
+    publishTime: "14:00:00",
+    image: `${import.meta.env.BASE_URL}images/gallery/tailoring-class-cutting-table.jpg`,
+    imageAlt:
+      "Participants measuring and cutting fabric at the long work table in the tailoring room at Treasured Vessels Girls' Centre, Jinja, Uganda",
+    excerpt:
+      "A reusable pad is not a product. It is a product plus a set of conditions, and if the conditions are missing you have handed a girl something worse than what she had. What the evidence shows, what makes a good pad, and the six conditions.",
+    metaDescription:
+      "What the evidence really shows about reusable sanitary pads in Uganda, what separates a well-made one from a bad one, and six conditions for safe use.",
+    seoTitle: "Reusable Sanitary Pads in Uganda | Treasured Vessels",
+    keywords: [
+      "reusable sanitary pads Uganda",
+      "cloth pads Jinja",
+      "menstrual product training Uganda",
+      "reusable pad care washing",
+      "washable sanitary pads safety",
+    ],
+    readingMinutes: 11,
+    articleSection: "Menstrual Dignity",
+    subject: "Reusable menstrual products",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://reproductive-health-journal.biomedcentral.com/articles/10.1186/s12978-016-0260-7",
+      "https://link.springer.com/article/10.1186/s12982-026-02380-5",
+      "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0257610",
+      "https://www.education.go.ug/wp-content/uploads/2025/05/FINAL-GUIDELINES-FOR-PRINTING-2024.pdf",
+    ],
+    body: reusablePadsBody,
+  },
   {
     slug: "menstrual-dignity-checklist-for-schools",
     title: "Ten Things a Menstrual-Friendly School Needs (Only One of Them Is Pads)",

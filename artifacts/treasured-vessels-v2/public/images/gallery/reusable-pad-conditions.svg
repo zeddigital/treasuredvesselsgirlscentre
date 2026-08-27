@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620" role="img"
+     aria-label="Six conditions that must hold before anyone is given a reusable menstrual pad. One, she chose it: offered the option, shown how it works, and able to say no without awkwardness. Two, enough pads in the set, since one pad cannot be washed, dried and worn at the same time. Three, water and soap she can actually reach, at the place and time she needs to wash. Four, somewhere private to dry, fully and ideally in sunlight, which is the condition most often missing. Five, somewhere clean and dry to store them, in a dedicated bag. Six, she can change her mind and receive disposables instead without a discussion about cost. Where these conditions do not hold, disposables and a working latrine will serve her better.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .n    { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 19px; }
+      .t    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 16px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13px; }
+      .warn { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 14.5px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="620" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="58" font-size="30">Six conditions, before anyone is given a kit</text>
+  <text class="lead" x="56" y="88">A reusable pad is a product plus a set of conditions. The conditions decide it.</text>
+  <line x1="56" y1="112" x2="944" y2="112" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- 1 -->
+  <rect x="56" y="144" width="286" height="130" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="144" width="286" height="5" rx="2.5" fill="#A33895"/>
+  <circle cx="88" cy="180" r="14" fill="#A33895"/><text class="n" x="88" y="187" text-anchor="middle">1</text>
+  <text class="t" x="114" y="186">She chose it</text>
+  <text class="d" x="78" y="218">Offered the option, shown how it</text>
+  <text class="d" x="78" y="237">works, able to say no without</text>
+  <text class="d" x="78" y="256">any awkwardness.</text>
+
+  <!-- 2 -->
+  <rect x="357" y="144" width="286" height="130" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="357" y="144" width="286" height="5" rx="2.5" fill="#E43F8C"/>
+  <circle cx="389" cy="180" r="14" fill="#E43F8C"/><text class="n" x="389" y="187" text-anchor="middle">2</text>
+  <text class="t" x="415" y="186">Enough in the set</text>
+  <text class="d" x="379" y="218">One pad cannot be washed,</text>
+  <text class="d" x="379" y="237">dried and worn at the same</text>
+  <text class="d" x="379" y="256">time.</text>
+
+  <!-- 3 -->
+  <rect x="658" y="144" width="286" height="130" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="658" y="144" width="286" height="5" rx="2.5" fill="#3DAAE1"/>
+  <circle cx="690" cy="180" r="14" fill="#3DAAE1"/><text class="n" x="690" y="187" text-anchor="middle">3</text>
+  <text class="t" x="716" y="186">Water and soap</text>
+  <text class="d" x="680" y="218">Not water in principle. Water at</text>
+  <text class="d" x="680" y="237">the place and time she needs</text>
+  <text class="d" x="680" y="256">to wash.</text>
+
+  <!-- 4 -->
+  <rect x="56" y="292" width="286" height="130" rx="16" fill="#ffffff" stroke="#A33895" stroke-width="3"/>
+  <rect x="56" y="292" width="286" height="5" rx="2.5" fill="#F1B74B"/>
+  <circle cx="88" cy="328" r="14" fill="#F1B74B"/><text class="n" x="88" y="335" text-anchor="middle">4</text>
+  <text class="t" x="114" y="334">Private drying</text>
+  <text class="d" x="78" y="366">Fully, ideally in sunlight. The</text>
+  <text class="d" x="78" y="385">condition most often missing,</text>
+  <text class="d" x="78" y="404">and the one that decides it.</text>
+
+  <!-- 5 -->
+  <rect x="357" y="292" width="286" height="130" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="357" y="292" width="286" height="5" rx="2.5" fill="#A33895"/>
+  <circle cx="389" cy="328" r="14" fill="#A33895"/><text class="n" x="389" y="335" text-anchor="middle">5</text>
+  <text class="t" x="415" y="334">Clean, dry storage</text>
+  <text class="d" x="379" y="366">A dedicated bag, not the</text>
+  <text class="d" x="379" y="385">bottom of a shared bucket.</text>
+
+  <!-- 6 -->
+  <rect x="658" y="292" width="286" height="130" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="658" y="292" width="286" height="5" rx="2.5" fill="#E43F8C"/>
+  <circle cx="690" cy="328" r="14" fill="#E43F8C"/><text class="n" x="690" y="335" text-anchor="middle">6</text>
+  <text class="t" x="716" y="334">She can change her mind</text>
+  <text class="d" x="680" y="366">Disposables instead, with no</text>
+  <text class="d" x="680" y="385">discussion about what the kit</text>
+  <text class="d" x="680" y="404">cost us.</text>
+
+  <rect x="56" y="452" width="888" height="88" rx="16" fill="#F6ECF4"/>
+  <text class="warn" x="500" y="486" text-anchor="middle">Where these do not hold, disposables and a working latrine will serve her better.</text>
+  <text class="d" x="500" y="512" text-anchor="middle">Across studies, take-up of reusable pads has ranged from 22% to 100%. The product is the same. The circumstances are not.</text>
+
+  <text class="foot" x="944" y="586" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>

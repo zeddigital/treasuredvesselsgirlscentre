@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Reusable Pad Care Card</title>
+<style>
+  /* Page 1 prints three identical cards to be cut apart, so one sheet supplies
+     three kits. Page 2 is for whoever hands the kits out. Designed to survive a
+     cheap mono photocopier: no meaning depends on hue alone. */
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #25222B;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    padding: 12mm 15mm;
+    position: relative;
+    page-break-after: always;
+    background: #fff;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* ---- the card ---- */
+  .card {
+    border: 1.5pt solid #552050; border-radius: 3mm;
+    padding: 5.5mm 7mm; height: 76mm;
+  }
+  .card h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #552050; font-size: 15pt; margin: 0 0 1mm; font-weight: normal;
+    text-transform: none; letter-spacing: 0;
+  }
+  .card .sub { font-size: 8pt; color: #6b6672; margin: 0 0 3.5mm; }
+
+  ol.steps { list-style: none; margin: 0; padding: 0; }
+  ol.steps li {
+    display: flex; align-items: flex-start; gap: 2.5mm;
+    margin-bottom: 2mm; font-size: 9pt; line-height: 1.35;
+  }
+  .n {
+    flex: 0 0 auto; width: 5mm; height: 5mm;
+    border-radius: 50%; background: #552050; color: #fff;
+    font-family: Georgia, serif; font-size: 8pt;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .n.warn { background: #B3261E; }
+  ol.steps b { color: #552050; }
+
+  .cardfoot {
+    margin-top: 3mm; padding-top: 2.5mm; border-top: 0.75pt solid #E9DCE6;
+    font-size: 7.5pt; color: #6b6672; line-height: 1.45;
+  }
+  .cardfoot strong { color: #552050; }
+
+  .cut {
+    display: flex; align-items: center; gap: 3mm;
+    margin: 4mm 0; color: #b9adb6; font-size: 7pt;
+  }
+  .cut::before, .cut::after {
+    content: ""; flex: 1 1 auto;
+    border-top: 0.75pt dashed #cfc3cc;
+  }
+
+  /* ---- page 2 ---- */
+  .masthead {
+    border-bottom: 2.5pt solid #552050;
+    padding-bottom: 4.5mm; margin-bottom: 5mm;
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #552050; font-size: 21pt; margin: 0 0 1.5mm; font-weight: normal;
+  }
+  .sub2 { color: #6b6672; font-size: 9.5pt; margin: 0; }
+  .org { text-align: right; font-size: 8pt; color: #6b6672; line-height: 1.5; flex: 0 0 auto; padding-left: 8mm; }
+  .org strong { display: block; color: #552050; font-size: 9.5pt; white-space: nowrap; }
+
+  h3 {
+    font-size: 10.5pt; color: #552050; margin: 0 0 3mm;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    border-bottom: 1pt solid #E9DCE6; padding-bottom: 1.5mm;
+  }
+  .block { margin-bottom: 6mm; break-inside: avoid; }
+
+  ul.cond { list-style: none; margin: 0; padding: 0; }
+  ul.cond li {
+    display: flex; align-items: flex-start; gap: 3mm;
+    font-size: 10pt; line-height: 1.45; margin-bottom: 2.6mm;
+  }
+  .box {
+    flex: 0 0 auto; width: 4mm; height: 4mm; margin-top: 0.7mm;
+    border: 1.2pt solid #A33895; border-radius: 0.8mm;
+  }
+  ul.cond b { color: #552050; }
+
+  .evidence { background: #552050; color: #fff; border-radius: 3mm; padding: 5mm 6mm; }
+  .evidence h3 { color: #F1B74B; border: 0; margin-bottom: 2.5mm; }
+  .evidence p { margin: 0 0 2mm; font-size: 9.5pt; line-height: 1.55; }
+  .evidence p:last-child { margin-bottom: 0; }
+
+  .stop { border: 1.5pt solid #B3261E; border-radius: 3mm; padding: 5mm 6mm; margin-top: 5mm; }
+  .stop h3 { color: #B3261E; border: 0; margin-bottom: 2.5mm; }
+  .stop p { margin: 0; font-size: 10pt; line-height: 1.5; }
+
+  .footer {
+    position: absolute; left: 15mm; right: 15mm; bottom: 9mm;
+    border-top: 1pt solid #E9DCE6; padding-top: 3mm;
+    font-size: 7.5pt; color: #6b6672;
+    display: flex; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<!-- ------------------------------------------------ page 1: three cards -->
+<div class="page">
+
+  <div class="card">
+    <h2>Looking after your pads</h2>
+    <p class="sub">Treasured Vessels Girls&rsquo; Centre, Jinja &middot; keep this with your kit</p>
+    <ol class="steps">
+      <li><span class="n">1</span><span><b>Rinse in cold water</b> as soon as you can. Not hot: hot water sets the stain for good.</span></li>
+      <li><span class="n">2</span><span><b>Wash with soap</b> and warm water. Water on its own is not enough.</span></li>
+      <li><span class="n">3</span><span><b>Rinse until the water runs clear.</b> Soap left in the cloth stops it absorbing and irritates skin.</span></li>
+      <li><span class="n">4</span><span><b>Dry it completely</b>, in the sun if you can. Never put a damp pad away.</span></li>
+      <li><span class="n">5</span><span><b>Iron it</b> if you have an iron.</span></li>
+      <li><span class="n">6</span><span><b>Store it clean and dry</b>, in its own bag.</span></li>
+    </ol>
+    <p class="cardfoot">
+      <strong>Get a new one when</strong> the cloth goes thin, the layers come apart, the stud stops holding,
+      or it will not dry properly. Come and see us: treasuredvesselsug@gmail.com &middot; +256 756 233 041
+    </p>
+  </div>
+
+  <div class="cut">cut here</div>
+
+  <div class="card">
+    <h2>Looking after your pads</h2>
+    <p class="sub">Treasured Vessels Girls&rsquo; Centre, Jinja &middot; keep this with your kit</p>
+    <ol class="steps">
+      <li><span class="n">1</span><span><b>Rinse in cold water</b> as soon as you can. Not hot: hot water sets the stain for good.</span></li>
+      <li><span class="n">2</span><span><b>Wash with soap</b> and warm water. Water on its own is not enough.</span></li>
+      <li><span class="n">3</span><span><b>Rinse until the water runs clear.</b> Soap left in the cloth stops it absorbing and irritates skin.</span></li>
+      <li><span class="n">4</span><span><b>Dry it completely</b>, in the sun if you can. Never put a damp pad away.</span></li>
+      <li><span class="n">5</span><span><b>Iron it</b> if you have an iron.</span></li>
+      <li><span class="n">6</span><span><b>Store it clean and dry</b>, in its own bag.</span></li>
+    </ol>
+    <p class="cardfoot">
+      <strong>Get a new one when</strong> the cloth goes thin, the layers come apart, the stud stops holding,
+      or it will not dry properly. Come and see us: treasuredvesselsug@gmail.com &middot; +256 756 233 041
+    </p>
+  </div>
+
+  <div class="cut">cut here</div>
+
+  <div class="card">
+    <h2>Looking after your pads</h2>
+    <p class="sub">Treasured Vessels Girls&rsquo; Centre, Jinja &middot; keep this with your kit</p>
+    <ol class="steps">
+      <li><span class="n">1</span><span><b>Rinse in cold water</b> as soon as you can. Not hot: hot water sets the stain for good.</span></li>
+      <li><span class="n">2</span><span><b>Wash with soap</b> and warm water. Water on its own is not enough.</span></li>
+      <li><span class="n">3</span><span><b>Rinse until the water runs clear.</b> Soap left in the cloth stops it absorbing and irritates skin.</span></li>
+      <li><span class="n">4</span><span><b>Dry it completely</b>, in the sun if you can. Never put a damp pad away.</span></li>
+      <li><span class="n">5</span><span><b>Iron it</b> if you have an iron.</span></li>
+      <li><span class="n">6</span><span><b>Store it clean and dry</b>, in its own bag.</span></li>
+    </ol>
+    <p class="cardfoot">
+      <strong>Get a new one when</strong> the cloth goes thin, the layers come apart, the stud stops holding,
+      or it will not dry properly. Come and see us: treasuredvesselsug@gmail.com &middot; +256 756 233 041
+    </p>
+  </div>
+
+  <div class="footer">
+    <span>Treasured Vessels Girls&rsquo; Centre &middot; Jinja, Uganda</span>
+    <span>Page 1 of 2 &middot; Three cards to a sheet &middot; May be freely copied</span>
+  </div>
+</div>
+
+<!-- ------------------------------------------------ page 2: for whoever hands them out -->
+<div class="page">
+  <div class="masthead">
+    <div>
+      <h1>Before you hand out a kit</h1>
+      <p class="sub2">For whoever is doing the distribution</p>
+    </div>
+    <div class="org">
+      <strong>Treasured Vessels Girls&rsquo; Centre</strong>
+      +256 756 233 041<br />
+      +256 774 427 101
+    </div>
+  </div>
+
+  <div class="block">
+    <h3>Six conditions. Check them with her, not about her.</h3>
+    <ul class="cond">
+      <li><span class="box"></span><span><b>She chose it.</b> Offered the option, shown how it works, and able to say no without awkwardness.</span></li>
+      <li><span class="box"></span><span><b>Enough pads in the set.</b> One pad cannot be washed, dried and worn at the same time.</span></li>
+      <li><span class="box"></span><span><b>Water and soap she can actually reach</b>, at the place and time she needs to wash.</span></li>
+      <li><span class="box"></span><span><b>Somewhere private to dry</b>, fully. The condition most often missing, and the one that decides everything.</span></li>
+      <li><span class="box"></span><span><b>Somewhere clean and dry to store them</b>, in a bag of their own.</span></li>
+      <li><span class="box"></span><span><b>She can change her mind</b> and get disposables, with no discussion about what the kit cost.</span></li>
+    </ul>
+  </div>
+
+  <div class="stop">
+    <h3>If the answer to any of these is no</h3>
+    <p>Give her disposables instead. A reusable kit without water, privacy or drying space is not a
+    cheaper option for her. It is a daily problem she did not have before, and she will stop using it
+    without telling you.</p>
+  </div>
+
+  <div class="evidence" style="margin-top: 5mm;">
+    <h3>Why the washing method matters</h3>
+    <p>Pads cleaned with <strong>water only</strong> carried the highest microbial loads in published
+    testing. Pads cleaned with a combination of <strong>detergent, disinfectant and ironing</strong>
+    showed minimal to no contamination.</p>
+    <p>So step two on the card is not housekeeping advice. It is the safety margin, and it is worth
+    taking two minutes to say out loud rather than assuming she has read it.</p>
+  </div>
+
+  <div class="block" style="margin-top: 5mm;">
+    <h3>What the evidence does and does not show</h3>
+    <p style="font-size: 10pt; line-height: 1.5; margin: 0;">A Ugandan trial reported leakage among
+    <strong>44.4%</strong> of reusable pad users against <strong>78%</strong> of girls using cloths, and
+    girls rated the reusable pads as more reliable and easier to change. The same evaluation found
+    <strong>no significant difference</strong> in outer-garment soiling or odour. Reviews of the African
+    evidence note <strong>no objective reporting on infection</strong> either way. Say all of that, not
+    only the first sentence.</p>
+  </div>
+
+  <div class="footer">
+    <span>treasuredvesselsuganda.org/blog/reusable-pads-choice-quality-and-safe-use</span>
+    <span>Page 2 of 2 &middot; May be freely copied</span>
+  </div>
+</div>
+
+</body>
+</html>

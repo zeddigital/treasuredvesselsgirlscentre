@@ -58,6 +58,7 @@ const OUTPUT_NAMES = {
   'community-action-checklist.html': 'tvgc-community-action-checklist.pdf',
   'mens-commitment-card.html': 'tvgc-mens-commitment-card.pdf',
   'menstrual-dignity-check.html': 'tvgc-menstrual-dignity-check.pdf',
+  'reusable-pad-care-card.html': 'tvgc-reusable-pad-care-card.pdf',
 };
 
 const sources = (await fs.readdir(sourceDir)).filter((f) => f.endsWith('.html')).sort();

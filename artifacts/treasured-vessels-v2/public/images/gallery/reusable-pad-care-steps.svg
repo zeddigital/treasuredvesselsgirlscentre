@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620" role="img"
+     aria-label="Six care steps for a reusable menstrual pad. Step one, rinse in cold water as soon as you can, because hot water sets the stain permanently. Step two, wash with soap and warm water, since water alone is not enough. Step three, rinse until the water runs clear, because soap left in the fabric reduces absorbency and irritates skin. Step four, dry fully, in direct sunlight if possible, and never put it away damp. Step five, iron it if you have an iron. Step six, store it clean and dry in its own bag. The evidence is specific: pads cleaned with water only carried the highest microbial loads, while detergent, disinfectant and ironing together reduced contamination to minimal or none. Replace a pad when the fabric thins, the layers separate, the fastening stops holding, or it no longer dries properly.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .n    { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 20px; }
+      .t    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 16.5px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13.5px; }
+      .why  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 13px; }
+      .ev   { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13.5px; }
+      .evt  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 14px; letter-spacing: 0.05em; }
+      .evtl { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #F1B74B; font-size: 14px; letter-spacing: 0.05em; }
+      .evl  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #EBD9E8; font-size: 13.5px; }
+      .evw  { fill: #ffffff; font-weight: 700; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="620" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="58" font-size="30">Caring for a reusable pad</text>
+  <text class="lead" x="56" y="88">Not fussiness. The washing method is the safety margin.</text>
+  <line x1="56" y1="112" x2="944" y2="112" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- the six steps, as a vertical numbered ladder in two columns -->
+  <circle cx="82" cy="156" r="17" fill="#A33895"/><text class="n" x="82" y="163" text-anchor="middle">1</text>
+  <text class="t" x="112" y="152">Rinse cold, straight away</text>
+  <text class="d" x="112" y="176">Hot water sets blood into the fabric and it stains permanently.</text>
+
+  <circle cx="82" cy="238" r="17" fill="#E43F8C"/><text class="n" x="82" y="245" text-anchor="middle">2</text>
+  <text class="t" x="112" y="234">Wash with soap and warm water</text>
+  <text class="d" x="112" y="258">Water alone is not enough. This is the step the evidence is clearest about.</text>
+
+  <circle cx="82" cy="320" r="17" fill="#3DAAE1"/><text class="n" x="82" y="327" text-anchor="middle">3</text>
+  <text class="t" x="112" y="316">Rinse until the water runs clear</text>
+  <text class="d" x="112" y="340">Soap left in the fabric reduces absorbency and irritates skin.</text>
+
+  <circle cx="82" cy="402" r="17" fill="#F1B74B"/><text class="n" x="82" y="409" text-anchor="middle">4</text>
+  <text class="t" x="112" y="398">Dry fully, in sunlight if you can</text>
+  <text class="d" x="112" y="422">Never put it away damp. Drying indoors simply takes longer.</text>
+
+  <circle cx="82" cy="484" r="17" fill="#A33895"/><text class="n" x="82" y="491" text-anchor="middle">5</text>
+  <text class="t" x="112" y="480">Iron it, if you have an iron</text>
+  <text class="d" x="112" y="504">The step almost nobody mentions, and it appears in the evidence.</text>
+
+  <circle cx="82" cy="566" r="17" fill="#E43F8C"/><text class="n" x="82" y="573" text-anchor="middle">6</text>
+  <text class="t" x="112" y="562">Store clean and dry, in its own bag</text>
+
+  <!-- evidence panel -->
+  <rect x="612" y="140" width="332" height="196" rx="16" fill="#552050"/>
+  <text class="evtl" x="640" y="176">WHY THE METHOD MATTERS</text>
+  <text class="evl" x="640" y="208">Pads cleaned with <tspan class="evw">water only</tspan> carried</text>
+  <text class="evl" x="640" y="228">the highest microbial loads.</text>
+  <text class="evl" x="640" y="262">Detergent, disinfectant and</text>
+  <text class="evl" x="640" y="282">ironing together showed</text>
+  <text class="evl evw" x="640" y="302">minimal to no contamination.</text>
+
+  <!-- replace panel -->
+  <rect x="612" y="356" width="332" height="180" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <text class="evt" x="640" y="392">REPLACE IT WHEN</text>
+  <circle cx="646" cy="418" r="3.5" fill="#A33895"/><text class="d" x="660" y="423">the fabric thins</text>
+  <circle cx="646" cy="446" r="3.5" fill="#A33895"/><text class="d" x="660" y="451">the layers separate</text>
+  <circle cx="646" cy="474" r="3.5" fill="#A33895"/><text class="d" x="660" y="479">the fastening stops holding</text>
+  <circle cx="646" cy="502" r="3.5" fill="#A33895"/><text class="d" x="660" y="507">it no longer dries properly</text>
+
+  <text class="foot" x="944" y="596" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>
