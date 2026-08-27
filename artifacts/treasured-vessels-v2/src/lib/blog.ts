@@ -52,9 +52,8 @@ export const blogPosts: BlogPost[] = [
     slug: "reusable-pads-choice-quality-and-safe-use",
     title: "Reusable Pads: Choice, Quality and Safe Use",
     eyebrow: "Menstrual Dignity",
-    date: "24 August 2026",
-    isoDate: "2026-08-24",
-    publishTime: "14:00:00",
+    date: "27 August 2026",
+    isoDate: "2026-08-27",
     image: `${import.meta.env.BASE_URL}images/gallery/tailoring-class-cutting-table.jpg`,
     imageAlt:
       "Participants measuring and cutting fabric at the long work table in the tailoring room at Treasured Vessels Girls' Centre, Jinja, Uganda",
