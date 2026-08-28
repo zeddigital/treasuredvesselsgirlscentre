@@ -53,9 +53,8 @@ export const blogPosts: BlogPost[] = [
     slug: "survivor-centred-response-to-gender-based-violence",
     title: "A Survivor-Centred Response to Gender-Based Violence",
     eyebrow: "Safeguarding",
-    date: "27 August 2026",
-    isoDate: "2026-08-27",
-    publishTime: "14:00:00",
+    date: "28 August 2026",
+    isoDate: "2026-08-28",
     image: `${import.meta.env.BASE_URL}images/gallery/survivor-centred-principles-hero.jpg`,
     imageAlt:
       "Six survivor-centred principles set out in a chart: safety first, confidentiality with its limits stated, respect and dignity, non-discrimination, informed choice and coordinated support, each with what it rules out",
