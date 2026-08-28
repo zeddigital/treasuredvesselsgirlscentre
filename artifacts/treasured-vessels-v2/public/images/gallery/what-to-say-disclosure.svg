@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" role="img"
+     aria-label="What to say when someone discloses violence, and what not to do. Five things to say, in order: I believe you. This is not your fault. Are you safe right now? Here is who I would have to tell. What would you like to happen next? Then seven things not to do: do not publish her story, do not confront the person responsible, do not push reconciliation, do not demand proof, do not comment on her clothing or behaviour, do not promise secrecy you cannot keep, and do not take over. The five sentences take about two minutes, require no training, and are most of the job.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .n    { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 19px; }
+      .say  { font-family: Georgia, 'Times New Roman', serif; fill: #552050; font-size: 22px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13.5px; }
+      .tag  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #A33895; font-size: 13.5px; letter-spacing: 0.06em; }
+      .nott { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #B3123C; font-size: 13.5px; letter-spacing: 0.06em; }
+      .nd   { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13.5px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="700" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="58" font-size="30">When someone tells you</text>
+  <text class="lead" x="56" y="88">Five sentences. About two minutes. No training required.</text>
+  <line x1="56" y1="112" x2="944" y2="112" stroke="#E9DCE6" stroke-width="2"/>
+
+  <text class="tag" x="56" y="146">SAY THESE, IN ROUGHLY THIS ORDER</text>
+
+  <!-- 1 -->
+  <circle cx="82" cy="192" r="16" fill="#A33895"/><text class="n" x="82" y="199" text-anchor="middle">1</text>
+  <text class="say" x="112" y="188">&#8220;I believe you.&#8221;</text>
+  <text class="d" x="112" y="212">Out loud, in those words, early. You are not a court.</text>
+
+  <!-- 2 -->
+  <circle cx="82" cy="258" r="16" fill="#E43F8C"/><text class="n" x="82" y="265" text-anchor="middle">2</text>
+  <text class="say" x="112" y="254">&#8220;This is not your fault.&#8221;</text>
+  <text class="d" x="112" y="278">She has already been told otherwise. Contradict it plainly.</text>
+
+  <!-- 3 -->
+  <circle cx="82" cy="324" r="16" fill="#3DAAE1"/><text class="n" x="82" y="331" text-anchor="middle">3</text>
+  <text class="say" x="112" y="320">&#8220;Are you safe right now?&#8221;</text>
+  <text class="d" x="112" y="344">The only urgent question. Tonight, that house, the children.</text>
+
+  <!-- 4 -->
+  <circle cx="82" cy="390" r="16" fill="#F1B74B"/><text class="n" x="82" y="397" text-anchor="middle">4</text>
+  <text class="say" x="112" y="386">&#8220;Here is who I would have to tell.&#8221;</text>
+  <text class="d" x="112" y="410">Before she tells you more. A disclosure she was tricked into is not consent.</text>
+
+  <!-- 5 -->
+  <circle cx="82" cy="456" r="16" fill="#A33895"/><text class="n" x="82" y="463" text-anchor="middle">5</text>
+  <text class="say" x="112" y="452">&#8220;What would you like to happen next?&#8221;</text>
+  <text class="d" x="112" y="476">Then start from her answer, not your plan. &#8220;Nothing yet&#8221; is a valid answer.</text>
+
+  <!-- do not -->
+  <rect x="56" y="512" width="888" height="130" rx="16" fill="#ffffff" stroke="#B3123C" stroke-width="2"/>
+  <text class="nott" x="82" y="544">DO NOT</text>
+  <text class="nd" x="82" y="572">Publish her story &#183; confront the person responsible &#183; push reconciliation &#183; demand proof</text>
+  <text class="nd" x="82" y="596">Comment on her clothing, movements or marriage &#183; promise secrecy you cannot keep</text>
+  <text class="nd" x="82" y="620">Take over. The one thing she has been deprived of is control over what happens to her.</text>
+
+  <text class="foot" x="944" y="676" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>

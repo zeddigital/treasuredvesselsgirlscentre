@@ -12,6 +12,7 @@ import maleAlliesBody from "@/content/fathers-men-and-boys-as-allies.md?raw";
 import adolescentHealthBody from "@/content/adolescent-friendly-health-services-uganda.md?raw";
 import menstrualDignityBody from "@/content/menstrual-dignity-checklist-for-schools.md?raw";
 import reusablePadsBody from "@/content/reusable-pads-choice-quality-and-safe-use.md?raw";
+import gbvResponseBody from "@/content/survivor-centred-response-to-gender-based-violence.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -48,6 +49,40 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "survivor-centred-response-to-gender-based-violence",
+    title: "A Survivor-Centred Response to Gender-Based Violence",
+    eyebrow: "Safeguarding",
+    date: "27 August 2026",
+    isoDate: "2026-08-27",
+    publishTime: "14:00:00",
+    image: `${import.meta.env.BASE_URL}images/gallery/survivor-centred-principles-hero.jpg`,
+    imageAlt:
+      "Six survivor-centred principles set out in a chart: safety first, confidentiality with its limits stated, respect and dignity, non-discrimination, informed choice and coordinated support, each with what it rules out",
+    excerpt:
+      "Sooner or later, someone tells you. What happens in the next five minutes decides whether she ever tells anyone again. The five sentences to say, the seven things not to do, what Ugandan law offers, and why we never publish survivor stories.",
+    metaDescription:
+      "What to say when someone discloses violence in Uganda, what never to do, what the Domestic Violence Act offers, and how a survivor-centred response works.",
+    seoTitle: "Survivor-Centred GBV Response in Uganda | Treasured Vessels",
+    keywords: [
+      "gender-based violence Uganda support",
+      "domestic violence help Jinja",
+      "survivor-centred GBV response",
+      "what to say when someone discloses abuse",
+      "Domestic Violence Act Uganda protection order",
+    ],
+    readingMinutes: 16,
+    articleSection: "Safeguarding",
+    subject: "Gender-based violence response",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://www.ubos.org/wp-content/uploads/publications/UDHS-2022-Report.pdf",
+      "https://ulii.org/en/akn/ug/act/2010/3/eng@2023-12-31",
+      "https://media.ulii.org/files/legislation/akn-ug-act-2010-3-eng-2010-04-09.pdf",
+      "https://mglsd.go.ug/uganda-child-helpline-116-2/",
+    ],
+    body: gbvResponseBody,
+  },
   {
     slug: "reusable-pads-choice-quality-and-safe-use",
     title: "Reusable Pads: Choice, Quality and Safe Use",

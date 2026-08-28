@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Safe Disclosure Guide</title>
+<style>
+  /* A4 handout. Page 1 is sized to pin up in a vestry, staff room or health
+     centre and be read from a metre away. Page 2 is the detail. Designed to
+     survive a cheap mono photocopier: no meaning depends on hue alone. */
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #25222B;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    padding: 13mm 15mm 12mm;
+    position: relative;
+    page-break-after: always;
+    background: #fff;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  .masthead {
+    border-bottom: 2.5pt solid #552050;
+    padding-bottom: 4mm; margin-bottom: 4.5mm;
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #552050; font-size: 22pt; margin: 0 0 1.5mm; font-weight: normal;
+  }
+  .sub { color: #6b6672; font-size: 9.5pt; margin: 0; }
+  .org { text-align: right; font-size: 8pt; color: #6b6672; line-height: 1.5; flex: 0 0 auto; padding-left: 8mm; }
+  .org strong { display: block; color: #552050; font-size: 9.5pt; white-space: nowrap; }
+
+  h2 {
+    font-size: 10.5pt; color: #552050; margin: 0 0 3mm;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    border-bottom: 1pt solid #E9DCE6; padding-bottom: 1.5mm;
+  }
+  .block { margin-bottom: 6mm; break-inside: avoid; }
+
+  /* the five sentences, large enough to read from a metre away */
+  ol.say { list-style: none; margin: 0; padding: 0; }
+  ol.say li {
+    display: flex; align-items: flex-start; gap: 4mm;
+    margin-bottom: 3.4mm;
+  }
+  .n {
+    flex: 0 0 auto; width: 8mm; height: 8mm; margin-top: 0.5mm;
+    border-radius: 50%; background: #552050; color: #fff;
+    font-family: Georgia, serif; font-size: 11pt;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .quote {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #552050; font-size: 16pt; display: block; margin-bottom: 1mm;
+  }
+  .why { font-size: 9.5pt; line-height: 1.4; color: #3A3540; }
+
+  .never { border: 1.5pt solid #B3261E; border-radius: 3mm; padding: 5mm 6mm; }
+  .never h2 { color: #B3261E; border: 0; margin-bottom: 3mm; }
+  .never ul { list-style: none; margin: 0; padding: 0; }
+  .never li {
+    display: flex; align-items: flex-start; gap: 3mm;
+    font-size: 9.5pt; line-height: 1.4; margin-bottom: 1.7mm;
+  }
+  .never li:last-child { margin-bottom: 0; }
+  .dot {
+    flex: 0 0 auto; width: 3.6mm; height: 3.6mm; margin-top: 1mm;
+    border: 1.2pt solid #B3261E; border-radius: 50%;
+  }
+  .never b { color: #B3261E; }
+
+  .urgent { background: #552050; color: #fff; border-radius: 3mm; padding: 4.5mm 6mm; margin-top: 5mm; }
+  .urgent h2 { color: #F1B74B; border: 0; margin-bottom: 3mm; }
+  .urgent p { margin: 0 0 2mm; font-size: 9.5pt; line-height: 1.55; }
+  .urgent p:last-child { margin-bottom: 0; }
+  .urgent .big { font-family: Georgia, serif; font-size: 22pt; vertical-align: -1mm; }
+
+  .body { font-size: 9.5pt; line-height: 1.5; }
+  .body p { margin: 0 0 3mm; }
+  .body p:last-child { margin-bottom: 0; }
+  .body strong { color: #552050; }
+
+  .note { font-size: 9pt; font-style: italic; color: #6b6672; margin-top: 4mm; text-align: center; }
+
+  .footer {
+    position: absolute; left: 15mm; right: 15mm; bottom: 9mm;
+    border-top: 1pt solid #E9DCE6; padding-top: 3mm;
+    font-size: 7.5pt; color: #6b6672;
+    display: flex; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<!-- ------------------------------------------------ page 1: what to say -->
+<div class="page">
+  <div class="masthead">
+    <div>
+      <h1>When someone tells you</h1>
+      <p class="sub">Five sentences. About two minutes. No training required.</p>
+    </div>
+    <div class="org">
+      <strong>Treasured Vessels Girls&rsquo; Centre</strong>
+      Walukuba-Masese Road, Jinja, Uganda<br />
+      treasuredvesselsuganda.org
+    </div>
+  </div>
+
+  <div class="block">
+    <h2>Say these, in roughly this order</h2>
+    <ol class="say">
+      <li>
+        <span class="n">1</span>
+        <span>
+          <span class="quote">&ldquo;I believe you.&rdquo;</span>
+          <span class="why">Out loud, in those words, early. You are not a court, and believing her costs you
+          nothing. Do not ask her to prove it, or why she did not speak sooner.</span>
+        </span>
+      </li>
+      <li>
+        <span class="n">2</span>
+        <span>
+          <span class="quote">&ldquo;This is not your fault.&rdquo;</span>
+          <span class="why">Also out loud, also in those words. She has already been told otherwise, probably
+          more than once. Contradict it plainly.</span>
+        </span>
+      </li>
+      <li>
+        <span class="n">3</span>
+        <span>
+          <span class="quote">&ldquo;Are you safe right now?&rdquo;</span>
+          <span class="why">The only urgent question, and a practical one. Tonight, that house, the person
+          who harmed her, the children. If she is in immediate danger, that changes the order of everything.</span>
+        </span>
+      </li>
+      <li>
+        <span class="n">4</span>
+        <span>
+          <span class="quote">&ldquo;Here is who I would have to tell.&rdquo;</span>
+          <span class="why">Before she says more, not after. For an adult: nobody, unless you ask me to, or
+          unless a child is at risk. A disclosure she was tricked into is not consent.</span>
+        </span>
+      </li>
+      <li>
+        <span class="n">5</span>
+        <span>
+          <span class="quote">&ldquo;What would you like to happen next?&rdquo;</span>
+          <span class="why">Then start from her answer rather than your plan. &ldquo;Nothing yet&rdquo; is a
+          legitimate answer. Say the offer stands, and mean it.</span>
+        </span>
+      </li>
+    </ol>
+  </div>
+
+  <div class="never">
+    <h2>Do not</h2>
+    <ul>
+      <li><span class="dot"></span><span><b>Publish her story.</b> Not on social media, not in a newsletter, not with initials, not with the details changed.</span></li>
+      <li><span class="dot"></span><span><b>Confront the person responsible.</b> It warns him, it can destroy a prosecution, and she bears the consequences.</span></li>
+      <li><span class="dot"></span><span><b>Push reconciliation.</b> The most common failure in community and faith settings, and the most damaging.</span></li>
+      <li><span class="dot"></span><span><b>Demand proof.</b> You are not deciding a case.</span></li>
+      <li><span class="dot"></span><span><b>Comment on her clothing, movements, drinking or marriage.</b> Even sympathetically. Especially sympathetically.</span></li>
+      <li><span class="dot"></span><span><b>Promise secrecy you cannot keep.</b> Say what you will do and who you will tell.</span></li>
+      <li><span class="dot"></span><span><b>Take over.</b> The one thing she has been deprived of is control over what happens to her.</span></li>
+    </ul>
+  </div>
+
+  <div class="urgent">
+    <h2>If she is in immediate danger</h2>
+    <p><span class="big">116</span> &nbsp; Uganda Child Helpline, free on any network, 24 hours</p>
+    <p>The Child and Family Protection Unit at your nearest police station &middot; your district probation
+    and social welfare officer &middot; a legal aid provider</p>
+  </div>
+
+  <div class="footer">
+    <span>Treasured Vessels Girls&rsquo; Centre &middot; Jinja, Uganda</span>
+    <span>Page 1 of 2 &middot; May be freely copied and shared</span>
+  </div>
+</div>
+
+<!-- ------------------------------------------------ page 2: the detail -->
+<div class="page">
+  <div class="masthead">
+    <div>
+      <h1>Confidentiality, the law, and what to write down</h1>
+      <p class="sub">General information, not legal advice</p>
+    </div>
+    <div class="org">
+      <strong>Treasured Vessels Girls&rsquo; Centre</strong>
+      +256 756 233 041<br />
+      +256 774 427 101
+    </div>
+  </div>
+
+  <div class="block">
+    <h2>Confidentiality, and its limits</h2>
+    <div class="body">
+      <p><strong>For an adult survivor</strong>, confidentiality is close to absolute. What she tells you is
+      not discussed with her family, her employer, her church or anyone else. She decides who is told.</p>
+      <p><strong>Where a child is at risk</strong>, that changes, whether or not the person disclosing is the
+      child. A sexual act with anyone under eighteen is defilement under Ugandan law. Say so before she tells
+      you more: <em>&ldquo;If this involves a child being hurt, I will have to involve someone who can protect
+      them. I will tell you who, and I will tell you before I do it.&rdquo;</em></p>
+      <p>That sentence sometimes ends the conversation. Say it anyway. A woman who discovers later that you
+      passed something on has learned, correctly, that you cannot be trusted.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <h2>What the law offers</h2>
+    <div class="body">
+      <p><strong>Domestic Violence Act 2010.</strong> Provides for interim and full protection orders, dealt
+      with in sections 10 to 16. A survivor, or someone acting on her behalf, applies to a magistrates&rsquo;
+      court on the form set out in the Act, supported by an affidavit. An interim order can be made quickly
+      where the situation is urgent.</p>
+      <p><strong>Where to apply.</strong> Every magistrates&rsquo; court can hear domestic violence matters and
+      issue protection orders. Local council courts also have a role and can make a range of orders, which
+      matters practically: an LC court is usually closer and cheaper to reach.</p>
+      <p><strong>Other remedies.</strong> The Act allows for criminal sanctions, civil remedies and
+      compensation, including costs and restitution. Criminal offences such as assault and defilement are
+      prosecuted separately under the Penal Code.</p>
+      <p><strong>The decision is hers.</strong> An adult survivor decides whether to pursue any of this, with
+      qualified advice, and may decide not to. Pursuing a case she does not want is not support. Child
+      protection duties are the exception and are not hers to waive.</p>
+    </div>
+  </div>
+
+  <div class="block">
+    <h2>What to write down, and what not to</h2>
+    <div class="body">
+      <p><strong>Record the minimum:</strong> that she consented, where she was referred, the general category
+      of support sought, whether she attended, and what still needs doing.</p>
+      <p><strong>Do not record</strong> the details of the assault, clinical details, or what she said about
+      her family. Detail of that kind belongs with the statutory services, not in a community
+      organisation&rsquo;s filing cabinet. A file cannot leak what it never held.</p>
+    </div>
+  </div>
+
+  <p class="note">General information, not legal advice. For a specific situation, speak to a qualified legal
+  practitioner or a legal aid provider. When in doubt, call 116 and ask.</p>
+
+  <div class="footer">
+    <span>treasuredvesselsuganda.org/blog/survivor-centred-response-to-gender-based-violence</span>
+    <span>Page 2 of 2 &middot; May be freely copied</span>
+  </div>
+</div>
+
+</body>
+</html>

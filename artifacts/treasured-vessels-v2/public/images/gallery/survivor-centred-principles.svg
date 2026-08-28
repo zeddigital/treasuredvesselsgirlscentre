@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img"
+     aria-label="Six survivor-centred principles, each with what it rules out. Safety first: immediate physical safety comes before investigation, reconciliation, evidence and procedure, ruling out any action that increases her risk in order to progress a case. Confidentiality with its limits stated: what she says stays with the fewest people who need it, ruling out promises of absolute secrecy. Respect and dignity: her account is taken at face value and her choices are hers, ruling out interrogation and scepticism. Non-discrimination: the same response regardless of age, marital status, religion, disability, income or reputation, ruling out taking some women more seriously than others. Informed choice: she decides what happens next between real options she understands, ruling out deciding on her behalf. Coordinated support: someone holds the whole picture, ruling out the referral that is a phone number with no follow-up.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 18px; }
+      .t    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 18px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 14px; }
+      .out  { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #B3123C; font-size: 12px; letter-spacing: 0.05em; }
+      .ru   { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 13px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" fill="#FFF8F0"/>
+
+  <text class="h" x="60" y="64" font-size="34">Six survivor-centred principles</text>
+  <text class="lead" x="60" y="96">What each one commits us to, and what it rules out.</text>
+  <line x1="60" y1="122" x2="1140" y2="122" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- 1 -->
+  <rect x="60" y="156" width="345" height="228" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="60" y="156" width="345" height="6" rx="3" fill="#A33895"/>
+  <text class="t" x="86" y="198">Safety first</text>
+  <text class="d" x="86" y="230">Immediate physical safety comes</text>
+  <text class="d" x="86" y="251">before investigation, reconciliation,</text>
+  <text class="d" x="86" y="272">evidence and our own procedures.</text>
+  <line x1="86" y1="296" x2="379" y2="296" stroke="#F0DCE4" stroke-width="1.5"/>
+  <text class="out" x="86" y="320">RULES OUT</text>
+  <text class="ru" x="86" y="342">Any step that raises her risk in</text>
+  <text class="ru" x="86" y="362">order to progress a case.</text>
+
+  <!-- 2 -->
+  <rect x="428" y="156" width="345" height="228" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="428" y="156" width="345" height="6" rx="3" fill="#E43F8C"/>
+  <text class="t" x="454" y="198">Confidentiality, limits stated</text>
+  <text class="d" x="454" y="230">What she tells us stays with the</text>
+  <text class="d" x="454" y="251">fewest people who need it, and she</text>
+  <text class="d" x="454" y="272">is told at the outset who that is.</text>
+  <line x1="454" y1="296" x2="747" y2="296" stroke="#F0DCE4" stroke-width="1.5"/>
+  <text class="out" x="454" y="320">RULES OUT</text>
+  <text class="ru" x="454" y="342">Promising absolute secrecy where</text>
+  <text class="ru" x="454" y="362">a child may be at risk.</text>
+
+  <!-- 3 -->
+  <rect x="796" y="156" width="345" height="228" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="796" y="156" width="345" height="6" rx="3" fill="#3DAAE1"/>
+  <text class="t" x="822" y="198">Respect and dignity</text>
+  <text class="d" x="822" y="230">Her account is taken at face value.</text>
+  <text class="d" x="822" y="251">Her choices are hers, including the</text>
+  <text class="d" x="822" y="272">ones we would not make.</text>
+  <line x1="822" y1="296" x2="1115" y2="296" stroke="#F0DCE4" stroke-width="1.5"/>
+  <text class="out" x="822" y="320">RULES OUT</text>
+  <text class="ru" x="822" y="342">Interrogation, scepticism, and</text>
+  <text class="ru" x="822" y="362">asking her to prove it.</text>
+
+  <!-- 4 -->
+  <rect x="60" y="402" width="345" height="228" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="60" y="402" width="345" height="6" rx="3" fill="#F1B74B"/>
+  <text class="t" x="86" y="444">Non-discrimination</text>
+  <text class="d" x="86" y="476">The same response regardless of age,</text>
+  <text class="d" x="86" y="497">marital status, religion, disability,</text>
+  <text class="d" x="86" y="518">income or reputation.</text>
+  <line x1="86" y1="542" x2="379" y2="542" stroke="#F0DCE4" stroke-width="1.5"/>
+  <text class="out" x="86" y="566">RULES OUT</text>
+  <text class="ru" x="86" y="588">Taking some women more</text>
+  <text class="ru" x="86" y="608">seriously than others.</text>
+
+  <!-- 5 -->
+  <rect x="428" y="402" width="345" height="228" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="428" y="402" width="345" height="6" rx="3" fill="#A33895"/>
+  <text class="t" x="454" y="444">Informed choice</text>
+  <text class="d" x="454" y="476">She decides what happens next,</text>
+  <text class="d" x="454" y="497">choosing between real options she</text>
+  <text class="d" x="454" y="518">actually understands.</text>
+  <line x1="454" y1="542" x2="747" y2="542" stroke="#F0DCE4" stroke-width="1.5"/>
+  <text class="out" x="454" y="566">RULES OUT</text>
+  <text class="ru" x="454" y="588">Deciding on her behalf, or offering</text>
+  <text class="ru" x="454" y="608">one option and token alternatives.</text>
+
+  <!-- 6 -->
+  <rect x="796" y="402" width="345" height="228" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="796" y="402" width="345" height="6" rx="3" fill="#E43F8C"/>
+  <text class="t" x="822" y="444">Coordinated support</text>
+  <text class="d" x="822" y="476">Someone holds the whole picture, so</text>
+  <text class="d" x="822" y="497">she is not repeating her account to</text>
+  <text class="d" x="822" y="518">five unconnected people.</text>
+  <line x1="822" y1="542" x2="1115" y2="542" stroke="#F0DCE4" stroke-width="1.5"/>
+  <text class="out" x="822" y="566">RULES OUT</text>
+  <text class="ru" x="822" y="588">The referral that is a phone</text>
+  <text class="ru" x="822" y="608">number and no follow-up.</text>
+
+  <text class="foot" x="1140" y="656" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>
