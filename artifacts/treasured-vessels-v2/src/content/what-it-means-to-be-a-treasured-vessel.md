@@ -105,7 +105,7 @@ If you are a school, church or organisation considering working with us, we expe
 
 ## A note from our founder, Racheal Muggaga Achen
 
-![Racheal Muggaga Achen, founder of Treasured Vessels Girls' Centre](/images/founder.jpg)
+![Racheal Muggaga Achen, founder of Treasured Vessels Girls' Centre, photographed outside the centre in Jinja, Uganda](/images/founder-racheal-muggaga-achen.jpg)
 
 When I began this journey in 2018, I did not set out to start an organisation. I simply saw girls in my community who were vulnerable, struggling and too often being left without the support they needed. I knew I could not solve every problem, but I could help one girl. Then another. And that is where Treasured Vessels began.
 

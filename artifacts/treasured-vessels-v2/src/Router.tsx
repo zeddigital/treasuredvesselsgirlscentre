@@ -112,15 +112,15 @@ function Router() {
                 {
                   "@type": "ImageObject",
                   "@id": FOUNDER_IMAGE_ID,
-                  url: `${SITE_ORIGIN}/images/founder.jpg`,
-                  contentUrl: `${SITE_ORIGIN}/images/founder.jpg`,
+                  url: `${SITE_ORIGIN}/images/founder-racheal-muggaga-achen.jpg`,
+                  contentUrl: `${SITE_ORIGIN}/images/founder-racheal-muggaga-achen.jpg`,
                   caption:
                     "Racheal Muggaga Achen, founder of Treasured Vessels Girls' Centre",
                 },
               ]}
             >
               <img
-                src={`${import.meta.env.BASE_URL}images/founder.jpg`}
+                src={`${import.meta.env.BASE_URL}images/founder-racheal-muggaga-achen.jpg`}
                 alt="Racheal Muggaga Achen, Founder of Treasured Vessels Girls' Centre"
                 className="w-full max-w-sm rounded-[24px] shadow-lg mb-8 not-prose"
               />
