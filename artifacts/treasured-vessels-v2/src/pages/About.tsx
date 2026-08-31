@@ -15,7 +15,7 @@ export default function About() {
   });
 
   return (
-    <div className="pb-24">
+    <div>
       {/* Hero */}
       <section className="bg-brand-paleblue py-16 md:py-24">
         <div className="container mx-auto max-w-[1240px] px-4 md:px-6">
@@ -73,7 +73,9 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-brand-plum text-white">
+      {/* Shares the footer's plum, so the two read as one block. Bottom
+          padding is lighter than the top because the footer adds its own. */}
+      <section className="pt-24 md:pt-32 pb-16 md:pb-20 bg-brand-plum text-white">
         <div className="container mx-auto max-w-[1240px] px-4 md:px-6">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl mb-4">Our Core Values</h2>
