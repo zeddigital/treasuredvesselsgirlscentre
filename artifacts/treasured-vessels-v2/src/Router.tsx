@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Switch, Route, Link } from "wouter";
 import { AppLayout } from "@/components/layout/AppLayout";
 import Home from "@/pages/Home";
@@ -167,11 +168,14 @@ function Router() {
                 { name: "FAQs", path: "/about/faqs" },
               ]}
             >
+              {/* A wrapping element would take the prose :last-child margin
+                  reset, leaving the final answer's bottom margin inside the
+                  section padding. A fragment keeps the <p> as the last child. */}
               {FAQS.map((item, i) => (
-                <div key={i}>
+                <Fragment key={i}>
                   <h3>{item.q}</h3>
                   <p>{item.a}</p>
-                </div>
+                </Fragment>
               ))}
             </GenericPage>
           )}

@@ -119,7 +119,7 @@ export default function Donate() {
   });
 
   return (
-    <div className="bg-brand-cream min-h-screen pt-12 pb-24">
+    <div className="bg-brand-cream min-h-screen py-16 md:py-20">
       <div className="container mx-auto max-w-[1240px] px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <Heart className="w-12 h-12 text-brand-pink mx-auto mb-4" />
