@@ -148,7 +148,7 @@ export default function ProgramDetail() {
   }
 
   return (
-    <div className="pb-24">
+    <div>
       {/* Hero */}
       <section className="relative h-[400px] md:h-[500px] flex items-center">
         <div className="absolute inset-0 z-0">

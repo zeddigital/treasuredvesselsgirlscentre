@@ -19,7 +19,7 @@ export default function NotFound() {
   });
 
   return (
-    <div className="pb-24">
+    <div>
       <section className="bg-brand-paleblue py-20 md:py-28">
         <div className="container mx-auto max-w-[1240px] px-4 md:px-6">
           <span className="block text-brand-pink font-semibold tracking-wider uppercase mb-3 text-sm">

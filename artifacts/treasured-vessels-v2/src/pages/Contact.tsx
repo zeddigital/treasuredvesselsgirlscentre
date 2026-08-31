@@ -64,7 +64,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="pb-24">
+    <div>
       <section className="bg-brand-paleblue py-16">
         <div className="container mx-auto max-w-[1240px] px-4 md:px-6">
           <h1 className="font-serif text-4xl md:text-5xl text-brand-plum mb-4">Contact Us</h1>

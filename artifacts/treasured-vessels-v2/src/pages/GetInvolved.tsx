@@ -280,7 +280,7 @@ export default function GetInvolved() {
   if (!page) return <NotFound />;
 
   return (
-    <div className="pb-24">
+    <div>
       {/* Hero */}
       <section className="relative h-[340px] md:h-[440px] flex items-center">
         <div className="absolute inset-0 z-0">
