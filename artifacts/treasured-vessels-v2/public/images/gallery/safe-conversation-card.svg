@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img"
+     aria-label="How to open a conversation with someone you are worried about, without exposing her. First, choose a place where she is genuinely alone, not within earshot of the group and not in front of her children. Second, choose a moment that has an innocent explanation, such as walking somewhere together or helping with a task. Third, do not use a message, because a phone may be shared, checked or monitored; call instead and let her control the timing. Then say: I have noticed you seem worried lately. Is there anything you would like support with? Then stop talking, because the silence is the part that works. The question names what you have seen without accusing anyone, and it can be answered with no at no cost to her. If she says no, accept it warmly, say the offer stands, and behave normally afterwards.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 18px; }
+      .n    { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 19px; }
+      .t    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 17px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 14px; }
+      .say  { font-family: Georgia, 'Times New Roman', serif; fill: #ffffff; font-size: 30px; }
+      .sayl { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #F1B74B; font-size: 14px; letter-spacing: 0.06em; }
+      .then { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #EBD9E8; font-size: 15px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" fill="#FFF8F0"/>
+
+  <text class="h" x="60" y="64" font-size="34">Before you say anything</text>
+  <text class="lead" x="60" y="96">The whole risk lives in where, when and how.</text>
+  <line x1="60" y1="122" x2="1140" y2="122" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- three preconditions -->
+  <rect x="60" y="156" width="345" height="150" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <circle cx="94" cy="194" r="16" fill="#A33895"/><text class="n" x="94" y="201" text-anchor="middle">1</text>
+  <text class="t" x="122" y="200">Somewhere alone</text>
+  <text class="d" x="86" y="234">Not within earshot of the group.</text>
+  <text class="d" x="86" y="256">Not in a doorway. Not in front of</text>
+  <text class="d" x="86" y="278">her children, who may be asked</text>
+  <text class="d" x="86" y="300">later what was said.</text>
+
+  <rect x="428" y="156" width="345" height="150" rx="18" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <circle cx="462" cy="194" r="16" fill="#E43F8C"/><text class="n" x="462" y="201" text-anchor="middle">2</text>
+  <text class="t" x="490" y="200">A moment that looks ordinary</text>
+  <text class="d" x="454" y="234">Walking somewhere together.</text>
+  <text class="d" x="454" y="256">Helping with a task. A reason to</text>
+  <text class="d" x="454" y="278">be talking that anyone watching</text>
+  <text class="d" x="454" y="300">would find unremarkable.</text>
+
+  <rect x="796" y="156" width="345" height="150" rx="18" fill="#ffffff" stroke="#B3123C" stroke-width="3"/>
+  <circle cx="830" cy="194" r="16" fill="#B3123C"/><text class="n" x="830" y="201" text-anchor="middle">3</text>
+  <text class="t" x="858" y="200">Never by message</text>
+  <text class="d" x="822" y="234">A phone may be shared, checked</text>
+  <text class="d" x="822" y="256">or already monitored. If you must</text>
+  <text class="d" x="822" y="278">use one, call rather than write and</text>
+  <text class="d" x="822" y="300">let her control the timing.</text>
+
+  <!-- the sentence -->
+  <rect x="60" y="340" width="1081" height="176" rx="20" fill="#552050"/>
+  <text class="sayl" x="92" y="378">THEN SAY</text>
+  <text class="say" x="92" y="424">&#8220;I have noticed you seem worried lately.</text>
+  <text class="say" x="92" y="464">Is there anything you would like support with?&#8221;</text>
+  <text class="then" x="92" y="496">Then stop talking. The silence is the part that works.</text>
+
+  <!-- why it is safe -->
+  <rect x="60" y="536" width="1081" height="76" rx="16" fill="#F6ECF4"/>
+  <text class="d" x="92" y="566">It names what you have seen without accusing anyone, and it offers rather than asks.</text>
+  <text class="d" x="92" y="592">She can answer &#8220;no, I am fine&#8221; at no cost, which is what makes it safe for her to say yes.</text>
+
+  <text class="foot" x="1140" y="650" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>

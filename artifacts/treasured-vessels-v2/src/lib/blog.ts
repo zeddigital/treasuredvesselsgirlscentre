@@ -13,6 +13,7 @@ import adolescentHealthBody from "@/content/adolescent-friendly-health-services-
 import menstrualDignityBody from "@/content/menstrual-dignity-checklist-for-schools.md?raw";
 import reusablePadsBody from "@/content/reusable-pads-choice-quality-and-safe-use.md?raw";
 import gbvResponseBody from "@/content/survivor-centred-response-to-gender-based-violence.md?raw";
+import recognisingAbuseBody from "@/content/recognising-abuse-without-increasing-risk.md?raw";
 
 export interface BlogPost {
   slug: string;
@@ -49,6 +50,40 @@ export interface BlogPost {
 
 // Newest first — the blog index and article routes are generated from this.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "recognising-abuse-without-increasing-risk",
+    title: "Recognising Abuse Without Putting Someone at Greater Risk",
+    eyebrow: "Safeguarding",
+    date: "28 August 2026",
+    isoDate: "2026-08-28",
+    publishTime: "14:00:00",
+    image: `${import.meta.env.BASE_URL}images/gallery/safe-conversation-hero.jpg`,
+    imageAlt:
+      "A card showing how to open a conversation safely: somewhere she is alone, at a moment that looks ordinary, never by message, then the words I have noticed you seem worried lately, is there anything you would like support with",
+    excerpt:
+      "Nobody has told you anything, and that is what makes it difficult. What you do with a suspicion is riskier than what you do with a disclosure. The six forms abuse takes, what you might notice, and the helpful moves that make things worse.",
+    metaDescription:
+      "How to recognise the signs of abuse in Uganda and open a conversation safely, plus the well-meant responses that increase the danger to her.",
+    seoTitle: "Signs of Domestic Violence in Uganda | Treasured Vessels",
+    keywords: [
+      "signs of domestic violence Uganda",
+      "economic abuse women",
+      "help someone experiencing GBV",
+      "coercive control signs",
+      "how to ask someone if they are safe",
+    ],
+    readingMinutes: 10,
+    articleSection: "Safeguarding",
+    subject: "Recognising abuse",
+    place: "Jinja, Uganda",
+    citations: [
+      "https://link.springer.com/article/10.1186/s12905-021-01363-9",
+      "https://journals.sagepub.com/doi/10.1177/0886260519836952",
+      "https://ulii.org/en/akn/ug/act/2010/3/eng@2023-12-31",
+      "https://mglsd.go.ug/uganda-child-helpline-116-2/",
+    ],
+    body: recognisingAbuseBody,
+  },
   {
     slug: "survivor-centred-response-to-gender-based-violence",
     title: "A Survivor-Centred Response to Gender-Based Violence",

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" width="1000" height="760" role="img"
+     aria-label="Six forms of abuse described by behaviour rather than by incident. Physical: hitting, choking, restraining, denying medical care, and the versions that leave no mark such as blocking a doorway or breaking her things. Sexual: any act she has not freely agreed to, including within a marriage, and refusing or sabotaging contraception. Emotional: repeated humiliation in front of others, threats to take the children, and telling her she is imagining things until she doubts her own account. Economic: taking her earnings, controlling all the money, destroying stock or tools, and making her ask for money for pads or school fees. Digital: demanding her phone password, reading her messages, tracking where she is, and threatening to share intimate images. Coercive control: the pattern that ties the others together, a set of rules about who she may see, what she may wear and when she may leave. Each rule sounds small; together they are the whole thing.">
+  <defs>
+    <style>
+      .h    { font-family: Georgia, 'Times New Roman', serif; fill: #552050; }
+      .lead { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 17px; }
+      .t    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 17px; }
+      .d    { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #25222B; font-size: 13.5px; }
+      .note { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; fill: #552050; font-size: 14.5px; }
+      .foot { font-family: Inter, 'Helvetica Neue', Arial, sans-serif; fill: #6b6672; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="760" fill="#FFF8F0"/>
+
+  <text class="h" x="56" y="60" font-size="30">Six forms, described by behaviour</text>
+  <text class="lead" x="56" y="90">Most of what you will encounter is not bruises.</text>
+  <line x1="56" y1="114" x2="944" y2="114" stroke="#E9DCE6" stroke-width="2"/>
+
+  <!-- Physical -->
+  <rect x="56" y="148" width="430" height="150" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="148" width="430" height="5" rx="2.5" fill="#B3123C"/>
+  <text class="t" x="82" y="186">Physical</text>
+  <text class="d" x="82" y="216">Hitting, choking, restraining, denying medical care.</text>
+  <text class="d" x="82" y="238">Also the kind that leaves no mark: blocking a</text>
+  <text class="d" x="82" y="260">doorway, driving dangerously, breaking her things</text>
+  <text class="d" x="82" y="282">instead of hitting her.</text>
+
+  <!-- Sexual -->
+  <rect x="514" y="148" width="430" height="150" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="148" width="430" height="5" rx="2.5" fill="#A33895"/>
+  <text class="t" x="540" y="186">Sexual</text>
+  <text class="d" x="540" y="216">Any act she has not freely agreed to, including</text>
+  <text class="d" x="540" y="238">inside a marriage. Refusing or sabotaging</text>
+  <text class="d" x="540" y="260">contraception. Under 18 is defilement, whatever</text>
+  <text class="d" x="540" y="282">anyone says she agreed to.</text>
+
+  <!-- Emotional -->
+  <rect x="56" y="316" width="430" height="150" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="316" width="430" height="5" rx="2.5" fill="#E43F8C"/>
+  <text class="t" x="82" y="354">Emotional</text>
+  <text class="d" x="82" y="384">Repeated humiliation, especially in front of others.</text>
+  <text class="d" x="82" y="406">Threats to leave, to take the children, or to harm</text>
+  <text class="d" x="82" y="428">himself if she goes. Telling her she is imagining</text>
+  <text class="d" x="82" y="450">things until she doubts her own account.</text>
+
+  <!-- Economic -->
+  <rect x="514" y="316" width="430" height="150" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="514" y="316" width="430" height="5" rx="2.5" fill="#F1B74B"/>
+  <text class="t" x="540" y="354">Economic</text>
+  <text class="d" x="540" y="384">Taking her earnings. Controlling all the money.</text>
+  <text class="d" x="540" y="406">Debt in her name. Destroying stock or tools.</text>
+  <text class="d" x="540" y="428">Making her ask for money for pads or school fees.</text>
+  <text class="d" x="540" y="450">The form most often missed.</text>
+
+  <!-- Digital -->
+  <rect x="56" y="484" width="430" height="150" rx="16" fill="#ffffff" stroke="#E9DCE6" stroke-width="2"/>
+  <rect x="56" y="484" width="430" height="5" rx="2.5" fill="#3DAAE1"/>
+  <text class="t" x="82" y="522">Digital</text>
+  <text class="d" x="82" y="552">Demanding her password. Reading her messages.</text>
+  <text class="d" x="82" y="574">Tracking where she is. Calling to check. Threatening</text>
+  <text class="d" x="82" y="596">to share intimate images, or posting to shame her.</text>
+
+  <!-- Coercive control -->
+  <rect x="514" y="484" width="430" height="150" rx="16" fill="#ffffff" stroke="#552050" stroke-width="3"/>
+  <rect x="514" y="484" width="430" height="5" rx="2.5" fill="#552050"/>
+  <text class="t" x="540" y="522">Coercive control</text>
+  <text class="d" x="540" y="552">The pattern tying the others together: rules about</text>
+  <text class="d" x="540" y="574">who she may see, what she may wear, when she</text>
+  <text class="d" x="540" y="596">may leave, how long the shopping should take.</text>
+
+  <rect x="56" y="656" width="888" height="52" rx="16" fill="#F6ECF4"/>
+  <text class="note" x="500" y="688" text-anchor="middle">Each rule sounds small. Together they are the whole thing.</text>
+
+  <text class="foot" x="944" y="738" text-anchor="end">Treasured Vessels Girls&#8217; Centre &#183; treasuredvesselsuganda.org</text>
+</svg>
