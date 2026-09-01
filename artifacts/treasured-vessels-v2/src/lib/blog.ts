@@ -54,12 +54,11 @@ export const blogPosts: BlogPost[] = [
     slug: "recognising-abuse-without-increasing-risk",
     title: "Recognising Abuse Without Putting Someone at Greater Risk",
     eyebrow: "Safeguarding",
-    date: "28 August 2026",
-    isoDate: "2026-08-28",
-    publishTime: "14:00:00",
-    image: `${import.meta.env.BASE_URL}images/gallery/safe-conversation-hero.jpg`,
+    date: "1 September 2026",
+    isoDate: "2026-09-01",
+    image: `${import.meta.env.BASE_URL}images/gallery/skills-training-lesson.jpg`,
     imageAlt:
-      "A card showing how to open a conversation safely: somewhere she is alone, at a moment that looks ordinary, never by message, then the words I have noticed you seem worried lately, is there anything you would like support with",
+      "A Treasured Vessels staff member standing to address a seated group of women and girls during a session at the centre in Jinja, Uganda",
     excerpt:
       "Nobody has told you anything, and that is what makes it difficult. What you do with a suspicion is riskier than what you do with a disclosure. The six forms abuse takes, what you might notice, and the helpful moves that make things worse.",
     metaDescription:

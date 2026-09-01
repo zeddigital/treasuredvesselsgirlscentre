@@ -62,6 +62,8 @@ Notice the shape of this list. Most of it is about control and isolation rather 
 
 If you decide to say something, the whole risk lives in **where, when and how**.
 
+![A safe opening: choose somewhere she is alone, at a moment that looks ordinary, never by message, then say I have noticed you seem worried lately, is there anything you would like support with, and then stop talking](/images/gallery/safe-conversation-card.svg)
+
 **Choose a place where she is genuinely alone.** Not within earshot of the group. Not in a doorway where someone might pass. Not in front of her children, who may be asked later what was said.
 
 **Choose a moment that has an innocent explanation.** Walking somewhere together. Helping with a task. A reason for the two of you to be talking that anybody watching would find unremarkable.
